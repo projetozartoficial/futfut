@@ -3,7 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Leilão Infinito</title>
+<title>FutFut</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%2064%2064%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Crect%20x%3D%222%22%20y%3D%222%22%20width%3D%2260%22%20height%3D%2260%22%20rx%3D%2214%22%20fill%3D%22%230e3a22%22%20stroke%3D%22%232ecc71%22%20stroke-width%3D%223%22/%3E%3Cpath%20d%3D%22M2%2032H62%22%20stroke%3D%22%23ffffff30%22%20stroke-width%3D%222%22/%3E%3Ccircle%20cx%3D%2232%22%20cy%3D%2232%22%20r%3D%2215%22%20fill%3D%22none%22%20stroke%3D%22%23ffffff30%22%20stroke-width%3D%222%22/%3E%3Cg%20fill%3D%22%23f7d24c%22%20stroke%3D%22%230e3a22%22%20stroke-width%3D%221.5%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M12%2015h19v8H21v5h8v7h-8v14h-9z%22/%3E%3Cpath%20d%3D%22M33%2015h19v8H42v5h8v7h-8v14h-9z%22/%3E%3C/g%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Barlow+Condensed:wght@600;700;800;900&display=swap" rel="stylesheet">
 <style>
@@ -19,7 +20,7 @@ button:active:not(:disabled){transform:scale(.96)}
 :focus-visible{outline:3px solid var(--ac);outline-offset:2px}
 .top{display:flex;align-items:center;gap:10px;padding:10px 16px;border-bottom:1px solid #ffffff12;position:sticky;top:0;background:#08140dd9;backdrop-filter:blur(10px);z-index:5;flex-wrap:wrap}
 .logo{display:flex;align-items:center;gap:8px;font:800 22px/1 var(--fd);letter-spacing:.3px;text-transform:uppercase}
-.logo svg{width:44px;height:26px;flex:none;filter:drop-shadow(0 2px 4px #0008)}
+.logo svg{width:34px;height:34px;flex:none;filter:drop-shadow(0 2px 4px #0008)}
 .logo em{font-style:normal;color:var(--ac)}
 .grow{flex:1}
 @media(max-width:640px){.top{position:static}.top .btn.sm{width:100%}}
@@ -121,6 +122,17 @@ tr.me td{background:#1f3d26}
 .pl{display:flex;justify-content:space-between;gap:6px;font-size:14px;padding:4px 0;border-bottom:1px solid #ffffff0a}
 .tag{font:700 14px var(--fd);letter-spacing:.3px;padding:5px 11px;border-radius:20px;background:var(--card2);border:1px solid var(--line);white-space:nowrap}
 .trophy{width:120px;filter:drop-shadow(0 10px 20px #f7d24c55);animation:flt 4s ease-in-out infinite}
+.homehero{display:flex;align-items:center;gap:22px;padding:18px 0 8px}
+.homehero h1{font-size:clamp(56px,11vw,96px);margin:0;text-transform:uppercase;letter-spacing:1px}.homehero h1 em,.logo em{font-style:normal;color:var(--ac)}
+.bigmark svg{width:clamp(96px,18vw,150px);height:auto;filter:drop-shadow(0 12px 24px #000a);animation:flt 5s ease-in-out infinite}
+@media(max-width:560px){.homehero{flex-direction:column;text-align:center}.homehero p{margin:8px auto}}
+.modes{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:16px;margin-top:18px}
+.mode{position:relative;text-align:left;display:flex;flex-direction:column;gap:8px;padding:20px;border-radius:20px;border:1.5px solid var(--line);background:linear-gradient(160deg,#1a3a26,#0f2218);box-shadow:var(--sh);overflow:hidden;min-height:300px}
+.mode:hover:not(:disabled){border-color:var(--ac);transform:translateY(-3px);box-shadow:0 16px 36px #0009}
+.mode b{font:900 34px/1 var(--fd);text-transform:uppercase}.mode>span:not(.mi){color:var(--mut);font-size:15px}
+.mode .mi{height:120px;display:grid;place-items:center}.mode .mi svg{width:auto;height:110px;animation:none}
+.mode .go{font:800 18px var(--fd);font-style:normal;text-transform:uppercase;color:var(--ac);margin-top:auto}
+.mode.soon{opacity:.75;cursor:default}.mode.soon .go{color:var(--mut)}
 .hide{display:none!important}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
 </style>
@@ -152,26 +164,26 @@ Mirassol|MIR|#d9a800|Reinaldo:LE:84:Reinaldo,Walter:GOL:83:Walter,Eduardo:MEI:82
 Remo|REM|#1a3a9e|Gabriel Taliari:CA:81:Taliari,Marllon:ZAG:80:Marllon,Marcelo Rangel:GOL:80:Marcelo Rangel,Jajá:PE:80:Jajá,Vitor Bueno:MEI:79:Bueno,Yago Pikachu:PD/LD:79:Pikachu,Patrick:MC:78:Patrick,Marcelinho:LD:77:Marcelinho,Ivan:GOL:76:Ivan
 Chapecoense|CHA|#007a3d|Giovanni Augusto:MEI/PD:81:Augusto,Doma:ZAG:80:Doma,Marcinho:PD:80:Marcinho,Camilo:VOL/MC/PD:79:Camilo,Yago Felipe:MC:79:Felipe,Carvalheira:VOL:77:Carvalheira,Anderson:GOL:77:Anderson,Yannick Bolasie:CA:77:Bolasie,Kevin Ramírez:PE:76:Ramírez,Rafael Thyere:ZAG:76:Thyere,Rafael Santos:GOL:74:Rafael Santos`;
 const EU_RAW=`
-Real Madrid|RMA|#c9b037|Kylian Mbappé:CA/PE/PD:93:Mbappé,Vinicius Junior:PE/CA:90:Vini Jr.,Jude Bellingham:MEI/MC/PE:89:Bellingham,Thibaut Courtois:GOL:89:Courtois,Federico Valverde:MC/LD/PD:88:Valverde,Aurélien Tchouaméni:VOL/ZAG/MC:87:Tchouaméni,Trent Alexander-Arnold:LD:86:Alexander-Arnold,Bernardo Silva:MEI/MC/PD:86:Bernardo Silva,Éder Militão:ZAG/LD:86:Militão,Antonio Rüdiger:ZAG:86:Rüdiger,Rodrygo:PD/PE/CA:85:Rodrygo,Marc Cucurella:LE/PE:84:Cucurella,Ibrahima Konaté:ZAG:84:Konaté,Denzel Dumfries:LD/PD:84:Dumfries,Arda Güler:MEI/MC/PD:82:Güler,Eduardo Camavinga:MC/LE/VOL:82:Camavinga,Brahim Díaz:PD/PE/MEI:82:Brahim Díaz,Dean Huijsen:ZAG:81:Huijsen,Álvaro Carreras:LE/PE:81:Carreras,Andriy Lunin:GOL:80:Lunin
-Manchester City|MCI|#6cabdd|Erling Haaland:CA:92:Haaland,Gianluigi Donnarumma:GOL:89:Donnarumma,Enzo Fernández:MC/VOL/MEI:87:Fernández,Rúben Dias:ZAG:87:Dias,Antoine Semenyo:PD/PE:86:Semenyo,Josko Gvardiol:LE/ZAG:86:Gvardiol,Marc Guéhi:ZAG:86:Guéhi,Phil Foden:MEI/MC/PE:86:Foden,Iliman Ndiaye:PE/PD/MEI:85:Ndiaye,Mateo Kovacic:MC/VOL:84:Kovacic,Elliot Anderson:VOL/MC:83:Anderson,Rayan Cherki:MEI/PD:83:Cherki,Jérémy Doku:PE/PD:83:Doku,Matheus Nunes:LD/MC/PE:83:Nunes,Gerónimo Rulli:GOL:83:Rulli
-Barcelona|BAR|#a50044|Lamine Yamal:PD:91:Yamal,Pedri:MC/VOL/PE:89:Pedri,Raphinha:CA/MEI/PE:89:Raphinha,Rodri:VOL/MC:88:Rodri,Jules Koundé:LD/ZAG:87:Koundé,Frenkie de Jong:MC/ZAG/VOL:86:De Jong,Dani Olmo:MEI/PE/PD:85:Olmo,Anthony Gordon:PE:84:Gordon,Joan García:GOL:84:Joan García,Fermín López:MEI/MC/PE:83:López,Eric García:ZAG/LD/VOL:82:Eric García,Alejandro Balde:LE:82:Balde,João Cancelo:LD/LE/PD:82:Cancelo,Karim Adeyemi:PD/PE/CA:81:Adeyemi,Gabriel Jesus:CA/PE:81:Jesus,Dominik Livakovic:GOL:79:Livakovic,Wojciech Szczęsny:GOL:76:Szczęsny
-Bayern de Munique|BAY|#dc052d|Harry Kane:CA:91:Kane,Michael Olise:PD:88:Olise,Jamal Musiala:MEI/MC/PE:88:Musiala,Joshua Kimmich:VOL/LD/MC:88:Kimmich,Dayot Upamecano:ZAG:87:Upamecano,Luis Díaz:PE/CA:87:Luis Díaz,Jonathan Tah:ZAG:86:Tah,Serge Gnabry:CA:85:Gnabry,Konrad Laimer:LD/VOL/MC:84:Laimer,Min-jae Kim:ZAG:84:Kim,Manuel Neuer:GOL:84:Neuer,Alphonso Davies:LE/PE:83:Davies,Ismael Saibari:MEI/MC/PD:82:Saibari,Jonas Urbig:GOL:77:Urbig,Sven Ulreich:GOL:73:Ulreich
-PSG|PSG|#004170|Ousmane Dembélé:CA/PE/PD:90:Dembélé,Vitinha:VOL:89:Vitinha,Willian Pacho:ZAG:89:Pacho,Khvicha Kvaratskhelia:PE:88:Kvaratskhelia,Achraf Hakimi:LD/LE/PD:88:Hakimi,Nuno Mendes:LE/PE:87:Mendes,Fabián Ruiz:MC/VOL:86:Ruiz,Marquinhos:ZAG:86:Marquinhos,João Neves:MC/VOL:85:Neves,Désiré Doué:PD/MEI/PE:85:Doué,Ferran Torres:CA/PE/PD:84:Torres,Matvey Safonov:GOL:84:Safonov,Lucas Hernández:LE/ZAG:84:Hernández,Lucas Chevalier:GOL:80:Chevalier
-Arsenal|ARS|#ef0107|Declan Rice:MC/VOL:88:Rice,Bukayo Saka:PD/LE/PE:88:Saka,William Saliba:ZAG:88:Saliba,David Raya:GOL:88:Raya,Gabriel:ZAG:87:Gabriel,Martin Ødegaard:MEI/MC:86:Ødegaard,Bruno Guimarães:MC/VOL:86:Guimarães,Kai Havertz:CA/MEI:86:Havertz,Viktor Gyökeres:CA:86:Gyökeres,Mikel Merino:MC/CA:86:Merino,Jurriën Timber:LD/ZAG/LE:85:Timber,Martín Zubimendi:VOL/MC:85:Zubimendi,Eberechi Eze:MEI/MC/PE:85:Eze,Ezri Konsa:ZAG/LD:84:Konsa,Noni Madueke:PD:83:Madueke,Ben White:LD/ZAG:83:White,Riccardo Calafiori:LE/ZAG/PE:82:Calafiori,Piero Hincapié:ZAG/LE:82:Hincapié,Kepa Arrizabalaga:GOL:81:Arrizabalaga
-Inter de Milão|INT|#0068a8|Lautaro Martínez:CA:88:Lautaro,Alessandro Bastoni:ZAG:87:Bastoni,Nicolò Barella:MC/VOL/MEI:87:Barella,Hakan Çalhanoğlu:VOL/MC/PE:86:Çalhanoğlu,Federico Dimarco:LE/PE:85:Dimarco,Marcus Thuram:CA/PE:85:Thuram,Manuel Akanji:ZAG:85:Akanji,John Stones:ZAG:84:Stones,Djed Spence:LD/LE/PD:82:Spence,Benjamin Pavard:ZAG/LD:81:Pavard,Ivan Provedel:GOL:80:Provedel,Josep Martínez:GOL:79:Josep Martínez,Henrikh Mkhitaryan:MC/PE/PD:78:Mkhitaryan
-Liverpool|LIV|#c8102e|Virgil van Dijk:ZAG:88:Van Dijk,Alexander Isak:CA:87:Isak,Florian Wirtz:MEI/PE/CA:87:Wirtz,Alexis Mac Allister:MC/VOL/MEI:87:Allister,Alisson:GOL:87:Alisson,Dominik Szoboszlai:MEI/MC/PE:86:Szoboszlai,Hugo Ekitiké:CA:85:Ekitiké,Cody Gakpo:PE/CA:85:Gakpo,Ryan Gravenberch:VOL/MC:85:Gravenberch,Bradley Barcola:PE:84:Barcola,Giorgi Mamardashvili:GOL:83:Mamardashvili,Ronald Araújo:ZAG/LD:83:Araújo,Jeremie Frimpong:LD/PD:81:Frimpong
-Chelsea|CHE|#034694|Cole Palmer:MEI/PD/CA:87:Palmer,Moisés Caicedo:VOL/MC:87:Caicedo,Emiliano Martínez:GOL:86:Dibu,João Pedro:CA:85:Pedro,Morgan Rogers:MEI/PE/PD:84:Rogers,Pedro Neto:PD/PE:84:Pedro Neto,Reece James:LD/VOL/PD:84:James,Maxence Lacroix:ZAG:82:Lacroix,Levi Colwill:ZAG/LE:81:Colwill,Danny Welbeck:CA:81:Welbeck
-Atlético de Madrid|ATM|#cb3524|Julián Alvarez:CA/MEI:87:Alvarez,Jan Oblak:GOL:87:Oblak,Ademola Lookman:PE:85:Lookman,Alejandro Grimaldo:LE/PE:85:Grimaldo,Marcos Llorente:LD/VOL/MC:85:Llorente,Cristian Romero:ZAG:84:Romero,Morten Hjulmand:VOL/MC:83:Hjulmand,Álex Baena:PE/MC/MEI:83:Baena,Dávid Hancko:ZAG/LE:83:Hancko,Pablo Barrios:MC:82:Barrios,Jonathan David:CA/MEI:82:David,Robin Le Normand:ZAG:82:Normand,Alexander Sørloth:CA:82:Sørloth,Koke:MC/VOL:82:Koke,Juan Musso:GOL:79:Musso
-Borussia Dortmund|BVB|#c9a800|Gregor Kobel:GOL:87:Kobel,Serhou Guirassy:CA:87:Guirassy,Nico Schlotterbeck:ZAG:86:Schlotterbeck,Waldemar Anton:ZAG:83:Anton,Julian Ryerson:LD/LE/PD:82:Ryerson,Marcel Sabitzer:MC/MEI:82:Sabitzer,Felix Nmecha:MC/VOL:81:Nmecha
-Manchester United|MUN|#da291c|Matheus Cunha:CA:86:Cunha,Bruno Fernandes:MEI:86:Fernandes,Bryan Mbeumo:PD:85:Mbeumo,Lisandro Martínez:ZAG/VOL:84:Lisandro,Youri Tielemans:MC/VOL/MEI:83:Tielemans,Marcus Rashford:PE/PD/CA:83:Rashford,Matthijs de Ligt:ZAG:82:De Ligt,Harry Maguire:ZAG:82:Maguire,Diogo Dalot:LD/LE/PE:81:Dalot,Mason Mount:MEI/MC:81:Mount,Senne Lammens:GOL:80:Lammens
-Porto|POR|#00428c|Diogo Costa:GOL:86:Costa,Jakub Kiwior:ZAG/LE/VOL:82:Kiwior,Pepê:PD/LD/PE:80:Pepê,Samu Aghehowa:CA:79:Aghehowa,Alan Varela:VOL/MC/MEI:79:Varela,Jan Bednarek:ZAG:79:Bednarek
-Milan|MIL|#b5121b|Mike Maignan:GOL:86:Maignan,Christian Pulisic:PD/PE/CA:85:Pulisic,Adrien Rabiot:MC/VOL:84:Rabiot,Gonçalo Ramos:CA:83:Ramos,Luka Modrić:MC/MEI:82:Modrić,Pietro Terracciano:GOL:77:Terracciano
-Tottenham|TOT|#132257|Sandro Tonali:VOL/MC:85:Tonali,Omar Marmoush:CA/PE:85:Marmoush,Micky van de Ven:ZAG/LE:83:Van de Ven,Mohammed Kudus:PD/PE/MEI:83:Kudus,Pedro Porro:LD/PD:83:Porro,Dominic Solanke:CA:83:Solanke,James Maddison:MEI/MC:83:Maddison,Marcos Senesi:ZAG:82:Senesi,Richarlison:CA/PE/PD:82:Richarlison,Jan Paul van Hecke:ZAG:81:Van Hecke,Conor Gallagher:MC/VOL/PE:81:Gallagher,Rodrigo Bentancur:VOL/MC:81:Bentancur,Dejan Kulusevski:MEI/PD/CA:81:Kulusevski,Andrew Robertson:LE/PE:81:Robertson,Martin Dúbravka:GOL:75:Dúbravka
-Juventus|JUV|#8c8c8c|Kenan Yıldız:PE/MEI/CA:85:Yıldız,Bremer:ZAG:85:Bremer,Manuel Locatelli:VOL/MC:83:Locatelli,Guglielmo Vicario:GOL:83:Vicario,Nick Woltemade:CA:82:Woltemade,Randal Kolo Muani:CA:82:Muani,Nico González:PE:82:González,Pierre Kalulu:ZAG/LD:81:Kalulu,Lloyd Kelly:ZAG/LE:81:Kelly,Jhon Lucumí:ZAG:81:Lucumí,Kamil Grabara:GOL:80:Grabara,Neto:GOL:75:Neto
-Napoli|NAP|#12a0d7|Scott McTominay:MC/VOL:85:McTominay,Kevin De Bruyne:MEI/MC:85:De Bruyne,Frank Anguissa:MC:83:Anguissa,Vanja Milinković-Savić:GOL:83:Milinković-Savić,Giovanni Di Lorenzo:LD/ZAG/PD:83:Di Lorenzo,Amir Rrahmani:ZAG:82:Rrahmani,Matteo Politano:PD/CA:82:Politano,Alessandro Buongiorno:ZAG:81:Buongiorno,Stanislav Lobotka:VOL/MC:81:Lobotka,Alex Meret:GOL:81:Meret
-Newcastle|NEW|#444444|Yoane Wissa:CA:85:Wissa,Joelinton:MC/PE/MEI:84:Joelinton,Malick Thiaw:ZAG:82:Thiaw,Harvey Barnes:PE:82:Barnes,Sven Botman:ZAG:82:Botman,Nick Pope:GOL:82:Pope,Fabian Schär:ZAG:81:Schär,Lukas Hornicek:GOL:77:Hornicek
-Benfica|BEN|#e30613|João Palhinha:VOL:85:Palhinha,Vangelis Pavlidis:CA/PE:83:Pavlidis,Fredrik Aursnes:MC/LE/LD:83:Aursnes,Anatoliy Trubin:GOL:81:Trubin,Dodi Lukébakio:PD/PE/CA:80:Lukébakio,Rafa Silva:PD/PE/MEI:80:Rafa Silva
-Bayer Leverkusen|B04|#e32221|Edmond Tapsoba:ZAG:84:Tapsoba,Patrik Schick:CA:84:Schick,Aleix García:MC/VOL/MEI:83:Aleix García,Moussa Diaby:PD/CA:82:Diaby,Robert Andrich:VOL/MC:82:Andrich,Miguel Gutiérrez:LE/PE:81:Gutiérrez,Martin Terrier:PE/MEI:81:Terrier,Mark Flekken:GOL:81:Flekken`;
+Real Madrid|RMA|#c9b037|Kylian Mbappé:CA/PE/PD:97:Mbappé,Vinicius Junior:PE/CA:94:Vini Jr.,Jude Bellingham:MEI/MC/PE:93:Bellingham,Thibaut Courtois:GOL:93:Courtois,Federico Valverde:MC/LD/PD:92:Valverde,Aurélien Tchouaméni:VOL/ZAG/MC:91:Tchouaméni,Trent Alexander-Arnold:LD:90:Alexander-Arnold,Bernardo Silva:MEI/MC/PD:90:Bernardo Silva,Éder Militão:ZAG/LD:90:Militão,Antonio Rüdiger:ZAG:90:Rüdiger,Rodrygo:PD/PE/CA:89:Rodrygo,Marc Cucurella:LE/PE:88:Cucurella,Ibrahima Konaté:ZAG:88:Konaté,Denzel Dumfries:LD/PD:88:Dumfries,Arda Güler:MEI/MC/PD:86:Güler,Eduardo Camavinga:MC/LE/VOL:86:Camavinga,Brahim Díaz:PD/PE/MEI:86:Brahim Díaz,Dean Huijsen:ZAG:85:Huijsen,Álvaro Carreras:LE/PE:85:Carreras,Andriy Lunin:GOL:84:Lunin
+Manchester City|MCI|#6cabdd|Erling Haaland:CA:96:Haaland,Gianluigi Donnarumma:GOL:93:Donnarumma,Enzo Fernández:MC/VOL/MEI:91:Fernández,Rúben Dias:ZAG:91:Dias,Antoine Semenyo:PD/PE:90:Semenyo,Josko Gvardiol:LE/ZAG:90:Gvardiol,Marc Guéhi:ZAG:90:Guéhi,Phil Foden:MEI/MC/PE:90:Foden,Iliman Ndiaye:PE/PD/MEI:89:Ndiaye,Mateo Kovacic:MC/VOL:88:Kovacic,Elliot Anderson:VOL/MC:87:Anderson,Rayan Cherki:MEI/PD:87:Cherki,Jérémy Doku:PE/PD:87:Doku,Matheus Nunes:LD/MC/PE:87:Nunes,Gerónimo Rulli:GOL:87:Rulli
+Barcelona|BAR|#a50044|Lamine Yamal:PD:95:Yamal,Pedri:MC/VOL/PE:93:Pedri,Raphinha:CA/MEI/PE:93:Raphinha,Rodri:VOL/MC:92:Rodri,Jules Koundé:LD/ZAG:91:Koundé,Frenkie de Jong:MC/ZAG/VOL:90:De Jong,Dani Olmo:MEI/PE/PD:89:Olmo,Anthony Gordon:PE:88:Gordon,Joan García:GOL:88:Joan García,Fermín López:MEI/MC/PE:87:López,Eric García:ZAG/LD/VOL:86:Eric García,Alejandro Balde:LE:86:Balde,João Cancelo:LD/LE/PD:86:Cancelo,Karim Adeyemi:PD/PE/CA:85:Adeyemi,Gabriel Jesus:CA/PE:85:Jesus,Dominik Livakovic:GOL:83:Livakovic,Wojciech Szczęsny:GOL:80:Szczęsny
+Bayern de Munique|BAY|#dc052d|Harry Kane:CA:95:Kane,Michael Olise:PD:92:Olise,Jamal Musiala:MEI/MC/PE:92:Musiala,Joshua Kimmich:VOL/LD/MC:92:Kimmich,Dayot Upamecano:ZAG:91:Upamecano,Luis Díaz:PE/CA:91:Luis Díaz,Jonathan Tah:ZAG:90:Tah,Serge Gnabry:CA:89:Gnabry,Konrad Laimer:LD/VOL/MC:88:Laimer,Min-jae Kim:ZAG:88:Kim,Manuel Neuer:GOL:88:Neuer,Alphonso Davies:LE/PE:87:Davies,Ismael Saibari:MEI/MC/PD:86:Saibari,Jonas Urbig:GOL:81:Urbig,Sven Ulreich:GOL:77:Ulreich
+PSG|PSG|#004170|Ousmane Dembélé:CA/PE/PD:94:Dembélé,Vitinha:VOL:93:Vitinha,Willian Pacho:ZAG:93:Pacho,Khvicha Kvaratskhelia:PE:92:Kvaratskhelia,Achraf Hakimi:LD/LE/PD:92:Hakimi,Nuno Mendes:LE/PE:91:Mendes,Fabián Ruiz:MC/VOL:90:Ruiz,Marquinhos:ZAG:90:Marquinhos,João Neves:MC/VOL:89:Neves,Désiré Doué:PD/MEI/PE:89:Doué,Ferran Torres:CA/PE/PD:88:Torres,Matvey Safonov:GOL:88:Safonov,Lucas Hernández:LE/ZAG:88:Hernández,Lucas Chevalier:GOL:84:Chevalier
+Arsenal|ARS|#ef0107|Declan Rice:MC/VOL:92:Rice,Bukayo Saka:PD/LE/PE:92:Saka,William Saliba:ZAG:92:Saliba,David Raya:GOL:92:Raya,Gabriel:ZAG:91:Gabriel,Martin Ødegaard:MEI/MC:90:Ødegaard,Bruno Guimarães:MC/VOL:90:Guimarães,Kai Havertz:CA/MEI:90:Havertz,Viktor Gyökeres:CA:90:Gyökeres,Mikel Merino:MC/CA:90:Merino,Jurriën Timber:LD/ZAG/LE:89:Timber,Martín Zubimendi:VOL/MC:89:Zubimendi,Eberechi Eze:MEI/MC/PE:89:Eze,Ezri Konsa:ZAG/LD:88:Konsa,Noni Madueke:PD:87:Madueke,Ben White:LD/ZAG:87:White,Riccardo Calafiori:LE/ZAG/PE:86:Calafiori,Piero Hincapié:ZAG/LE:86:Hincapié,Kepa Arrizabalaga:GOL:85:Arrizabalaga
+Inter de Milão|INT|#0068a8|Lautaro Martínez:CA:92:Lautaro,Alessandro Bastoni:ZAG:91:Bastoni,Nicolò Barella:MC/VOL/MEI:91:Barella,Hakan Çalhanoğlu:VOL/MC/PE:90:Çalhanoğlu,Federico Dimarco:LE/PE:89:Dimarco,Marcus Thuram:CA/PE:89:Thuram,Manuel Akanji:ZAG:89:Akanji,John Stones:ZAG:88:Stones,Djed Spence:LD/LE/PD:86:Spence,Benjamin Pavard:ZAG/LD:85:Pavard,Ivan Provedel:GOL:84:Provedel,Josep Martínez:GOL:83:Josep Martínez,Henrikh Mkhitaryan:MC/PE/PD:82:Mkhitaryan
+Liverpool|LIV|#c8102e|Virgil van Dijk:ZAG:92:Van Dijk,Alexander Isak:CA:91:Isak,Florian Wirtz:MEI/PE/CA:91:Wirtz,Alexis Mac Allister:MC/VOL/MEI:91:Allister,Alisson:GOL:91:Alisson,Dominik Szoboszlai:MEI/MC/PE:90:Szoboszlai,Hugo Ekitiké:CA:89:Ekitiké,Cody Gakpo:PE/CA:89:Gakpo,Ryan Gravenberch:VOL/MC:89:Gravenberch,Bradley Barcola:PE:88:Barcola,Giorgi Mamardashvili:GOL:87:Mamardashvili,Ronald Araújo:ZAG/LD:87:Araújo,Jeremie Frimpong:LD/PD:85:Frimpong
+Chelsea|CHE|#034694|Cole Palmer:MEI/PD/CA:91:Palmer,Moisés Caicedo:VOL/MC:91:Caicedo,Emiliano Martínez:GOL:90:Dibu,João Pedro:CA:89:Pedro,Morgan Rogers:MEI/PE/PD:88:Rogers,Pedro Neto:PD/PE:88:Pedro Neto,Reece James:LD/VOL/PD:88:James,Maxence Lacroix:ZAG:86:Lacroix,Levi Colwill:ZAG/LE:85:Colwill,Danny Welbeck:CA:85:Welbeck
+Atlético de Madrid|ATM|#cb3524|Julián Alvarez:CA/MEI:91:Alvarez,Jan Oblak:GOL:91:Oblak,Ademola Lookman:PE:89:Lookman,Alejandro Grimaldo:LE/PE:89:Grimaldo,Marcos Llorente:LD/VOL/MC:89:Llorente,Cristian Romero:ZAG:88:Romero,Morten Hjulmand:VOL/MC:87:Hjulmand,Álex Baena:PE/MC/MEI:87:Baena,Dávid Hancko:ZAG/LE:87:Hancko,Pablo Barrios:MC:86:Barrios,Jonathan David:CA/MEI:86:David,Robin Le Normand:ZAG:86:Normand,Alexander Sørloth:CA:86:Sørloth,Koke:MC/VOL:86:Koke,Juan Musso:GOL:83:Musso
+Borussia Dortmund|BVB|#c9a800|Gregor Kobel:GOL:91:Kobel,Serhou Guirassy:CA:91:Guirassy,Nico Schlotterbeck:ZAG:90:Schlotterbeck,Waldemar Anton:ZAG:87:Anton,Julian Ryerson:LD/LE/PD:86:Ryerson,Marcel Sabitzer:MC/MEI:86:Sabitzer,Felix Nmecha:MC/VOL:85:Nmecha
+Manchester United|MUN|#da291c|Matheus Cunha:CA:90:Cunha,Bruno Fernandes:MEI:90:Fernandes,Bryan Mbeumo:PD:89:Mbeumo,Lisandro Martínez:ZAG/VOL:88:Lisandro,Youri Tielemans:MC/VOL/MEI:87:Tielemans,Marcus Rashford:PE/PD/CA:87:Rashford,Matthijs de Ligt:ZAG:86:De Ligt,Harry Maguire:ZAG:86:Maguire,Diogo Dalot:LD/LE/PE:85:Dalot,Mason Mount:MEI/MC:85:Mount,Senne Lammens:GOL:84:Lammens
+Porto|POR|#00428c|Diogo Costa:GOL:90:Costa,Jakub Kiwior:ZAG/LE/VOL:86:Kiwior,Pepê:PD/LD/PE:84:Pepê,Samu Aghehowa:CA:83:Aghehowa,Alan Varela:VOL/MC/MEI:83:Varela,Jan Bednarek:ZAG:83:Bednarek
+Milan|MIL|#b5121b|Mike Maignan:GOL:90:Maignan,Christian Pulisic:PD/PE/CA:89:Pulisic,Adrien Rabiot:MC/VOL:88:Rabiot,Gonçalo Ramos:CA:87:Ramos,Luka Modrić:MC/MEI:86:Modrić,Pietro Terracciano:GOL:81:Terracciano
+Tottenham|TOT|#132257|Sandro Tonali:VOL/MC:89:Tonali,Omar Marmoush:CA/PE:89:Marmoush,Micky van de Ven:ZAG/LE:87:Van de Ven,Mohammed Kudus:PD/PE/MEI:87:Kudus,Pedro Porro:LD/PD:87:Porro,Dominic Solanke:CA:87:Solanke,James Maddison:MEI/MC:87:Maddison,Marcos Senesi:ZAG:86:Senesi,Richarlison:CA/PE/PD:86:Richarlison,Jan Paul van Hecke:ZAG:85:Van Hecke,Conor Gallagher:MC/VOL/PE:85:Gallagher,Rodrigo Bentancur:VOL/MC:85:Bentancur,Dejan Kulusevski:MEI/PD/CA:85:Kulusevski,Andrew Robertson:LE/PE:85:Robertson,Martin Dúbravka:GOL:79:Dúbravka
+Juventus|JUV|#8c8c8c|Kenan Yıldız:PE/MEI/CA:89:Yıldız,Bremer:ZAG:89:Bremer,Manuel Locatelli:VOL/MC:87:Locatelli,Guglielmo Vicario:GOL:87:Vicario,Nick Woltemade:CA:86:Woltemade,Randal Kolo Muani:CA:86:Muani,Nico González:PE:86:González,Pierre Kalulu:ZAG/LD:85:Kalulu,Lloyd Kelly:ZAG/LE:85:Kelly,Jhon Lucumí:ZAG:85:Lucumí,Kamil Grabara:GOL:84:Grabara,Neto:GOL:79:Neto
+Napoli|NAP|#12a0d7|Scott McTominay:MC/VOL:89:McTominay,Kevin De Bruyne:MEI/MC:89:De Bruyne,Frank Anguissa:MC:87:Anguissa,Vanja Milinković-Savić:GOL:87:Milinković-Savić,Giovanni Di Lorenzo:LD/ZAG/PD:87:Di Lorenzo,Amir Rrahmani:ZAG:86:Rrahmani,Matteo Politano:PD/CA:86:Politano,Alessandro Buongiorno:ZAG:85:Buongiorno,Stanislav Lobotka:VOL/MC:85:Lobotka,Alex Meret:GOL:85:Meret
+Newcastle|NEW|#444444|Yoane Wissa:CA:89:Wissa,Joelinton:MC/PE/MEI:88:Joelinton,Malick Thiaw:ZAG:86:Thiaw,Harvey Barnes:PE:86:Barnes,Sven Botman:ZAG:86:Botman,Nick Pope:GOL:86:Pope,Fabian Schär:ZAG:85:Schär,Lukas Hornicek:GOL:81:Hornicek
+Benfica|BEN|#e30613|João Palhinha:VOL:89:Palhinha,Vangelis Pavlidis:CA/PE:87:Pavlidis,Fredrik Aursnes:MC/LE/LD:87:Aursnes,Anatoliy Trubin:GOL:85:Trubin,Dodi Lukébakio:PD/PE/CA:84:Lukébakio,Rafa Silva:PD/PE/MEI:84:Rafa Silva
+Bayer Leverkusen|B04|#e32221|Edmond Tapsoba:ZAG:88:Tapsoba,Patrik Schick:CA:88:Schick,Aleix García:MC/VOL/MEI:87:Aleix García,Moussa Diaby:PD/CA:86:Diaby,Robert Andrich:VOL/MC:86:Andrich,Miguel Gutiérrez:LE/PE:85:Gutiérrez,Martin Terrier:PE/MEI:85:Terrier,Mark Flekken:GOL:85:Flekken`;
 
 /* ================== BASE ================== */
 const GOF={GOL:'G',ZAG:'D',LE:'D',LD:'D',VOL:'M',MC:'M',MEI:'M',PE:'A',PD:'A',CA:'A'};
@@ -201,10 +213,11 @@ const FORMS={5:[['2-1-1'],['1-2-1'],['1-1-2'],['2-0-2'],['3-1','Retranca'],['1-3
 const BOT_FORMS={5:['2-1-1','2-1-1','1-2-1','1-1-2'],11:['4-4-2','4-3-3','4-3-3','4-2-3-1','3-5-2','4-1-4-1','5-3-2']};
 const COACH={br:['Jardine','Mano','Sampaoli','Renato','Ceni','Roger','Diniz','Cuca','Telê','Dorival','Tite','Zubeldía','Vojvoda','Abel','Luxa'],
  eu:['Guardiola','Klopp','Ancelotti','Arteta','Simeone','Flick','Luis Enrique','Mourinho','Xabi','Slot','Conte','Allegri','Inzaghi','Tuchel','Zidane']};
-const LOGO=`<svg viewBox="0 0 44 26" aria-hidden="true"><rect x="1" y="1" width="42" height="24" rx="4" fill="#f7d24c" stroke="#fff3b0" stroke-width="1.5"/><rect x="4" y="4" width="36" height="18" rx="2" fill="none" stroke="#b8860b" stroke-width="1" stroke-dasharray="2 2"/><path d="M22 13c-3-4-8-5-9.5-2.5S14 17 17 16.5 21 14 22 13zm0 0c3 4 8 5 9.5 2.5S30 9 27 9.5 23 12 22 13z" fill="none" stroke="#1b1400" stroke-width="2.4" stroke-linecap="round"/></svg>`;
+const MARK=`<svg viewBox="0 0 64 64" aria-hidden="true"><rect x="2" y="2" width="60" height="60" rx="14" fill="#0e3a22" stroke="#2ecc71" stroke-width="3"/><path d="M2 32H62" stroke="#ffffff30" stroke-width="2"/><circle cx="32" cy="32" r="15" fill="none" stroke="#ffffff30" stroke-width="2"/><g fill="#f7d24c" stroke="#0e3a22" stroke-width="1.5" stroke-linejoin="round"><path d="M12 15h19v8H21v5h8v7h-8v14h-9z"/><path d="M33 15h19v8H42v5h8v7h-8v14h-9z"/></g></svg>`;
+const LOGO=`${MARK}<span>Fut<em>Fut</em></span>`;
 const NOTE=`<svg class="note" viewBox="0 0 300 150" role="img" aria-label="Nota de dinheiro"><defs><linearGradient id="ng" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff3b8"/><stop offset=".45" stop-color="#f7d24c"/><stop offset="1" stop-color="#c99512"/></linearGradient><pattern id="np" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M0 10L10 0" stroke="#b8860b" stroke-width=".6" opacity=".35"/></pattern></defs><rect x="3" y="3" width="294" height="144" rx="14" fill="url(#ng)" stroke="#fff6c8" stroke-width="3"/><rect x="3" y="3" width="294" height="144" rx="14" fill="url(#np)"/><rect x="14" y="14" width="272" height="122" rx="9" fill="none" stroke="#8a6508" stroke-width="2" stroke-dasharray="5 4"/><circle cx="150" cy="75" r="44" fill="#fff8d6" stroke="#8a6508" stroke-width="2"/><path d="M150 75c-8-11-22-13-26-6s3 18 11 16 13-7 15-10zm0 0c8 11 22 13 26 6s-3-18-11-16-13 7-15 10z" fill="none" stroke="#1b1400" stroke-width="6" stroke-linecap="round"/><text x="28" y="48" font-family="Barlow Condensed,sans-serif" font-weight="900" font-size="30" fill="#1b1400">R$</text><text x="272" y="128" text-anchor="end" font-family="Barlow Condensed,sans-serif" font-weight="900" font-size="34" fill="#1b1400">∞</text><text x="28" y="128" font-family="Barlow Condensed,sans-serif" font-weight="800" font-size="13" fill="#5a4300" letter-spacing="1.5">BANCO DO TÉCNICO</text></svg>`;
 const TROPHY=`<svg class="trophy" viewBox="0 0 120 140" aria-hidden="true"><defs><linearGradient id="tg" x1="0" x2="1"><stop offset="0" stop-color="#c99512"/><stop offset=".5" stop-color="#fff0a0"/><stop offset="1" stop-color="#c99512"/></linearGradient></defs><path d="M28 10h64v30c0 22-14 38-32 38S28 62 28 40z" fill="url(#tg)"/><path d="M28 20H12c0 18 8 28 18 30M92 20h16c0 18-8 28-18 30" fill="none" stroke="url(#tg)" stroke-width="7"/><rect x="52" y="76" width="16" height="24" fill="url(#tg)"/><rect x="34" y="100" width="52" height="12" rx="3" fill="url(#tg)"/><rect x="26" y="112" width="68" height="18" rx="4" fill="#3b2b06"/></svg>`;
-const FOOT=`<footer class="foot">Leilão Infinito · feito por wasmorf · jogadores e overalls do 100pracada (thefenomeno.com)</footer>`;
+const FOOT=`<footer class="foot">FutFut · feito por wasmorf</footer>`;
 const $=s=>document.querySelector(s);
 const app=$('#app');
 const rnd=(a,b)=>a+Math.random()*(b-a), ri=(a,b)=>Math.floor(rnd(a,b+1)), pick=a=>a[Math.floor(Math.random()*a.length)];
@@ -224,7 +237,7 @@ function slotList(f){const r=LAY[f],k=r.length,s=[{pos:'GOL',g:'G',x:50,y:90}];r
 function pen(a,b){if(a===b)return .93;if(a==='G'||b==='G')return .45;const o='DMA';return Math.abs(o.indexOf(a)-o.indexOf(b))===1?.82:.68}
 const effOf=(p,s)=>p.ps.includes(s.pos)?p.ovr:Math.round(p.ovr*pen(p.g,s.g));
 
-let S={cfg:{name:'WasDuMorf',mode:'br',club:null,size:11,format:'both',nBots:3,showOvr:true,form:'4-4-2',fast:false,budget:100}};
+let S={cfg:{name:'',mode:'br',club:null,size:11,format:'both',nBots:3,showOvr:true,form:'4-4-2',fast:false,budget:100}};
 
 /* casamento jogador→vaga (posição exata) */
 function assign(players,slots){
@@ -258,16 +271,28 @@ function pitchHTML(t,form,strict,mini){
 const nota=t=>t.squad.length?(t.squad.reduce((a,s)=>a+s.p.ovr,0)/t.squad.length).toFixed(1):'0.0';
 const notaHTML=t=>`<div class="nota">${S.cfg.showOvr||S.reveal?nota(t):'?'}<small>NOTA</small></div>`;
 
+/* ================== MENU ================== */
+function renderHome(){
+ clearInterval(TICK);if(LIVE)clearInterval(LIVE.iv);
+ app.innerHTML=`<header class="top"><div class="logo">${LOGO}</div></header>
+ <main class="wrap">
+ <section class="homehero"><div class="bigmark">${MARK}</div><div><h1>Fut<em>Fut</em></h1><p class="mut" style="font-size:18px;max-width:40ch">Monte seu time, dispute campeonatos e prove que você é o melhor técnico. Escolha um modo pra começar.</p></div></section>
+ <section class="modes">
+  <button class="mode" data-act="goLeilao"><span class="mi">${NOTE}</span><b>Leilão</b><span>Cada técnico tem dinheiro pra gastar e os jogadores vão a leilão um por um. Monte o elenco contra bots e dispute o campeonato.</span><i class="go">Jogar →</i></button>
+  <button class="mode soon" disabled><span class="mi">${TROPHY}</span><b>Modo Carreira Técnico</b><span>Assuma um clube e construa sua história como técnico, temporada após temporada.</span><i class="go">Em breve</i></button>
+ </section>
+ </main>${FOOT}`;
+}
 /* ================== TELA INICIAL ================== */
 function roundsTxt(){const n=S.cfg.nBots+1,f=S.cfg.format;const ko=Math.ceil(Math.log2(n));const rr=n%2?n:n-1;
  if(f==='league')return (n<=8?rr*2:rr)+' rodadas';if(f==='ko')return ko+' rodadas';const k=n<=4?2:n<=8?4:8;return (rr+Math.log2(k))+' rodadas'}
 function renderSetup(){
  const c=S.cfg,n=c.nBots+1,clubs=DB[c.mode].cl;if(!clubs.some(x=>x.sig===c.club))c.club=clubs[0].sig;
  const opt=(k,v,l,sub)=>`<button class="opt ${String(c[k])===String(v)?'sel':''}" data-act="set" data-k="${k}" data-v="${v}"><b>${l}</b>${sub?`<span>${sub}</span>`:''}</button>`;
- app.innerHTML=`<header class="top"><div class="logo">${LOGO}Leilão <em>Infinito</em></div></header>
+ app.innerHTML=`<header class="top"><div class="logo">${LOGO}</div><span class="tag">Leilão</span><span class="grow"></span><button class="btn sm" data-act="menu">← Menu</button></header>
  <main class="wrap">
  <section class="hero"><div><h1>Monte sua sala e compre o time dos sonhos</h1><p class="mut" style="font-size:17px;max-width:46ch">Leilão de futebol singleplayer contra bots. Você escolhe com quanto começa: <b style="color:var(--ac)">R$ 100 como todo mundo ou até R$ 1000</b>. Os bots têm só R$ 100.</p></div>${NOTE}</section>
- <h3>Seu nome de técnico</h3><input id="nm" class="input" maxlength="18" value="${esc(c.name)}">
+ <h3>Seu nome de técnico</h3><input id="nm" class="input" maxlength="18" placeholder="Digite seu nome (ex.: Mister Tático)" value="${esc(c.name)}">
  <h3>Campeonato</h3><div class="grid2">${opt('mode','br','Futebol Brasileiro',DB.br.pl.length+' jogadores dos 20 clubes da Série A')}${opt('mode','eu','Futebol Europeu',DB.eu.pl.length+' jogadores de 20 gigantes da Europa')}</div>
  <h3>Seu escudo <span class="mut small" style="font-weight:400">Cada clube só pode ser de um técnico na sala.</span></h3>
  <div class="crests">${clubs.map(x=>`<button class="${x.sig===c.club?'sel':''}" data-act="club" data-v="${x.sig}">${crest(x)}<span>${esc(x.club)}</span></button>`).join('')}</div>
@@ -374,7 +399,7 @@ function renderAuction(){
  const L=S.lot,p=L.p,u=T(0),c=S.cfg;
  const allowed=f=>!!assign(squadP(u),slotList(f));
  const left=S.techs.reduce((a,t)=>a+totFree(t),0);
- app.innerHTML=`<header class="top"><div class="logo">${LOGO}Leilão</div><span class="tag">Jogador ${S.lotN} · faltam ${left} vagas</span><span class="grow"></span><button class="btn sm" data-act="simrest">Simular resto do leilão</button></header>
+ app.innerHTML=`<header class="top"><div class="logo">${LOGO}</div><span class="tag">Leilão</span><span class="tag">Jogador ${S.lotN} · faltam ${left} vagas</span><span class="grow"></span><button class="btn sm" data-act="simrest">Simular resto do leilão</button></header>
  <main class="auc">
  <section style="grid-area:me">
   <div class="row" style="margin-bottom:6px">${crest(u.crest,1)}<b class="grow">${esc(u.name)} <span class="mut small">VOCÊ</span></b><b style="color:var(--ac)">${brl(u.money)}</b></div>
@@ -415,7 +440,7 @@ function squadCard(t){
  ${sl.filter(s=>s.p).map(s=>{const pr=t.squad.find(x=>x.p===s.p);return `<div class="pl"><span><span class="pos ${s.g}">${s.pos}</span> ${esc(s.p.name)} <span class="mut">${s.p.sig}</span></span><span style="white-space:nowrap">${showO(s.p)} · <span class="mut">R$ ${pr?pr.price:0}</span></span></div>`}).join('')}</div>`;
 }
 function renderSquads(){
- app.innerHTML=`<header class="top"><div class="logo">${LOGO}Elencos fechados</div></header><main class="wrap">
+ app.innerHTML=`<header class="top"><div class="logo">${LOGO}</div><span class="tag">Elencos fechados</span></header><main class="wrap">
  ${S.filled?`<p class="mut">Você ficou com ${S.filled} vaga(s) vazia(s); completamos com jogadores que sobraram, de graça.</p>`:''}
  <div class="squads">${S.techs.map(squadCard).join('')}</div>
  <button class="btn ac block" data-act="tour" style="margin:16px 0 30px">Começar o campeonato 🏆</button></main>`;
@@ -506,7 +531,7 @@ function tacHTML(t,act){return `<div class="seg" style="margin-top:8px">${[['def
 function renderHub(){
  const R=S.tour,u=T(0),pairs=curPairs(),mine=pairs.find(p=>p.includes(0));
  const alive=R.stage!=='ko'||R.ko.rounds[R.ko.cur].some(p=>p.includes(0));
- app.innerHTML=`<header class="top"><div class="logo">${LOGO}Campeonato</div><span class="grow"></span><span class="tag">${S.cfg.mode==='br'?'Brasileiro':'Europeu'}</span></header><main class="wrap layout">
+ app.innerHTML=`<header class="top"><div class="logo">${LOGO}</div><span class="tag">Campeonato</span><span class="grow"></span><span class="tag">${S.cfg.mode==='br'?'Brasileiro':'Europeu'}</span></header><main class="wrap layout">
  <div>
   <div class="card"><h2>${stageTitle()}</h2>
   ${mine?`<p class="row" style="flex-wrap:wrap">Seu jogo: ${tn(mine[0])} <b>x</b> ${tn(mine[1])}</p>`:alive?`<p class="mut">Você passa direto nesta fase.</p>`:`<p class="mut">Você foi eliminado. Veja quem leva a taça.</p>`}
@@ -520,20 +545,20 @@ function renderHub(){
 }
 function renderEnd(){
  const R=S.tour,c=T(R.champ),u=T(0);
- app.innerHTML=`<header class="top"><div class="logo">${LOGO}Fim</div></header><main class="wrap">
+ app.innerHTML=`<header class="top"><div class="logo">${LOGO}</div><span class="tag">Fim</span></header><main class="wrap">
  <div class="card" style="text-align:center">${TROPHY}<div style="transform:scale(2);margin:14px 0">${crest(c.crest)}</div><h1>${esc(c.name)}</h1><p class="mut">${c.isUser?'Você é o campeão! '+(S.cfg.budget>100?`(começando com R$ ${S.cfg.budget} contra R$ 100 dos bots 😅)`:'(com o mesmo dinheiro dos bots, mérito puro! 💪)'):'levou a taça.'}</p>
  <p>Você gastou <b>R$ ${u.spent}</b> no leilão.</p></div>
  ${R.last?`<div class="card" style="margin-top:12px"><b>${R.last.title}</b>${R.last.ms.map(matchRow).join('')}</div>`:''}
  <div class="card" style="margin-top:12px">${R.ko?koHTML():''}${Object.keys(R.table).length?`<h3>Tabela</h3>${tableHTML()}`:''}</div>
  <h3>Elencos (notas reveladas)</h3><div class="squads">${S.techs.map(squadCard).join('')}</div>
- <div class="grid2" style="margin:16px 0 30px"><button class="btn ac block" data-act="again">Jogar de novo</button><button class="btn block" data-act="home">Mudar configurações</button></div></main>`;
+ <div class="grid2" style="margin:16px 0 30px"><button class="btn ac block" data-act="again">Jogar de novo</button><button class="btn block" data-act="home">Mudar configurações</button><button class="btn block" data-act="menu" style="grid-column:1/-1">Menu principal</button></div></main>`;
 }
 
 /* ================== PARTIDA AO VIVO ================== */
 let LIVE=null;
 function liveMatch(m,ms){
  LIVE={m,ms,speed:1,iv:null};const u=T(0);
- app.innerHTML=`<header class="top"><div class="logo">${LOGO}Ao vivo</div><span class="grow"></span><span class="tag">${stageTitle()}</span></header><main class="wrap layout">
+ app.innerHTML=`<header class="top"><div class="logo">${LOGO}</div><span class="tag">Ao vivo</span><span class="grow"></span><span class="tag">${stageTitle()}</span></header><main class="wrap layout">
  <div><div class="card"><div class="board">
   <div class="score"><div class="grow">${crest(T(m.h).crest)}<br>${nm(m.h)}</div><div class="n" id="gh">0</div><div class="mut">x</div><div class="n" id="ga">0</div><div class="grow">${crest(T(m.a).crest)}<br>${nm(m.a)}</div></div>
   <div style="text-align:center;margin-top:8px"><span class="tag" id="min">0'</span></div></div>
@@ -582,12 +607,14 @@ const ACT={
  tacL(b){const u=T(0);u.tac[b.dataset.k]=b.dataset.v;$('#lt').innerHTML=tacHTML(u,'tacL')},
  cont(){finishRound(LIVE.ms)},
  again(){start()},
+ goLeilao(){renderSetup()},
+ menu(){renderHome()},
  home(){renderSetup()}
 };
 document.addEventListener('click',e=>{const b=e.target.closest('[data-act]');if(!b||b.disabled)return;const f=ACT[b.dataset.act];if(f)f(b)});
 document.addEventListener('input',e=>{if(e.target.id==='nm')S.cfg.name=e.target.value});
 document.addEventListener('change',e=>{if(e.target.id==='bud'){S.cfg.budget=Math.min(1000,Math.max(100,Math.round(+e.target.value||100)));renderSetup()}});
-renderSetup();
+renderHome();
 </script>
 </body>
 </html>
