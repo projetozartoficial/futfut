@@ -1311,13 +1311,17 @@ function genOffers(n){
   const best=bestBuyerFor(p,true);if(!best)continue;
   C.offers.push({pid:p.i,club:best.i,fee:r1(p.v*rnd(.9,1.3)),st:'open',tries:0});made++}
 }
-function bestBuyerFor(p,needBased){
- let best=null;
- C.clubs.forEach(c=>{if(c.i===C.me||c.i===p.c)return;if(!playerWilling(p,c))return;if(c.money<p.v*1.05)return;if(p.o>c.pr+3)return;
+function buyersFor(p,needBased){
+ const out=[];
+ C.clubs.forEach(c=>{if(c.i===C.me||c.i===p.c)return;if(!playerWilling(p,c))return;if(c.money<p.v*1.05)return;
+  // só clubes do nível do jogador: ele precisa ser útil ao elenco e não estar muito acima do time
+  if(p.o>c.pw+5||p.o<c.pw-(needBased?3:6))return;
   if(needBased){const lu=lineupC(c.i).filter(s=>p.ps.some(x=>TYP[x]===TYP[s.pos]));if(!lu.length)return;const cur=Math.min(...lu.map(s=>s.eff));if(p.o<cur+2)return}
-  if(!best||c.pr>best.pr)best=c});
- return best;
+  out.push({c,sc:-Math.abs(c.pw-p.o)+rnd(0,4)});
+ });
+ return out.sort((x,y)=>y.sc-x.sc).map(x=>x.c);
 }
+function bestBuyerFor(p,needBased){return buyersFor(p,needBased)[0]||null}
 
 // clubes da IA contratam jogadores livres para substituir os da base / repor elenco
 function faPass(){
@@ -1594,12 +1598,12 @@ function cMktHTML(){
   <div class="plist">${list.map(p=>`<button class="pl" data-act="cPlayer" data-v="${p.i}"><span class="ov">${p.o}</span><span class="nm">${esc(p.n)}<small>${posTxt(p)} · ${p.c>=0?esc(CL(p.c).club):'Livre'} · ${M(p.v)}${p.ct===1&&p.c>=0?' · último ano':''}</small></span>${p.c>=0?crest(CL(p.c),1):''}</button>`).join('')}</div></div>`;
 }
 function offerAccept(k){const o=C.offers[k],p=PL(o.pid);if(p.c!==C.me){o.st='x';return cRender()}const b=CL(o.club);if(b.money<o.fee){o.st='x';flashC('O clube desistiu: sem saldo.');return cRender()}
- doTransfer(p,o.club,o.fee,r2(Math.max(p.w*1.1,baseWage(p.o,o.club))),ri(2,5),'');o.st='ok';me().man=null;calcPower();if(C.win)C.win.moves++;cSave();cRender()}
+ doTransfer(p,o.club,o.fee,r2(Math.max(p.w*1.1,baseWage(p.o,o.club))),ri(2,5),'');o.st='ok';C.offers.forEach(x=>{if(x.pid===o.pid&&x!==o)x.st='x'});me().man=null;calcPower();if(C.win)C.win.moves++;cSave();cRender()}
 function offerCounter(k){const o=C.offers[k];o.tries++;const b=CL(o.club),want=r1(o.fee*1.2);
  if(Math.random()<.55&&b.money>=want){o.fee=want;flashC(`✅ O ${b.club} aceitou pagar ${M(want)}. Agora é só aceitar.`)}else{o.st='x';flashC(`❌ O ${b.club} não subiu a oferta e desistiu.`)}cSave();cRender()}
 function sellList(pid){const p=PL(pid);if(C.offers.some(o=>o.pid===pid&&o.st==='open')){closeModal();return cRender('mkt')}
- const b=bestBuyerFor(p,false);if(!b){modal(`<h2>${esc(p.n)}</h2><p>Nenhum clube se interessou agora.</p>`);return}
- C.offers.push({pid,club:b.i,fee:r1(p.v*rnd(.8,1.05)),st:'open',tries:0});cSave();closeModal();cRender('mkt')}
+ const bs=buyersFor(p,false).slice(0,ri(1,3));if(!bs.length){modal(`<h2>${esc(p.n)}</h2><p>Nenhum clube do nível dele se interessou agora.</p>`);return}
+ bs.forEach(b=>C.offers.push({pid,club:b.i,fee:r1(p.v*rnd(.8,1.1)),st:'open',tries:0}));cSave();closeModal();flashC(`📨 ${bs.length} proposta(s) por ${p.n}`);cRender('mkt')}
 function renewModal(pid){
  const p=PL(pid);const want=r2(Math.max(p.w*1.08,baseWage(p.o,C.me)));const n=C.negs['r'+pid]||(C.negs['r'+pid]={w:r2(want*.9),y:3,tries:0,want,msg:''});
  if(n.closed){modal(`<h2>${esc(p.n)}</h2><p>${n.closed}</p>`);return}
