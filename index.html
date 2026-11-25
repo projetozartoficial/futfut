@@ -3,22 +3,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>FutFut</title>
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%2064%2064%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Crect%20x%3D%222%22%20y%3D%222%22%20width%3D%2260%22%20height%3D%2260%22%20rx%3D%2214%22%20fill%3D%22%230e3a22%22%20stroke%3D%22%232ecc71%22%20stroke-width%3D%223%22/%3E%3Cpath%20d%3D%22M2%2032H62%22%20stroke%3D%22%23ffffff30%22%20stroke-width%3D%222%22/%3E%3Ccircle%20cx%3D%2232%22%20cy%3D%2232%22%20r%3D%2215%22%20fill%3D%22none%22%20stroke%3D%22%23ffffff30%22%20stroke-width%3D%222%22/%3E%3Cg%20fill%3D%22%23f7d24c%22%20stroke%3D%22%230e3a22%22%20stroke-width%3D%221.5%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M12%2015h19v8H21v5h8v7h-8v14h-9z%22/%3E%3Cpath%20d%3D%22M33%2015h19v8H42v5h8v7h-8v14h-9z%22/%3E%3C/g%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Barlow+Condensed:wght@600;700;800;900&display=swap" rel="stylesheet">
+<title>FutFut · Zart Jogos</title>
+<meta name="description" content="FutFut, da Zart Jogos: jogo de futebol de fã, gratuito, com modo Leilão e Modo Carreira Técnico.">
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
 <style>
-/* Leilão Infinito — paleta: verde gramado (#0a1a11 / #1f9d55), ouro da nota (#f7d24c), branco giz.
+/* Leilão Infinito — paleta: verde gramado (#05060d / #1f9d55), ouro da nota (#9aa6ff), branco giz.
    Tipografia: Barlow Condensed (placar, números, títulos) + Barlow (texto). Layout mobile-first. */
-:root{--bg:#08140d;--bg2:#0d1f15;--card:#102419;--card2:#163121;--line:#24402f;--tx:#eef6f0;--mut:#93ad9c;--ac:#f7d24c;--ac2:#e0a92a;--gr:#2ecc71;--rd:#ef5350;--r:16px;--sh:0 10px 30px #0007;--fd:"Barlow Condensed","Arial Narrow",sans-serif}
+:root{--bg:#000000;--bg2:#0b1440;--card:#0f1a52;--card2:#141f5e;--line:#2a3576;--tx:#eef0ff;--mut:#b4bbe0;--ac:#9aa6ff;--ac2:#6f7cf0;--gr:#2ecc71;--rd:#ff8a80;--r:16px;--sh:0 10px 30px #0007;--fd:"Arial Narrow","Roboto Condensed","Helvetica Neue",system-ui,-apple-system,"Segoe UI",sans-serif}
 *{box-sizing:border-box;min-width:0;-webkit-tap-highlight-color:transparent}
 html{scroll-behavior:smooth}
-body{margin:0;color:var(--tx);font:16px/1.5 Barlow,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;overflow-x:clip;min-height:100vh;
- background:radial-gradient(1200px 600px at 50% -200px,#1d5a36 0,transparent 70%),repeating-linear-gradient(90deg,var(--bg) 0 90px,#0a1710 90px 180px)}
+body{margin:0;color:var(--tx);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;overflow-x:clip;min-height:100vh;
+ background:radial-gradient(1200px 600px at 50% -200px,#191970 0,transparent 70%),repeating-linear-gradient(90deg,var(--bg) 0 90px,#03040a 90px 180px)}
 button{font:inherit;color:inherit;cursor:pointer;transition:transform .12s,background .2s,border-color .2s,box-shadow .2s}
 button:active:not(:disabled){transform:scale(.96)}
 :focus-visible{outline:3px solid var(--ac);outline-offset:2px}
-.top{display:flex;align-items:center;gap:10px;padding:10px 16px;border-bottom:1px solid #ffffff12;position:sticky;top:0;background:#08140dd9;backdrop-filter:blur(10px);z-index:5;flex-wrap:wrap}
+.top{display:flex;align-items:center;gap:10px;padding:10px 16px;border-bottom:1px solid #ffffff12;position:sticky;top:0;background:#000000d9;backdrop-filter:blur(10px);z-index:5;flex-wrap:wrap}
 .logo{display:flex;align-items:center;gap:8px;font:800 22px/1 var(--fd);letter-spacing:.3px;text-transform:uppercase}
 .logo svg{width:34px;height:34px;flex:none;filter:drop-shadow(0 2px 4px #0008)}
 .logo em{font-style:normal;color:var(--ac)}
@@ -38,21 +37,21 @@ h1{margin:6px 0 6px;font-size:clamp(34px,6vw,52px);text-wrap:balance}h2{margin:0
 @media(max-width:560px){.grid3{grid-template-columns:1fr}}
 .opt{text-align:left;background:linear-gradient(180deg,var(--card2),var(--card));border:1.5px solid var(--line);border-radius:14px;padding:13px;display:flex;flex-direction:column;gap:3px;min-height:72px}
 .opt b{font:700 19px/1.1 var(--fd)}.opt span{color:var(--mut);font-size:13px;line-height:1.35}
-.opt:hover{border-color:#3d6b50}
-.opt.sel{border-color:var(--ac);background:linear-gradient(180deg,#2a3d1c,#1a2d1f);box-shadow:0 0 0 3px #f7d24c22}.opt.sel b{color:var(--ac)}
+.opt:hover{border-color:#4a55c9}
+.opt.sel{border-color:var(--ac);background:linear-gradient(180deg,#1c2a7a,#121c5a);box-shadow:0 0 0 3px #9aa6ff22}.opt.sel b{color:var(--ac)}
 .forms{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;background:var(--card);padding:6px;border-radius:14px;border:1px solid var(--line)}
 .forms button{background:none;border:0;border-radius:9px;padding:8px 2px;font:700 16px/1.1 var(--fd);color:var(--mut);display:flex;flex-direction:column;align-items:center;min-height:44px;justify-content:center}
 .forms button:hover:not(:disabled){background:#ffffff0a;color:var(--tx)}
-.forms button small{font:500 10px Barlow,sans-serif}.forms button.sel{background:#04100a;color:var(--gr);box-shadow:inset 0 0 0 1px #2ecc7155}.forms button:disabled{opacity:.22}
+.forms button small{font:500 10px Barlow,sans-serif}.forms button.sel{background:#02030a;color:var(--gr);box-shadow:inset 0 0 0 1px #2ecc7155}.forms button:disabled{opacity:.22}
 .count{display:flex;align-items:center;gap:14px;flex-wrap:wrap}.count b{font:800 34px var(--fd);min-width:40px;text-align:center}
 .cbtn{width:46px;height:46px;border-radius:50%;border:1.5px solid var(--line);background:var(--card2);font-size:22px}
 .btn{border-radius:12px;padding:12px 16px;font:800 17px var(--fd);letter-spacing:.4px;text-transform:uppercase;background:var(--card2);border:1.5px solid var(--line);min-height:46px}
-.btn:hover:not(:disabled){border-color:#4a7d5e}
-.btn.ac{background:linear-gradient(180deg,#ffe27a,var(--ac) 45%,var(--ac2));color:#1b1400;border-color:#ffe58a;box-shadow:0 6px 18px #f7d24c33}
-.btn.ac:hover:not(:disabled){box-shadow:0 8px 26px #f7d24c66}
+.btn:hover:not(:disabled){border-color:#6f7cf0}
+.btn.ac{background:linear-gradient(180deg,#c3caff,var(--ac) 45%,var(--ac2));color:#05060d;border-color:#c9cfff;box-shadow:0 6px 18px #9aa6ff33}
+.btn.ac:hover:not(:disabled){box-shadow:0 8px 26px #9aa6ff66}
 .btn.block{width:100%;font-size:20px;padding:15px}.btn:disabled{opacity:.3;cursor:not-allowed}
 .btn.sm{padding:7px 12px;font-size:14px;min-height:38px}
-.card{background:linear-gradient(180deg,#132a1d,var(--card));border:1px solid var(--line);border-radius:var(--r);padding:16px;box-shadow:var(--sh)}
+.card{background:linear-gradient(180deg,#101a55,var(--card));border:1px solid var(--line);border-radius:var(--r);padding:16px;box-shadow:var(--sh)}
 .row{display:flex;align-items:center;gap:8px}
 footer.foot{text-align:center;color:var(--mut);font-size:13px;padding:22px 16px 34px;border-top:1px solid #ffffff10;margin-top:20px}
 /* escudo */
@@ -62,8 +61,8 @@ footer.foot{text-align:center;color:var(--mut);font-size:13px;padding:22px 16px 
 .crest.sm{width:22px;height:25px;padding-bottom:5px}.crest.sm b{font-size:7px;padding:0 2px}
 .crests{display:grid;grid-template-columns:repeat(auto-fill,minmax(86px,1fr));gap:6px}
 .crests button{background:var(--card);border:1.5px solid var(--line);border-radius:12px;padding:9px 4px;display:flex;flex-direction:column;align-items:center;gap:6px;font-size:12px;color:var(--mut)}
-.crests button:hover{border-color:#3d6b50;color:var(--tx)}
-.crests button.sel{border-color:var(--gr);background:#16361f;color:var(--tx);box-shadow:0 0 0 3px #2ecc7122}
+.crests button:hover{border-color:#4a55c9;color:var(--tx)}
+.crests button.sel{border-color:var(--gr);background:#16236a;color:var(--tx);box-shadow:0 0 0 3px #2ecc7122}
 .crests button span{max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 /* campo */
 .pitch{position:relative;width:100%;aspect-ratio:10/11;border-radius:14px;background:radial-gradient(circle at 50% 48%,transparent 13%,#ffffff26 13.4%,transparent 14%),linear-gradient(#ffffff26,#ffffff26) 0 48%/100% 2px no-repeat,repeating-linear-gradient(0deg,#1c8a4a 0 10%,#219552 10% 20%);border:2px solid #3cb36d;overflow:hidden;box-shadow:inset 0 0 40px #0004,0 8px 20px #0005}
@@ -71,28 +70,28 @@ footer.foot{text-align:center;color:var(--mut);font-size:13px;padding:22px 16px 
 .pitch:before{content:"";position:absolute;left:50%;top:0;width:38%;height:9%;border:2px solid #ffffff2a;border-top:0;transform:translateX(-50%)}
 .pitch.blue{background:radial-gradient(circle at 50% 48%,transparent 13%,#ffffff26 13.4%,transparent 14%),repeating-linear-gradient(0deg,#2f5fc4 0 10%,#3366cc 10% 20%);border-color:#5a86e0}
 .slot{position:absolute;transform:translate(-50%,-50%);display:flex;flex-direction:column;align-items:center;width:23%;z-index:2}
-.dot{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;font:800 17px var(--fd);border:2px solid #fff;background:#0d2a1a;box-shadow:0 3px 6px #0007;animation:pop .35s ease-out}
+.dot{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;font:800 17px var(--fd);border:2px solid #fff;background:#0b1440;box-shadow:0 3px 6px #0007;animation:pop .35s ease-out}
 @keyframes pop{0%{transform:scale(.4)}70%{transform:scale(1.15)}}
 .dot.empty{border:2px dashed #ffffffb0;background:#ffffff14;color:#fff;font-weight:400;font-size:20px;animation:none}
-.slot i{font:700 11px/1.3 Barlow,sans-serif;font-style:normal;margin-top:3px;background:#06140ccc;padding:1px 7px;border-radius:7px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.slot i{font:700 11px/1.3 Barlow,sans-serif;font-style:normal;margin-top:3px;background:#02030acc;padding:1px 7px;border-radius:7px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .slot i.bad{color:#ffb4a8}
 .mini .dot{width:15px;height:15px;font-size:8px;border-width:1px;box-shadow:none}.mini .dot.empty{font-size:0;border-width:1px}
 .mini .slot i{font-size:6px;padding:0 3px;margin-top:1px}
 .mini{border-radius:8px;border-width:1px;box-shadow:none}.mini:before,.mini:after{border-width:1px}
-.G{background:#c99512!important;color:#111}.D{background:#2f6fd6!important}.M{background:#18914d!important}.A{background:#d64545!important}
+.G{background:#5560d8!important;color:#111}.D{background:#2f6fd6!important}.M{background:#18914d!important}.A{background:#d64545!important}
 .pos{display:inline-block;font:800 12px var(--fd);letter-spacing:.4px;padding:2px 7px;border-radius:6px}
 /* leilão */
 .auc{display:grid;gap:16px;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr) minmax(0,1.2fr);grid-template-areas:"me lot bots";max-width:1400px;margin:0 auto;padding:16px}
 @media(max-width:1000px){.auc{grid-template-columns:1fr 1fr;grid-template-areas:"lot lot" "me bots"}}
 @media(max-width:640px){.auc{grid-template-columns:1fr;grid-template-areas:"lot" "me" "bots"}}
-.player{position:relative;display:flex;gap:14px;align-items:center;padding:14px;border-radius:14px;background:linear-gradient(135deg,#fff3b8 0,#f7d24c 35%,#c99512 100%);color:#231a00;box-shadow:0 10px 24px #0008,inset 0 0 0 2px #fff6;overflow:hidden;animation:enter .4s ease-out}
+.player{position:relative;display:flex;gap:14px;align-items:center;padding:14px;border-radius:14px;background:linear-gradient(135deg,#e3e6ff 0,#9aa6ff 35%,#5560d8 100%);color:#05060d;box-shadow:0 10px 24px #0008,inset 0 0 0 2px #fff6;overflow:hidden;animation:enter .4s ease-out}
 .player:after{content:"";position:absolute;inset:-40% auto -40% -30%;width:30%;background:linear-gradient(90deg,transparent,#ffffff8c,transparent);transform:rotate(20deg);animation:shine 2.8s ease-in-out infinite}
 @keyframes shine{0%,60%{left:-30%}100%{left:130%}}
 @keyframes enter{from{opacity:0;transform:translateY(12px) scale(.97)}}
 .ovr{font:900 58px/1 var(--fd);min-width:66px;text-align:center}
 .ovr small{display:block;font-size:12px;letter-spacing:1px;opacity:.7}
 .pname{font:800 28px/1.02 var(--fd);text-wrap:balance}
-.player .mut{color:#4a3a00}
+.player .mut{color:#1c2470}
 .price{font:900 52px/1 var(--fd);color:var(--ac);font-variant-numeric:tabular-nums}
 .price.bump{animation:bump .3s}@keyframes bump{50%{transform:scale(1.15);color:#fff}}
 .bar{height:10px;background:#0008;border-radius:6px;overflow:hidden;margin:12px 0}.bar div{height:100%;background:linear-gradient(90deg,#27ae60,var(--gr));transition:width .35s linear}
@@ -101,33 +100,33 @@ footer.foot{text-align:center;color:var(--mut);font-size:13px;padding:22px 16px 
 .log{max-height:140px;overflow:auto;font-size:14px;color:var(--mut);margin-top:10px}.log div{padding:4px 0;border-bottom:1px solid #ffffff0d}.log div:first-child{color:var(--tx);font-weight:600}
 .bots{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;align-content:start}
 @media(max-width:640px){.bots{grid-template-columns:repeat(2,minmax(0,1fr))}}
-.bot{border-radius:12px;padding:6px;border:2px solid transparent;background:#ffffff06;transition:border-color .2s,background .2s}.bot.lead{border-color:var(--ac);background:#f7d24c1a}
+.bot{border-radius:12px;padding:6px;border:2px solid transparent;background:#ffffff06;transition:border-color .2s,background .2s}.bot.lead{border-color:var(--ac);background:#9aa6ff1a}
 .bot .hd{display:flex;align-items:center;gap:5px;font:700 14px var(--fd);margin-bottom:5px}
 .bot .hd b{flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .nota{font:900 16px var(--fd);color:var(--gr);margin-top:3px}.nota small{color:var(--mut);font-size:10px;margin-left:3px;letter-spacing:.6px}
-.res{position:fixed;left:50%;top:38%;transform:translate(-50%,-50%);background:linear-gradient(180deg,#1d3a27,#0d1f15);border:2px solid var(--ac);padding:18px 26px;border-radius:18px;font:800 24px/1.15 var(--fd);text-align:center;z-index:20;display:none;max-width:90vw;box-shadow:0 20px 50px #000c;animation:enter .25s ease-out}
+.res{position:fixed;left:50%;top:38%;transform:translate(-50%,-50%);background:linear-gradient(180deg,#1a2670,#0b1440);border:2px solid var(--ac);padding:18px 26px;border-radius:18px;font:800 24px/1.15 var(--fd);text-align:center;z-index:20;display:none;max-width:90vw;box-shadow:0 20px 50px #000c;animation:enter .25s ease-out}
 .layout{display:grid;grid-template-columns:1.2fr 1fr;gap:16px}@media(max-width:760px){.layout{grid-template-columns:1fr}}
 table{width:100%;border-collapse:collapse;font-size:14px}th,td{padding:8px 4px;text-align:center;border-bottom:1px solid var(--line);font-variant-numeric:tabular-nums}th{color:var(--mut);font-weight:600}td.l,th.l{text-align:left}
-tr.me td{background:#1f3d26}
-.board{background:linear-gradient(180deg,#0b0f0c,#151c17);border:2px solid #2c3a30;border-radius:16px;padding:14px;box-shadow:inset 0 2px 0 #ffffff10}
+tr.me td{background:#1c2a7a}
+.board{background:linear-gradient(180deg,#05060d,#0f1433);border:2px solid #2a3576;border-radius:16px;padding:14px;box-shadow:inset 0 2px 0 #ffffff10}
 .score{display:grid;grid-template-columns:1fr auto auto auto 1fr;align-items:center;gap:8px;font:700 18px/1.1 var(--fd);text-align:center}
-.score .n{font:900 60px/1 var(--fd);color:var(--ac);min-width:48px;text-shadow:0 0 18px #f7d24c55}
+.score .n{font:900 60px/1 var(--fd);color:var(--ac);min-width:48px;text-shadow:0 0 18px #9aa6ff55}
 .ev{font-size:15px;padding:6px 0;border-bottom:1px solid #ffffff0d;animation:enter .3s}
 .seg{display:flex;gap:6px;flex-wrap:wrap}.seg button{flex:1;padding:10px 6px;border-radius:10px;background:var(--card2);border:1.5px solid var(--line);font-weight:700;font-size:14px;min-height:44px}
-.seg button.sel{border-color:var(--ac);color:var(--ac);background:#2a3d1c}
+.seg button.sel{border-color:var(--ac);color:var(--ac);background:#1c2a7a}
 .match{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:8px 0;border-bottom:1px solid #ffffff0d;font-size:15px}
 .match>span{flex:1;display:flex;align-items:center;gap:6px}.match>span:last-child{justify-content:flex-end;text-align:right}
 .match b{font:800 19px var(--fd)}
 .squads{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:12px}
 .pl{display:flex;justify-content:space-between;gap:6px;font-size:14px;padding:4px 0;border-bottom:1px solid #ffffff0a}
 .tag{font:700 14px var(--fd);letter-spacing:.3px;padding:5px 11px;border-radius:20px;background:var(--card2);border:1px solid var(--line);white-space:nowrap}
-.trophy{width:120px;filter:drop-shadow(0 10px 20px #f7d24c55);animation:flt 4s ease-in-out infinite}
+.trophy{width:120px;filter:drop-shadow(0 10px 20px #9aa6ff55);animation:flt 4s ease-in-out infinite}
 .homehero{display:flex;align-items:center;gap:22px;padding:18px 0 8px}
 .homehero h1{font-size:clamp(56px,11vw,96px);margin:0;text-transform:uppercase;letter-spacing:1px}.homehero h1 em,.logo em{font-style:normal;color:var(--ac)}
 .bigmark svg{width:clamp(96px,18vw,150px);height:auto;filter:drop-shadow(0 12px 24px #000a);animation:flt 5s ease-in-out infinite}
 @media(max-width:560px){.homehero{flex-direction:column;text-align:center}.homehero p{margin:8px auto}}
 .modes{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:16px;margin-top:18px}
-.mode{position:relative;text-align:left;display:flex;flex-direction:column;gap:8px;padding:20px;border-radius:20px;border:1.5px solid var(--line);background:linear-gradient(160deg,#1a3a26,#0f2218);box-shadow:var(--sh);overflow:hidden;min-height:300px}
+.mode{position:relative;text-align:left;display:flex;flex-direction:column;gap:8px;padding:20px;border-radius:20px;border:1.5px solid var(--line);background:linear-gradient(160deg,#1a2670,#0f2218);box-shadow:var(--sh);overflow:hidden;min-height:300px}
 .mode:hover:not(:disabled){border-color:var(--ac);transform:translateY(-3px);box-shadow:0 16px 36px #0009}
 .mode b{font:900 34px/1 var(--fd);text-transform:uppercase}.mode>span:not(.mi){color:var(--mut);font-size:15px}
 .mode .mi{height:120px;display:grid;place-items:center}.mode .mi svg{width:auto;height:110px;animation:none}
@@ -138,41 +137,41 @@ tr.me td{background:#1f3d26}
 /* ===== Modo Carreira ===== */
 .cwrap{padding-bottom:96px}
 .ctop{flex-wrap:nowrap;position:sticky}.ctop .btn.cm{width:auto;flex:none}.ctop .tag{padding:4px 8px;font-size:13px}.ctop b{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.cnav{position:fixed;left:0;right:0;bottom:0;z-index:20;display:grid;grid-template-columns:repeat(5,1fr);background:#06110bf2;backdrop-filter:blur(10px);border-top:1px solid var(--line);padding:4px 4px calc(4px + env(safe-area-inset-bottom))}
+.cnav{position:fixed;left:0;right:0;bottom:0;z-index:20;display:grid;grid-template-columns:repeat(5,1fr);background:#02030af2;backdrop-filter:blur(10px);border-top:1px solid var(--line);padding:4px 4px calc(4px + env(safe-area-inset-bottom))}
 .cnav button{position:relative;background:none;border:0;color:var(--mut);display:flex;flex-direction:column;align-items:center;gap:1px;font:700 12px Barlow,sans-serif;padding:6px 2px;border-radius:10px;min-height:52px}
 .cnav button span{font-size:20px;line-height:1.1}.cnav button.sel{color:var(--ac);background:#ffffff0a}
-.dotn{position:absolute;top:6px;right:calc(50% - 18px);width:9px;height:9px;border-radius:50%;background:var(--rd);box-shadow:0 0 0 2px #06110b}
+.dotn{position:absolute;top:6px;right:calc(50% - 18px);width:9px;height:9px;border-radius:50%;background:var(--rd);box-shadow:0 0 0 2px #02030a}
 button.dot{color:#fff;cursor:pointer;padding:0}
 .vs{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:10px;text-align:center;margin:6px 0 14px}
 .vs>div{display:flex;flex-direction:column;align-items:center;gap:4px}.vs b{font:800 18px/1.1 var(--fd)}.vs small{color:var(--gr);font:800 14px var(--fd)}.vs>span{font:900 26px var(--fd);color:var(--mut)}
 .vs .crest{width:48px;height:54px}
 .card.mini{padding:12px;display:flex;flex-direction:column;gap:2px}.card.mini small{color:var(--mut);font-size:12px}.card.mini b{font:900 28px/1.05 var(--fd);color:var(--ac)}.card.mini span{font-size:13px;color:var(--mut)}
 .news{display:flex;flex-direction:column;gap:2px;margin-top:6px;font-size:14px}.news div{padding:6px 0;border-bottom:1px solid #ffffff0d}
-.match.mine{background:#1f3d26;border-radius:8px;padding-left:6px;padding-right:6px}
+.match.mine{background:#1c2a7a;border-radius:8px;padding-left:6px;padding-right:6px}
 .plist{display:flex;flex-direction:column;gap:4px;margin-top:8px;max-height:62vh;overflow:auto}
 .pl{display:flex;align-items:center;gap:10px;text-align:left;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:7px 10px;min-height:48px}
-.pl:hover:not(:disabled){border-color:#3d6b50}.pl:disabled{opacity:.4}
+.pl:hover:not(:disabled){border-color:#4a55c9}.pl:disabled{opacity:.4}
 .pl .ov{font:900 22px var(--fd);color:var(--ac);min-width:30px;text-align:center}.pl .ov.up{color:var(--gr)}.pl .ov.dn{color:var(--rd)}
 .pl .nm{flex:1;display:flex;flex-direction:column;font-weight:600;font-size:15px;line-height:1.25}.pl .nm small{color:var(--mut);font-weight:500;font-size:12px}
-.bdg{font:700 10px Barlow,sans-serif;font-style:normal;background:#2c4a37;color:#cfe;padding:1px 5px;border-radius:5px;vertical-align:middle}.bdg.rd{background:#5a2323}
+.bdg{font:700 10px Barlow,sans-serif;font-style:normal;background:#26307a;color:#cfe;padding:1px 5px;border-radius:5px;vertical-align:middle}.bdg.rd{background:#5a2323}
 .tit{font:800 11px var(--fd);color:var(--gr);border:1px solid #2ecc7166;border-radius:6px;padding:1px 5px}
 .mbg{position:fixed;inset:0;background:#000a;z-index:40;animation:enter .2s}
-.mbox{position:fixed;z-index:41;left:50%;top:50%;transform:translate(-50%,-50%);width:min(560px,94vw);max-height:88vh;overflow:auto;background:linear-gradient(180deg,#14301f,#0d1f15);border:1px solid var(--line);border-radius:18px;padding:18px;box-shadow:0 20px 60px #000c}
+.mbox{position:fixed;z-index:41;left:50%;top:50%;transform:translate(-50%,-50%);width:min(560px,94vw);max-height:88vh;overflow:auto;background:linear-gradient(180deg,#141f5e,#0b1440);border:1px solid var(--line);border-radius:18px;padding:18px;box-shadow:0 20px 60px #000c}
 .kv{display:grid;grid-template-columns:1fr auto;gap:6px 12px;margin:12px 0;font-size:15px}.kv span{color:var(--mut)}.kv b{text-align:right}
 .bigov{font:900 46px/1 var(--fd);color:var(--ac)}
 .stepper{display:flex;align-items:center;gap:12px;justify-content:center;margin:4px 0 6px}.stepper b{font:900 28px var(--fd);min-width:120px;text-align:center}
 .lbl{display:block;color:var(--mut);font-size:13px;margin-top:10px;text-align:center}
-.steps{display:flex;gap:6px;margin:12px 0 4px}.steps span{flex:1;text-align:center;padding:6px;border-radius:8px;background:var(--card);color:var(--mut);font:700 14px var(--fd)}.steps .on{background:#2a3d1c;color:var(--ac)}.steps .done{color:var(--gr)}
-.resp{margin-top:10px;padding:10px 12px;border-radius:10px;background:#0b1a11;border:1px solid var(--line);font-size:15px}
+.steps{display:flex;gap:6px;margin:12px 0 4px}.steps span{flex:1;text-align:center;padding:6px;border-radius:8px;background:var(--card);color:var(--mut);font:700 14px var(--fd)}.steps .on{background:#1c2a7a;color:var(--ac)}.steps .done{color:var(--gr)}
+.resp{margin-top:10px;padding:10px 12px;border-radius:10px;background:#0b1440;border:1px solid var(--line);font-size:15px}
 .offer{display:flex;flex-direction:column;gap:8px;padding:10px 0;border-bottom:1px solid #ffffff10}
 .filters{display:grid;grid-template-columns:1fr 1fr;gap:8px}.filters .input{padding:10px 12px;font-size:15px}.filters #mq{grid-column:1/-1}
 .chk{display:flex;align-items:center;gap:8px;font-size:14px;color:var(--mut)}.chk input{width:20px;height:20px;accent-color:var(--ac)}
 select.input{appearance:auto}
 .chips{display:flex;gap:6px;overflow-x:auto;padding-bottom:4px;scrollbar-width:none}.chips::-webkit-scrollbar{display:none}
 .chips button{flex:none;padding:8px 14px;border-radius:20px;background:var(--card2);border:1.5px solid var(--line);font:700 14px Barlow,sans-serif;white-space:nowrap;min-height:40px}
-.chips button.sel{border-color:var(--ac);color:var(--ac);background:#2a3d1c}
+.chips button.sel{border-color:var(--ac);color:var(--ac);background:#1c2a7a}
 .tie{display:grid;grid-template-columns:1fr auto 1fr;gap:8px;align-items:center;padding:7px 0;border-bottom:1px solid #ffffff0d;font-size:14px}.tie b{font:800 15px var(--fd);white-space:nowrap}
-.tie .w{font-weight:800;color:var(--ac)}.tie.mine{background:#1f3d26;border-radius:8px;padding:7px 6px}
+.tie .w{font-weight:800;color:var(--ac)}.tie.mine{background:#1c2a7a;border-radius:8px;padding:7px 6px}
 .ell{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 tr.cut td{border-bottom:2px solid var(--ac)}
 .champ{font:800 20px var(--fd);color:var(--ac);text-align:center;margin-top:14px}
@@ -180,14 +179,35 @@ tr.cut td{border-bottom:2px solid var(--ac)}
 .evo{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}.evo span{font-size:13px;padding:3px 8px;border-radius:8px;background:var(--card2)}.evo .up{color:var(--gr)}.evo .dn{color:var(--rd)}
 .ok{color:var(--gr)}.warn{color:#ffb4a8}
 .warnc{border-color:#7a5a1f;background:linear-gradient(180deg,#2a2412,#1a1a10);font-size:15px}.lnk{background:none;border:0;padding:0;color:var(--ac);text-decoration:underline;font-weight:700}
-.toast{position:fixed;left:50%;bottom:90px;transform:translateX(-50%);background:#0b1a11;border:1px solid var(--ac);color:var(--tx);padding:10px 16px;border-radius:12px;z-index:60;box-shadow:var(--sh);max-width:90vw;animation:enter .25s}
+.toast{position:fixed;left:50%;bottom:90px;transform:translateX(-50%);background:#0b1440;border:1px solid var(--ac);color:var(--tx);padding:10px 16px;border-radius:12px;z-index:60;box-shadow:var(--sh);max-width:90vw;animation:enter .25s}
 .crests button small.nota{font-size:14px}
 @media(max-width:560px){.score .n{font-size:46px}.kv{font-size:14px}}
+
+/* ===== Grupo Zart ===== */
+.zbrand{display:inline-flex;align-items:center;gap:8px}.zbrand img{height:30px;width:auto;display:block}
+.zsub{padding-left:8px;border-left:1px solid #4a55c9;color:#b4bbe0;font:600 15px/1 system-ui,sans-serif;text-transform:none;letter-spacing:0}
+.zprod{margin-left:10px;font:800 22px/1 var(--fd);text-transform:uppercase}.zprod em{font-style:normal;color:var(--ac)}
+.logo{gap:0}
+.zfoot{display:flex;flex-direction:column;align-items:center;gap:6px;line-height:1.5}.zfoot p{margin:0;max-width:70ch}.zfoot a{color:var(--ac)}
+.zfoot-logo{height:34px;width:auto;opacity:.9}
+.zlinks{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 14px;margin:4px 0}.zlinks .lnk{font-size:14px;min-height:32px}
+.zfan{font-size:12px}
+.apreencher{background:#ffd479;color:#1a1200;padding:1px 6px;border-radius:6px;font-weight:700}
+.somente-leitor{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.pular{position:absolute;left:12px;top:-80px;z-index:100;padding:10px 14px;border-radius:12px;background:#eef0ff;color:#000;font-weight:700}.pular:focus{top:12px}
+[tabindex="-1"]:focus{outline:none}
+:focus-visible{outline:3px solid #9aa6ff!important;outline-offset:3px}
+.zcons{position:fixed;left:50%;bottom:16px;transform:translateX(-50%);z-index:80;width:min(640px,94vw);background:linear-gradient(180deg,#141f5e,#0b1440);border:1px solid #4a55c9;border-radius:18px;padding:16px 18px;box-shadow:0 20px 60px #000c}
+.zcons h2{font-size:22px;margin:0 0 6px}.zcons p{margin:0 0 12px;font-size:15px;color:var(--tx)}
+.zpage{max-width:760px}.zpage h2{margin-top:24px;font-size:22px}.zpage p,.zpage li{font-size:16px;line-height:1.6}.zpage ul{padding-left:20px}.zpage a{color:var(--ac)}
+.lnk{color:var(--ac)}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
 <body>
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
 <div id="app"></div>
-<div class="res" id="res"></div>
+<div class="res" id="res" role="status" aria-live="polite"></div>
 <script>
 /* ===== JOGADORES (dados do 100pracada) — Clube|SIGLA|cor|Nome:POS1/POS2:overall:apelido ===== */
 const BR_RAW=`
@@ -261,11 +281,9 @@ const FORMS={5:[['2-1-1'],['1-2-1'],['1-1-2'],['2-0-2'],['3-1','Retranca'],['1-3
 const BOT_FORMS={5:['2-1-1','2-1-1','1-2-1','1-1-2'],11:['4-4-2','4-3-3','4-3-3','4-2-3-1','3-5-2','4-1-4-1','5-3-2']};
 const COACH={br:['Jardine','Mano','Sampaoli','Renato','Ceni','Roger','Diniz','Cuca','Telê','Dorival','Tite','Zubeldía','Vojvoda','Abel','Luxa'],
  eu:['Guardiola','Klopp','Ancelotti','Arteta','Simeone','Flick','Luis Enrique','Mourinho','Xabi','Slot','Conte','Allegri','Inzaghi','Tuchel','Zidane']};
-const MARK=`<svg viewBox="0 0 64 64" aria-hidden="true"><rect x="2" y="2" width="60" height="60" rx="14" fill="#0e3a22" stroke="#2ecc71" stroke-width="3"/><path d="M2 32H62" stroke="#ffffff30" stroke-width="2"/><circle cx="32" cy="32" r="15" fill="none" stroke="#ffffff30" stroke-width="2"/><g fill="#f7d24c" stroke="#0e3a22" stroke-width="1.5" stroke-linejoin="round"><path d="M12 15h19v8H21v5h8v7h-8v14h-9z"/><path d="M33 15h19v8H42v5h8v7h-8v14h-9z"/></g></svg>`;
-const LOGO=`${MARK}<span>Fut<em>Fut</em></span>`;
+const MARK=`<svg viewBox="0 0 64 64" aria-hidden="true"><rect x="2" y="2" width="60" height="60" rx="14" fill="#191970" stroke="#9aa6ff" stroke-width="3"/><path d="M2 32H62" stroke="#ffffff30" stroke-width="2"/><circle cx="32" cy="32" r="15" fill="none" stroke="#ffffff30" stroke-width="2"/><g fill="#eef0ff" stroke="#191970" stroke-width="1.5" stroke-linejoin="round"><path d="M12 15h19v8H21v5h8v7h-8v14h-9z"/><path d="M33 15h19v8H42v5h8v7h-8v14h-9z"/></g></svg>`;
 const NOTE=`<svg class="note" viewBox="0 0 300 150" role="img" aria-label="Nota de dinheiro"><defs><linearGradient id="ng" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff3b8"/><stop offset=".45" stop-color="#f7d24c"/><stop offset="1" stop-color="#c99512"/></linearGradient><pattern id="np" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M0 10L10 0" stroke="#b8860b" stroke-width=".6" opacity=".35"/></pattern></defs><rect x="3" y="3" width="294" height="144" rx="14" fill="url(#ng)" stroke="#fff6c8" stroke-width="3"/><rect x="3" y="3" width="294" height="144" rx="14" fill="url(#np)"/><rect x="14" y="14" width="272" height="122" rx="9" fill="none" stroke="#8a6508" stroke-width="2" stroke-dasharray="5 4"/><circle cx="150" cy="75" r="44" fill="#fff8d6" stroke="#8a6508" stroke-width="2"/><path d="M150 75c-8-11-22-13-26-6s3 18 11 16 13-7 15-10zm0 0c8 11 22 13 26 6s-3-18-11-16-13 7-15 10z" fill="none" stroke="#1b1400" stroke-width="6" stroke-linecap="round"/><text x="28" y="48" font-family="Barlow Condensed,sans-serif" font-weight="900" font-size="30" fill="#1b1400">R$</text><text x="272" y="128" text-anchor="end" font-family="Barlow Condensed,sans-serif" font-weight="900" font-size="34" fill="#1b1400">∞</text><text x="28" y="128" font-family="Barlow Condensed,sans-serif" font-weight="800" font-size="13" fill="#5a4300" letter-spacing="1.5">BANCO DO TÉCNICO</text></svg>`;
 const TROPHY=`<svg class="trophy" viewBox="0 0 120 140" aria-hidden="true"><defs><linearGradient id="tg" x1="0" x2="1"><stop offset="0" stop-color="#c99512"/><stop offset=".5" stop-color="#fff0a0"/><stop offset="1" stop-color="#c99512"/></linearGradient></defs><path d="M28 10h64v30c0 22-14 38-32 38S28 62 28 40z" fill="url(#tg)"/><path d="M28 20H12c0 18 8 28 18 30M92 20h16c0 18-8 28-18 30" fill="none" stroke="url(#tg)" stroke-width="7"/><rect x="52" y="76" width="16" height="24" fill="url(#tg)"/><rect x="34" y="100" width="52" height="12" rx="3" fill="url(#tg)"/><rect x="26" y="112" width="68" height="18" rx="4" fill="#3b2b06"/></svg>`;
-const FOOT=`<footer class="foot">FutFut · feito por wasmorf</footer>`;
 const $=s=>document.querySelector(s);
 const app=$('#app');
 const rnd=(a,b)=>a+Math.random()*(b-a), ri=(a,b)=>Math.floor(rnd(a,b+1)), pick=a=>a[Math.floor(Math.random()*a.length)];
@@ -340,7 +358,7 @@ function renderSetup(){
  app.innerHTML=`<header class="top"><div class="logo">${LOGO}</div><span class="tag">Leilão</span><span class="grow"></span><button class="btn sm" data-act="menu">← Menu</button></header>
  <main class="wrap">
  <section class="hero"><div><h1>Monte sua sala e compre o time dos sonhos</h1><p class="mut" style="font-size:17px;max-width:46ch">Leilão de futebol singleplayer contra bots. Você escolhe com quanto começa: <b style="color:var(--ac)">R$ 100 como todo mundo ou até R$ 1000</b>. Os bots têm só R$ 100.</p></div>${NOTE}</section>
- <h3>Seu nome de técnico</h3><input id="nm" class="input" maxlength="18" placeholder="Digite seu nome (ex.: Mister Tático)" value="${esc(c.name)}">
+ <h3><label for="nm">Seu nome de técnico</label></h3><input id="nm" class="input" maxlength="18" aria-describedby="nm-ajuda" autocomplete="nickname" placeholder="Digite seu nome (ex.: Mister Tático)" value="${esc(c.name)}"><p class="mut small" id="nm-ajuda" style="margin:6px 0 0">Serve só para mostrar seu nome no jogo (pode ser um apelido). Fica neste navegador e não é enviado a ninguém. <button class="lnk" data-act="page" data-v="privacidade">Política de Privacidade</button></p>
  <h3>Campeonato</h3><div class="grid2">${opt('mode','br','Futebol Brasileiro',DB.br.pl.length+' jogadores dos 20 clubes da Série A')}${opt('mode','eu','Futebol Europeu',DB.eu.pl.length+' jogadores de 20 gigantes da Europa')}</div>
  <h3>Seu escudo <span class="mut small" style="font-weight:400">Cada clube só pode ser de um técnico na sala.</span></h3>
  <div class="crests">${clubs.map(x=>`<button class="${x.sig===c.club?'sel':''}" data-act="club" data-v="${x.sig}">${crest(x)}<span>${esc(x.club)}</span></button>`).join('')}</div>
@@ -350,7 +368,7 @@ function renderSetup(){
  <h3>Bots</h3><div class="count"><button class="cbtn" data-act="bots" data-v="-1">−</button><b>${c.nBots}</b><button class="cbtn" data-act="bots" data-v="1">+</button><span class="mut small">Você contra ${c.nBots} bot${c.nBots>1?'s':''} · ${n}/16 na sala</span></div>
  <h3>Seu dinheiro <span class="mut small" style="font-weight:400">Os bots sempre começam com R$ 100.</span></h3>
  <div class="seg">${[100,200,300,500,1000].map(v=>`<button class="${c.budget===v?'sel':''}" data-act="budget" data-v="${v}">R$ ${v}${v===100?' · padrão':''}</button>`).join('')}</div>
- <div class="row" style="margin-top:8px"><span class="mut small">Outro valor:</span><input id="bud" class="input" type="number" min="100" max="1000" step="10" value="${c.budget}" style="max-width:140px" inputmode="numeric"></div>
+ <div class="row" style="margin-top:8px"><label class="mut small" for="bud">Outro valor:</label><input id="bud" class="input" type="number" min="100" max="1000" step="10" value="${c.budget}" style="max-width:140px" inputmode="numeric"></div>
  <h3>Overall dos jogadores</h3><div class="grid2">${opt('showOvr',true,'À mostra','Você vê a nota de cada jogador')}${opt('showOvr',false,'Escondido','Leilão no olho: notas só no fim')}</div>
  <h3>Velocidade do leilão</h3><div class="grid2">${opt('fast',false,'Normal','10 segundos por lote')}${opt('fast',true,'Rápido','6 segundos por lote')}</div>
  <h3>Sua formação</h3>${formsHTML(c.size,c.form,'form0')}
@@ -1099,7 +1117,7 @@ function cNew(coach,ci,startMoney){
  pushNews(`📋 ${esc(coach)} é o novo técnico do ${esc(me().club)}.`);
 }
 function pushNews(t){C.news.unshift({s:C.season,d:C.day,t});if(C.news.length>120)C.news.length=120}
-function cSave(){if(PEND)return;try{localStorage.setItem(SAVE_KEY,JSON.stringify(C))}catch(e){}}
+function cSave(){if(PEND||!zCanSave())return;try{localStorage.setItem(SAVE_KEY,JSON.stringify(C))}catch(e){}}
 function cLoad(){try{const s=localStorage.getItem(SAVE_KEY);if(!s)return null;const c=JSON.parse(s);return c&&c.ver===1?c:null}catch(e){return null}}
 function cHasSave(){try{return!!localStorage.getItem(SAVE_KEY)}catch(e){return false}}
 function cDel(){try{localStorage.removeItem(SAVE_KEY)}catch(e){}}
@@ -1394,13 +1412,14 @@ function cHead(){
  return `<header class="top ctop"><button class="btn sm cm" data-act="cMenu" aria-label="Menu principal">☰</button><div class="row grow" style="gap:8px">${crest(c,1)}<b style="font:800 18px var(--fd)">${esc(c.club)}</b></div><span class="tag">T${C.season}/${NSEAS}</span><span class="tag" title="Saldo">${M(c.money)}</span></header>`;
 }
 function cNav(){const t=[['home','🏠','Início'],['squad','👕','Elenco'],['tab','📊','Tabelas'],['mkt','💱','Mercado'],['club','🏛️','Clube']];
- return `<nav class="cnav">${t.map(([k,i,l])=>`<button class="${CT===k?'sel':''}" data-act="cTab" data-v="${k}"><span>${i}</span>${l}${k==='mkt'&&C.win?'<i class="dotn"></i>':''}</button>`).join('')}</nav>`}
+ return `<nav class="cnav" aria-label="Seções da carreira">${t.map(([k,i,l])=>`<button class="${CT===k?'sel':''}" ${CT===k?'aria-current="page"':''} data-act="cTab" data-v="${k}"><span aria-hidden="true">${i}</span>${l}${k==='mkt'&&C.win?'<i class="dotn"></i>':''}</button>`).join('')}</nav>`}
 function cRender(tab){
  if(tab)CT=tab;
  if(!C)return renderHome();
  if(CT==='end')return renderSeasonEnd();if(CT==='over')return renderOver();
  const body={home:cHomeHTML,squad:cSquadHTML,tab:cTabHTML,mkt:cMktHTML,club:cClubHTML}[CT]();
- app.innerHTML=cHead()+`<main class="wrap cwrap">${body}</main>`+cNav()+`<div id="modal"></div>`;
+ const tn={home:'Início',squad:'Elenco',tab:'Tabelas',mkt:'Mercado',club:'Clube'}[CT];
+ app.innerHTML=cHead()+`<main class="wrap cwrap"><h1 class="somente-leitor">${esc(me().club)}: ${tn}</h1>${body}</main>`+cNav()+`<div id="modal"></div>`;
  window.scrollTo(0,0);
 }
 const tnc=(ci,sm=1)=>`${crest(CL(ci),sm)}<span>${esc(CL(ci).club)}</span>`;
@@ -1481,7 +1500,7 @@ function buyButtons(p){
  if(!b.length)return `<p class="mut small">${!w?'A janela está fechada. Pré-contratos (jogadores no último ano) liberam a partir do meio da temporada.':'Contratado há pouco: não pode ser negociado nesta janela.'}</p>`;
  return `<div class="grid2">${b.join('')}</div>`;
 }
-function modal(h){let el=$('#modal');if(!el){el=document.createElement('div');el.id='modal';document.body.appendChild(el)}el.innerHTML=`<div class="mbg" data-act="cClose"></div><div class="mbox" role="dialog">${h}<button class="btn block" data-act="cClose" style="margin-top:12px">Fechar</button></div>`}
+function modal(h){let el=$('#modal');if(!el){el=document.createElement('div');el.id='modal';document.body.appendChild(el)}el.innerHTML=`<div class="mbg" data-act="cClose" aria-hidden="true"></div><div class="mbox" role="dialog" aria-modal="true" aria-labelledby="mtitle">${h}<button class="btn block" data-act="cClose" style="margin-top:12px">Fechar</button></div>`;const bx=el.querySelector('.mbox');const t=bx&&bx.querySelector('h2');if(t){t.id='mtitle';t.setAttribute('tabindex','-1');t.focus()}else if(bx){const f=bx.querySelector('button,input');if(f)f.focus()}}
 function closeModal(){const m=$('#modal');if(m)m.innerHTML=''}
 
 /* ----- trocar jogador na escalação ----- */
@@ -1589,10 +1608,10 @@ function cMktHTML(){
  ${w?`<button class="btn ac block" data-act="cCloseWin" style="margin-top:10px">Fechar janela e seguir ▶</button>`:''}</div>
  ${offs.length?`<div class="card" style="margin-top:12px"><b>📨 Propostas pelos seus jogadores</b>${offs.map(o=>{const p=PL(o.pid);return `<div class="offer"><div>${crest(CL(o.club),1)} <b>${esc(CL(o.club).club)}</b> quer <b>${esc(p.n)}</b> (${p.o})<br><span class="mut small">Oferta: <b>${M(o.fee)}</b> · valor ${M(p.v)}</span></div><div class="seg"><button data-act="cOffAcc" data-v="${C.offers.indexOf(o)}">Aceitar</button><button data-act="cOffCnt" data-v="${C.offers.indexOf(o)}">Pedir +20%</button><button data-act="cOffRej" data-v="${C.offers.indexOf(o)}">Recusar</button></div></div>`}).join('')}</div>`:''}
  <div class="card" style="margin-top:12px"><div class="filters">
-  <input class="input" id="mq" placeholder="Buscar jogador" value="${esc(f.q)}">
-  <select class="input" id="mpos"><option value="">Todas as posições</option>${[['GOL','Goleiro'],['ZAG','Zagueiro'],['LE','Lateral esquerdo'],['LD','Lateral direito'],['MID','Meio-campo'],['WIN','Ponta'],['CA','Centroavante']].map(([v,l])=>`<option value="${v}" ${f.pos===v?'selected':''}>${l}</option>`).join('')}</select>
-  <select class="input" id="mlg"><option value="">Todas as ligas</option>${[...LGORD,'LIB'].map(k=>`<option value="${k}" ${f.lg===k?'selected':''}>${k==='LIB'?'Outros da Libertadores':LG[k].n}</option>`).join('')}</select>
-  <select class="input" id="mmax"><option value="0">Qualquer valor</option>${[5,10,20,40,70,100,150].map(v=>`<option value="${v}" ${+f.max===v?'selected':''}>Até ${M(v)}</option>`).join('')}</select>
+  <label for="mq" class="somente-leitor">Buscar jogador</label><input class="input" id="mq" placeholder="Buscar jogador" type="search" value="${esc(f.q)}">
+  <select class="input" id="mpos" aria-label="Posição"><option value="">Todas as posições</option>${[['GOL','Goleiro'],['ZAG','Zagueiro'],['LE','Lateral esquerdo'],['LD','Lateral direito'],['MID','Meio-campo'],['WIN','Ponta'],['CA','Centroavante']].map(([v,l])=>`<option value="${v}" ${f.pos===v?'selected':''}>${l}</option>`).join('')}</select>
+  <select class="input" id="mlg" aria-label="Liga"><option value="">Todas as ligas</option>${[...LGORD,'LIB'].map(k=>`<option value="${k}" ${f.lg===k?'selected':''}>${k==='LIB'?'Outros da Libertadores':LG[k].n}</option>`).join('')}</select>
+  <select class="input" id="mmax" aria-label="Valor máximo"><option value="0">Qualquer valor</option>${[5,10,20,40,70,100,150].map(v=>`<option value="${v}" ${+f.max===v?'selected':''}>Até ${M(v)}</option>`).join('')}</select>
   <label class="chk"><input type="checkbox" id="mfree" ${f.free?'checked':''}> Só jogadores livres</label></div>
   <p class="mut small">${tot} jogadores${tot>60?' (mostrando os 60 melhores)':''}</p>
   <div class="plist">${list.map(p=>`<button class="pl" data-act="cPlayer" data-v="${p.i}"><span class="ov">${p.o}</span><span class="nm">${esc(p.n)}<small>${posTxt(p)} · ${p.c>=0?esc(CL(p.c).club):'Livre'} · ${M(p.v)}${p.ct===1&&p.c>=0?' · último ano':''}</small></span>${p.c>=0?crest(CL(p.c),1):''}</button>`).join('')}</div></div>`;
@@ -1614,7 +1633,7 @@ function renewModal(pid){
 function renewGo(pid){const p=PL(pid),n=C.negs['r'+pid];n.tries++;
  if(n.w>=n.want*.97){p.w=r2(n.w);p.ct=n.y+ (p.ct>0?0:0);p.ct=Math.max(p.ct,n.y);n.closed=`✅ ${esc(p.n)} renovou por ${n.y} temporada(s) com ${M(n.w)}/ano.`;pushNews(`🖊️ ${esc(p.n)} renovou com o ${esc(me().club)}.`);cSave();cRender();return modal(`<h2>Renovado!</h2><p>${n.closed}</p>`)}
  n.msg=n.w>=n.want*.75?`↔️ Ele pede ${M(n.want)}/ano.`:'❌ Proposta fraca.';if(n.tries>=3)n.closed=`${esc(p.n)} não quer mais conversar sobre renovação agora.`;renewModal(pid)}
-function flashC(t){const d=document.createElement('div');d.className='toast';d.textContent=t;document.body.appendChild(d);setTimeout(()=>d.remove(),2600)}
+function flashC(t){const d=document.createElement('div');d.className='toast';d.setAttribute('role','status');d.textContent=t;document.body.appendChild(d);setTimeout(()=>d.remove(),2600)}
 
 /* ----- tabelas ----- */
 function tabT(rows,hl,cut){return `<table><tr><th class="l">#</th><th class="l">Clube</th><th>P</th><th>J</th><th>V</th><th>E</th><th>D</th><th>SG</th></tr>${rows.map((r,i)=>`<tr class="${r.id===C.me?'me':''} ${cut&&cut(i)?'cut':''}"><td class="l">${i+1}</td><td class="l"><span class="row">${crest(CL(r.id),1)}<span class="ell">${esc(CL(r.id).club)}</span></span></td><td><b>${r.P}</b></td><td>${r.J}</td><td>${r.V}</td><td>${r.E}</td><td>${r.D}</td><td>${r.GP-r.GC}</td></tr>`).join('')}</table>`}
@@ -1650,7 +1669,8 @@ function cClubHTML(){
   <h3>Histórico</h3>${C.hist.length?`<table>${C.hist.map(x=>`<tr><td class="l">T${x.s}</td><td class="l">${esc(x.club)}</td><td>${x.pos}º/${x.n}</td><td>${x.ok?'✅':'❌'}</td><td class="l small">${x.troph.join(', ')||'—'}</td></tr>`).join('')}</table>`:'<p class="mut">A primeira temporada ainda está em andamento.</p>'}`}
  else if(sub==='rec')h=`<h2>Recordes de transferência</h2><table>${C.recs.map((r,i)=>`<tr class="${r.mine?'me':''}"><td class="l">${i+1}</td><td class="l"><b>${esc(r.n)}</b><br><span class="mut small">${esc(r.f)} → ${esc(r.t)} · ${r.y[0]==='T'?'⭐ nesta carreira (temp. '+r.y.slice(1)+')':r.y}</span></td><td><b>${M(r.fee)}</b></td></tr>`).join('')}</table>
   <h3>Futebol brasileiro</h3><p>Maior compra de um clube brasileiro: <b>${esc(C.brRec.n)}</b> · ${M(C.brRec.fee)} ${C.brRec.y[0]==='T'?'(⭐ nesta carreira)':''}</p>`;
- else if(sub==='opt')h=`<h2>Carreira</h2><p>Técnico: <b>${esc(C.coach)}</b><br>Clube: <b>${esc(c.club)}</b> · ${flag(c.ctry)} ${LG[c.lg].n}<br>Temporada ${C.season} de ${NSEAS}</p><p class="mut small">O jogo salva sozinho neste navegador depois de cada rodada.</p>
+ else if(sub==='opt')h=`<h2>Carreira</h2><p>Técnico: <b>${esc(C.coach)}</b><br>Clube: <b>${esc(c.club)}</b> · ${flag(c.ctry)} ${LG[c.lg].n}<br>Temporada ${C.season} de ${NSEAS}</p><p class="mut small">${zCanSave()?'O jogo salva sozinho neste navegador depois de cada rodada.':'O armazenamento está desligado: a carreira não fica salva ao fechar.'}</p>
+  <p class="small"><button class="lnk" data-act="page" data-v="privacidade">Política de Privacidade</button> · <button class="lnk" data-act="page" data-v="termos">Termos de Uso</button> · <button class="lnk" data-act="zPrefs">Preferências de armazenamento</button></p>
   <button class="btn block" data-act="menu">Voltar ao menu principal</button><button class="btn block" data-act="cAbandon" style="margin-top:8px;border-color:#7a2b2b">Apagar esta carreira</button>`;
  return `<div class="chips">${[['fin','Finanças'],['tro','Troféus'],['rec','Recordes'],['opt','Carreira']].map(([v,l])=>`<button class="${v===sub?'sel':''}" data-act="cClubSub" data-v="${v}">${l}</button>`).join('')}</div><div class="card" style="margin-top:10px">${h}</div>`;
 }
@@ -1684,14 +1704,16 @@ function renderCSetup(){
  app.innerHTML=`<header class="top"><div class="logo">${LOGO}</div><span class="tag">Modo Carreira</span><span class="grow"></span><button class="btn sm" data-act="menu">← Menu</button></header><main class="wrap">
  <h1>Modo Carreira <em style="font-style:normal;color:var(--ac)">Técnico</em></h1><p class="mut">Escolha um clube e comande por até ${NSEAS} temporadas: liga, copa, Champions ou Libertadores, Mundial, mercado e finanças.</p>
  ${has?`<div class="card" style="margin-bottom:14px"><b>Você tem uma carreira salva.</b><div class="grid2" style="margin-top:8px"><button class="btn ac block" data-act="cContinue">Continuar carreira</button><button class="btn block" data-act="cAbandon">Apagar e começar outra</button></div></div>`:''}
- <h3>Nome do técnico</h3><input class="input" id="cnm" maxlength="24" placeholder="Digite seu nome" value="${esc(CS.name)}">
+ <h3><label for="cnm">Nome do técnico</label></h3><input class="input" id="cnm" maxlength="24" placeholder="Digite seu nome" value="${esc(CS.name)}" aria-describedby="cnm-ajuda" autocomplete="nickname">
+ <p class="mut small" id="cnm-ajuda" style="margin:6px 0 0">Serve só para mostrar seu nome no jogo (pode ser um apelido). Fica neste navegador e não é enviado a ninguém. <button class="lnk" data-act="page" data-v="privacidade">Política de Privacidade</button></p>
+ ${zCons()&&!zCanSave()?`<p class="warnc card small" style="margin-top:10px">Você recusou o armazenamento: a carreira funciona, mas não fica salva quando você fechar o jogo. <button class="lnk" data-act="zPrefs">Mudar escolha</button></p>`:''}
  <h3>Liga</h3><div class="grid3">${LGORD.map(k=>`<button class="opt ${CS.lg===k?'sel':''}" data-act="cLg" data-v="${k}"><b>${flag(k)} ${LG[k].n}</b><span>${C0clubs().filter(c=>c.lg===k).length} times · ${k==='BRA'?'vaga na Libertadores':LG[k].ucl+' vagas na Champions'}</span></button>`).join('')}</div>
  <h3>Time</h3><div class="crests">${clubs.map(c=>`<button class="${CS.club===c.i?'sel':''}" data-act="cClub" data-v="${c.i}">${crest(c)}<span>${esc(c.club)}</span><small class="nota" style="margin:0">${c.pw}</small></button>`).join('')}</div>
  <p class="mut small">O número é a força do time titular. Times mais fracos têm objetivos menores.</p>
  <h3>Dinheiro para contratar</h3>
  <div class="grid2"><button class="opt ${CS.mm==='fair'?'sel':''}" data-act="cMM" data-v="fair"><b>Valor justo</b><span>${M(fairMoney(clubs.find(c=>c.i===CS.club)))} · calculado pela força do time</span></button>
  <button class="opt ${CS.mm==='custom'?'sel':''}" data-act="cMM" data-v="custom"><b>Escolher valor</b><span>Você define quanto o clube tem pra gastar</span></button></div>
- ${CS.mm==='custom'?`<div class="row" style="margin-top:10px;gap:8px"><span style="font:800 22px var(--fd)">€</span><input class="input" id="cmoney" type="number" inputmode="decimal" min="0" step="1" placeholder="Ex.: 150" value="${esc(String(CS.money))}" style="flex:1"><span style="font:800 22px var(--fd)">M</span></div><p class="mut small">Só o seu clube recebe esse valor; os outros clubes continuam com o valor justo.</p>`:''}
+ ${CS.mm==='custom'?`<div class="row" style="margin-top:10px;gap:8px"><span style="font:800 22px var(--fd)">€</span><label for="cmoney" class="somente-leitor">Dinheiro inicial em milhões de euros</label><input class="input" id="cmoney" type="number" inputmode="decimal" min="0" step="1" placeholder="Ex.: 150" value="${esc(String(CS.money))}" style="flex:1"><span style="font:800 22px var(--fd)">M</span></div><p class="mut small">Só o seu clube recebe esse valor; os outros clubes continuam com o valor justo.</p>`:''}
  <button class="btn ac block" data-act="cStart" style="margin:18px 0 30px" ${CS.name.trim()?'':'disabled'}>Começar carreira ▶</button></main>${FOOT}`;
 }
 let C0=null;
@@ -1711,7 +1733,7 @@ function cLive(){
   <div class="score"><div class="grow">${crest(CL(m.h))}<br>${esc(CL(m.h).club)}</div><div class="n" id="gh">0</div><div class="mut">x</div><div class="n" id="ga">0</div><div class="grow">${crest(CL(m.a))}<br>${esc(CL(m.a).club)}</div></div>
   <div style="text-align:center;margin-top:8px"><span class="tag" id="min">0'</span>${f.ah||f.aa?`<div class="mut small" id="agg"></div>`:''}</div></div>
   <div class="seg" style="margin-top:12px">${[1,2,4].map(v=>`<button data-act="cSpd" data-v="${v}" class="${v===1?'sel':''}">${v}x</button>`).join('')}<button data-act="cPause" id="pz">Pausar</button><button data-act="cSkip">Pular ⏭</button></div>
-  <div id="evs" style="margin-top:10px"></div><button class="btn ac block hide" id="cont" data-act="cCont" style="margin-top:12px">Continuar</button></div></div>
+  <div id="evs" style="margin-top:10px" aria-live="polite" aria-label="Lances do jogo"></div><button class="btn ac block hide" id="cont" data-act="cCont" style="margin-top:12px">Continuar</button></div></div>
  <div class="card"><div class="row"><b class="grow">Mexa no time</b><span class="tag" id="subs">0/5 trocas</span></div><div id="lp" style="margin-top:8px">${cPitch(C.me,'cLSlot')}</div><div id="lf" style="margin-top:10px">${formsHTML(11,me().form,'cLForm')}</div><div id="lt">${tacHTMLc('cLTac')}</div></div></main><div id="modal"></div>`;
  cRun();
 }
@@ -1789,7 +1811,135 @@ document.addEventListener('change',e=>{
  cRender();
 });
 
-renderHome();
+/* ======================================================================
+   GRUPO ZART — identidade, rodapé, páginas legais, privacidade e acessibilidade
+   ====================================================================== */
+const ZLOGO_SRC='data:image/png;base64,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';
+const ZART={resp:'wasmorf',email:'projetozart@gmail.com',doc:null,atualizado:'25 de novembro de 2026',
+ projetos:[['Zart Domínios','https://projetozartoficial.github.io/dominios/']]};
+const LOGO=`<span class="zbrand"><img src="${ZLOGO_SRC}" alt="ZART" width="62" height="30"><span class="zsub">Jogos</span></span><span class="zprod" aria-label="FutFut">Fut<em>Fut</em></span>`;
+const aPreencher=t=>`<mark class="apreencher">${t}: a preencher</mark>`;
+const FOOT=`<footer class="foot zfoot">
+ <img src="${ZLOGO_SRC}" alt="ZART" width="72" height="35" class="zfoot-logo">
+ <p><b>FutFut, da Zart Jogos.</b> Um projeto do grupo Zart.</p>
+ <nav aria-label="Links do rodapé" class="zlinks">
+  <button class="lnk" data-act="page" data-v="sobre">Sobre o Grupo Zart</button>
+  <button class="lnk" data-act="page" data-v="termos">Termos de Uso</button>
+  <button class="lnk" data-act="page" data-v="privacidade">Política de Privacidade</button>
+  <button class="lnk" data-act="page" data-v="cookies">Armazenamento e cookies</button>
+  <button class="lnk" data-act="page" data-v="reembolso">Política de Reembolso</button>
+  <button class="lnk" data-act="zPrefs">Preferências de armazenamento</button>
+ </nav>
+ <p class="zproj">Outros projetos Zart: ${ZART.projetos.map(([n,u])=>`<a href="${u}" target="_blank" rel="noopener">${n}<span class="somente-leitor"> (abre em nova aba)</span></a>`).join(' · ')}</p>
+ <p>Responsável: <b>${ZART.resp}</b> · Contato: <a href="mailto:${ZART.email}">${ZART.email}</a> · ${ZART.doc?`CPF/CNPJ: ${ZART.doc}`:aPreencher('CPF/CNPJ (se exigido)')}</p>
+ <p class="zfan">Jogo de fã, gratuito e sem fins lucrativos. Não tem ligação oficial com clubes, ligas, confederações, competições ou jogadores citados. Os escudos são desenhos próprios e os overalls, valores e resultados são fictícios.</p>
+</footer>`;
+
+/* ----- consentimento de armazenamento (LGPD) ----- */
+const CONS_KEY='futfut_privacidade';
+function zCons(){try{const s=localStorage.getItem(CONS_KEY);return s?JSON.parse(s):null}catch(e){return null}}
+function zCanSave(){const c=zCons();return!!(c&&c.salvar)}
+function zSetCons(v){
+ try{localStorage.setItem(CONS_KEY,JSON.stringify({salvar:v,data:new Date().toISOString()}))}catch(e){}
+ if(!v){try{Object.keys(localStorage).forEach(k=>{if(k!==CONS_KEY&&k.startsWith('futfut'))localStorage.removeItem(k)})}catch(e){}}
+}
+function zBanner(force){
+ const old=document.querySelector('.zcons');if(old)old.remove();
+ if(!force&&zCons())return;
+ const prev=document.activeElement;const d=document.createElement('section');d.className='zcons';d.setAttribute('role','dialog');d.setAttribute('aria-labelledby','zcons-t');d.setAttribute('aria-describedby','zcons-d');
+ d.innerHTML=`<h2 id="zcons-t">Sua privacidade</h2><p id="zcons-d">O FutFut não usa cookies de rastreamento, análise nem anúncios. Com a sua permissão, ele guarda a sua carreira e as suas escolhas <b>só neste navegador</b>, para você continuar depois. Nada é enviado para nós. Se recusar, o jogo funciona normalmente, mas a carreira não fica salva quando você fechar.</p>
+ <div class="row" style="gap:8px;flex-wrap:wrap"><button class="btn ac" data-act="zAccept">Aceitar</button><button class="btn" data-act="zRefuse">Recusar</button><button class="lnk" data-act="page" data-v="cookies">Saiba mais</button></div>`;
+ document.body.appendChild(d);const b=d.querySelector('[data-act=zAccept]');if(b)b.focus();d._prev=prev;
+}
+
+/* ----- páginas ----- */
+const ZPAGES={
+ sobre:['Sobre o Grupo Zart',()=>`
+  <p><b>Grupo Zart</b> é um grupo de projetos digitais independentes: sites, jogos e ferramentas criados com cuidado e com identidade própria. Cada projeto Zart resolve uma coisa diferente, mas todos seguem o mesmo padrão de qualidade, transparência e respeito a quem usa.</p>
+  <h2>O que é o Grupo Zart</h2><p>O Grupo Zart reúne projetos digitais criados de forma independente. A ideia é simples: em vez de vários sites soltos, cada um com uma cara, todos fazem parte de uma mesma marca, com a mesma identidade e o mesmo cuidado.</p>
+  <h2>Como funciona</h2><p>Cada área do grupo ganha o nome Zart mais o que ela faz. O <b>FutFut</b> faz parte da <b>Zart Jogos</b>. O primeiro projeto do grupo é a <a href="https://projetozartoficial.github.io/dominios/" target="_blank" rel="noopener">Zart Domínios<span class="somente-leitor"> (abre em nova aba)</span></a>, um site para pesquisar e registrar domínios.</p>
+  <h2>O que todo projeto Zart tem em comum</h2><ul>
+  <li><b>Visual da marca:</b> a coroa, o azul meia-noite, o azul-escuro e o preto.</li>
+  <li><b>Transparência:</b> avisamos quando um link é de parceiro e não inventamos avaliações nem promessas.</li>
+  <li><b>Privacidade:</b> só pedimos os dados necessários e nada de rastreamento sem permissão.</li>
+  <li><b>Acessibilidade:</b> sites que funcionam no celular, no teclado e com leitores de tela.</li></ul>
+  <h2>Sobre o FutFut</h2><p>O FutFut é um jogo de futebol de fã, gratuito e sem fins lucrativos, com dois modos: Leilão e Modo Carreira Técnico. Ele não tem ligação oficial com clubes, ligas, confederações, competições, jogadores nem com outros jogos de leilão de futebol.</p>`],
+ termos:['Termos de Uso',()=>`
+  <p class="mut">Última atualização: ${ZART.atualizado}</p>
+  <h2>1. O que é o FutFut</h2><p>O FutFut é um jogo de navegador gratuito, feito para diversão, com os modos Leilão e Modo Carreira Técnico. Ele faz parte da Zart Jogos, do grupo Zart. Ao usar o jogo, você concorda com estes termos.</p>
+  <h2>2. Jogo de fã, sem ligação oficial</h2><p>O FutFut é um projeto de fã, sem fins lucrativos. Ele <b>não tem ligação, patrocínio nem autorização</b> de clubes, ligas, confederações (como FIFA, UEFA, CONMEBOL e CBF), organizadores de competições, jogadores, nem de outros jogos de leilão de futebol. Nomes de clubes, competições e jogadores aparecem só como referência, para identificar o que está sendo simulado. Todas as marcas pertencem aos seus donos.</p>
+  <p>Os escudos do jogo são desenhos próprios, feitos só com as cores dos clubes; nenhum logo oficial é usado. Overalls, valores de mercado, salários, contratos, transferências e resultados são <b>fictícios</b>, gerados pelo jogo, e não representam avaliações reais de ninguém.</p>
+  <p>Se você é dono de algum direito e quer que algo seja alterado ou removido, escreva para <a href="mailto:${ZART.email}">${ZART.email}</a>.</p>
+  <h2>3. Uso permitido</h2><p>Você pode jogar livremente para uso pessoal. Não é permitido usar o jogo para atividades ilegais, tentar prejudicar o funcionamento do site ou republicar o jogo dizendo que é seu.</p>
+  <h2>4. Dinheiro do jogo</h2><p>Os valores em reais (R$) e euros (€) dentro do jogo são <b>fictícios</b>. Eles não valem dinheiro, não podem ser comprados nem trocados por nada.</p>
+  <h2>5. Progresso salvo</h2><p>Se você permitir, o progresso fica guardado só no seu navegador. Ele pode ser perdido se você limpar os dados do navegador, trocar de aparelho ou se o jogo for atualizado. O jogo é oferecido "como está", sem garantia de que estará sempre disponível ou sem erros.</p>
+  <h2>6. Mudanças</h2><p>Estes termos podem ser atualizados. A data no topo mostra a última versão.</p>
+  <h2>7. Lei aplicável</h2><p>Estes termos seguem as leis do Brasil, incluindo o Código de Defesa do Consumidor e a Lei Geral de Proteção de Dados (LGPD).</p>
+  <h2>8. Contato</h2><p>Responsável: ${ZART.resp} · <a href="mailto:${ZART.email}">${ZART.email}</a> · ${ZART.doc?`CPF/CNPJ: ${ZART.doc}`:aPreencher('CPF/CNPJ (se exigido)')}</p>`],
+ privacidade:['Política de Privacidade',()=>`
+  <p class="mut">Última atualização: ${ZART.atualizado}</p>
+  <p>Esta política explica, de acordo com a Lei Geral de Proteção de Dados (Lei 13.709/2018, a LGPD), como o FutFut trata informações. Resumo: <b>o FutFut não coleta dados pessoais para nós</b>. O que você digita fica no seu próprio navegador.</p>
+  <h2>1. Quem é o responsável</h2><p>Controlador: ${ZART.resp}, do grupo Zart · contato: <a href="mailto:${ZART.email}">${ZART.email}</a> · ${ZART.doc?`CPF/CNPJ: ${ZART.doc}`:aPreencher('CPF/CNPJ (se exigido)')}</p>
+  <h2>2. Quais informações e para quê</h2><ul>
+  <li><b>Nome de técnico</b> que você digita: usado só para mostrar o seu nome dentro do jogo. Pode ser um apelido; não precisa ser o seu nome real.</li>
+  <li><b>Progresso do jogo</b> (carreira, elenco, escolhas): usado só para você continuar de onde parou.</li>
+  <li><b>Sua escolha de privacidade</b> (aceitou ou recusou): usada para lembrar a sua decisão.</li></ul>
+  <p>Não pedimos e-mail, telefone, CPF, endereço, localização nem dados de pagamento. Não há cadastro, login, anúncios, Google Analytics, pixels ou qualquer rastreamento.</p>
+  <h2>3. Onde ficam guardadas</h2><p>Só no <b>armazenamento local do seu navegador</b> (localStorage), no seu aparelho. Nada é enviado para servidores do grupo Zart. O jogo não carrega fontes, scripts ou imagens de outros sites.</p>
+  <h2>4. Base legal</h2><p>Guardar a carreira e as escolhas depende do seu <b>consentimento</b> (art. 7º, I, da LGPD), dado no aviso de privacidade. Guardar a própria escolha (aceitar ou recusar) é necessário para respeitar a sua decisão.</p>
+  <h2>5. Com quem compartilhamos</h2><p>Com ninguém. A plataforma que hospeda a página onde o jogo roda pode registrar dados técnicos de acesso (como endereço IP e navegador), conforme a política de privacidade dela; o grupo Zart não recebe esses dados.</p>
+  <h2>6. Por quanto tempo</h2><p>Até você apagar: pelo botão abaixo, recusando o armazenamento ou limpando os dados do navegador.</p>
+  <h2>7. Seus direitos</h2><p>Pela LGPD (art. 18) você pode confirmar se há tratamento, acessar, corrigir, apagar, levar seus dados para outro lugar e revogar o consentimento a qualquer momento. Como tudo fica no seu aparelho, você mesmo faz isso: veja e corrija pelo próprio jogo, mude a escolha em "Preferências de armazenamento" ou apague tudo no botão abaixo. Dúvidas ou pedidos: <a href="mailto:${ZART.email}">${ZART.email}</a>, com resposta em até 15 dias.</p>
+  <div class="card" style="margin:14px 0"><b>Apagar meus dados deste navegador</b><p class="mut small" style="margin:6px 0 10px">Remove a carreira salva e a sua escolha de privacidade. Não dá para desfazer.</p><button class="btn" data-act="zWipe">Apagar meus dados</button></div>
+  <h2>8. Crianças e adolescentes</h2><p>O jogo não pede dados pessoais. Recomendamos que menores de 18 anos usem o jogo com acompanhamento de um responsável.</p>
+  <h2>9. Mudanças</h2><p>Se esta política mudar, a data no topo será atualizada.</p>`],
+ cookies:['Armazenamento e cookies',()=>`
+  <p class="mut">Última atualização: ${ZART.atualizado}</p>
+  <p>O FutFut <b>não usa cookies</b>. Ele usa o armazenamento local do navegador (localStorage), que funciona de forma parecida, só no seu aparelho.</p>
+  <table><tr><th class="l">O que fica guardado</th><th class="l">Tipo</th><th class="l">Quando</th></tr>
+  <tr><td class="l">Sua escolha de privacidade (aceitar ou recusar)</td><td class="l">Essencial</td><td class="l">Sempre que você escolhe</td></tr>
+  <tr><td class="l">Carreira salva (Modo Carreira Técnico)</td><td class="l">Funcional</td><td class="l">Só se você aceitar</td></tr></table>
+  <p>Não usamos cookies de análise, publicidade ou de terceiros. Se algum dia isso mudar, eles só vão carregar depois de você aceitar.</p>
+  <p>Estado atual: <b>${zCons()?(zCanSave()?'você aceitou guardar o progresso neste navegador':'você recusou; nada além da sua escolha é guardado'):'você ainda não escolheu'}</b>.</p>
+  <button class="btn" data-act="zPrefs">Mudar minha escolha</button>`],
+ reembolso:['Política de Reembolso',()=>`
+  <p class="mut">Última atualização: ${ZART.atualizado}</p>
+  <p>O FutFut é <b>100% gratuito</b>. Não vende nada: não tem assinatura, compras dentro do jogo, moedas pagas nem anúncios. Os valores em R$ e € que aparecem no jogo são fictícios.</p>
+  <p>Como não existe nenhuma cobrança, também não há o que cancelar ou reembolsar.</p>
+  <h2>Se um dia houver venda</h2><p>Se algum produto ou serviço pago for oferecido no futuro, valerá o <b>direito de arrependimento de 7 dias</b> do Código de Defesa do Consumidor (art. 49): em compras feitas pela internet, você pode desistir em até 7 dias corridos depois da compra ou do recebimento e receber de volta tudo o que pagou, sem precisar explicar o motivo. As regras completas seriam publicadas aqui antes de qualquer venda.</p>
+  <p>Dúvidas: <a href="mailto:${ZART.email}">${ZART.email}</a></p>`]
+};
+let ZBACK=null;
+function renderPage(k){
+ const p=ZPAGES[k];if(!p)return;
+ if(typeof CLV!=='undefined'&&CLV&&!CLV.done)return;
+ clearInterval(TICK);
+ app.innerHTML=`<header class="top"><div class="logo">${LOGO}</div><span class="grow"></span><button class="btn sm" data-act="zBack">← Voltar</button></header>
+ <main class="wrap zpage"><h1>${p[0]}</h1>${p[1]()}</main>${FOOT}`;
+ window.scrollTo(0,0);const h=document.querySelector('main h1');if(h){h.setAttribute('tabindex','-1');h.focus()}
+}
+Object.assign(ACT,{
+ page(b){if(!ZBACK)ZBACK=document.querySelector('.cnav')?'career':'home';if(typeof closeModal==='function')closeModal();renderPage(b.dataset.v)},
+ zBack(){const w=ZBACK;ZBACK=null;if(w==='career'&&typeof C!=='undefined'&&C)cRender();else renderHome()},
+ zAccept(){zSetCons(true);const d=document.querySelector('.zcons');if(d)d.remove();if(typeof C!=='undefined'&&C&&typeof cSave==='function')cSave();zNotice('Escolha salva: o progresso fica guardado neste navegador.')},
+ zRefuse(){zSetCons(false);const d=document.querySelector('.zcons');if(d)d.remove();zNotice('Escolha salva: nada além dela é guardado. A carreira não fica salva ao fechar.')},
+ zPrefs(){zBanner(true)},
+ zWipe(){try{Object.keys(localStorage).forEach(k=>{if(k.startsWith('futfut'))localStorage.removeItem(k)})}catch(e){}if(typeof C!=='undefined')C=null;zNotice('Seus dados foram apagados deste navegador.');renderHome();setTimeout(()=>zBanner(),50)}
+});
+function zNotice(t){const d=document.createElement('div');d.className='toast';d.setAttribute('role','status');d.textContent=t;document.body.appendChild(d);setTimeout(()=>d.remove(),3200)}
+
+/* ----- acessibilidade: área principal, modais, Esc ----- */
+function zA11y(){
+ const m=app.querySelector('main');if(m){m.id='conteudo';m.setAttribute('tabindex','-1')}
+ app.querySelectorAll('.crest').forEach(c=>{if(!c.hasAttribute('role')){c.setAttribute('role','img');const b=c.querySelector('b');c.setAttribute('aria-label','Escudo '+(b?b.textContent:''))}});
+}
+if(typeof MutationObserver!=="undefined")new MutationObserver(zA11y).observe(app,{childList:true});
+document.addEventListener('keydown',e=>{
+ if(e.key!=='Escape')return;
+ const mb=document.querySelector('#modal .mbox');if(mb){const x=document.querySelector('#modal [data-act=cClose]');if(x)x.click();e.preventDefault();return}
+});
+
+renderHome();zBanner();
 </script>
 </body>
 </html>
