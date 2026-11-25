@@ -135,6 +135,54 @@ tr.me td{background:#1f3d26}
 .mode.soon{opacity:.75;cursor:default}.mode.soon .go{color:var(--mut)}
 .hide{display:none!important}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
+/* ===== Modo Carreira ===== */
+.cwrap{padding-bottom:96px}
+.ctop{flex-wrap:nowrap;position:sticky}.ctop .btn.cm{width:auto;flex:none}.ctop .tag{padding:4px 8px;font-size:13px}.ctop b{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cnav{position:fixed;left:0;right:0;bottom:0;z-index:20;display:grid;grid-template-columns:repeat(5,1fr);background:#06110bf2;backdrop-filter:blur(10px);border-top:1px solid var(--line);padding:4px 4px calc(4px + env(safe-area-inset-bottom))}
+.cnav button{position:relative;background:none;border:0;color:var(--mut);display:flex;flex-direction:column;align-items:center;gap:1px;font:700 12px Barlow,sans-serif;padding:6px 2px;border-radius:10px;min-height:52px}
+.cnav button span{font-size:20px;line-height:1.1}.cnav button.sel{color:var(--ac);background:#ffffff0a}
+.dotn{position:absolute;top:6px;right:calc(50% - 18px);width:9px;height:9px;border-radius:50%;background:var(--rd);box-shadow:0 0 0 2px #06110b}
+button.dot{color:#fff;cursor:pointer;padding:0}
+.vs{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:10px;text-align:center;margin:6px 0 14px}
+.vs>div{display:flex;flex-direction:column;align-items:center;gap:4px}.vs b{font:800 18px/1.1 var(--fd)}.vs small{color:var(--gr);font:800 14px var(--fd)}.vs>span{font:900 26px var(--fd);color:var(--mut)}
+.vs .crest{width:48px;height:54px}
+.card.mini{padding:12px;display:flex;flex-direction:column;gap:2px}.card.mini small{color:var(--mut);font-size:12px}.card.mini b{font:900 28px/1.05 var(--fd);color:var(--ac)}.card.mini span{font-size:13px;color:var(--mut)}
+.news{display:flex;flex-direction:column;gap:2px;margin-top:6px;font-size:14px}.news div{padding:6px 0;border-bottom:1px solid #ffffff0d}
+.match.mine{background:#1f3d26;border-radius:8px;padding-left:6px;padding-right:6px}
+.plist{display:flex;flex-direction:column;gap:4px;margin-top:8px;max-height:62vh;overflow:auto}
+.pl{display:flex;align-items:center;gap:10px;text-align:left;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:7px 10px;min-height:48px}
+.pl:hover:not(:disabled){border-color:#3d6b50}.pl:disabled{opacity:.4}
+.pl .ov{font:900 22px var(--fd);color:var(--ac);min-width:30px;text-align:center}.pl .ov.up{color:var(--gr)}.pl .ov.dn{color:var(--rd)}
+.pl .nm{flex:1;display:flex;flex-direction:column;font-weight:600;font-size:15px;line-height:1.25}.pl .nm small{color:var(--mut);font-weight:500;font-size:12px}
+.bdg{font:700 10px Barlow,sans-serif;font-style:normal;background:#2c4a37;color:#cfe;padding:1px 5px;border-radius:5px;vertical-align:middle}.bdg.rd{background:#5a2323}
+.tit{font:800 11px var(--fd);color:var(--gr);border:1px solid #2ecc7166;border-radius:6px;padding:1px 5px}
+.mbg{position:fixed;inset:0;background:#000a;z-index:40;animation:enter .2s}
+.mbox{position:fixed;z-index:41;left:50%;top:50%;transform:translate(-50%,-50%);width:min(560px,94vw);max-height:88vh;overflow:auto;background:linear-gradient(180deg,#14301f,#0d1f15);border:1px solid var(--line);border-radius:18px;padding:18px;box-shadow:0 20px 60px #000c}
+.kv{display:grid;grid-template-columns:1fr auto;gap:6px 12px;margin:12px 0;font-size:15px}.kv span{color:var(--mut)}.kv b{text-align:right}
+.bigov{font:900 46px/1 var(--fd);color:var(--ac)}
+.stepper{display:flex;align-items:center;gap:12px;justify-content:center;margin:4px 0 6px}.stepper b{font:900 28px var(--fd);min-width:120px;text-align:center}
+.lbl{display:block;color:var(--mut);font-size:13px;margin-top:10px;text-align:center}
+.steps{display:flex;gap:6px;margin:12px 0 4px}.steps span{flex:1;text-align:center;padding:6px;border-radius:8px;background:var(--card);color:var(--mut);font:700 14px var(--fd)}.steps .on{background:#2a3d1c;color:var(--ac)}.steps .done{color:var(--gr)}
+.resp{margin-top:10px;padding:10px 12px;border-radius:10px;background:#0b1a11;border:1px solid var(--line);font-size:15px}
+.offer{display:flex;flex-direction:column;gap:8px;padding:10px 0;border-bottom:1px solid #ffffff10}
+.filters{display:grid;grid-template-columns:1fr 1fr;gap:8px}.filters .input{padding:10px 12px;font-size:15px}.filters #mq{grid-column:1/-1}
+.chk{display:flex;align-items:center;gap:8px;font-size:14px;color:var(--mut)}.chk input{width:20px;height:20px;accent-color:var(--ac)}
+select.input{appearance:auto}
+.chips{display:flex;gap:6px;overflow-x:auto;padding-bottom:4px;scrollbar-width:none}.chips::-webkit-scrollbar{display:none}
+.chips button{flex:none;padding:8px 14px;border-radius:20px;background:var(--card2);border:1.5px solid var(--line);font:700 14px Barlow,sans-serif;white-space:nowrap;min-height:40px}
+.chips button.sel{border-color:var(--ac);color:var(--ac);background:#2a3d1c}
+.tie{display:grid;grid-template-columns:1fr auto 1fr;gap:8px;align-items:center;padding:7px 0;border-bottom:1px solid #ffffff0d;font-size:14px}.tie b{font:800 15px var(--fd);white-space:nowrap}
+.tie .w{font-weight:800;color:var(--ac)}.tie.mine{background:#1f3d26;border-radius:8px;padding:7px 6px}
+.ell{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+tr.cut td{border-bottom:2px solid var(--ac)}
+.champ{font:800 20px var(--fd);color:var(--ac);text-align:center;margin-top:14px}
+.troph{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:10px}.troph div{display:flex;flex-direction:column;align-items:center;text-align:center;background:var(--card2);border-radius:12px;padding:10px}.troph svg{width:54px;height:62px}.troph small{color:var(--mut)}
+.evo{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}.evo span{font-size:13px;padding:3px 8px;border-radius:8px;background:var(--card2)}.evo .up{color:var(--gr)}.evo .dn{color:var(--rd)}
+.ok{color:var(--gr)}.warn{color:#ffb4a8}
+.warnc{border-color:#7a5a1f;background:linear-gradient(180deg,#2a2412,#1a1a10);font-size:15px}.lnk{background:none;border:0;padding:0;color:var(--ac);text-decoration:underline;font-weight:700}
+.toast{position:fixed;left:50%;bottom:90px;transform:translateX(-50%);background:#0b1a11;border:1px solid var(--ac);color:var(--tx);padding:10px 16px;border-radius:12px;z-index:60;box-shadow:var(--sh);max-width:90vw;animation:enter .25s}
+.crests button small.nota{font-size:14px}
+@media(max-width:560px){.score .n{font-size:46px}.kv{font-size:14px}}
 </style>
 </head>
 <body>
@@ -273,13 +321,13 @@ const notaHTML=t=>`<div class="nota">${S.cfg.showOvr||S.reveal?nota(t):'?'}<smal
 
 /* ================== MENU ================== */
 function renderHome(){
- clearInterval(TICK);if(LIVE)clearInterval(LIVE.iv);
+ clearInterval(TICK);if(LIVE)clearInterval(LIVE.iv);if(typeof CLV!=='undefined'&&CLV){clearInterval(CLV.iv);CLV=null}
  app.innerHTML=`<header class="top"><div class="logo">${LOGO}</div></header>
  <main class="wrap">
  <section class="homehero"><div class="bigmark">${MARK}</div><div><h1>Fut<em>Fut</em></h1><p class="mut" style="font-size:18px;max-width:40ch">Monte seu time, dispute campeonatos e prove que você é o melhor técnico. Escolha um modo pra começar.</p></div></section>
  <section class="modes">
   <button class="mode" data-act="goLeilao"><span class="mi">${NOTE}</span><b>Leilão</b><span>Cada técnico tem dinheiro pra gastar e os jogadores vão a leilão um por um. Monte o elenco contra bots e dispute o campeonato.</span><i class="go">Jogar →</i></button>
-  <button class="mode soon" disabled><span class="mi">${TROPHY}</span><b>Modo Carreira Técnico</b><span>Assuma um clube e construa sua história como técnico, temporada após temporada.</span><i class="go">Em breve</i></button>
+  <button class="mode" data-act="goCarreira"><span class="mi">${TROPHY}</span><b>Modo Carreira Técnico</b><span>Escolha uma liga e um clube e comande por até 10 temporadas: liga, copa, Champions ou Libertadores, Mundial, mercado com negociações e finanças.</span><i class="go">${cHasSave()?'Continuar carreira →':'Jogar →'}</i></button>
  </section>
  </main>${FOOT}`;
 }
@@ -335,11 +383,16 @@ function start(){
 }
 function generic(pos){S.gen++;return{id:'GEN'+S.gen,name:'Reserva '+S.gen,short:'Reserva',ps:[pos],pos,g:GOF[pos],ovr:ri(68,73),club:'Sem clube',sig:'---',color:'#555'}}
 function drawLot(skipUser){
- const need=[];S.techs.forEach(t=>{if(skipUser&&t.isUser)return;if(spendable(t)<1)return;need.push(...freePos(t))});
- if(!need.length)return null;
- const pos=pick(need),cand=S.pool.filter(p=>p.ps.includes(pos));
- if(!cand.length)return generic(pos);
- const p=pick(cand);S.pool.splice(S.pool.indexOf(p),1);return p;
+ const ts=S.techs.filter(t=>!(skipUser&&t.isUser)&&spendable(t)>=1&&totFree(t)>0);
+ if(!ts.length)return null;
+ const t=pick(ts),n=S.pool.length;
+ // sorteia um jogador que caiba no time (mesmo que outro titular precise mudar de posição, ex.: Paquetá vai pro MC e Arrascaeta entra de MEI)
+ for(let k=0;k<250&&n;k++){const i=ri(0,n-1),p=S.pool[i];if(canTake(t,p)){S.pool.splice(i,1);return p}}
+ const cand=S.pool.filter(p=>canTake(t,p));
+ if(cand.length){const p=pick(cand);S.pool.splice(S.pool.indexOf(p),1);return p}
+ const un=S.unsold.filter(p=>canTake(t,p));
+ if(un.length){const p=pick(un);S.unsold.splice(S.unsold.indexOf(p),1);return p}
+ const fp=freePos(t);return generic(fp.length?pick(fp):'MC');
 }
 function botMax(t,p){
  if(spendable(t)<1||!canTake(t,p))return 0;
@@ -614,6 +667,1124 @@ const ACT={
 document.addEventListener('click',e=>{const b=e.target.closest('[data-act]');if(!b||b.disabled)return;const f=ACT[b.dataset.act];if(f)f(b)});
 document.addEventListener('input',e=>{if(e.target.id==='nm')S.cfg.name=e.target.value});
 document.addEventListener('change',e=>{if(e.target.id==='bud'){S.cfg.budget=Math.min(1000,Math.max(100,Math.round(+e.target.value||100)));renderSetup()}});
+/* ======================================================================
+   MODO CARREIRA TÉCNICO
+   ====================================================================== */
+const CAR_RAW=`BRA|BRA|Palmeiras|PAL|band,#006437,#fff,|José Manuel López:CA:90:López;Gustavo Gómez:ZAG:89:Gustavo Gómez;Andreas Pereira:MC/MEI:88:A. Pereira;Jhon Arias:PD/MC/PE:88:Arias;Joaquín Piquerez:LE:87:Piquerez;Vitor Roque:CA/PD:87:Roque;Mauricio:MEI/PE/PD:86:Mauricio;Carlos Miguel:GOL:86:Miguel;Agustín Giay:LD/MC/PD:86:Giay;Marlon Freitas:VOL/MC:86:Freitas;Alexander Barboza:ZAG:86:Barboza;Murilo:ZAG/VOL:84:Murilo;Ramón Sosa:PE/PD:84:Ramón Sosa;Lucas Evangelista:MC/VOL/MEI:83:Evangelista;Felipe Anderson:PE/MEI/PD:83:F. Anderson;Bruno Fuchs:ZAG:82:Fuchs;Arthur Gabriel:LE:81:Gabriel;Khellven:LD:80:Khellven;Bruno Bertinato:GOL:80:Bertinato;Paulinho:CA:84:Paulinho;Marcelo Lomba:GOL:81:Lomba;Emiliano Martínez:VOL/MC:79:Martínez
+BRA|BRA|Flamengo|FLA|h,#c4161c,#111,|Pedro:CA:90:Pedro;Giorgian de Arrascaeta:MEI:90:Arrascaeta;Samuel Lino:PE/MEI/CA:89:Lino;Lucas Paquetá:MEI/MC/PE:89:Paquetá;Léo Pereira:ZAG:89:Léo Pereira;Jorginho:VOL/MC:89:Jorginho;Léo Ortiz:ZAG/VOL:88:Ortiz;Jorge Carrascal:MEI/PE/PD:87:Carrascal;Guillermo Varela:LD:87:Varela;Erick Pulgar:VOL/MC:87:Pulgar;Agustín Rossi:GOL:86:Rossi;Gonzalo Plata:PD/PE/CA:86:Plata;Danilo:ZAG:85:Danilo;Alex Sandro:LE/ZAG/PE:85:Sandro;Bruno Henrique:CA:85:Bruno Henrique;Emerson Royal:LD/PD:84:Royal;Nicolás de la Cruz:MC/PE/PD:84:N. Cruz;Vitão:ZAG/VOL/MC:84:Vitão;Ayrton Lucas:LE:83:Ayrton Lucas;Evertton Araújo:VOL:83:E. Araújo;Luiz Araújo:PD/PE:83:Luiz Araújo;Saúl Ñíguez:MC/VOL/PE:82:Ñíguez;Andrew:GOL:81:Andrew
+BRA|BRA|Fluminense|FLU|v3,#8a1e40,#fff,#0b6b3a|Thiago Silva:ZAG:90:Silva;Fábio:GOL:88:Fábio;Martinelli:VOL:87:Martinelli;Luciano Acosta:MEI:86:Acosta;John Kennedy:CA:85:Kennedy;Jefferson Savarino:MEI/PE/PD:85:Savarino;Agustín Canobbio:PD/PE:85:Canobbio;Guilherme Arana:LE:84:Arana;Hércules:MC:84:Hércules;Hulk:CA:84:Hulk;Kevin Serna:PD:83:Serna;Guga:LD:82:Guga;Julián Millán:ZAG:82:Millán;Renê:LE:80:Renê;Rodrigo Castillo:CA:80:Castillo;Ignácio:ZAG:80:Ignácio;Nonato:MC:80:Nonato;Samuel Xavier:LD:80:Xavier;Germán Cano:CA:79:Cano;Juan Pablo Freytes:ZAG:76:Freytes;Alisson:MC:80:Alisson;Ganso:MEI:80:Ganso;Yeferson Soteldo:PE/PD/MEI:79:Soteldo;Igor Rabello:ZAG:79:Rabello;Otávio:VOL:79:Otávio
+BRA|BRA|Botafogo|BOT|v,#111,#fff,|Danilo:MC:88:Danilo;Alex Telles:LE/PE:85:Telles;Álvaro Montoro:PE/MEI/PD:85:Montoro;Vitinho:LD:84:Vitinho;Arthur Cabral:CA:83:Cabral;Hakim Ziyech:PD:83:Ziyech;Cristian Medina:MC/PD/MEI:82:Medina;Nahuel Ferraresi:ZAG:82:Ferraresi;Matheus Martins:PE:82:M. Martins;Gabriel Batista:GOL:82:Batista;Júnior Santos:PD:83:Júnior Santos;Warleson:GOL:82:Warleson;Tiquinho Soares:CA:82:Soares;Allan:VOL:81:Allan;Kaio:ZAG:80:Kaio
+BRA|BRA|Santos|SAN|half,#fff,#111,|Neymar:MEI:88:Neymar;Gabriel Barbosa:CA:87:G. Barbosa;Gabriel Bontempo:MC/PD/MEI:86:Bontempo;Rodinei:LD:86:Rodinei;Gabriel Brazão:GOL:85:Brazão;Arthur Melo:VOL:85:Melo;Philippe Coutinho:MEI:85:Coutinho;Everton:PE:84:Everton;Lucas Veríssimo:ZAG:83:Veríssimo;Willian Arão:ZAG/VOL/MC:82:Arão;Christian Oliva:VOL:81:Oliva;Gonzalo Escobar:LE/ZAG:81:Escobar;Igor Vinícius:LD/PD:80:Igor Vinícius;João Paulo:GOL:80:Paulo;Rony:CA/PE/PD:79:Rony;Luan Peres:ZAG:79:Peres;Benjamín Rollheiser:PD/MEI/CA:81:Rollheiser;Moisés:PE/PD/CA:79:Moisés
+BRA|BRA|Atlético-MG|CAM|v,#111,#fff,|Fred:MC/VOL:88:Fred;Everson:GOL:86:Everson;Renan Lodi:LE:85:Lodi;Victor Hugo:MC:84:Hugo;Natanael:LD:84:Natanael;Tomás Cuello:PE/PD:84:Cuello;Mateo Cassierra:CA:83:Cassierra;Lyanco:ZAG:83:Lyanco;Reinier:MEI:83:Reinier;Gabriel Delfim:GOL:83:Delfim;Bernard:PE:82:Bernard;Dudu:PE:82:Dudu;Ruan:ZAG/PE:81:Ruan;Maycon:MC:81:Maycon;Gustavo Scarpa:MEI:81:Scarpa;Alan Franco:MC/VOL/MEI:80:Franco;Léo Duarte:ZAG/LD:81:Léo Duarte;Vitor Hugo:ZAG:80:Hugo
+BRA|BRA|Corinthians|COR|band,#fff,#111,|Hugo Souza:GOL:88:Souza;Breno Bidon:MC/VOL:87:Bidon;Rodrigo Garro:MEI:86:Garro;Yuri Alberto:CA:86:Alberto;Gustavo Henrique:ZAG:86:G. Henrique;Memphis Depay:CA/PE:85:Depay;Matheuzinho:LD:85:Matheuzinho;Matheus Bidu:LE:84:Bidu;Gabriel Paulista:ZAG:83:Paulista;André:MC/VOL:82:André;Jesse Lingard:MEI:82:Lingard;Raniele:VOL/ZAG/MC:81:Raniele;André Carrillo:MC:82:Carrillo;Allan:VOL:80:Allan;Vitinho:PE:79:Vitinho
+BRA|BRA|Cruzeiro|CRU|band,#1b3fa0,#fff,|Matheus Pereira:MEI:87:M. Pereira;Kaio Jorge:CA:87:Jorge;Gerson:MC:87:Gerson;Fabrício Bruno:ZAG:86:Bruno;Jonathan Jesus:ZAG:85:Jesus;Keny Arroyo:PD/MC/PE:85:Arroyo;Otávio:GOL:85:Otávio;Lucas Romero:VOL/LD/MC:85:Romero;Gabriel Pec:PD/MEI:84:Pec;William:LD:83:William;Cássio:GOL:83:Cássio;Luis Sinisterra:PE:82:Sinisterra;Lucas Villalba:ZAG/LE/PE:82:Villalba;Matheus Henrique:MC/VOL:82:M. Henrique;Gabriel Rojas:LE/PE:81:Rojas;Fagner:LD:81:Fagner;Léo Aragão:GOL:78:Aragão;Wanderson:PE:82:Wanderson;Matías Viña:LE/PE:79:Viña;Lucas Silva:VOL:79:Lucas Silva
+BRA|BRA|Grêmio|GRE|v3,#0d80bf,#111,#fff|Weverton:GOL:87:Weverton;Carlos Vinícius:CA:86:C. Vinícius;Francis Amuzu:PE:83:Amuzu;Erick Noriega:VOL/ZAG:83:Noriega;Marlon:LE/PE:83:Marlon;Tetê:PD/PE:81:Tetê;Cristian Pavón:PD/PE:81:Pavón;Gustavo Martins:ZAG/LD:80:G. Martins;Gabriel Grando:GOL:79:Grando;Martin Braithwaite:CA/PE:83:Braithwaite;Mathías Villasanti:VOL/MC:81:Villasanti;Walter Kannemann:ZAG:81:Kannemann;Filip Krovinovic:VOL:80:Krovinovic;Danilo Barbosa:VOL:79:Danilo Barbosa;Fabián Balbuena:ZAG:78:Balbuena
+BRA|BRA|Athletico-PR|CAP|d,#c8102e,#111,|Kevin Viveros:CA/PD:87:Viveros;Arthur Dias:ZAG:84:Dias;Gilberto Junior:LD:84:Junior;Lucas Esquivel:LE/ZAG:83:Esquivel;João Cruz:MC/PE/MEI:82:João Cruz;Santos:GOL:82:Santos;Gastón Benavídez:LD/ZAG:81:Benavídez;Mycael:GOL:81:Mycael;Gilberto:LD:79:Gilberto;Juan Felipe Aguirre:ZAG:79:Aguirre;Luiz Gustavo:VOL:78:Gustavo;Juan Portilla:MC/VOL:81:Portilla;Léo:ZAG/LE:79:Léo;Stiven Mendoza:PE/PD/CA:79:Mendoza
+BRA|BRA|Vasco|VAS|d,#111,#fff,|Andrés Gómez:PE:87:Andrés Gómez;Robert Renan:ZAG:87:Renan;Thiago Mendes:VOL/MC:87:Mendes;Alan Lescano:MEI/MC/PD:86:Lescano;Cuiabano:LE:86:Cuiabano;Santiago Sosa:VOL:86:Santiago Sosa;Léo Jardim:GOL:86:Jardim;Paulo Henrique:LD:85:Paulo Henrique;Facundo Colidio:CA/MEI/PE:84:Colidio;José Luis Rodríguez:LD:84:Rodríguez;Carlos Cuesta:ZAG:81:Cuesta;Nuno Moreira:PD/MEI/PE:81:Moreira;Bruno Duarte:CA:80:Bruno Duarte;Lucas Piton:LE/PE:79:Piton;Claudio Spinelli:CA:76:Spinelli;Gabriel Pereira:ZAG:80:G. Pereira;Tchê Tchê:MC/VOL:80:Tchê;Jair:VOL/MC:79:Jair;Daniel Fuzato:GOL:76:Fuzato
+BRA|BRA|Bahia|BAH|v3,#0055a4,#e30613,#fff|Luciano Juba:LE/PE:86:Juba;Ronaldo:GOL:84:Ronaldo;Everton Ribeiro:MEI/PD:84:Ribeiro;Jean Lucas:MC:83:Jean Lucas;Nicolás Acevedo:VOL:83:Acevedo;Alejo Veliz:CA:83:Veliz;Erick Pulga:PE:82:Pulga;Erick:VOL:82:Erick;Guido Herrera:GOL:82:Herrera;Rodrigo Nestor:MC/VOL/MEI:81:Nestor;Dell:CA:81:Dell;David Duarte:ZAG:81:David Duarte;Willian José:CA:80:José;Léo Vieira:GOL:80:Vieira;Caio Alexandre:VOL/MC:81:Alexandre;Kanu:ZAG:79:Kanu;Ademir:PD/PE:79:Ademir;Everaldo:CA:79:Everaldo
+BRA|BRA|Bragantino|RBB|band,#fff,#e30613,|Gustavo Marques:ZAG:86:Marques;Juninho Capixaba:LE:85:Capixaba;Agustín Sant'Anna:LD:84:Sant'Anna;Lucas Barbosa:PD/MC/MEI:83:Lucas Barbosa;Isidro Pitta:CA:82:Pitta;Alix:ZAG:82:Alix;Wallace Yan:CA/PD:81:Yan;Tiago Volpi:GOL:81:Volpi;Cleiton:GOL:78:Cleiton;Eduardo Sasha:CA:81:Sasha;Gabriel:VOL:80:Gabriel
+BRA|BRA|Coritiba|CFC|h,#fff,#00843d,|Pedro Morisco:GOL:86:Morisco;Josué:MEI/MC/PE:83:Josué;Jacy:ZAG/VOL:82:Jacy;Breno Lopes:PE/CA:80:Lopes;Pedro Rocha:CA/PE/PD:79:Rocha;Pedro Rangel:GOL:78:Pedro Rangel;Keno:PE/CA:80:Keno;Fabricio Bustos:LD:79:Bustos;Keiller:GOL:76:Keiller
+BRA|BRA|Internacional|INT|band,#c8102e,#fff,|Alan Patrick:MEI/MC:85:Patrick;Guillermo Maripán:ZAG:85:Maripán;Alexandro Bernabei:LE/PE:84:Bernabei;Johan Carbonero:PE/PD:84:Carbonero;Bruno Gomes:LD/VOL:83:Gomes;Vitinho:PE:83:Vitinho;Sergio Rochet:GOL:82:Rochet;Matheus Cunha:GOL:80:Cunha;Anthoni:GOL:79:Anthoni;Niclas Eliasson:PD:81:Eliasson;Bruno Henrique:MC:80:Bruno Henrique;Gabriel Mercado:ZAG/LD:80:Mercado;Thiago Maia:VOL/MC:79:Maia;Antonio Sanabria:CA:79:Sanabria
+BRA|BRA|São Paulo|SAO|band3,#fff,#d0021b,#111|Marcos Antônio:MC/VOL/MEI:85:Antônio;Lucas Ramon:LD:85:Lucas Ramon;Rafael:GOL:84:Rafael;Jonathan Calleri:CA:84:Calleri;Lucas Moura:PD/CA:84:Moura;Luciano:CA/MEI:83:Luciano;Artur:PD/VOL/MC:82:Artur;Wendell:LE:82:Wendell;Danielzinho:MC/PE/PD:82:Danielzinho;Sabino:ZAG:82:Sabino;Domingos Duarte:ZAG:82:D. Duarte;Damián Bobadilla:MC:81:Bobadilla;Ryan Francisco:CA:80:Francisco;Carlos Coronel:GOL:80:Coronel;Iago:LE/ZAG:79:Iago;Rafael Tolói:ZAG/LD:78:Tolói;Robert Arboleda:ZAG:84:Arboleda;Victor Sá:PE:82:Sá;Enzo Díaz:LE/ZAG:81:Díaz;André Silva:CA:81:André Silva;Ferreirinha:PE:78:Ferreirinha;Aurélio Buta:LD/PD:78:Buta
+BRA|BRA|Vitória|VIT|half,#b30000,#111,|Lucas Arcanjo:GOL:85:Arcanjo;Emanuel Brítez:ZAG/LE/LD:85:Brítez;Renê:PE:83:Renê;Erick:PD:83:Erick;Matheuzinho:MEI:82:Matheuzinho;Baralhas:VOL:80:Baralhas;Ramon:LE:80:Ramon;Emmanuel Martínez:MEI/MC/PE:80:Martínez;Cacá:ZAG:79:Cacá;Tomás Pochettino:MEI/MC:80:Pochettino;Walace:VOL:80:Walace;Marinho:PD/CA:79:Marinho;Renato Kayzer:CA:78:Kayzer
+BRA|BRA|Mirassol|MIR|band,#f2c200,#0a7a3e,|Reinaldo:LE:84:Reinaldo;Walter:GOL:83:Walter;Eduardo:MEI:82:Eduardo;João Victor:ZAG:81:Victor;Igor Formiga:LD:81:Formiga;Willian Machado:ZAG:80:Machado;André Luis:CA:79:Luis;Alex Muralha:GOL:75:Muralha
+BRA|BRA|Remo|REM|band,#1a237e,#fff,|Gabriel Taliari:CA:81:Taliari;Marllon:ZAG:80:Marllon;Marcelo Rangel:GOL:80:Marcelo Rangel;Jajá:PE:80:Jajá;Marcelinho:LD:77:Marcelinho;Ivan:GOL:76:Ivan;Vitor Bueno:MEI:79:Bueno;Yago Pikachu:PD/LD:79:Pikachu;Patrick:MC:78:Patrick
+BRA|BRA|Chapecoense|CHA|d,#0a7a3e,#fff,|Giovanni Augusto:MEI/PD:81:Augusto;Doma:ZAG:80:Doma;Marcinho:PD:80:Marcinho;Camilo:VOL/MC/PD:79:Camilo;Carvalheira:VOL:77:Carvalheira;Anderson:GOL:77:Anderson;Yago Felipe:MC:79:Felipe;Yannick Bolasie:CA:77:Bolasie;Kevin Ramírez:PE:76:Ramírez;Rafael Thyere:ZAG:76:Thyere;Rafael Santos:GOL:74:Rafael Santos
+ESP|ESP|Real Madrid|RMA|band,#ffffff,#febe10,|Kylian Mbappé:CA/PE/PD:97:Mbappé;Vinicius Junior:PE/CA:94:Vini Jr.;Jude Bellingham:MEI/MC/PE:93:Bellingham;Thibaut Courtois:GOL:93:Courtois;Federico Valverde:MC/LD/PD:92:Valverde;Aurélien Tchouaméni:VOL/ZAG/MC:91:Tchouaméni;Trent Alexander-Arnold:LD:90:Alexander-Arnold;Bernardo Silva:MEI/MC/PD:90:Bernardo Silva;Éder Militão:ZAG/LD:90:Militão;Antonio Rüdiger:ZAG:90:Rüdiger;Rodrygo:PD/PE/CA:89:Rodrygo;Marc Cucurella:LE/PE:88:Cucurella;Ibrahima Konaté:ZAG:88:Konaté;Denzel Dumfries:LD/PD:88:Dumfries;Arda Güler:MEI/MC/PD:86:Güler;Eduardo Camavinga:MC/LE/VOL:86:Camavinga;Brahim Díaz:PD/PE/MEI:86:Brahim Díaz;Dean Huijsen:ZAG:85:Huijsen;Álvaro Carreras:LE/PE:85:Carreras;Andriy Lunin:GOL:84:Lunin
+ING|ING|Manchester City|MCI|band,#6cabdd,#ffffff,|Erling Haaland:CA:96:Haaland;Gianluigi Donnarumma:GOL:93:Donnarumma;Enzo Fernández:MC/VOL/MEI:91:Fernández;Rúben Dias:ZAG:91:Dias;Antoine Semenyo:PD/PE:90:Semenyo;Josko Gvardiol:LE/ZAG:90:Gvardiol;Marc Guéhi:ZAG:90:Guéhi;Phil Foden:MEI/MC/PE:90:Foden;Iliman Ndiaye:PE/PD/MEI:89:Ndiaye;Mateo Kovacic:MC/VOL:88:Kovacic;Elliot Anderson:VOL/MC:87:Anderson;Rayan Cherki:MEI/PD:87:Cherki;Jérémy Doku:PE/PD:87:Doku;Matheus Nunes:LD/MC/PE:87:Nunes;Gerónimo Rulli:GOL:87:Rulli
+ESP|ESP|Barcelona|BAR|v,#a50044,#004d98,|Lamine Yamal:PD:95:Yamal;Pedri:MC/VOL/PE:93:Pedri;Raphinha:CA/MEI/PE:93:Raphinha;Rodri:VOL/MC:92:Rodri;Jules Koundé:LD/ZAG:91:Koundé;Frenkie de Jong:MC/ZAG/VOL:90:De Jong;Dani Olmo:MEI/PE/PD:89:Olmo;Anthony Gordon:PE:88:Gordon;Joan García:GOL:88:Joan García;Fermín López:MEI/MC/PE:87:López;Eric García:ZAG/LD/VOL:86:Eric García;Alejandro Balde:LE:86:Balde;João Cancelo:LD/LE/PD:86:Cancelo;Karim Adeyemi:PD/PE/CA:85:Adeyemi;Gabriel Jesus:CA/PE:85:Jesus;Dominik Livakovic:GOL:83:Livakovic;Wojciech Szczęsny:GOL:80:Szczęsny
+ALE|ALE|Bayern de Munique|BAY|band,#dc052d,#ffffff,|Harry Kane:CA:95:Kane;Michael Olise:PD:92:Olise;Jamal Musiala:MEI/MC/PE:92:Musiala;Joshua Kimmich:VOL/LD/MC:92:Kimmich;Dayot Upamecano:ZAG:91:Upamecano;Luis Díaz:PE/CA:91:Luis Díaz;Jonathan Tah:ZAG:90:Tah;Serge Gnabry:CA:89:Gnabry;Konrad Laimer:LD/VOL/MC:88:Laimer;Min-jae Kim:ZAG:88:Kim;Manuel Neuer:GOL:88:Neuer;Alphonso Davies:LE/PE:87:Davies;Ismael Saibari:MEI/MC/PD:86:Saibari;Jonas Urbig:GOL:81:Urbig;Sven Ulreich:GOL:77:Ulreich
+FRA|FRA|PSG|PSG|center,#004170,#da291c,|Ousmane Dembélé:CA/PE/PD:94:Dembélé;Vitinha:VOL:93:Vitinha;Khvicha Kvaratskhelia:PE:92:Kvaratskhelia;Achraf Hakimi:LD/LE/PD:92:Hakimi;Nuno Mendes:LE/PE:91:Mendes;Fabián Ruiz:MC/VOL:90:Ruiz;Marquinhos:ZAG:90:Marquinhos;João Neves:MC/VOL:89:Neves;Désiré Doué:PD/MEI/PE:89:Doué;Willian Pacho:ZAG:93:Pacho;Ferran Torres:CA/PE/PD:88:Torres;Matvey Safonov:GOL:88:Safonov;Lucas Hernández:LE/ZAG:88:Hernández;Lucas Chevalier:GOL:84:Chevalier
+ING|ING|Arsenal|ARS|band,#ef0107,#ffffff,|Declan Rice:MC/VOL:92:Rice;Bukayo Saka:PD/LE/PE:92:Saka;William Saliba:ZAG:92:Saliba;David Raya:GOL:92:Raya;Gabriel:ZAG:91:Gabriel;Martin Ødegaard:MEI/MC:90:Ødegaard;Bruno Guimarães:MC/VOL:90:Guimarães;Kai Havertz:CA/MEI:90:Havertz;Viktor Gyökeres:CA:90:Gyökeres;Mikel Merino:MC/CA:90:Merino;Jurriën Timber:LD/ZAG/LE:89:Timber;Martín Zubimendi:VOL/MC:89:Zubimendi;Eberechi Eze:MEI/MC/PE:89:Eze;Ezri Konsa:ZAG/LD:88:Konsa;Noni Madueke:PD:87:Madueke;Ben White:LD/ZAG:87:White;Riccardo Calafiori:LE/ZAG/PE:86:Calafiori;Piero Hincapié:ZAG/LE:86:Hincapié;Kepa Arrizabalaga:GOL:85:Arrizabalaga
+ITA|ITA|Inter de Milão|INT|v,#0068a8,#111111,|Lautaro Martínez:CA:92:Lautaro;Alessandro Bastoni:ZAG:91:Bastoni;Nicolò Barella:MC/VOL/MEI:91:Barella;Hakan Çalhanoğlu:VOL/MC/PE:90:Çalhanoğlu;Federico Dimarco:LE/PE:89:Dimarco;Marcus Thuram:CA/PE:89:Thuram;Manuel Akanji:ZAG:89:Akanji;John Stones:ZAG:88:Stones;Djed Spence:LD/LE/PD:86:Spence;Benjamin Pavard:ZAG/LD:85:Pavard;Ivan Provedel:GOL:84:Provedel;Josep Martínez:GOL:83:Josep Martínez;Henrikh Mkhitaryan:MC/PE/PD:82:Mkhitaryan
+ING|ING|Liverpool|LIV|band,#c8102e,#ffffff,|Virgil van Dijk:ZAG:92:Van Dijk;Alexander Isak:CA:91:Isak;Florian Wirtz:MEI/PE/CA:91:Wirtz;Alexis Mac Allister:MC/VOL/MEI:91:Allister;Alisson:GOL:91:Alisson;Dominik Szoboszlai:MEI/MC/PE:90:Szoboszlai;Hugo Ekitiké:CA:89:Ekitiké;Cody Gakpo:PE/CA:89:Gakpo;Ryan Gravenberch:VOL/MC:89:Gravenberch;Bradley Barcola:PE:88:Barcola;Giorgi Mamardashvili:GOL:87:Mamardashvili;Ronald Araújo:ZAG/LD:87:Araújo;Jeremie Frimpong:LD/PD:85:Frimpong
+ING|ING|Chelsea|CHE|band,#034694,#ffffff,|Cole Palmer:MEI/PD/CA:91:Palmer;Moisés Caicedo:VOL/MC:91:Caicedo;Emiliano Martínez:GOL:90:Dibu;João Pedro:CA:89:Pedro;Morgan Rogers:MEI/PE/PD:88:Rogers;Pedro Neto:PD/PE:88:Pedro Neto;Reece James:LD/VOL/PD:88:James;Maxence Lacroix:ZAG:86:Lacroix;Levi Colwill:ZAG/LE:85:Colwill;Danny Welbeck:CA:85:Welbeck
+ESP|ESP|Atlético de Madrid|ATM|v,#cb3524,#ffffff,|Julián Alvarez:CA/MEI:91:Alvarez;Jan Oblak:GOL:91:Oblak;Ademola Lookman:PE:89:Lookman;Alejandro Grimaldo:LE/PE:89:Grimaldo;Marcos Llorente:LD/VOL/MC:89:Llorente;Cristian Romero:ZAG:88:Romero;Morten Hjulmand:VOL/MC:87:Hjulmand;Álex Baena:PE/MC/MEI:87:Baena;Dávid Hancko:ZAG/LE:87:Hancko;Pablo Barrios:MC:86:Barrios;Jonathan David:CA/MEI:86:David;Robin Le Normand:ZAG:86:Normand;Alexander Sørloth:CA:86:Sørloth;Koke:MC/VOL:86:Koke;Juan Musso:GOL:83:Musso
+ALE|ALE|Borussia Dortmund|BVB|band,#fde100,#111111,|Gregor Kobel:GOL:91:Kobel;Serhou Guirassy:CA:91:Guirassy;Nico Schlotterbeck:ZAG:90:Schlotterbeck;Waldemar Anton:ZAG:87:Anton;Julian Ryerson:LD/LE/PD:86:Ryerson;Marcel Sabitzer:MC/MEI:86:Sabitzer;Felix Nmecha:MC/VOL:85:Nmecha
+ING|ING|Manchester United|MUN|band,#da291c,#111111,|Matheus Cunha:CA:90:Cunha;Bruno Fernandes:MEI:90:Fernandes;Bryan Mbeumo:PD:89:Mbeumo;Lisandro Martínez:ZAG/VOL:88:Lisandro;Youri Tielemans:MC/VOL/MEI:87:Tielemans;Marcus Rashford:PE/PD/CA:87:Rashford;Matthijs de Ligt:ZAG:86:De Ligt;Harry Maguire:ZAG:86:Maguire;Diogo Dalot:LD/LE/PE:85:Dalot;Mason Mount:MEI/MC:85:Mount;Senne Lammens:GOL:84:Lammens
+POR|POR|Porto|FCP|v,#0047ab,#ffffff,|Diogo Costa:GOL:90:Costa;Jakub Kiwior:ZAG/LE/VOL:86:Kiwior;Pepê:PD/LD/PE:84:Pepê;Samu Aghehowa:CA:83:Aghehowa;Alan Varela:VOL/MC/MEI:83:Varela;Jan Bednarek:ZAG:83:Bednarek
+ITA|ITA|Milan|MIL|v,#fb090b,#111111,|Mike Maignan:GOL:90:Maignan;Christian Pulisic:PD/PE/CA:89:Pulisic;Adrien Rabiot:MC/VOL:88:Rabiot;Gonçalo Ramos:CA:87:Ramos;Luka Modrić:MC/MEI:86:Modrić;Pietro Terracciano:GOL:81:Terracciano
+ING|ING|Tottenham|TOT|band,#ffffff,#132257,|Sandro Tonali:VOL/MC:89:Tonali;Omar Marmoush:CA/PE:89:Marmoush;Micky van de Ven:ZAG/LE:87:Van de Ven;Mohammed Kudus:PD/PE/MEI:87:Kudus;Pedro Porro:LD/PD:87:Porro;Dominic Solanke:CA:87:Solanke;James Maddison:MEI/MC:87:Maddison;Marcos Senesi:ZAG:86:Senesi;Richarlison:CA/PE/PD:86:Richarlison;Jan Paul van Hecke:ZAG:85:Van Hecke;Conor Gallagher:MC/VOL/PE:85:Gallagher;Rodrigo Bentancur:VOL/MC:85:Bentancur;Dejan Kulusevski:MEI/PD/CA:85:Kulusevski;Andrew Robertson:LE/PE:85:Robertson;Martin Dúbravka:GOL:79:Dúbravka
+ITA|ITA|Juventus|JUV|v,#111111,#ffffff,|Kenan Yıldız:PE/MEI/CA:89:Yıldız;Bremer:ZAG:89:Bremer;Manuel Locatelli:VOL/MC:87:Locatelli;Guglielmo Vicario:GOL:87:Vicario;Nick Woltemade:CA:86:Woltemade;Randal Kolo Muani:CA:86:Muani;Nico González:PE:86:González;Pierre Kalulu:ZAG/LD:85:Kalulu;Lloyd Kelly:ZAG/LE:85:Kelly;Jhon Lucumí:ZAG:85:Lucumí;Kamil Grabara:GOL:84:Grabara;Neto:GOL:79:Neto
+ITA|ITA|Napoli|NAP|band,#12a0d7,#ffffff,|Scott McTominay:MC/VOL:89:McTominay;Kevin De Bruyne:MEI/MC:89:De Bruyne;Frank Anguissa:MC:87:Anguissa;Vanja Milinković-Savić:GOL:87:Milinković-Savić;Giovanni Di Lorenzo:LD/ZAG/PD:87:Di Lorenzo;Amir Rrahmani:ZAG:86:Rrahmani;Matteo Politano:PD/CA:86:Politano;Alessandro Buongiorno:ZAG:85:Buongiorno;Stanislav Lobotka:VOL/MC:85:Lobotka;Alex Meret:GOL:85:Meret
+ING|ING|Newcastle|NEW|v,#111111,#ffffff,|Yoane Wissa:CA:89:Wissa;Joelinton:MC/PE/MEI:88:Joelinton;Malick Thiaw:ZAG:86:Thiaw;Harvey Barnes:PE:86:Barnes;Sven Botman:ZAG:86:Botman;Nick Pope:GOL:86:Pope;Fabian Schär:ZAG:85:Schär;Lukas Hornicek:GOL:81:Hornicek
+POR|POR|Benfica|SLB|band,#e30613,#ffffff,|João Palhinha:VOL:89:Palhinha;Vangelis Pavlidis:CA/PE:87:Pavlidis;Fredrik Aursnes:MC/LE/LD:87:Aursnes;Anatoliy Trubin:GOL:85:Trubin;Dodi Lukébakio:PD/PE/CA:84:Lukébakio;Rafa Silva:PD/PE/MEI:84:Rafa Silva
+ALE|ALE|Bayer Leverkusen|B04|d,#111111,#e32221,|Edmond Tapsoba:ZAG:88:Tapsoba;Patrik Schick:CA:88:Schick;Aleix García:MC/VOL/MEI:87:Aleix García;Moussa Diaby:PD/CA:86:Diaby;Robert Andrich:VOL/MC:86:Andrich;Miguel Gutiérrez:LE/PE:85:Gutiérrez;Martin Terrier:PE/MEI:85:Terrier;Mark Flekken:GOL:85:Flekken
+ALE|ALE|Augsburg|FCA|band3,#ffffff,#ba3733,#46714d|Finn Dahmen:GOL:86:;Nediljko Labrović:GOL:84:;Tom Wisbereit:GOL:80:;Calvin Brackelmann:ZAG:82:;Chrislain Matsima:ZAG:85:;Jeffrey Gouweleeuw:ZAG:84:;Seol Young-woo:LD:85:;Hennes Behrens:ZAG:82:;Kristijan Jakić:VOL/LD:85:;Robin Fellhauer:LD:83:;Abdulay Juma Bah:ZAG:82:;Noahkai Banks:ZAG:83:;Han-Noah Massengo:MC:84:;Sima Suso:MC:80:;Mert Kömür:MEI:84:;Tim Breithaupt:MC:82:;Arijon Ibrahimović:MEI:82:;Faik Sakar:MC:80:;Marius Wolf:LE/LD:84:;Anton Kade:PE:82:;Fabian Rieder:MC/MEI:85:;Nathanaël Mbuku:PE:83:;Tim Schnitzer:MC:80:;Loris Husic:MC:80:;Yusuf Kabadayı:PD:83:;Rodrigo Ribeiro:CA:84:;Michael Gregoritsch:CA:84:;Steve Mounié:CA:83:;Alexis Claude-Maurice:MEI/PE:85:;Elias Saad:PE:83:;Aiman Dardari:PE:80:;Kyliane Dong:CA:80:;Uchenna Ogundu:CA:80:
+ALE|ALE|Colônia|KOE|band,#ffffff,#ed1c24,|Ron-Robert Zieler:GOL:83:;Marvin Schwäbe:GOL:85:;Martin James:GOL:80:;Matthias Kobbing:GOL:80:;Malek El Mala:PE/CA:83:;Gideon Mensah:LE:83:;Timo Hübers:ZAG:85:;Rav van den Berg:ZAG:83:;Luka Loczoszwili:ZAG:83:;Julian Pauli:ZAG:81:;Elias Bakatukanda:ZAG:81:;Jahmai Simpson-Pusey:ZAG:83:;Alessio Castro-Montes:LD/LE:83:;Joël Schmied:ZAG:83:;Jonathan Friemel:ZAG:80:;Assad Kotya-Fofana:ZAG:80:;Sebastian Sebulonsen:LD:83:;Said El Mala:PE:86:;Ellyes Skhiri:VOL:85:;Linton Maina:PE/PD:84:;Ísak Bergmann Jóhannesson:MC/MEI:85:;Gil Neves:MC:80:;Tom Krauß:VOL/MC:84:;Jan Thielmann:PD:84:;Paul Okon-Engstler:MC:81:;Mikey Moore:PE:83:;Thijs Dallinga:CA:84:;Reigan Heskey:PE:80:;Ragnar Ache:CA:84:;Luca Waldschmidt:MEI/CA:84:;Marius Bülter:PE:83:;Imad Rondić:CA:83:;Youssoupha Niang:PD:81:;Fynn Schenten:CA:80:;Jaka Cuber Potocnik:CA:80:
+ALE|ALE|Eintracht Frankfurt|SGE|d,#111111,#e1000f,|Kauã Santos:GOL:84:;Jens Grahl:GOL:81:;Amil Siljevic:GOL:80:;Robin Koch:ZAG:86:;Lilian Brassier:ZAG/LE:84:;Nnamdi Collins:ZAG/LD:84:;Elias Baum:LD:82:;Keita Kosugi:LE:81:;Jeremiaha Maluze:ZAG:80:;Julian Etse:ZAG:80:;Fousseny Max Doumbia:ZAG:80:;Otávio:ZAG:83:;Mario Götze:MEI:85:;Ritsu Dōan:PD:86:;Farès Chaïbi:MEI/MC:85:;Raphael Onyedika:VOL:85:;Timothy Chandler:LD:81:;Noël Aséko Nkili:MC:81:;Oscar Højlund:MC:83:;Niko Iličević:MC:80:;Love Arrhov:MC:80:;Krisztián Lisztes:MEI:81:;Can Uzun:MEI/CA:86:;Younes Ebnoutalib:CA:83:;Jean-Mattéo Bahoya:PE:84:;Jonathan Burkardt:CA:86:;Noel Futkeu:CA:82:;Ansgar Knauff:PD:84:;Jessic Ngankam:CA:82:;Ayoube Amaimouni:PE:81:;Malik Pimpong:PE:80:;Alexander Staff:CA:80:
+ALE|ALE|Elversberg|SVE|half,#ffffff,#111111,|Frank Lehmann:GOL:83:;Elias Etringer:GOL:80:;Nicolas Kristof:GOL:86:;Tim Boss:GOL:83:;Nicholas Mickelson:LD:83:;Florian Le Joncour:ZAG:84:;Luis Seifert:ZAG/LE:83:;Lukas Pinckert:LD:84:;Luca Sirch:ZAG:84:;Jan Gyamerah:LD:83:;Maximilian Rohr:ZAG:84:;Amara Conde:VOL:84:;Maurice Krattenmacher:MEI:84:;Łukasz Poręba:MC:86:;Frederik Schmahl:MC:80:;Tom Zimmerschied:MEI/PE:84:;Felix Keidel:MC:83:;Jason Ceka:PE:84:;Raif Adam:CA:80:;Luca Pfeiffer:CA:84:;Lasse Günther:PE/LE:84:;Luca Pascal Schnellbacher:CA:83:;Lukas Petkov:PD:84:;Cole Campbell:PE:83:;Francis Onyeka:CA:80:;David Mokwa:PD:82:
+ALE|ALE|Freiburg|SCF|band,#e30613,#111111,|Mio Backhaus:GOL:82:;Florian Müller:GOL:83:;Jannik Huth:GOL:81:;Noah Atubolu:GOL:86:;Philipp Lienhart:ZAG:86:;Anthony Jung:ZAG/LE:83:;Lukas Kübler:LD:85:;Berkay Yılmaz:LE:81:;Matthias Ginter:ZAG:86:;Philipp Treu:LD:85:;Christian Günter:LE:85:;Jordy Makengo:LE:83:;Karl Steinmann:ZAG:80:;Max Rosenfelder:ZAG:83:;Bruno Ogbus:ZAG:81:;Patrick Osterhage:MC:84:;Maximilian Eggestein:MC:86:;Yuito Suzuki:MEI/PE:85:;Yannik Engelhardt:VOL:83:;Jan-Niklas Beste:PE/LE:85:;Rihito Yamamoto:MC:81:;Florent Muslija:MEI:83:;Vincenzo Grifo:PE:86:;Rouven Tarnutzer:MC:80:;Derry Scherhant:PE:83:;Lucas Höler:CA:84:;Eren Dinkçi:PD:85:;Cyriaque Irié:CA:83:;Igor Matanovic:CA:85:;Mateo Zelic:CA:80:;Keisuke Goto:CA:81:
+ALE|ALE|Mönchengladbach|BMG|band3,#ffffff,#111111,#00a651|Moritz Nicolas:GOL:86:;Tobias Sippel:GOL:81:;Jan Olschowsky:GOL:82:;Daniel Batz:GOL:81:;Fabio Chiarodia:ZAG:84:;Kevin Diks:ZAG/LD:85:;Jan Leszczynski:ZAG:80:;Kō Itakura:ZAG:86:;Daiki Hashioka:LD:84:;Jens Castrop:LD/MC:84:;David Herold:LE:81:;Yukhym Konoplya:LD:83:;Lukas Ullrich:LE:84:;Joe Scally:LD:85:;Kevin Stöger:MEI/MC:86:;Enzo Leopold:MC:81:;Franck Honorat:PD:86:;Florian Neuhaus:MC/MEI:85:;Philipp Sander:VOL:84:;Robin Hack:PE/MEI:84:;Isac Lidberg:CA:82:;Tim Kleindienst:CA:86:;Shuto Machino:CA/PE:85:;Tomáš Čvančara:CA:84:
+ALE|ALE|Hamburg|HSV|band3,#ffffff,#e30613,#0a3f86|Daniel Heuer Fernandes:GOL:85:;Sander Tangvik:GOL:82:;Fernando Dickes:GOL:80:;David Møller Wolfe:LE:84:;Zakaria El Ouahdi:LD:84:;Warmed Omari:ZAG:84:;Nicolás Capaldo:LD/MC:85:;Sebastiaan Bornauw:ZAG:85:;Albert Grønbæk:MEI/PE:85:;Albert Sambi Lokonga:MC:86:;Bilal Nadir:MC:82:;Terem Moffi:CA:86:;Rayan Philippe:CA:84:;Kelvin Ojo:PE:80:
+ALE|ALE|Hoffenheim|TSG|band,#1961b5,#ffffff,|Oliver Baumann:GOL:86:;Lúkas Petersson:GOL:81:;Luca Philipp:GOL:81:;Robin Hranáč:ZAG:84:;Sean Dulic:ZAG:81:;Ozan Kabak:ZAG:85:;Bernardo:LE:84:;Valentin Gendrey:LD:84:;Albian Hajdari:ZAG:84:;Kōki Machida:ZAG:84:;Natnael Abraha:ZAG:80:;Vladimír Coufal:LD:84:;Arthur Chaves:ZAG:83:;Mats Rots:LD:81:;Kelven Frees:LE:80:;Leon Avdullahu:VOL/MC:84:;Adam Daghim:PD:82:;Luis Engelns:MC:81:;Nathan De Cat:MC:81:;Umut Tohumcu:MC:81:;Wouter Burger:MC:84:;Bambasé Conté:MC:81:;Alexander Prass:LE/MC:84:;Cajetan Lenz:MC:81:;Deniz Zeitler:MC:80:;Oskar Hencke:MC:80:;Tiago Poller:MC:80:;Valentin Lassig:MC:80:;Klaus Gjasula:VOL:81:;Patrick Wimmer:PD:84:;Max Moerstedt:CA:82:;Adam Hložek:CA/MEI:84:;Fisnik Asllani:CA:84:;Gift Orban:CA:83:;Tim Lemperle:CA:84:;Alessandro Vogt:CA:80:;Andrej Kramaric:CA/MEI:86:;Yannick Eduardo:PE:81:;Jykese Fields:CA:80:;Lion Wagenbach:CA:80:;Erencan Yardımcı:CA:81:;Precious Benjamin:CA:80:;Yasin Zor:PE:80:
+ALE|ALE|RB Leipzig|RBL|band,#ffffff,#dd0741,|Ørjan Nyland:GOL:83:;Leopold Zingerle:GOL:81:;Maarten Vandevoordt:GOL:85:;Timo Schlieck:GOL:80:;Abdoul Koné:ZAG:82:;Maxime Estève:ZAG:85:;Willi Orbán:ZAG:86:;El Chadaille Bitshiabu:ZAG:83:;Lukas Klostermann:ZAG/LD:84:;David Raum:LE:86:;Castello Lukeba:ZAG:86:;Max Finkgräfe:LE:82:;Benjamin Henrichs:LD:85:;Lutsharel Geertruida:ZAG/LD:85:;Joyeux Masanka Bungi:ZAG:80:;Ezechiel Banzuzi:MC:83:;Assan Ouédraogo:MC/MEI:84:;Nicolas Seiwald:VOL/MC:85:;Christoph Baumgartner:MEI:85:;Ridle Baku:LD/PD:85:;Rocco Reitz:MC:85:;Neil El Aynaoui:MC:84:;Andrija Maksimović:MC:82:;Benno Kaltefleiter:MC:80:;Viggo Gebel:MC:80:;Arthur Vermeeren:VOL/MC:84:;Ota Yamamoto:MC:80:;Antonio Nusa:PE:85:;Marc Guiu:CA:83:;Johan Bakayoko:PD:85:;Tidiam Gomis:PE:82:;Christopher Nkunku:CA/MEI:86:;Rômulo:CA:84:;Samba Konaté:CA:80:
+ALE|ALE|Mainz 05|M05|band,#c3141e,#ffffff,|Robin Zentner:GOL:85:;Alexander Schwolow:GOL:83:;Lasse Rieß:GOL:81:;Maximilian Kinzig:GOL:80:;Phillipp Mwene:LE:84:;Fabio Gruber:ZAG:81:;Stefan Posch:ZAG/LD:85:;Stefan Bell:ZAG:83:;Anthony Caci:LE/LD:85:;Danny da Costa:LD:83:;Konstantin Schopp:LE:81:;Silvan Widmer:LD:84:;Rael Nakuzola:ZAG:80:;Kacper Potulski:ZAG:82:;Eric Martel:VOL:84:;Kaishu Sano:VOL/MC:85:;Lee Jae-sung:MEI/PE:85:;Paul Nebel:MEI/PD:85:;Nadiem Amiri:MEI:86:;Hong Hyun-seok:MEI:83:;William Bøving:PE:83:;Lennard Maloney:VOL:83:;Otto Ruoppi:MC:80:;Sōta Kawasaki:MC:81:;Dominik Kohr:VOL:83:;Daniel Gleiber:MC:80:;Phillip Tietz:CA:83:;Ransford-Yeboah Königsdörffer:CA:83:;Benedict Hollerbach:PE/CA:85:;Kasey Bos:LE:81:;Sheraldo Becker:PD:83:;Silas Katompa Mvumpa:PD:83:;Alynho Haïdara:PE:80:;Nelson Weiper:CA:83:
+ALE|ALE|Paderborn 07|PAD|band,#005ba1,#111111,|Markus Schubert:GOL:86:;Nahuel Noll:GOL:83:;Florian Pruhs:GOL:80:;Ruben Müller:MC:80:;Jonah Sticker:LE:83:;Nyamekye Awortwie-Grant:ZAG:80:;Santiago Castaneda:ZAG:83:;Tom Baack:VOL:83:;Oliver Batista Meier:PE:83:;Luka Đurić:MC:83:;Kennedy Okpala:PD:82:;Sven Michel:CA:84:;Laurin Curda:LD:83:;Marvin Pieringer:CA:84:;Marco Wörner:MC:80:;Felix Götze:VOL/ZAG:83:;Jano ter Horst:LD:83:;Mattes Hansen:MC:83:;Raphael Obermair:LE:84:;Niklas Mohr:MC:80:;Tjark Scheller:ZAG:83:;Sebastian Klaas:MEI:84:;Steffen Tigges:CA:83:;Clemens Lippmann:ZAG:80:;Stefano Marino:PE:80:;Lasse Eickel:CA:80:;Marcel Hoffmeier:ZAG:84:;Bennit Bröger:MC:80:;Gabriel Vidović:MEI/CA:86:;Timur Gayret:CA:80:
+ALE|ALE|Schalke|S04|band,#004d9d,#ffffff,|Loris Karius:GOL:84:;Kevin Müller:GOL:82:;Johannes Siebeking:GOL:80:;Robin Gosens:LE:86:;Maximilian Wöber:ZAG/LE:84:;Nikola Katić:ZAG:84:;Hasan Kuruçay:ZAG:83:;Timo Becker:ZAG/LD:83:;Adrian Gantenbein:LD:83:;Mertcan Ayhan:ZAG:82:;Hwang Hee-chan:PE/CA:85:;Ron Schallenberg:VOL:84:;Dejan Ljubicic:MC:84:;Éric Junior Dina Ebimbe:MC/MEI:84:;Adil Aouchiche:MEI:83:;Soufiane El-Faouzi:MC:82:;Satoshi Tanaka:MC:82:;Finn Porath:PD:82:;Janik Bachmann:MC:82:;Edin Džeko:CA:85:;Kenan Karaman:CA:84:;Moussa Sylla:CA:84:;Junior Adamu:CA:83:;Bryan Lasme:PE:83:;Emil Højlund:CA:82:
+ALE|ALE|VfB Stuttgart|VFB|band,#ffffff,#e32219,|Fabian Bredlow:GOL:83:;Marius Funk:GOL:81:;Dennis Seimen:GOL:81:;Florian Hellstern:GOL:80:;Stefan Drljača:GOL:82:;Ameen Al-Dakhil:ZAG:83:;Ramon Hendriks:ZAG/LE:83:;Josha Vagnoman:LD:84:;Maximilian Mittelstädt:LE:85:;Luca Jaquez:ZAG:83:;Leonidas Stergiou:ZAG/LD:83:;Lorenz Assignon:LD:83:;Dan-Axel Zagadou:ZAG:84:;Jeff Chabot:ZAG:85:;Finn Jeltsch:ZAG:83:;Maximilian Herwerth:ZAG:80:;Yannik Keitel:VOL:83:;Angelo Stiller:MC:86:;Chris Führich:PE:85:;Bilal El Khannouss:MEI:85:;Atakan Karazor:VOL:85:;Jamie Leweling:PD:85:;Noah Darvich:MEI:81:;Grischa Prömel:MC:83:;Badredine Bouanani:PD:83:;Nikolas Nartey:MC:82:;Mirza Catovic:MC:80:;Laurin Ulrich:MC:81:;Ertugrul Yigit:MC:80:;Yanik Spalt:MC:80:;Tiago Tomás:CA/PE:84:;Ermedin Demirović:CA:85:;Dženan Pejčinović:CA:81:;Jeremy Arévalo:CA:82:;Deniz Undav:CA:86:;Justin Diehl:PE:81:;Jarzinho Malanga:PE:80:;Leo Sauer:PE:81:
+ALE|ALE|Union Berlin|FCU|v,#eb1923,#ffffff,|Frederik Rønnow:GOL:86:;Carl Klaus:GOL:82:;Matheo Raab:GOL:82:;Felix Uduokhai:ZAG:84:;Andrik Markgraf:ZAG:82:;Marvin Friedrich:ZAG:83:;Leopold Querfeld:ZAG:86:;Tom Rothe:LE:84:;Derrick Köhn:LE:84:;Josip Juranović:LD:85:;Christopher Trimmel:LD:83:;Stanley N'Soki:ZAG:83:;Oluwaseun Ogbemudia:ZAG:80:;Leon Prosche:ZAG:80:;Zeno Van Den Bosch:ZAG/VOL:82:;Aljoscha Kemlein:MC:84:;Rani Khedira:VOL:85:;Livan Burcu:MEI/PE:83:;Jeong Woo-yeong:PE/MEI:85:;András Schäfer:MC:84:;Janik Haberer:MC:84:;Michel Aebischer:MC:84:;Tim Skarke:PD:83:;Kastriot Imeri:MEI:83:;Julien Friedrich:MC:80:;Tim Blaszczak:MC:80:;Oliver Burke:PE/CA:84:;Andrej Ilić:CA:85:;Robert Skov:PD/LE:84:;Marin Ljubičić:CA:83:;Emmanuel Latte Lath:CA:84:;Dmytro Bogdanov:CA:80:;Mekhi Gray:PE:80:;Linus Güther:CA:80:
+ALE|ALE|Werder Bremen|SVW|band,#1d9053,#ffffff,|Karl Hein:GOL:84:;Markus Kolke:GOL:82:;Alexander Schlager:GOL:83:;Stefan Smarkalev:GOL:80:;Oliver Deman:ZAG/LE:84:;Oskar Wójcik:ZAG:82:;Niklas Stark:ZAG:85:;Amos Pieper:ZAG:84:;Mitchell Weiser:LD:86:;Arthur:LD:82:;Moussa N'Diaye:LE:83:;Julián Malatini:ZAG:83:;Felix Agu:LE/LD:84:;Marco Friedl:ZAG:86:;Mick Schmetgens:ZAG:80:;Mats Ole Heitmann:ZAG:80:;Luca Hocker:ZAG:80:;Jens Stage:MC:86:;Senne Lynen:VOL:86:;Ludovit Reis:MC:83:;Chuki:MEI:82:;Dariusz Stalmach:MC:82:;Patrice Čović:MC:80:;Skelly Alvero:VOL:84:;Wesley Adeh:MC:80:;Darwin Soylu:MC:80:;Leon Opitz:MC:80:;Paul Erevbenagie:MC:80:;Youri Regeer:MC:83:;Keke Topp:CA:84:;Niclas Füllkrug:CA:86:;Justin Njinmah:PD:84:;Marco Grüll:PE:85:;Kenny Quetant:PE:80:;Cedric Itten:CA:83:;Salim Musah:PD:80:
+ESP|ESP|Alavés|ALA|v,#0761af,#ffffff,|Antonio Sivera:GOL:86:;Adrián Rodríguez:GOL:82:;Grégoire Świderski:GOL:80:;Ruben Montero:GOL:80:;Nicolás Valentini:ZAG:84:;Youssef Enriquez:LE:82:;Alvaro Garcia:ZAG:82:;Hugo Novoa:LD:83:;Nahuel Tenaglia:LD/ZAG:85:;Ville Koski:ZAG:83:;Jonny Castro:LD/LE:85:;Egoitz Muñoz:ZAG:80:;Xanet Olaiz:ZAG:80:;Adrián Pica:ZAG:80:;Facundo Garcés:ZAG:84:;Denis Suárez:MEI:84:;Ander Guevara:VOL:85:;Ángel Pérez:LE:82:;Antonio Blanco:VOL/MC:86:;Carles Aleñá:MC/MEI:85:;Mikel Rodríguez:MC:82:;Pablo Ibáñez:MC:85:;Abde Rebbach:PE:84:;Miguel Rodríguez:MEI:82:;Carlos Benavídez:VOL:84:;Selu Diallo:MC:82:;Izei Hernandez Canas:MC:80:;Tomás Mendes:MC:80:;Gustavo Albarracín:MC:80:;Mariano Díaz:CA:84:;Toni Martínez:CA:85:;Lucas Boyé:CA:86:;Aitor Mañas:CA:80:;Unai Ropero:PD:82:
+ESP|ESP|Athletic Bilbao|ATH|v,#ee2523,#ffffff,|Unai Simón:GOL:89:;Álex Padilla:GOL:82:;Mikel Santos:GOL:80:;Andoni Gorosabel:LD:84:;Daniel Vivian:ZAG:85:;Aitor Paredes:ZAG:84:;Yeray Álvarez:ZAG:84:;Jesús Areso:LD:84:;Aymeric Laporte:ZAG:85:;Hugo Rincón:LD:81:;Yuri Berchiche:LE:84:;Adama Boiro:LE:82:;Iker Monreal:ZAG:80:;Johaneko Louis-Jean:LD:80:;Ander Izagirre:ZAG:80:;Unai Egiluz:ZAG:81:;Beñat Prados:VOL:84:;Oihan Sancet:MEI:86:;Iñigo Ruiz de Galarreta:MC:84:;Mikel Jauregizar:MC:84:;Alejandro Rego:MEI:82:;Beñat Gerenabarrena:MC:80:;Peio Canales:MC:81:;Selton Sánchez:MEI:81:;Álex Berenguer:PE/PD:84:;Iñaki Williams:PD/CA:85:;Nico Williams:PE:86:;Gorka Guruzeta:CA:84:;Maroan Sannadi:CA:82:;Nico Serrano:PE:81:;Robert Navarro:PE/PD:83:;Álvaro Djaló:PE:82:;Asier Hierro:CA:81:;Christian Imga:PD:80:;Txus Vizcay:CA:80:;Elijah Gift:PD:80:;Eder García:CA:80:
+ESP|ESP|Betis|BET|v,#00954c,#ffffff,|Álvaro Valles:GOL:85:;Diego Conde:GOL:84:;Manu Gonzalez:GOL:80:;Alvaro de Pablo:GOL:80:;Héctor Bellerín:LD:84:;Fran García:LE:85:;Marc Bartra:ZAG:84:;Junior Firpo:LE:84:;Diego Llorente:ZAG:84:;Natan:ZAG:85:;Valentín Gómez:ZAG:84:;Isco:MEI:86:;Dani Ceballos:MC:85:;Nelson Deossa:MC:84:;Álvaro Fidalgo:MC/MEI:85:;Giovani Lo Celso:MEI/MC:86:;Facundo Bernal:VOL:83:;Rodrigo Riquelme:PE:85:;Pablo Fornals:MEI/MC:85:;Marc Roca:VOL:85:;Ángel Ortiz Monterrey:LD:81:;Ricardo Funez:MC:80:;Troy Parrott:CA:84:;Antony:PD:86:;Abde Ezzalzouli:PE:86:;Cucho Hernández:CA:85:;Aitor Ruibal:PD/LD:84:;Iker Losada:MEI/PE:83:;Gonzalo Petit:CA:81:;Jose Antonio:CA:80:
+ESP|ESP|Celta de Vigo|CEL|band,#8ac3ee,#ffffff,|Altay Bayındır:GOL:85:;Ionuț Radu:GOL:85:;Iván Villar:GOL:82:;Carl Starfelt:ZAG:85:;Marcos Alonso:ZAG/LE:85:;Abdoulaye Faye:ZAG:81:;Sergio Carreira:LD:83:;Álvaro Núñez:LD:83:;Javi Rueda:LD/PD:84:;Yoel Lago:ZAG:83:;Javi Rodríguez:ZAG:84:;Sebastián Cáceres:ZAG:84:;Quique Ribes:LE:80:;Ilaix Moriba:MC:85:;Miguel Román:MC:83:;Aleix Febas:MC:83:;Williot Swedberg:MEI/PE:85:;Javi Galán:LE:84:;Hugo Álvarez:PE:84:;Andrés Antañón:MC:80:;Hugo Burcio:MC:80:;Jones El-Abdellaoui:PD:83:;Borja Iglesias:CA:86:;Ferran Jutglà:CA:85:;Iago Aspas:CA/MEI:86:;Pablo Durán:CA:83:;Hugo González:LD:81:;Couhaib Driouech:PE:83:;Ángel Arcos:PE:80:;Germain Miller:CA:80:
+ESP|ESP|Elche|ELC|band,#ffffff,#05642c,|Matías Dituro:GOL:85:;Alejandro Iturbe:GOL:83:;Buba Sangaré:LD:82:;Roy Revivo:LE:82:;Bambo Diaby:ZAG:83:;Pedro Bigas:ZAG:84:;Kevin Lomónaco:ZAG:83:;John Nwankwo:ZAG:80:;Víctor Chust:ZAG:85:;Matía Barzic:ZAG:80:;Pablo Felipe:ZAG:80:;Federico Redondo:VOL/MC:85:;Yago Santiago:PE:83:;Marc Aguado:MC:85:;Germán Valera:PD:84:;Gonzalo Villar:MC:84:;Martim Neto:MC:83:;Josan:PD:83:;Thomas Lemar:MEI/PE:86:;Grady Diangana:PE/MEI:85:;Rubén Sánchez:MC:82:;Ali Houary:MEI:80:;Adam Boayar:PE:80:;Javi Morcillo:MC:80:;Ezequiel Ponce:CA:84:;Fernando Niño:CA:82:;Tete Morente:PE:83:;Lucas Cepeda:PD:84:;Abiel Osorio:CA:82:;Álvaro Padilla:CA:80:;Umaru Konare:CA:80:;Tiziano Perrotta:CA:80:
+ESP|ESP|Espanyol|ESP|v,#007fc8,#ffffff,|Ángel Fortuño:GOL:80:;Marko Dmitrović:GOL:86:;Leandro Cabrera:ZAG:86:;Clemens Riedel:ZAG:84:;Unai Núñez:ZAG:84:;Vanja Drkušić:ZAG:82:;Omar El Hilali:LD:85:;Quilindschy Hartman:LE:84:;Roger Hinojo:LD:80:;Edu Expósito:MC/MEI:86:;Pol Lozano:VOL:84:;Urko González de Zárate:VOL:84:;Gabriel Moscardo:VOL:82:;Javi Hernández:MC:80:;Rafel Bauzà:MC:80:;Álex Calatrava:MC:80:;Javi Puado:CA/PE:86:;Roberto Fernández:CA:85:;Bryan Zaragoza:PE:85:;Pere Milla:PD/CA:84:;Tyrhys Dolan:PE:84:;Jofre Carreras:PD:83:;Marcos Fernández:PE:80:;Kike García:CA:84:
+ESP|ESP|Getafe|GET|band,#005999,#ffffff,|Jiří Letáček:GOL:83:;David Soria:GOL:85:;Djené Dakonam:ZAG:85:;Davinchi:LE:81:;Saba Sazonov:ZAG:83:;Abdel Abqar:ZAG:83:;Dani Carvajal:LD:86:;Sebastián Boselli:ZAG:83:;Francisco Femenía:LD:81:;Johan Mojica:LE:84:;Zaid Romero:ZAG:83:;Jean Ives Valou:ZAG:80:;Mario Martín:MC:84:;Nemanja Gudelj:VOL:84:;Ramon Terrats:MC:83:;Francho Serrano:MC:82:;Juanmi:PE/CA:83:;Borja Mayoral:CA:85:;Martín Satriano:CA:84:;Álex Sancris:PE:83:;Enes Ünal:CA:84:;Iván Azón:CA:83:
+ESP|ESP|La Coruña|DEP|v,#0055a5,#ffffff,|Germán Parreño:GOL:83:;Leo Román:GOL:83:;Álvaro Fernández Llorente:GOL:83:;Eric Puerto:GOL:80:;Adrià Altimira:LD:83:;Arnau Comas:ZAG:83:;Lucas Noubi:ZAG:81:;Dani Barcia:ZAG:82:;Giacomo Quagliata:LE:83:;Miguel Loureiro:ZAG:82:;Angeliño Tasende:LE:85:;José Giménez:ZAG:86:;Bright Ede:ZAG:80:;Ximo Navarro:LD:82:;Charlie Patino:MC:83:;Marc Casadó:VOL/MC:85:;Diego Gómez Pérez:MC:81:;Diego Villares:MC:83:;Yeremay Hernández:PE/MEI:86:;Riki:MC:80:;Lorenzo Amatucci:MC:82:;Jonathan Asp Jensen:MC:81:;Luismi Cruz:PD:83:;Teun Gijselhart:MC:80:;Rubén López:MC:80:;Yayo:MC:80:;Noé Carrillo:MC:80:;Pierre-Emerick Aubameyang:CA:85:;Zakaria Eddahchouri:CA:83:;David Mella:PE:83:;Mario Soriano:MEI:83:;Adama Traoré:PD:85:;Martin Ochoa Ruiz:CA:80:;Bil Nsongo:PE:80:;Kevin Sanchez:CA:80:
+ESP|ESP|Levante|LEV|v,#b4053f,#004d98,|Mathew Ryan:GOL:85:;Alejandro Primo:GOL:80:;Pablo Campos:GOL:82:;Dani Martín:GOL:80:;Igor Galdin:GOL:80:;Ifeanyi Ndukwe:ZAG:80:;Aïssa Mandi:ZAG:85:;Marc Santos:ZAG:80:;Jeremy Toljan:LD:84:;Adrián de la Fuente:ZAG:84:;Martín Krug:ZAG:80:;Jorge Cabello:ZAG:82:;Nacho Pérez:LE:80:;Víctor García:LD:83:;Huseini Alhassan:ZAG:80:;Karl Etta Eyong:CA:86:;Tai Abed:PD:83:;Roger Brugué:PE:84:;Axel Tape:PE:81:;Enzo Bardeli:MEI:83:;Hugo Sotelo:MC:83:;Jon Ander Olasagasti:MC:84:;Manu Sánchez:LE:84:;Oriol Rey:VOL:84:;Alberto Calatrava:MC:80:;Manel Usedo:MC:80:;Iván Romero:CA:85:;Thiago Fernández:PE:82:;Yanis Musuayi:PD:80:;Paco Cortés:CA:80:
+ESP|ESP|Málaga|MAL|v,#0090d7,#ffffff,|Alfonso Herrero:GOL:85:;Andres Cespedes:GOL:80:;Carlos López:GOL:81:;Fernando Calero:ZAG:84:;José Salinas:LE:83:;Einar Galilea:ZAG:83:;Carlos Puga:LD:83:;Juan Berrocal:ZAG:83:;Ángel Recio:ZAG:81:;Rafael Garrido:ZAG:80:;Diego Murillo:ZAG:82:;Álex Pastor:ZAG:82:;Pablo Arriaza:ZAG:80:;Adam Aznou:LE:84:;Jens Cajuste:MC:86:;Carlos Dotor:MC:84:;Izan Merino:VOL:83:;Aarón Ochoa:MC:80:;Dani Lorenzo:MC/MEI:83:;Pablo Martínez:MC:82:;Rafa:MC:81:;Ramón Enríquez:VOL:82:;Oscar Gonzalez Campos:MC:80:;Joseph Otu:MC:80:;David Larrubia:PD/MEI:85:;Juan Cruz Diaz Espósito:PE:83:;Adrián Niño:CA:83:;Chupete:CA:84:;Haitam Abaida:PE:83:;Eneko Jauregi:CA:81:;Joaquín:PD:82:;Julen Lobete:PE:83:;Juani:PE:80:
+ESP|ESP|Osasuna|OSA|band,#d91a21,#0a346f,|Sergio Herrera:GOL:85:;Aitor Fernández:GOL:84:;Dimitrios Stamatakis:GOL:80:;Rafa Fernandez:GOL:80:;Mikel Bermejo Sola:GOL:80:;Jorge Herrando:ZAG:84:;Diego Rico:LE:84:;Valentin Rosier:LD:84:;Flavien Enzo Boyomo:ZAG:85:;Alejandro Catena:ZAG:85:;Unai Santos:ZAG:80:;Rockson Yeboah:ZAG:80:;Lucas Torró:VOL:85:;Jon Moncayola:MC:85:;Iker Muñoz:MC:84:;Moi Gómez:MEI/PE:84:;Raúl Moro:PE:83:;Romain Del Castillo:PD:84:;Abel Bretones:LE:84:;Mauro Echegoyen:MC:80:;Asier Osambela:MC:81:;Raúl García:CA:84:;Aimar Oroz:MEI:85:;Kike Barja:PE:83:;Rubén García:PE/PD:84:;Ante Budimir:CA:86:;Jonathan Dubasin:PE:83:;Iñigo Arguibide:CA:80:;Asier Bonel:CA:80:
+ESP|ESP|Racing de Santander|RAC|band,#ffffff,#00843d,|Simon Eriksson:GOL:81:;Julen Agirrezabala:GOL:85:;Laro Gómez:GOL:80:;Álvaro Mantilla:LD:83:;Aarón Martín:LE:85:;Manu Hernando:ZAG:83:;Pablo Ramón:ZAG:83:;Íñigo Sainz-Maza:ZAG:81:;Facu González:ZAG:83:;Jorge Salinas:LE:81:;Pedro Felipe:ZAG:81:;Jeanuël Belocian:ZAG/LE:83:;Carlos Sanchez:ZAG:80:;Domingos André Ribeiro:MC:83:;Iñigo Vicente:MEI/PE:85:;Maguette Gueye:VOL:81:;Sergio Canales:MEI/MC:86:;Iván Martín Núñez:MC:84:;Andres Vallecillo:MC:80:;Diego Díaz:MC:80:;Hugo Perez:MC:80:;Giorgi Guliashvili:PE:83:;Aritz Aldasoro:MC:82:;Juan Carlos Arana:CA:84:;Andrés Martín:PE/PD:85:;Asier Villalibre:CA:83:;Pablo García:PD:81:;Iker Luque Sierra:PE:80:;Jorge Castellanos:CA:80:
+ESP|ESP|Rayo Vallecano|RAY|d,#ffffff,#e53027,|Daniel Cárdenas:GOL:83:;Augusto Batalla:GOL:85:;Adrian Molina:GOL:80:;Andrei Rațiu:LD:86:;Marash Kumbulla:ZAG:84:;Luiz Felipe:ZAG:85:;Mujaid Sadick:ZAG:84:;Iván Balliu:LD:84:;Pelayo Fernández:ZAG:82:;Florian Lejeune:ZAG:85:;Marco de las Sias:ZAG:80:;Sergio Lozano:ZAG:80:;Jozhua Vertrouwd:LE:82:;Rayane Belaid:LE:80:;Pedro Díaz:MC:84:;Pathé Ciss:VOL:84:;Isi Palazón:PD/MEI:86:;Unai López:MC:85:;Heorhiy Tsitaishvili:PE:84:;Álvaro García:PE:85:;Fran Pérez:PD:84:;Óscar Valentín:VOL:84:;Samu Becerra:MC:80:;Diego Méndez:MC:80:;Marco Roman:MC:80:;Gnangoro Bouare Samake:MC:80:;Alexandre Alemão:CA:84:;Sergio Camello:CA:85:;Randy Nteka:CA:84:;Jorge de Frutos:PD/PE:86:;Iván Alonso:CA:80:;Etienne Eto'o:MC:81:;Raúl de Tomás:CA:84:
+ESP|ESP|Real Sociedad|RSO|v,#0067b1,#ffffff,|Álex Remiro:GOL:86:;Unai Marrero:GOL:83:;Aitor Fraga:GOL:80:;Theo Folgado:GOL:80:;Jon Aramburu:LD:84:;Aihen Muñoz:LE:84:;Jon Martín:ZAG:84:;Javi López:LE:84:;Jon Pacheco:ZAG:85:;Mamadou Sarr:ZAG:83:;Álvaro Odriozola:LD:83:;Héctor Fort:LD:83:;Luken Beitia:ZAG:80:;Jon Gorrotxategi:MC:83:;Igor Zubeldia:ZAG/VOL:85:;Beñat Turrientes:MC:84:;Job Nguono Ochieng:MC:80:;Takefusa Kubo:PD:86:;Pablo Marín:MC:83:;Carlos Soler:MC/MEI:85:;Yangel Herrera:MC:84:;Arsen Zakharyan:MEI:84:;Luka Sučić:MC/MEI:85:;Ibai Aguirre:MC:80:;Alex Lebarbier:MC:80:;Ander Barrenetxea:PE:85:;Orri Óskarsson:CA:84:;Mikel Oyarzabal:CA/PE:86:;Gonçalo Guedes:PE/PD:84:;Sergio Gómez:LE/PE:84:;Mikel Goti:CA:80:;Gorka Carrera:CA:80:;Alex Marchal:PE:80:
+ESP|ESP|Sevilla|SEV|band,#ffffff,#d4001e,|Odisseas Vlachodimos:GOL:85:;Fran González:GOL:81:;Rafa Romero:GOL:80:;Marcão:ZAG:85:;Gabriel Suazo:LE:85:;Arouna Sangante:ZAG:83:;Juan Iglesias:LD:84:;Kike Salas:ZAG:85:;Adrià Pedrosa:LE:84:;Andrés Castrín:ZAG:83:;José Ángel Carmona:LD:85:;Fábio Cardoso:ZAG:84:;Iker Ortin Munoz:ZAG:80:;Tamiou Kpebane:ZAG:80:;Youssouf Fofana:VOL/MC:86:;Giorgi Kochorashvili:MC:84:;Lucien Agoumé:VOL:85:;Jon Guridi:MEI/MC:84:;Manu Bueno:MC:83:;Julio Díaz:MC:81:;Nico Guillén:MC:80:;Jesus Cruz:MC:80:;Robbie Ure:CA:81:;Rubén Vargas:PE/PD:85:;Lucas Stassin:CA:84:;Rafa Mir:CA:83:;Chidera Ejuke:PE:85:;Isaac Romero:CA:85:;Gerard Fernández:PD:81:;Miguel Ángel Sierra:PE:80:;Alfon:PE:83:;Ibrahima Sow:CA:80:;Manuel Angel Castillo:PE:80:;Marc Scuri:CA:80:
+ESP|ESP|Valencia|VCF|band3,#ffffff,#f18e00,#111111|Stole Dimitrievski:GOL:85:;Cristian Rivero:GOL:81:;Kayne van Oevelen:GOL:80:;José Manuel Copete:ZAG:84:;Mouctar Diakhaby:ZAG:85:;César Tárrega:ZAG:85:;Justin de Haas:ZAG:82:;José Luis Gayà:LE:85:;Dimitri Foulquier:LD:83:;Jesús Vázquez:LE:84:;Arnau Martínez:LD/ZAG:84:;Pablo Maffeo:LD:84:;Alejandro Panach:LE:80:;Rodrigo Gamon:ZAG:80:;Iker Córdoba:ZAG:80:;Marcos Navarro:ZAG:80:;Guido Rodríguez:VOL:85:;Javi Guerra:MC:86:;Harvey Elliott:MEI/PD:86:;Luis Rioja:PE:85:;Aliou Dieng:VOL:83:;José Luis García Vayá:MC:83:;Filip Ugrinic:MC:84:;Lucas Núñez:MC:80:;Aaron Mayol:MC:80:;Jaume Dura:MC:80:;Ryūnosuke Satō:MEI:81:;Umar Sadiq:CA:84:;Arnaut Danjuma:PE:85:;Hugo Duro:CA:85:;Diego López:PE/PD:85:;Dani Raba:CA/MEI:83:;David Otorbi:PD:80:;Aimar Blazquez:CA:80:;Sergi Canós:PD:83:
+ESP|ESP|Villarreal|VIL|band,#ffe667,#005187,|Luiz Júnior:GOL:85:;Rubén Gómez:GOL:81:;Péter Gulácsi:GOL:84:;Juan Foyth:ZAG/LD:85:;Logan Costa:ZAG:85:;Carlos Romero:LE:84:;Sergi Cardona:LE:85:;Pau Navarro:ZAG:82:;Santiago Mouriño:ZAG/LD:84:;Renato Veiga:ZAG/LE:85:;Alex Freeman:LD:84:;Santi Comesaña:MC:85:;Pape Gueye:VOL/MC:85:;Nathan Saliba:MC:82:;Dani Requena:MC:81:;Carlos Maciá:MC:80:;Gerard Moreno:CA/PD:85:;Georges Mikautadze:CA:86:;Alberto Moleiro:MEI/PE:86:;Nicolas Pépé:PD:85:;Tajon Buchanan:PD/LD:84:;Ilias Akhomach:PD:84:;Tani Oluwaseyi:CA:83:;Ayoze Pérez:CA/PE:85:
+FRA|FRA|Angers|SCO|v,#111111,#ffffff,|Anthony Lopes:GOL:86:;Melvin Zinga:GOL:80:;Oumar Pona:GOL:80:;Ianis Sacko:GOL:80:;Carlens Arcus:LD:83:;Joseph Kalulu:LD:83:;Jim Allevinah:PE/LE:83:;Marius Louër:ZAG:82:;Jordan Lefort:ZAG/LE:83:;Dan Sinaté:ZAG:82:;Lilian Rao-Lisoa:LE:82:;Maël Gernigon:ZAG:80:;Marius Courcoul:ZAG:82:;Ousmane Camara:VOL:83:;Louis Mouton:MC:83:;Branco van den Boomen:MC/MEI:84:;Yassin Belkhdim:MC:83:;Emmanuel Biumla:MC:82:;Bane Diatta:MC:80:;Jules Bouffandeau:MC:80:;Haris Belkebla:VOL:83:;Usman Mamadou Simbakoli:PE:82:;Prosper Peter:PD:83:;Amine Sbaï:PE:83:;Harouna Djibirin:CA:82:;Amine El Ouazzani:CA:83:;Lanroy Machine:CA:82:
+FRA|FRA|Auxerre|AJA|band,#ffffff,#0a3e8c,|Paul Nardi:GOL:85:;Mamadou Diop:GOL:82:;Louis Mezerette:GOL:80:;Théo De Percin:GOL:84:;Axel Tuanzebe:ZAG:85:;Francisco Sierralta:ZAG:86:;Telli Siwe:ZAG:82:;Christ Makosso:ZAG:83:;Sinaly Diomande:ZAG:85:;Fredrik Oppegård:LE:84:;Bryan Okoh:ZAG:84:;Marvin Senaya:LD:85:;Elikya Legros:ZAG:80:;Alvin Petit Dol:ZAG:80:;Salimou Danfakha:ZAG:80:;Arthur Piedfort:LE:81:;Clément Akpa:ZAG:85:;Sekou Fofana:ZAG:80:;Ackah Tidiane Zoukrou:ZAG:80:;Kévin Danois:MC:84:;Naouirou Ahamada:MC/MEI:85:;Pierre Ekwah:VOL:85:;Assane Dioussé:VOL:83:;Lasso Coulibaly:MC:85:;Lamine Sy:MC:81:;Rayan Mandengue:MC:80:;Lamfia Dioubate:MC:80:;Tidiane Devernois:MC:80:;Josué Casimir:PD/PE:85:;Cameron Archer:CA:86:;Danny Namaso:CA:85:;Theo Bair:CA:84:;Ryan Rodin:PE:80:;Mamoudou Cissokho:CA:80:;Youssef Khoudda:PE:80:;Wei Xiangxin:CA:80:;Aristide Zossou:PD:81:
+FRA|FRA|Brest|SB29|band,#e30613,#ffffff,|Egil Selvik:GOL:84:;Noe Poillion:GOL:80:;Mathieu Patouillet:GOL:82:;Romain Cagnon:GOL:80:;Bradley Locko:LE:85:;Gautier Lloris:ZAG:84:;Brendan Chardonnet:ZAG:85:;Justin Bourgault:ZAG:82:;Luck Zogbé:ZAG:83:;Evan Mailly:ZAG:80:;Kenny Lala:LD:85:;Raphaël Le Guen:ZAG:82:;Mamady Diambou:VOL/MC:84:;Joseph Nonge:MC/MEI:84:;Hugo Magnetti:MC:85:;Joris Chotard:MC:84:;Kamory Doumbia:MEI:86:;Lucas Tousart:VOL/MC:85:;Hamidou Makalou:MC:81:;Pathé Mboup:CA:83:;Giovani Versini:MEI/PE:82:;Mama Baldé:PE:84:;Ludovic Ajorque:CA:86:;Ibrahim Yayiya Kanté:PD:82:;Mathis Laine:CA:80:;Enzo Monchatre:PE:80:;Djylian N'Guessan:CA:80:
+FRA|FRA|Le Havre|HAC|half,#0d2c6c,#8bc5e8,|Arnaud Bodart:GOL:85:;Paul Argney:GOL:81:;Lionel Mpasi:GOL:85:;Gauthier Gallon:GOL:82:;Ahmed Touba:ZAG:86:;Elias Jelert:LD:85:;Ayumu Seko:ZAG:85:;Djibril Ouziad:ZAG:80:;Sasso:ZAG:85:;Stephan Zagadou:ZAG:80:;Timothée Pembélé:LD/ZAG:84:;Lamine N'Diaye:LE:81:;Bocar Wade:ZAG:80:;Junior Mwanga:VOL:85:;Amir Richardson:MC:85:;Rassoul Ndiaye:MC:86:;Mathéo Bodmer:MC:80:;Guy Noël Zohouri:MC:80:;Simon Ebonog:VOL:84:;Thomas Rousseau:MC:80:;Mokrane Bentoumi:MEI:80:;Ismaïl Bouneb:PE:82:;Daren Mosengo:MEI:80:;Josh Maja:CA:85:;Felix Mambimbi:PE:84:;Kaito Mizuta:PD:82:;Joan Tincres:CA:82:;Noam Obougou:PE:80:;Mbwana Samatta:CA:84:;Enzo Koffi:PD:80:;Sōta Nakamura:PE:82:;Hakim Dongopandji:CA:80:;Andy Elysée Logbo:CA:82:
+FRA|FRA|Le Mans|LMF|v,#e30613,#fde100,|Ewan Hatfout:GOL:84:;Augustin Delbecque:GOL:80:;Nicolas Kocik:GOL:82:;Harold Voyer:ZAG:82:;Alexandre Lauray:ZAG:81:;Noa Boisse:ZAG:80:;Raúl Torrente:ZAG:85:;Samuel Yohou:ZAG:84:;Djibril Sidibé:LD:86:;Théo Eyoum:LD:81:;Adnane Kharroubi:ZAG:80:;Yasser Larouci:LE:85:;Edwin Quarshie:VOL:82:;Jean Vercruysse:MEI:84:;Adil Bourabaa:MEI/PE:82:;Daouda Traoré:MC:82:;Martin Rossignol:MC:80:;Erwan Colas:MC:80:;Lucas Bretelle:MC:81:;Izhak Hammoudi:MC:80:;Lenny Videira:MEI:80:;Bilal Brahimi:PE:85:;Antoine Rabillard:CA:82:;Habib Diallo:CA:86:;Louis Mafouta:CA:82:;Lucas Buadés:PD:84:;William Harhouz:PE:80:;Lucas Calodat:PE:82:;Dame Guèye:CA:80:;Enzo Vagner:CA:80:
+FRA|FRA|Lens|RCL|band,#fde100,#e30613,|Régis Gurtner:GOL:83:;Mathieu Gorgelin:GOL:82:;Kouakou Hervé Koffi:GOL:81:;Robin Risser:GOL:85:;Ilan Jourdren:GOL:80:;Ruben Aguilar:LD:85:;Maik Nawrocki:ZAG:85:;Nidal Čelik:ZAG:83:;Samson Baidoo:ZAG:84:;Jhoanner Chávez:LE:85:;Matthieu Udol:LE:84:;Jean-Clair Todibo:ZAG:86:;Saud Abdulhamid:LD:84:;Jonathan Gradit:ZAG:85:;Ismaëlo Ganiou:ZAG:83:;Souleymane Sagnan:ZAG:81:;Kyllian Antonio:ZAG:80:;Andrija Bulatović:MC:83:;Yacine Titraoui:MC:83:;Thorgan Hazard:MEI/PE:85:;Amadou Haidara:MC/VOL:85:;Anthony Bermont:MC:83:;Michaël Cuisance:MEI:84:;Franjo Ivanović:CA/MEI:84:;Mezian Soares Mesloub:MC:80:;Florian Sotoca:PD/CA:85:;Florian Thauvin:PD:86:;Odsonne Édouard:CA:85:;Rayan Fofana:PE:82:;Abdallah Sima:PE/CA:85:;Michał Skóraś:PD:84:;Junior Kadile:PE:81:;Rémy Labeau Lascary:PE:83:;Moussa Diarra:CA:81:
+FRA|FRA|Lille|LIL|band,#e01e13,#1d2a5c,|Berke Özer:GOL:85:;Orlando Gill:GOL:81:;Thomas Sajous:GOL:80:;Zadig Lanssade:GOL:80:;Alexsandro:ZAG:85:;Nathan Ngoy:ZAG:84:;Romain Perraud:LE:85:;Tiago Santos:LD:85:;Tanguy Nianzou:ZAG:84:;Calvin Verdonk:LE:84:;Rafael Fernandes:ZAG:83:;Loun Srdanović:ZAG:81:;Başar Önal:LD:81:;Isaac Cossier:LE:81:;Ousmane Touré:ZAG:81:;Maxima Goffi:LD:80:;Nabil Bentaleb:VOL/MC:84:;Ethan Mbappé:MC:83:;Hákon Arnar Haraldsson:MEI/PE:86:;Osame Sahraoui:PE/MEI:84:;Maurits Kjærgaard:MC:84:;Marius Sivertsen Broholm:MEI:82:;Ngal'ayel Mukau:MC:84:;Ignacio Miramón:VOL:84:;Benjamin André:VOL:85:;Gaëtan Perrin:MEI:84:;Saad Boussadia:MC:80:;Dilane Bakwa:PD:85:;Olivier Giroud:CA:85:;Ayase Ueda:CA:84:;Noah Edjouma:CA:81:;Félix Correia:PE/LE:84:;Hamza Igamane:CA:84:;Tiago Morais:PE:82:;Soriba Diaoune:PE:81:;Angel Yondjo:PD:80:;Yeli Traore:CA:80:;Younes Lachaab:CA:80:
+FRA|FRA|Lorient|FCL|v,#f58220,#111111,|Benjamin Leroy:GOL:84:;Bingourou Kamara:GOL:82:;Yvon Mvogo:GOL:86:;Alec Georgen:LD:82:;Montassar Talbi:ZAG:86:;Formose Mendy:ZAG:83:;Isaac Monnier:ZAG:81:;Dembo Sylla:ZAG:83:;Srdjan Kuzmić:ZAG:82:;Nathaniel Adjei:ZAG:83:;Arsène Kouassi:LE:83:;Nosa Edward Obaretin:ZAG:82:;Enzo Genton:LD:80:;Isaak Touré:ZAG:83:;Bandiougou Fadiga:MC/PE:83:;Noah Cadiou:MC:83:;Isak Steiner Jensen:MEI:82:;Théo Le Bris:PD/LD:85:;Jean-Victor Makengo:MC/MEI:85:;Gabin Bernardeau:MC:80:;Daniel Xavier Semedo:MC:80:;Arthur Avom:VOL/MC:84:;Noah Mbamba:VOL:83:;Panos Katseris:PD/MEI:84:;Mohamed Bamba:CA:85:;Tosin Aiyegun:PE/CA:85:;Ibrahima Baldé:CA:82:;Souleymane Faye:CA:80:;Samir Saïd Haribou:PE:80:;Mamadou Koné:CA:82:;Jeremy Hatchi:PD:80:
+FRA|FRA|Lyon|OL|band3,#ffffff,#da0812,#0a2d6e|Dominik Greif:GOL:83:;Rémy Descamps:GOL:80:;Nicolás Tagliafico:LE:84:;Abner Vinícius:LE:83:;Moussa Niakhaté:ZAG:85:;Corentin Tolisso:MC/MEI:85:;Orel Mangala:VOL/MC:84:;Tanner Tessmann:MC:83:;Ernest Nuamah:PD/PE:83:;Loïs Openda:CA:86:;Keito Nakamura:PE:84:
+FRA|FRA|Olympique de Marseille|OM|band,#ffffff,#2faee0,|Jeffrey de Lange:GOL:83:;Theo Vermot:GOL:81:;Ibrahim Gomis:GOL:80:;Jelle Van Neck:GOL:80:;Leonardo Balerdi:ZAG:86:;Nayef Aguerd:ZAG:85:;Emerson Palmieri:LE:84:;Derek Cornelius:ZAG:84:;Ulisses Garcia:LE:83:;Bamo Meïté:ZAG:83:;CJ Egan-Riley:ZAG/LD:84:;Kelyann Bezahaf:ZAG:80:;Alexi Koum:LD:81:;Mohamed Baradji:ZAG:80:;Angel Gomes:MEI/MC:85:;Pierre-Emile Højbjerg:VOL/MC:86:;Amine Harit:MEI/PE:85:;Geoffrey Kondogbia:VOL:85:;Himad Abdelli:MC:84:;Tochukwu Nnadi:VOL:83:;Hamed Traorè:MEI/PD:84:;Tadjidine Mmadi:MC:81:;Nouhoum Kamissoko:MC:81:;Igor Paixão:PE:86:;Amine Gouiri:CA:86:;Faris Pemi Moumbagna:CA:83:;Timothy Weah:PD/LD:85:;Neal Maupay:CA:84:;Keyliane Abdallah:PE:81:;Antoine Valero:CA:80:
+FRA|FRA|Mônaco|ASM|d,#ffffff,#e31b23,|Lukáš Hrádecký:GOL:86:;Philipp Köhn:GOL:85:;Jules Stawiecki:GOL:80:;Vanderson:LD:86:;Jordan Teze:ZAG/LD:85:;Christian Mawissa:ZAG/LE:84:;Eric Dier:ZAG:85:;Flávio Nazinho:LE:82:;Mohammed Salisu:ZAG:85:;Samuel Nibombé:ZAG:81:;Sadibou Sané:ZAG:81:;Denis Zakaria:VOL/MC:86:;Lamine Camara:MC:86:;Aleksandr Golovin:MEI:85:;Stanis Idumbo:MEI/PE:82:;Takumi Minamino:MEI/PE:86:;Pape Cabral:MC:81:;Mamadou Coulibaly:VOL:83:;Edan Diop:MC:81:;Ilane Touré:MC:80:;Mathys Detourbet:PD:81:;Folarin Balogun:CA:86:;Matthis Abline:CA:85:;Mika Biereth:CA:85:;Paris Brunner:PE:82:;Ansu Fati:PE:85:
+FRA|FRA|Nice|NIC|v,#d71920,#111111,|Yehvann Diouf:GOL:85:;Martin Ponsot:GOL:80:;Teddy Boulhendi:GOL:81:;Ali Abdi:LE:84:;Mohamed Abdelmonem:ZAG:85:;Melvin Bard:LE:85:;Niels Nkounkou:LE:84:;Antoine Mendy:ZAG/LD:84:;Alidu Seidu:ZAG/LD:84:;Moïse Bombito:ZAG:85:;Jonathan Clauss:LD:86:;Hicham Boudaoui:MC:86:;Morgan Sanson:MEI/MC:85:;Laurent Abergel:VOL:85:;Isak Jansson:PE/PD:84:;Axel Witsel:VOL:85:;Nathan N'Goumou:PD:83:;Youssouf Ndayishimiye:VOL:85:;Salis Abdul Samed:VOL/MC:84:;Gauthier Hein:MEI/PD:83:;Mohamed Amoura:CA:86:;Sofiane Diop:MEI/PE:86:;Elye Wahi:CA:85:;Kevin Carlos:CA:84:
+FRA|FRA|Paris FC|PFC|band,#0b1e45,#8fc4ea,|Kevin Trapp:GOL:86:;Obed Nkambadio:GOL:82:;Ibrahim Meite:GOL:80:;Emmanuel Mbemba:ZAG:82:;Moustapha Mbow:ZAG:84:;Otávio Silva:ZAG:84:;Hamari Traoré:LD:84:;Nhoa Sangui:LE:83:;Yoan Koré:ZAG:82:;Thibault De Smet:LE:83:;Samir Chergui:LE:82:;Diego Coppola:ZAG:84:;Vincent Marchetti:MC:83:;Patrick Zabi:MC:81:;Ilan Kebbal:MEI/PE:85:;Adama Camara:MC:82:;Maxime Lopez:MC:84:;Rudy Matondo:VOL:82:;Pierre Lees-Melou:MC/VOL:84:;El Hadary Raheriniaina:MC:80:;Pablo Pagis:PE:84:;Lassine Sinayoko:CA:84:;Jean-Philippe Krasso:CA:84:;Luca Koleosho:PE:84:;Omar Sissoko:PD:81:;Moses Simon:PE:85:;Mohamed Dao:CA:81:;Jonathan Ikoné:PD/MEI:84:
+FRA|FRA|Rennes|SRFC|half,#e13327,#111111,|Brice Samba:GOL:86:;Kilian Belazzoug:GOL:80:;Nicolas Lemaître:GOL:81:;Mathys Silistrie:GOL:80:;Przemysław Frankowski:LD/LE:85:;Charlie Cresswell:ZAG:84:;Abdelhamid Ait Boudlal:ZAG:83:;Mahamadou Nagida:LE:82:;Mikayil Faye:ZAG:84:;Quentin Merlin:LE:84:;Bryan Reynolds:LD:83:;Rayan Bamba:LD:81:;Anthony Rouault:ZAG:84:;Gonçalo Oliveira:ZAG:81:;Sebastian Szymański:MEI/MC:86:;Seko Fofana:MC:85:;Jordan James:MC:84:;Glen Kamara:VOL/MC:84:;Ludovic Blas:MEI:85:;Valentin Rongier:MC:85:;Adrien Thomasson:MEI/MC:84:;Djaoui Cissé:VOL:84:;Mahdi Camara:VOL:84:;Ayanda Sishuba:MC:81:;Paolo Limon:MC:80:;Esteban Lepaul:CA:85:;Yassir Zabiri:CA:83:;Nordan Mukiele:CA:80:;Boulaye Dia:CA:85:;Musa Al-Taamari:PD:85:;Eliezer Mayenda:CA:83:;Issa Soumaré:PE:83:;Arnaud Nordin:PE/PD:84:;Elias Legendre:PE:80:;Henrick Do Marcolino:CA:80:;Lucas Rosier:PD:80:
+FRA|FRA|Strasbourg|RCS|band,#009fe3,#ffffff,|Filip Jörgensen:GOL:86:;Miłosz Piekutowski:GOL:80:;Andrew Omobamidele:ZAG:85:;Saïdou Sow:ZAG:83:;Jeyland Mitchell:ZAG:83:;Ismaël Doukouré:ZAG:85:;Mateo Del Blanco:LE:83:;Genesis Antwi:LD:80:;Lucas Høgsberg:ZAG:83:;Yoni Gomis:ZAG:80:;Karim Coulibaly:ZAG:82:;Yoann Becker:ZAG:80:;Soumaïla Coulibaly:ZAG:83:;Hermann Malonga:ZAG:80:;Sam Amo-Ameyaw:PD:83:;Maxi Oyedele:MC:84:;Giovanni Reyna:MEI:86:;Sebastian Nanasi:MEI/PE:86:;Dário Essugo:VOL:85:;Martial Godo:PD/PE:84:;Pape Demba Diop:MC:83:;Diogo Loboa Sousa:MC:80:;Tyrese Noubissie:MC:80:;Samir El Mourabet:VOL:83:;Oso:MEI:82:;Ghianny Kodia:MC:80:;Benjamin Brantlind:MC:80:;Gessime Yassine:MEI:82:;Joaquín Panichelli:CA:86:;Sékou Mara:CA:84:;Fabio Baldé:PD:81:;Oscar Perea:PE/PD:83:;Omari Kellyman:MEI/PE:83:;Jacobo Ortega:PE:80:;Yaya Dieme:CA:80:;Conrad Harder:CA:84:;Rayane Messi:CA:80:;Miloš Luković:CA:82:;Deivid Washington:CA:83:
+FRA|FRA|Toulouse|TFC|band,#5b2b82,#ffffff,|Theo Collin:GOL:80:;Guillaume Restes:GOL:86:;Mathys Niflore:GOL:80:;Rasmus Nicolaisen:ZAG:85:;Mark McKenzie:ZAG:85:;Seny Koumbassa:ZAG:82:;Christ Tape:LD:82:;Niko Sigur:LD/MC:84:;David Odogu:ZAG:82:;Ylies Aradj:LE:81:;Gatan Bakhouche Piernas:ZAG:80:;Ismail Diallo:LE:82:;Alexis Vossah:VOL:83:;Thomas Jørgensen:MC:83:;Abu Francis:MC/VOL:84:;Mathis Amougou:MC:82:;Rafik Messali:MEI:82:;Cristian Cásseres Jr.:MC/MEI:85:;Mathis Saka:MC:80:;Niklas Schmidt:MEI:83:;Aymen Amaaouch:MC:80:;Mario Sauer:MC:81:;Julián Vignolo:PD:83:;Santiago Hidalgo:CA/PE:84:;Sion Oppong:CA:82:;Jacen Russell-Rowe:CA:83:;Aron Dønnum:PE/PD:84:;Casper Tengstedt:CA:84:;Enzo Faty:PE:80:;Ilyas Azizi:PD:81:
+FRA|FRA|Troyes|ETR|band,#0b4ea2,#ffffff,|Zacharie Boucher:GOL:84:;Patrick Beach:GOL:81:;Hillel Konaté:GOL:82:;Lucas Maronnier:LD:82:;Anis Ouzenadji:ZAG/CA:81:;Junior Diaz:ZAG:82:;Paolo Gozzi:ZAG:85:;Adrien-Mehdi Monfray:ZAG:84:;Ismaël Boura:LE:85:;Fred Ondoa Onambele:ZAG:81:;Noah Donkor:ZAG:80:;Lassana Simakha:LE:80:;Enisio Carneiro:ZAG:80:;Yvann Titi:ZAG:82:;Kandet Diawara:MC:82:;Mouhamed Diop:VOL:82:;Merwan Ifnaoui:MEI:84:;Iron Gomis:PE/MEI:84:;Antoine Mille:MC:82:;Hugo Picard:MC:81:;Alexandre Phliponeau:MC:81:;Karim Dermane:MEI:82:;Roman Murcy:MC:80:;Idrissa Soukouna:MC:80:;Jérémy Le Douaron:CA/PE:86:;Elijah Odede:CA:81:;Renaud Ripart:PD/CA:84:;Timothé Nkada:CA:84:;Ibrahim Traore:PE:81:;Amadou Diakite:CA:80:;Christ Batola:PE:80:;Yacouba Kone:CA:80:
+ING|ING|Aston Villa|AVL|half,#670e36,#95bfe5,|Zion Suzuki:GOL:85:;Marco Bizot:GOL:84:;James Wright:GOL:80:;Owen Asemota:GOL:80:;Matty Cash:LD:85:;Victor Lindelöf:ZAG:85:;Taylor Harwood-Bellis:ZAG:84:;Tyrone Mings:ZAG:85:;Matteo Ruggeri:LE:85:;Pau Torres:ZAG:86:;Ian Maatsen:LE:85:;Aaron Wan-Bissaka:LD:85:;Ross Barkley:MEI/MC:84:;John McGinn:MC:86:;Boubacar Kamara:VOL:86:;Emiliano Buendía:MEI/PD:85:;Andrés García:LD/MC:83:;Amadou Onana:VOL/MC:86:;Lamare Bogarde:VOL:83:;Leon Goretzka:MC:86:;João Gomes:VOL/MC:85:;Johan Manzambi:MC/MEI:84:;Nicolas Jackson:CA:85:;Alejandro Garnacho:PE:86:;Tammy Abraham:CA:85:;Samuel Iling-Junior:PE/LE:83:;Ibrahim Mbaye:PE:84:;Evann Guessand:PD/CA:85:;Brian Madjo:CA:81:;Alysson:PE:82:;George Hemmings:CA:80:
+ING|ING|Bournemouth|BOU|v,#da291c,#111111,|Đorđe Petrović:GOL:86:;Alex Paulsen:GOL:82:;Fraser Forster:GOL:83:;Michele Di Gregorio:GOL:82:;Mack Allan:GOL:80:;Julián Araujo:LD:84:;Adrien Truffert:LE:85:;James Hill:ZAG/LD:82:;Julio Soler:LE:83:;António Silva:ZAG:85:;Adam Smith:LD:84:;Bafodé Diakité:ZAG/LD:85:;Juanlu Sánchez:LD/PD:85:;Max Aarons:LD:83:;Veljko Milosavljević:ZAG:84:;Matai Akinmboni:ZAG:82:;Alfie Merritt:ZAG:80:;Álex Jiménez:LD:83:;Lewis Cook:MC/VOL:85:;Alex Scott:MC:85:;Ryan Christie:MC/MEI:85:;Tyler Adams:VOL:86:;Justin Kluivert:MEI/PE:86:;Romain Faivre:MEI/PD:84:;Alex Tóth:MC:82:;Ben Winterburn:MC:81:;David Brooks:PD:85:;Evanilson:CA:86:;Ben Gannon-Doak:PD/PE:83:;Marcus Tavernier:PE/MEI:85:;Amine Adli:PE/PD:85:;Eli Junior Kroupi:CA/MEI:84:;Daniel Jebbison:CA:82:;Álvaro Rodríguez:CA:83:;Rayan:PD:85:
+ING|ING|Brentford|BRE|v,#e30613,#ffffff,|Caoimhín Kelleher:GOL:86:;Hákon Rafn Valdimarsson:GOL:83:;Ellery Balcombe:GOL:80:;Aaron Hickey:LD/LE:85:;Rico Henry:LE:84:;Sepp van den Berg:ZAG:85:;Kristoffer Ajer:ZAG/LD:85:;Jayden Meghoma:LE:81:;Nathan Collins:ZAG:86:;Keane Lewis-Potter:LE/PE:85:;El Hadji Malick Diouf:LE:83:;Michael Kayode:LD:84:;Kim Ji-soo:ZAG:81:;Benjamin Arthur:ZAG:80:;Jannik Schuster:ZAG:82:;Benjamin Fredrick:ZAG:80:;Yehor Yarmolyuk:MC/VOL:84:;Mathias Jensen:MC:85:;Josh Dasilva:MEI:83:;Fábio Carvalho:MEI/PE:84:;Antoni Milambo:MEI:84:;Mamadou Sangaré:VOL:82:;Mikkel Damsgaard:MEI/PE:86:;Yunus Emre Konak:MC:82:;Vitaly Janelt:VOL/MC:85:;Romelle Donovan:PE:80:;Kevin Schade:PE:86:;Igor Thiago:CA:86:;Dango Ouattara:PD/PE:86:;Callum Wilson:CA:85:;Jaidon Anthony:PE:84:;Gustavo Nunes:PD:83:;Kaye Furo:CA:81:
+ING|ING|Brighton|BHA|v,#0057b8,#ffffff,|Bart Verbruggen:GOL:86:;Jason Steele:GOL:84:;James Beadle:GOL:82:;Tom McGill:GOL:82:;Nils Ramming:GOL:80:;Steven Hall:GOL:80:;Ferdi Kadıoğlu:LE/LD:86:;Luka Vuskovic:ZAG:84:;Maxim De Cuyper:LE:85:;Pascal Struijk:ZAG/LE:84:;Jaouen Hadjam:LE:84:;Lewis Dunk:ZAG:85:;Olivier Boscagli:ZAG:84:;Mats Wieffer:VOL/LD:85:;Michael Svoboda:ZAG:83:;Costinha:LD:83:;Eiran Cashin:ZAG:84:;Freddie Simmonds:ZAG:80:;Kaoru Mitoma:PE:86:;Yasin Ayari:MC:84:;Malick Yalcouyé:VOL:83:;Pascal Gross:MC:85:;Chema Andrés:VOL:83:;Jack Hinshelwood:MC/LD:84:;Diego Gómez:MC:84:;Facundo Buonanotte:MEI:84:;Brajan Gruda:MEI/PE:84:;Femi Azeez:PD:82:;Matias Orozco:MC:81:;Matt O'Riley:MC/MEI:85:;Yoon Do-young:PD:82:;Younes Ibrahim:MEI:80:;Shane Nti:MC:80:;Josh Robertson:MC:80:;Jesse Middleton:MC:80:;Yankuba Minteh:PD:85:;Charalampos Kostoulas:CA:84:;Stefanos Tzimas:CA:84:;Promise David:CA:83:;Evan Ferguson:CA:84:;Georginio Rutter:MEI/CA:85:;Zadok Yohanna:PE:82:;Amario Cozier-Duberry:PD:82:;Ibrahim Osman:PE:82:;Tommy Watson:PE:82:;Nehemiah Oriola:CA:80:;Rodrigo Rêgo:PD:81:
+ING|ING|Coventry City|COV|v,#59cbe8,#ffffff,|Oliver Dovin:GOL:85:;Ben Wilson:GOL:82:;Carl Rushworth:GOL:84:;Daniel Bentley:GOL:82:;Ethan Pinnock:ZAG:85:;Jay Dasilva:LE:84:;Bobby Thomas:ZAG:84:;Stephen Mfuni:ZAG:81:;Liam Kitching:ZAG:84:;Kaine Hayden:LD:82:;Joel Latibeaudiere:ZAG/LD:84:;Aurèle Amenda:ZAG:84:;Luke Woolfenden:ZAG:84:;Milan van Ewijk:LD:85:;Miguel Ángel Brau:LE:82:;Jake Bidwell:LE:83:;Callum Perry:ZAG:80:;Jack Rudoni:MC/MEI:86:;Matt Grimes:MC/VOL:85:;Tatsuhiro Sakamoto:PD:85:;Caleb Yirenkyi:MC:82:;Frank Onyeka:VOL/MC:85:;Raphael Borges Rodrigues:MEI:82:;Josh Eccles:MC:83:;Victor Torp:MC:84:;Yann Gboho:PE/MEI:84:;Gustavo Hamer:MEI/MC:86:;Kai Andrews:MC:80:;Ellis Simms:CA:85:;Ephron Mason-Clark:PE:85:;Haji Wright:CA:86:;Taiwo Awoniyi:CA:86:;Loum Tchaouna:PD:85:;Brandon Thomas-Asante:CA:84:;Norman Bassette:CA:83:;Sidiki Cherif:CA:81:
+ING|ING|Crystal Palace|CRY|v,#1b458f,#c4122e,|Dean Henderson:GOL:86:;Remi Matthews:GOL:81:;Walter Benítez:GOL:85:;Owen Goodman:GOL:81:;Lucca Benetton:GOL:80:;Tyrick Mitchell:LE:85:;Chadi Riad:ZAG:84:;Axel Disasi:ZAG:85:;Jaydee Canvot:ZAG:83:;Takehiro Tomiyasu:ZAG/LD:85:;Honest Ahanor:ZAG/LE:83:;Borna Sosa:LE:84:;Chris Richards:ZAG:85:;Óscar Mingueza:LD:85:;Ben Chilwell:LE:84:;Dean Benamar:ZAG:80:;Nathanael James Kalembo:LD:80:;Jefferson Lerma:VOL/MC:85:;Daichi Kamada:MEI/MC:85:;Will Hughes:MC:84:;Adam Wharton:MC:86:;Romain Esse:MEI/PD:83:;Quinten Timber:MC:85:;Cheick Doucouré:VOL:85:;George King:MC:81:;Sebastian Williams:MC:80:;Jesurun Rak-Sakyi:PD:82:;Hindolo Mustapha:MC:80:;Matheus França:MEI:83:;Ismaïla Sarr:PD:86:;Eddie Nketiah:CA:84:;Yéremy Pino:PE/PD:85:;Dwight McNeil:PE:85:;Zavier Gozo:PE:81:;Jean-Philippe Mateta:CA:86:;Jørgen Strand Larsen:CA:85:;Darío Osorio:PD:83:;Anan Khalaili:PD:83:;Rio Cardines:CA:81:
+ING|ING|Everton|EVE|band,#003399,#ffffff,|Jordan Pickford:GOL:86:;Mark Travers:GOL:83:;Tom King:GOL:81:;George Pickford:GOL:80:;Ainsley Maitland-Niles:LD:83:;Jarrad Branthwaite:ZAG:85:;Michael Keane:ZAG:84:;James Tarkowski:ZAG:85:;Jake O'Brien:ZAG/LD:84:;Vitaliy Mykolenko:LE:84:;Kiernan Dewsbury-Hall:MC/MEI:85:;Jack Grealish:PE/MEI:85:;Tyrique George:PE:83:;Christian Nørgaard:VOL:84:;Carlos Alcaraz:MC/MEI:84:;Hayden Hackney:MC:83:;Merlin Röhl:MEI:83:;James Garner:MC/VOL:85:;Harrison Armstrong:MC:81:;Malik Olayiwola:MC:80:;Harvey Foster:MC:80:;Thierno Barry:CA:84:;Tyler Dibling:PD:84:;Brennan Johnson:PD/CA:85:;Braiden Graham:CA:80:
+ING|ING|Fulham|FUL|band,#ffffff,#111111,|Bernd Leno:GOL:86:;Benjamin Lecomte:GOL:83:;Alexander Borto:GOL:80:;Kenny Tete:LD:84:;Calvin Bassey:ZAG/LE:85:;Jorge Cuenca:ZAG:84:;Joachim Andersen:ZAG:85:;Timothy Castagne:LD/LE:84:;David Affengruber:ZAG:83:;Ryan Sessegnon:LE/PE:84:;Antonee Robinson:LE:86:;Harrison Reed:MC/VOL:84:;César Palacios:MEI:82:;Tom Cairney:MC:84:;Hugo Larsson:MC:84:;Sander Berge:VOL/MC:85:;Alex Iwobi:MEI/PE:85:;Shea Charles:VOL:83:;Manuel Ángel:MC:82:;Josh King:MEI:82:;Emile Smith Rowe:MEI:85:;Gonzalo García:CA:84:;Rodrigo Muniz:CA:85:;Kevin:PE:84:;Oscar Bobb:PD/PE:85:;Jonah Kusi-Asare:CA:82:
+ING|ING|Hull City|HUL|v,#f5a12d,#111111,|Jack Butland:GOL:85:;Dillon Phillips:GOL:81:;Konstantinos Tzolakis:GOL:82:;Lewie Coyle:LD:82:;Ryan Giles:LE:84:;Charlie Hughes:ZAG:82:;Semi Ajayi:ZAG:84:;John Egan:ZAG:84:;Paddy McNair:ZAG/VOL:83:;Brooke Norton-Cuffy:LD:83:;Lucas Herrington:ZAG:80:;Matt Targett:LE:83:;Nobel Mendy:ZAG:81:;Hidemasa Morita:MC/VOL:86:;Eliot Matazo:VOL/MC:83:;Jens Hjertø-Dahl:MC:82:;Óscar Zambrano:VOL:83:;Darko Gyabi:MC:81:;Matt Crooks:MEI/CA:82:;Kieran Dowell:MEI:82:;Regan Slater:MC:82:;Lucas Gourna-Douath:VOL:83:;Abdülkadir Ömür:MEI/PD:84:;Christos Mouzakitis:MC:83:;Tim Iroegbunam:VOL/MC:82:;Sorba Thomas:PD:82:;Oli McBurnie:CA:83:;Mohamed Belloumi:PD:82:;Joe Gelhardt:CA/PE:82:;Ilyas Ansah:PE:81:;Robinio Vaz:CA:82:;Mohamed-Ali Cho:PE:84:
+ING|ING|Ipswich Town|IPS|band,#0044a9,#ffffff,|Alex Palmer:GOL:85:;David Button:GOL:81:;Christian Walton:GOL:83:;Kjell Scherpen:GOL:82:;Darnell Furlong:LD:83:;Leif Davis:LE:86:;Cédric Kipré:ZAG:84:;Issa Diop:ZAG:84:;Jacob Greaves:ZAG:85:;Dara O'Shea:ZAG:85:;Abdoul Ouattara:ZAG:80:;Azor Matusiwa:VOL:85:;Florentino Luís:VOL/MC:86:;Jack Taylor:MC:83:;Saša Lukić:MC:85:;Exequiel Palacios:MC:86:;Marcelino Núñez:MC/MEI:84:;Abdul Fatawu:PD:85:;Sindre Walle Egeli:PE/MEI:83:;Zian Flemming:CA/MEI:84:;Julio Enciso:MEI/PE:86:;Jaden Philogene:PE:84:;Emersonn:CA:82:;Kasey McAteer:PD:82:;Chuba Akpom:CA:83:;Anis Mehmeti:PE/MEI:84:;Daizen Maeda:PE:86:;Jack Clarke:PE:85:
+ING|ING|Leeds|LEE|band,#ffffff,#1d428a,|James Trafford:GOL:85:;Michael Zetterer:GOL:84:;Alex Cairns:GOL:82:;Rory Mahady:GOL:80:;Darryl Ombang:GOL:80:;Ethan Ampadu:ZAG/VOL:86:;Joe Rodon:ZAG:86:;Jayden Bogle:LD:85:;Gabriel Gudmundsson:LE:85:;Jaka Bijol:ZAG:86:;James Justin:LD/LE:85:;Sean Longstaff:MC:85:;Brenden Aaronson:MEI/PE:85:;Anton Stach:VOL/MC:86:;Ao Tanaka:MC:85:;Ilia Gruev:VOL:84:;Dominic Calvert-Lewin:CA:86:;Harry Wilson:PD:86:;Daniel James:PE/PD:85:;Lukas Nmecha:CA:84:;Noah Okafor:PE:85:
+ING|ING|Nottingham Forest|NFO|band,#dd0000,#ffffff,|John Victor:GOL:84:;Matz Sels:GOL:85:;Steven Benda:GOL:80:;Murillo:ZAG:86:;Neco Williams:LD/LE:84:;Nikola Milenković:ZAG:85:;Ola Aina:LD/LE:85:;Morato:ZAG/LE:83:;Zach Abbott:ZAG:80:;Morgan Gibbs-White:MEI:86:;Ibrahim Sangaré:VOL:84:;Ryan Yates:MC/VOL:83:;Nicolás Domínguez:MC:84:;Chris Wood:CA:85:;Callum Hudson-Odoi:PE/PD:85:;Igor Jesus:CA:84:;Liam Delap:CA:84:
+ING|ING|Sunderland|SUN|v,#eb172b,#ffffff,|Robin Roefs:GOL:84:;Simon Moore:GOL:81:;Melker Ellborg:GOL:80:;Kevin Danso:ZAG:85:;Thomas Meunier:LD:84:;Daniel Ballard:ZAG:84:;Trai Hume:LD:84:;Nordi Mukiele:ZAG/LD:84:;Reinildo Mandava:LE/ZAG:84:;Luke O'Nien:ZAG/MC:82:;Dayann Méthalie:LD:81:;Granit Xhaka:MC/VOL:86:;Enzo Le Fée:MC/MEI:85:;Chris Rigg:MC:83:;Noah Sadiki:VOL/MC:84:;Habib Diarra:MC/MEI:84:;Alan Browne:MC:82:;Brian Brobbey:CA:85:;Wilson Isidor:CA:84:;Nilson Angulo:PE:83:;Malick Fofana:PE:85:;Chemsdine Talbi:PD/PE:84:;Jocelin Ta Bi:PE:81:
+ITA|ITA|Atalanta|ATA|v,#1e71b8,#111111,|Marco Carnesecchi:GOL:86:;Marco Sportiello:GOL:83:;Thomas Pompei:GOL:80:;Mattia Sonzogni:GOL:80:;Odilon Kossounou:ZAG:84:;Isak Hien:ZAG:85:;Raoul Bellanova:LD:84:;Sead Kolašinac:ZAG/LE:84:;Giorgio Scalvini:ZAG:85:;Davide Zappacosta:LD:84:;Thomas T. Kristensen:ZAG:83:;Mario Pašalić:MC/MEI:85:;Lazar Samardžić:MEI:84:;Éderson:MC/VOL:86:;Franck Kessié:MC:84:;Nicola Zalewski:LE/PE:84:;Elif Elmas:MEI/PE:84:;Gianluca Scamacca:CA:85:;Charles De Ketelaere:MEI/CA:86:;Giacomo Raspadori:CA/MEI:85:;Nikola Krstović:CA:84:;Kamaldeen Sulemana:PE:84:
+ITA|ITA|Bologna|BFC|v,#1a2f48,#a21c26,|Łukasz Skorupski:GOL:85:;Massimo Pessina:GOL:81:;Ukko Happonen:GOL:80:;Matteo Franceschelli:GOL:80:;Emil Holm:LD:85:;Arthur Theate:ZAG/LE:85:;Torbjorn Heggem:ZAG:84:;Nicolò Casale:ZAG:84:;Nadir Zortea:LD/LE:84:;Lorenzo De Silvestri:LD:83:;Juan Miranda:LE:85:;Martin Vitík:ZAG:84:;Tommaso Pobega:MC:85:;Nikola Moro:MC/VOL:85:;Mikel Amondarain:MC:82:;Oussama El Azzouzi:MC:83:;Lewis Ferguson:MC/MEI:86:;Nicolò Cambiaghi:PE:84:;Riccardo Orsolini:PD:86:;Artem Dovbyk:CA:86:;Federico Bernardeschi:PD/MEI:85:;Samuel Mbangula:PE:83:;Jens Odgaard:MEI/CA:85:;Benjamín Domínguez:PE:84:;Roberto Piccoli:CA:85:
+ITA|ITA|Cagliari|CAG|half,#a3001e,#002350,|Elia Caprile:GOL:86:;Alen Sherri:GOL:81:;Boris Radunović:GOL:82:;Vincenzo Sarno:GOL:80:;Velizar Iliya Iliev:GOL:80:;Zé Pedro:ZAG:84:;Riyad Idrissi:LE:83:;Juan Rodríguez:ZAG:83:;Nicola Pintus:ZAG:80:;Giuseppe Aurelio:LE:82:;Yerry Mina:ZAG:85:;Gabriele Zappa:LD:84:;Yukinari Sugawara:LD:85:;Adam Obert:LE/ZAG:83:;Márton Prettenhoffer:ZAG:80:;Davide Veroli:ZAG:81:;Francesco Gallea Beidi:ZAG:80:;Alessandro Romano:MC:80:;Harry Winks:MC:84:;Michel Ndary Adopo:MC/VOL:84:;Jacopo Fazzini:MEI:83:;Alessandro Deiola:MC:83:;Matteo Prati:VOL:84:;Othniël Raterink:MC:80:;Nicolò Cavuoti:MEI:81:;Roberto Gagliardini:VOL/MC:84:;Raphael Kofler:MC:80:;Joseph Liteta:MC:80:;Demi Akarakiri:MC:80:;Ivan Sulev:MC:80:;Nicola Grandu:MC:80:;Roberto Malfitano:MC:80:;Yanis Massolin:MC:82:;Mattia Felici:PE/PD:83:;M'Bala Nzola:CA:84:;Kingstone Mutandwa:CA:81:;Yael Trepy:CA:81:;Riccardo Ciervo:PD:80:;Agustín Albarracín:PE:83:;Sebastiano Di Paolo Vlad:CA:80:;Gennaro Borrelli:CA:83:;Paul Mendy:CA:80:;Alessandro Sugamele:CA:80:;Alieu Fadera:PE:83:;Daniel Maldini:MEI/PE:84:;Zito Luvumbo:PE/PD:85:;Sebastiano Esposito:CA/MEI:85:
+ITA|ITA|Como|COM|band,#00539f,#ffffff,|Jean Butez:GOL:84:;Robert Sánchez:GOL:84:;Emil Audero:GOL:83:;Noel Törnqvist:GOL:81:;Mauro Vigorito:GOL:80:;Lorenzo Luigi Ginelli:GOL:80:;Yan Couto:LD:84:;Trevoh Chalobah:ZAG:84:;Marc-Oliver Kempf:ZAG:84:;Alberto Dossena:ZAG:83:;Álex Valle:LE:83:;Jacobo Ramón:ZAG:83:;Ignace Van der Brempt:LD:83:;Ivan Smolčić:LD:83:;Edoardo Goldaniga:ZAG:82:;Willy Kambwala:ZAG:82:;Kaiki Bruno:LE:83:;Fellipe Jack:ZAG:82:;Nico Paz:MEI:93:;Samuele Ricci:VOL/MC:84:;Martin Baturina:MEI/MC:84:;Maxence Caqueret:MC:84:;Máximo Perrone:VOL/MC:84:;Lucas Da Cunha:MC:83:;Luis Milla:MC:83:;Moise Kean:CA:85:;Álvaro Morata:CA:84:;Anastasios Douvikas:CA:84:;Assane Diao:PE/PD:84:;Jesús Rodríguez:PE:84:;Nicolas Kühn:PD:84:;Jayden Addai:PD:82:
+ITA|ITA|Fiorentina|FIO|band,#4b2e83,#ffffff,|Luca Lezzerini:GOL:81:;David de Gea:GOL:86:;Oliver Christensen:GOL:83:;Dodô:LD:85:;Radu Drăgușin:ZAG:85:;Marin Pongračić:ZAG:84:;Luca Ranieri:ZAG/LE:84:;João Mário:LD:83:;Víctor Valdepeñas:ZAG:81:;Viery:ZAG:81:;Fabiano Parisi:LE:84:;Marco Brescianini:MC:84:;Arthur Atta:MC:83:;Cher Ndour:MC:84:;Pedro Gonçalves:MEI/PE:85:;Christ Inao Oulaï:MC:81:;Nicolò Fagioli:MC:85:;Riccardo Sottil:PE:83:;Beto:CA:84:;Wilfried Gnonto:PE/PD:84:;Alieu Njie:PD:81:;Franco Mastantuono:PD/MEI:85:;Mateo Pellegrino:CA:83:;Federico Croci:CA:80:
+ITA|ITA|Frosinone|FRO|band,#fde100,#0047ab,|Matteo Pisseri:GOL:82:;Lorenzo Palmisani:GOL:83:;Francesco Minicangeli:GOL:80:;Sebastiano Desplanches:GOL:82:;Eldin Lolić:GOL:80:;Giorgio Cittadini:ZAG:83:;Gabriele Calvani:ZAG:81:;Wisdom Amey:ZAG:82:;Jacopo Gelli:ZAG:81:;Niccolò Corrado:LE:82:;Anthony Oyono:LD:83:;Jérémy Oyono:LD:82:;Kevin Akpoguma:ZAG:84:;Ilario Monterisi:ZAG:83:;Aleksa Terzić:LE:84:;Omar Fayed:ZAG:81:;Gabriele Bracaglia:ZAG:80:;Enzo Tchato:LD:82:;Ben Lhassine Kone:VOL:83:;Romano Schmid:MEI/MC:86:;Giacomo Calò:MC:83:;Matteo Cichella:MC:81:;Filippo Grosso:MC:81:;Alessio Zerbin:PD:83:;Florian Grillitsch:VOL/MC:85:;Anouar El Azzouzi:VOL:82:;Luis Hasa:MEI:83:;Patrizio Masini:MC:82:;Farès Ghedjemis:PD:84:;Antonio Raimondo:CA:83:;Daniel Birligea:CA:83:;Lorenzo Gori:CA:80:;Giorgi Kvernadze:PE:82:;Alejandro Cichero Terrero:CA:80:;Seydou Fini:PE:81:;Muhammed Colley:PE:80:;Damar Dixon:PD:80:;Tomáš Bobček:CA:82:;Francesco Gelli:CA:80:
+ITA|ITA|Genoa|GEN|half,#a50034,#002856,|Justin Bijlow:GOL:85:;Daniele Sommariva:GOL:81:;Franz Stolz:GOL:82:;Rendijs Mihelsons:GOL:80:;Leo Østigård:ZAG:85:;Johan Vásquez:ZAG/LE:86:;Alessandro Marcandalli:ZAG/LD:83:;Mario Mitaj:LE:83:;Junior Messias:PD/MEI:85:;Morten Frendrup:MC/VOL:86:;Djibril Sow:MC:85:;Mikael Ellertsson:MC:83:;Stephan El Shaarawy:PE:85:;Vitinha:CA/PE:85:;Lorenzo Colombo:CA:85:
+ITA|ITA|Lazio|LAZ|band,#87d8f7,#ffffff,|Christos Mandas:GOL:85:;Edoardo Motta:GOL:81:;Davide Renzetti:GOL:80:;Alessio Furlanetto:GOL:80:;Diogo Leite:ZAG:84:;Luca Pellegrini:LE:84:;Danilho Doekhi:ZAG:85:;Romano Floriani Mussolini:LD:81:;Nuno Tavares:LE:85:;Oliver Provstgaard:ZAG:82:;Ricardo Bordon:ZAG:80:;Josip Šutalo:ZAG:85:;Filipe Bordon:ZAG:80:;Adam Marušić:LD:84:;Nicolò Rovella:VOL/MC:86:;Davide Frattesi:MC/MEI:86:;Fisayo Dele-Bashiru:MC:84:;Bruno Galassi:MC:80:;Reda Belahyane:MC:83:;Kenneth Taylor:MC/MEI:85:;Adrian Przyborek:MEI:81:;Manuel Lazzari:LD/PD:84:;Danilo Cataldi:VOL:84:;Pietro Pinelli:MC:80:;Valerio Farcomeni:MC:80:;Mohamed Farès:LE/MC:82:;Andrea Pinamonti:CA:85:;Mattia Zaccagni:PE:86:;Gustav Isaksen:PD:85:;Tijjani Noslin:CA/PD:84:;Petar Ratkov:CA:83:;Matteo Cancellieri:PD:84:;Alfonso Pedraza:LE/PE:84:;Saná Fernandes:PE:81:;Federico Serra:CA:80:;Albert Guðmundsson:MEI/CA:86:
+ITA|ITA|Lecce|LEC|v,#fde100,#e30613,|Marco Bleve:GOL:82:;Wladimiro Falcone:GOL:86:;Alexandru Borbei:GOL:80:;Jasper Samooja:GOL:80:;Plamen Penev:GOL:80:;Ali Dembélé:LD:82:;Corrie Ndaba:ZAG/LE:82:;Kialonda Gaspar:ZAG:84:;Jamil Siebert:ZAG:83:;Sadik Fofana:ZAG:81:;Matías Pérez:ZAG:82:;Danilo Veiga:LD:83:;Gaby Jean:ZAG:82:;Owen Kouassi:ZAG:80:;Antonino Gallo:LE:84:;Elijah Scott:ZAG:80:;Tiago Gabriel:ZAG:84:;Niko Kovac:ZAG:80:;Sebastian Esposito:ZAG:80:;Álex Sala:MC:84:;Amar Ahmed Fatah:MEI:81:;Konan N'Dri:PD:83:;Youssef Maleh:MC:83:;Omri Gandelman:MC/MEI:83:;Ed McJannet:MC:80:;Olaf Gorter:MC:81:;Lassana Coulibaly:MC/VOL:84:;Filip Marchwiński:MEI:83:;Santiago Pierotti:PD/MEI:84:;Mohamed Kaba:VOL:83:;Oumar Ngom:MC:81:;Joël Monteiro:PE:82:;Nikola Štulić:CA:84:;Medon Berisha:MEI/CA:82:;Paco Esteban:PE:80:;Rareș Burnete:CA:81:;Hjalte Laerke:CA:80:;Willem Geubbels:CA:82:;Milos Jovic:CA:80:
+ITA|ITA|Monza|MON|half,#e30613,#ffffff,|Semuel Pizzignacco:GOL:83:;Demba Thiam:GOL:82:;Aljaž Strajnar:GOL:80:;Saba Goglichidze:ZAG:83:;Lorenzo Lucchesi:ZAG:83:;Jan Ziółkowski:ZAG:84:;Yvan Maye:ZAG:82:;Valentin Antov:ZAG:83:;Ricardo Mangas:LE:84:;Samuele Birindelli:LD:84:;Andrea Carboni:ZAG/LE:83:;Eddy Kouadio:ZAG:80:;Manga Foe-Ondoa:MC:81:;Omari Forson:PE/MEI:83:;Patrick Ciurria:PD/LD:84:;Idrissa Touré:MC/VOL:83:;Andrea Colpani:MEI:86:;Matteo Pessina:MC/MEI:85:;Michael Folorunsho:MC:85:;Gustavo Varela:CA:82:;Patrick Cutrone:CA:85:;Ebenezer Akinsanmiro:MC/MEI:83:;Cyril Ngonge:PD:85:;Keita Baldé Diao:PE:83:;Exequiel Zeballos:PE:84:;Dany Mota:CA:84:
+ITA|ITA|Parma|PAR|band3,#ffffff,#fde100,#1d3f91|Giovanni Daffara:GOL:82:;Edoardo Corvi:GOL:83:;Simone Ghidotti:GOL:80:;Filippo Rinaldi:GOL:80:;Gianluca Astaldi:GOL:80:;Alessandro Mazzocchi:GOL:80:;Diego Carlos:ZAG:85:;Sascha Britschgi:LD:82:;Mariano Troilo:ZAG:84:;Franco Carboni:LE:83:;Enrico Delprato:ZAG/LD:84:;Emanuele Valeri:LE:84:;Lautaro Valenti:ZAG:84:;Abdoulaye Ndiaye:ZAG:84:;Dominik Drobnič:ZAG:80:;Marlon Mena:LD:80:;Djibril Diallo:ZAG:80:;Nicolas Trabucchi:ZAG:80:;Karlo Pajsar:ZAG:80:;Roberto D'Intino:ZAG:80:;Adrián Bernabé:MEI/MC:86:;Giovanni Fabbian:MC/MEI:84:;Benjamin Cremaschi:MC:84:;Mandela Keita:VOL:85:;Oliver Sørensen:MC:84:;Vincent Sierro:MC:84:;Jacob Ondrejka:PE:85:;Rachid Kouda:MC:83:;Christian Ordoñez:VOL:83:;Elia Plicco:MC:80:;Edoardo Tigani:MC:80:;Abdou-Salam Konate:MC:80:;El Bilal Touré:CA:84:;José David Romero:CA:82:;Simone Lontani:CA:80:;Hans Nicolussi:MC:83:;Nesta Elphege:PE:82:;Pontus Almqvist:PD/PE:84:;Ousmane Diallo:PD:82:;Matija Frigan:CA:83:;Thomás de Martis:CA:80:;Daniel Mikołajewski:CA:81:;Aymen Zouin:PE:80:;Dario Sits:CA:81:;Alessandro Cardinali:CA:80:;Mateusz Kowalski:CA:80:
+ITA|ITA|Roma|ROM|band,#8e1f2f,#f0bc42,|Mile Svilar:GOL:86:;Pierluigi Gollini:GOL:83:;Devis Vásquez:GOL:82:;Levente Kilvinger:GOL:80:;Giorgio De Marzi:GOL:80:;Gianluca Mancini:ZAG:85:;Evan Ndicka:ZAG:85:;Mario Hermoso:ZAG/LE:84:;Devyne Rensch:LD:84:;Daniele Ghilardi:ZAG:84:;Konstantinos Koulierakis:ZAG:84:;Bryan Cristante:VOL/MC:85:;Lorenzo Pellegrini:MEI/MC:85:;Manu Koné:MC:86:;Marten de Roon:VOL:84:;Niccolò Pisilli:MC:84:;Tommaso Baldanzi:MEI:84:;Rodrigo Mora:MEI:84:;Paulo Dybala:MEI/CA:86:;Santiago Castro:CA:84:;Donyell Malen:PD/CA:85:;Matías Soulé:PD:85:;Antonio Arena:CA:80:
+ITA|ITA|Sassuolo|SAS|v,#00a651,#111111,|Arijanet Muric:GOL:85:;Stefano Turati:GOL:83:;Giacomo Satalino:GOL:81:;Lorenzo Nyarko:GOL:80:;Alessandro Russo:GOL:81:;Gioele Zacchi:GOL:81:;Duje Ćaleta-Car:ZAG:84:;Josh Doig:LE:84:;Jay Idzes:ZAG:85:;Fali Candé:LE:83:;Sebastian Walukiewicz:ZAG:83:;Edoardo Pieragnolo:LE:81:;Simone Cinquegrano:LD:81:;Fedde Leysen:ZAG:81:;Cas Odenthal:ZAG:83:;Filippo Missori:LD:82:;Nemanja Matić:VOL:84:;Kristian Thorstvedt:MC/MEI:85:;Daniel Boloca:MC:83:;Ismaël Koné:MC:85:;Andrea Ghion:MC:81:;Luca Lipani:MC:83:;Ibrahim Sulemana:MC:83:;Vasilije Adžić:MEI:82:;Darryl Bakola:MC:80:;Samuele Mulattieri:CA:83:;Domenico Berardi:PD:86:;Armand Laurienté:PE:86:;Cristian Volpato:MEI/PD:84:;Nicholas Pierini:PE:83:;Kieron Bowie:CA:82:;Laurs Skjellerup:CA:81:;Agustín Álvarez:CA:83:
+ITA|ITA|Torino|TOR|band,#8a1e03,#ffffff,|Lucas Perri:GOL:85:;Franco Israel:GOL:84:;Diego Mascardi:GOL:80:;Lapo Siviero:GOL:80:;Cristiano Biraghi:LE:84:;Eray Cömert:ZAG:84:;Ricardo Rodríguez:ZAG/LE:85:;Pietro Comuzzo:ZAG:85:;Saúl Coco:ZAG:85:;Ardian Ismajli:ZAG:85:;Rafik Belghali:LD:84:;Nathan Patterson:LD:83:;Ivan Ilić:MC:85:;Rolando Mandragora:MC/VOL:85:;Nikola Vlašić:MEI:86:;Gaetano Oristanio:PD/MEI:84:;Tino Anjorin:MC:83:;Daniel Bragança:MC:84:;Cesare Casadei:MC:85:;Kian Fitz-Jim:MC:82:;Gvidas Gineitis:MC:84:;Zakaria Aboukhlal:PD:85:;Pietro Pellegri:CA:83:;Sandro Kulenović:CA:83:;Giovanni Simeone:CA:85:;Ché Adams:CA:85:;Duván Zapata:CA:85:
+ITA|ITA|Udinese|UDI|v,#111111,#ffffff,|Alessandro Nunziante:GOL:81:;Maduka Okoye:GOL:85:;Bartosz Mrozek:GOL:83:;Daniele Padelli:GOL:81:;David Alaba:ZAG:86:;Hassane Kamara:LE:85:;Nicolò Bertola:ZAG:83:;James Abankwah:ZAG:81:;Matteo Palma:ZAG:81:;Branimir Mlačić:ZAG:81:;Mërgim Vojvoda:LD:84:;Christian Kabasele:ZAG:84:;Oumar Solet:ZAG:86:;Jordan Zemura:LE:84:;Alessandro Zanoli:LD:83:;Enzo Ebosse:LE/ZAG:83:;Sandi Lovrić:MC:85:;Oier Zarraga:MC:85:;Jesper Karlström:VOL:85:;Nicolò Zaniolo:MEI/PD:85:;Juan David Arizala:LE:81:;Simone Pafundi:MEI:83:;Jakub Piotrowski:MC:83:;Giorgi Chakvetadze:MEI:83:;Jurgen Ekkelenkamp:MC/MEI:85:;Lennon Miller:MC:83:;Unai Gómez:MEI:82:;David Pejičić:MC:80:;Idrissa Gueye:PE:81:;Keinan Davis:CA:85:;Vakoun Issouf Bayo:CA:83:;Adam Buksa:CA:83:;Giulio Vinciati:CA:80:;Lazar Jovanović:PE:83:;Damián Pizarro:CA:81:
+ITA|ITA|Venezia|VEN|band3,#111111,#f58220,#00843d|Filip Stanković:GOL:85:;Alessandro Plizzari:GOL:80:;Matteo Grandi:GOL:81:;Alessio Pozzi:GOL:80:;Lorenzo Montipò:GOL:85:;Matías Moreno:ZAG:84:;Seid Korać:ZAG:82:;Joël Schingtienne:ZAG:83:;Ridgeciano Haps:LE:84:;Thierry Correia:LD:83:;Juan Jesus:ZAG:84:;Michael Venturi:ZAG:81:;Rufai Mohammed:ZAG:80:;Armel Bella-Kotchap:ZAG:85:;Richie Sagrado:LD:82:;Redouane Halhal:ZAG:81:;Marin Šverko:LE/ZAG:83:;Pasquale Mazzocchi:LD:84:;Ale Gomes:LE:80:;Bartol Franjić:VOL/MC:84:;Gianluca Busio:MC:86:;Lamine Fanne:MC:80:;Antoine Hainaut:MC:82:;Simon Sohm:MC:86:;Þórir Jóhann Helgason:MC:83:;Toma Bašić:MC:83:;Saad El Haddad:PE:82:;Matteo Dagasso:MC:83:;Alfred Duncan:MC:84:;Lorenzo Berardi:MC:80:;Emil Bohinen:MC:83:;Simone Panada:MC:80:;Kornel Lisman:MC:80:;Kike Pérez:MC/MEI:84:;Toni Fernández:MEI/PE:82:;Nicolò Berengo:MC:80:;Albion Rrahmani:CA:83:;Daniel Fila:CA:84:;Andrea Adorante:CA:84:;John Yeboah:PE/PD:85:;Lion Lauberbach:CA:82:;Akor Adams:CA:86:;Antonio Casas:CA:82:;Alvin Okoro:PE:80:;Calixte Ligue:CA:80:
+ARG||Boca Juniors|BOC|band,#0a3e8c,#fde100,|Álvaro Montero:GOL:84:;Agustín Marchesín:GOL:84:;Leandro Brey:GOL:82:;Javier Hernán García:GOL:81:;Agustín Lastra:GOL:80:;Lautaro Di Lollo:ZAG:83:;Lautaro Blanco:LE:84:;Leandro Lozano:ZAG:82:;Lucas Blondel:LD:82:;Ayrton Costa:ZAG:83:;Marcelo Weigandt:LD:83:;Juan Barinaga:LD:81:;Facundo Herrera:ZAG:80:;Nicolás Figal:ZAG:83:;Marco Pellegrino:ZAG:83:;Dylan Gorosito:LE:80:;Malcom Braida:LE:81:;Matías Satas:ZAG:80:;Mateo Mendia:LD:80:;Renzo Giampaoli:ZAG:80:;Agustín Heredia:ZAG:80:;Balthazar Bernardi:ZAG:80:;Leandro Paredes:VOL/MC:89:;Tomás Aranda:MEI:83:;Santiago Ascacíbar:VOL:83:;Milton Delgado:VOL:82:;Rodrigo Battaglia:VOL:82:;Agustín Martegani:MC/MEI:83:;Tomás Belmonte:MC:82:;Williams Alarcón:MC:83:;Juan Edgardo Ramírez:MEI:82:;Camilo Rey Domenech:MC:80:;Jabes Saralegui:MEI:81:;Gonzalo Maroni:MEI:81:;Lautaro Bianco:MC:80:;Gabriel Vega:MC:80:;Simon Rivero:MC:80:;Joaquin Ruiz:MC:80:;Julian Carrasco:MC:80:;Julian Ceballos:MC:80:;Nahuel Génez:MC:80:;Pedro Velurtas:MC:80:;Roman Rodriguez:MC:80:;Enner Valencia:CA:83:;Leonel Flores:CA:80:;Miguel Merentiel:CA:84:;Carlos Palacios:PE/MEI:83:;Sebastian Villa:PE:83:;Ángel Romero:PD:82:;Alan Velasco:PE:83:;Adam Bareiro:CA:82:;Milton Giménez:CA:83:;Gonzalo Gelini:PE:80:;Lucas Janson:PD:81:;Brian Aguirre:PD:82:;Iker Zufiaurre:CA:80:;Agustín Obando:PE:81:;Norberto Briasco:CA:80:;Brandon Cortés:PE:80:;Maximiliano Zalazar:CA:80:;Lucas Brochero:PE:80:
+ARG||Estudiantes|EDL|v,#e30613,#ffffff,|Fabricio Iacovich:GOL:82:;Rodrigo Borzone:GOL:80:;Fernando Muslera:GOL:86:;Máximo Desábato:ZAG:80:;Santiago Núñez:ZAG:83:;Marcos Rojo:ZAG:84:;Gastón Benedetti:LE:83:;Leandro González Pírez:ZAG:84:;Santiago Arzamendia:LE:84:;Eric Meza:LD:83:;Tomás Palacios:ZAG:83:;Ramiro Funes Mori:ZAG:83:;Eros Mancuso:LD:84:;José Ernesto Sosa:MC/MEI:83:;Gabriel Neves:VOL:84:;Tiago Palacios:MEI:84:;Facundo Farías:PE/MEI:85:;Lucas Piovi:VOL:83:;Alexis Castro:MC:83:;Baltasar Rodríguez:MC:81:;Miguel Monsalve:MC:83:;Guido Carrillo:CA:85:;Joaquín Tobio Burgos:CA:80:;Edwuin Cetré:PD:85:;Adolfo Gaich:CA:83:;Lucas Alario:CA:84:;Fabricio Pérez:PE:80:;Joaquín Correa:CA/PE:86:
+ARG||River Plate|RIV|d,#ffffff,#e30613,|Santiago Beltrán:GOL:84:;Ezequiel Centurión:GOL:84:;Jaime Jaroszewicz:GOL:80:;Nicolás Otamendi:ZAG:89:;Gonzalo Montiel:LD:88:;Lucas Martínez Quarta:ZAG:86:;Marcos Acuña:LE:85:;Lautaro Rivero:ZAG:84:;Tobías Ramírez:ZAG:80:;Giovanni González:LD:82:;Héctor Martínez:ZAG:82:;Juan Portillo:LD:82:;Ulises Giménez:ZAG:80:;Facundo González:ZAG:80:;Valentín Lucero:LE:80:;Daniel Zabala:ZAG:80:;Gonzalo Trindade:ZAG:80:;Angel Susano:ZAG:80:;Matías Galarza:MC:84:;Kevin Castaño:VOL:84:;Tobías Andrada:MC:80:;Giuliano Galoppo:MC/MEI:84:;Cristian Jaime:MC:80:;Mauro Arambarri:VOL/MC:84:;Aníbal Moreno:VOL:85:;Francisco Ortega:LE:82:;Fausto Vera:VOL:84:;Tomás Galván:MC/MEI:82:;Santiago Lencina:MEI:82:;Juan Cruz Meza:MC:80:;Lautaro Pereyra:MC:80:;Tiago Serrago:MC:80:;Lucas Silva:MC:80:;Agustín Obregón:MC:80:;Santiago Espindola:MC:80:;Elias Nunez:MC:80:;Benjamin Rodriguez:MC:80:;Thiago Almada:MEI/PE:90:;Ángel Correa:CA/PE:85:;Rafael Santos Borré:CA:84:;Lucas Beltrán:CA:84:;Sebastián Driussi:CA:84:;Ian Subiabre:PD:82:;Agustín Ruberto:CA:81:;Jonathan Spiff:PE:80:;Tomás Nasif:CA:80:;Felipe Esquivel:PE:80:;Juan Bautista Dadin:CA:80:
+ARG||Rosario Central|RCE|v,#003a8c,#fde100,|Axel Werner:GOL:81:;Jeremías Ledesma:GOL:82:;Damián Fernández:GOL:75:;Gastón Ávila:ZAG/LE:81:;Facundo Mallo:ZAG:81:;Juan Komar:ZAG:79:;Agustín Sández:LE:81:;Emanuel Coronel:LD:79:;Alexis Soto:LE:78:;Juan Giménez:LD:76:;Ignacio Ovando:ZAG:75:;Franco Ibarra:VOL:81:;Vicente Pizarro:MC:81:;Franco Cervi:PE/MEI:82:;Pol Fernández:MC/MEI:81:;Federico Navarro:VOL:79:;Alan Rodríguez:MC:78:;Santiago Segovia:MC:75:;Ángel Di María:PD/MEI:90:;Marco Ruben:CA:78:;Jaminton Campaz:PE:82:;Enzo Copetti:CA:81:;Tomás Badaloni:CA:78:;Julián Fernández:PD:76:;Gaspar Duarte:PE:75:
+BOL||Always Ready|AR|half,#e30613,#ffffff,|Alain Baroja:GOL:82:;Enzo Rodríguez:GOL:77:;Saidt Mustafá:GOL:78:;Richet Gómez:ZAG:79:;José Herrera:LD:78:;Nicolás Villarroel:ZAG:75:;Carlitos Rodríguez:LE:77:;Alex Rambal:ZAG:79:;Edisson Restrepo:ZAG/MC:80:
+BOL||Bolívar|BLV|band,#6cace4,#ffffff,|Carlos Lampe:GOL:84:;Juan José López:GOL:75:;Diego Méndez:GOL:75:;Jesús Sagredo:LE/ZAG:80:;Xavier Arreaga:ZAG:85:;Miguel Torrén:ZAG:81:;Santiago Echeverría:LD:81:;Luis Paz:ZAG:79:;Leonardo Zabala:ZAG:79:;Heiden Butrón:ZAG:75:;Fernando Mena:LD:76:;Escleizon Freita:ZAG:75:;Andersson Ordóñez:ZAG:81:;Ervin Vaca:VOL:79:;Jhon Velásquez:MC:77:;Robson Matheus:MEI/MC:82:;Cristian López:MC:75:;Lucas Chávez:MEI:81:;John García:PD/MEI:80:;Carlos Sejas:MC:77:;Anderson Ayhuana:MC:76:;Leonel Justiniano:VOL:80:;Matías Galindo:MC:78:;Erwin Saavedra:MC/MEI:80:;Carlos Melgar:MEI:80:;Damián Batallini:PD/MEI:83:;Martín Cauteruccio:CA:84:;Billy Arce:PE/PD:82:;Bruno Miranda:PE:79:;Patricio Rodríguez:PD/MEI:79:;Dairon Asprilla:PD:81:;Dorny Romero:CA:80:
+BOL||The Strongest|TSD|v,#fde100,#111111,|Rodrigo Banegas:GOL:81:;Diego Valdivia:GOL:75:;Adrián Jusino:ZAG:81:;Pablo Pedraza:LE:79:;Martín Chiatti:ZAG:79:;Widen Saucedo:LD/ZAG:77:;Jaime Arrascaita:MEI:83:;Raúl Castro:MC:75:;Kevin Salvatierra:MC:77:;Jovani Welch:VOL/MC:81:;Adrián Estacio:PE/PD:83:;Fabricio Quaglio:CA:79:
+CHI||Universidad Católica|UC|band,#ffffff,#0a3e8c,|Vicente Bernedo:GOL:82:;Francisco Valdés:GOL:76:;Martín Contreras:GOL:75:;Darío Melo:GOL:79:;Gary Medel:ZAG:84:;Eugenio Mena:LE:80:;Cristian Cuevas:LD:80:;Daniel González:ZAG:82:;Bernardo Cerezo:ZAG/LD:80:;Juan Ignacio Díaz:ZAG:80:;Agustín Farías:VOL:81:;Matías Palavecino:MEI:83:;Johan Valencia:MC/VOL:79:;Fernando Zampedri:CA:85:;Diego Valencia:CA/PE:82:
+CHI||Coquimbo Unido|CQU|band,#fde100,#111111,|Gonzalo Flores:GOL:79:;Diego Sánchez:GOL:84:;Cristóbal Dorador:GOL:75:;Benjamín Gazzolo:ZAG:80:;Manuel Fernández:ZAG:84:;Elvis Hernández:ZAG:80:;Juan Cornejo:LE:82:;Francisco Salinas:LD:81:;Joshua Arancibia:LE:79:;Lukas Soza:LD:78:;Sebastián Cabrera:ZAG:82:;Diego Calderón:ZAG:75:;Dylan Glaby:VOL:80:;Sebastián Galani:MC/MEI:85:;Alejandro Camargo:VOL/MC:84:;Salvador Cordero:MC:80:;Diego Plaza:MC:79:;Matías Zepeda:MC:77:;Gino Alfaro:MEI:75:;Ythans Blanco:MC:75:;Nicolás Johansen:CA:83:;Guido Vadalá:MEI/PE:85:;Alejandro Azócar:PD:80:;Lucas Pratto:CA:85:;Cristián Zavala:PE/PD:84:;Pablo Rodríguez:CA:75:;Mundaca:PE:75:;Matías Alvarado:PD:76:;Luis Riveros:PE:79:;Rodrigo Holgado:CA:82:;Facundo Pons:CA:80:;Benjamín Chandía:PD:77:;Dixon Pereira:PE:75:;Joaquín Rojas:CA:75:
+COL||Junior Barranquilla|JUN|v,#e30613,#ffffff,|Mauro Silveira:GOL:82:;Jefferson Martínez:GOL:78:;Howell Mena:LD:80:;Edwin Herrera:LD:81:;Daniel Rivera:ZAG:79:;Jean Carlos Pestaña:ZAG:80:;Yeison Suárez:LE:80:;Daniel Socarrás:ZAG:77:;Andrés Shmalbach:ZAG:75:;Jermein Peña:ZAG:81:;Fabián Correa:ZAG:75:;Harold Rivera:MC:79:;Juan David Ríos:VOL:80:;Jannenson Sarmiento:MEI:80:;Jesús Rivas:MC:78:;Guillermo Celis:VOL:82:;Diego Mendoza:MC:77:;Fabián Ángel:MC:78:;Yimmi Chará:PD/MEI:83:;Guillermo Paiva:CA:83:;Luis Muriel:CA/PE:85:;Fredy Salazar:PE:78:;Kevin Pérez:PD:77:;Francisco Fydriszewski:CA:80:;Stiwart Acuña:PE:77:;Joel Canchimbo:PD:77:;Stiven Rodríguez:PE:78:;Déiber Caicedo:PE/PD:81:;Teófilo Gutiérrez:CA/MEI:81:;Bryan Castrillón:PD/PE:80:;Jesús Díaz:PE:77:
+COL||Independiente Santa Fe|ISF|band,#e30613,#ffffff,|Weimar Asprilla:GOL:80:;Andrés Mosquera:GOL:83:;Juan Espitia:GOL:78:;Helibelton Palacios:LD:82:;Emanuel Olivera:ZAG:83:;Juan Quintero Fletcher:ZAG:80:;Christian Mafla:LE:82:;Jeison Angulo:LD/ZAG:80:;Mateo Puerta:ZAG:80:;Iván Scarpeta:ZAG:81:;Víctor Moreno:ZAG:82:;Santiago Tamayo:LE:78:;David Ramírez:ZAG:77:;Alejandro Morales:LD:77:;Luis Palacios:ZAG:77:;Jhon Rentería:ZAG:75:;Daniel Torres:VOL:82:;Kevin Balanta:VOL:81:;Yílmar Velásquez:MC:80:;Alexis Zapata:MEI:82:;Kilian Toscano:MC:79:;Jhojan Torres:MEI:80:;Ewil Murillo:MC:78:;Jersson González:PE/MEI:80:;Leandro Angulo:MC:77:;Kevin Cortés:MC:76:;Tomás Molina:MC:75:;Cristhian Portocarrero:MC:75:;Hugo Rodallega:CA:83:;Franco Fagúndez:MEI/PE:82:;Nahuel Bustos:CA:85:;Emerson Rodríguez:PD:82:;Omar Fernández:MEI/PE:82:;Maximiliano Lovera:PE/PD:82:;Jáder Obrian:PD:81:;Andrés Amaya:CA:78:;Jhon Tenorio:CA:75:;Jimmy Martínez:PE:75:
+COL||Deportes Tolima|TOL|band,#8a1538,#fde100,|Neto Volpi:GOL:84:;Juan Covilla:GOL:77:;Miguel Ortega:GOL:77:;Gali Balanta:GOL:75:;Anderson Angulo:LD:81:;Jan Carlos Angulo:ZAG:78:;Daniel Pedrozo:ZAG:80:;Juan José Mera:ZAG:79:;Junior Hernández:ZAG/LE:81:;Jherson Mosquera:ZAG:80:;Yordan Osorio:ZAG:85:;Cristian Trujillo:VOL:81:;Éver Valencia:MEI/PE:83:;Juan Pablo Torres:MEI:80:;Homer Martínez:VOL:80:;Nilder Zapata:MC:77:;Sebastián Guzmán:MC:79:;Brayan Rovira:MC/MEI:83:;Jorge Hurtado:PE/CA:80:;Luis Fernando Sandoval:CA:82:;Kelvin Flórez:PE/PD:80:;Adrián Parra:PD:79:;Jeinner Fuentes:CA:78:;Edwar López:PD:79:
+EQU||Barcelona de Guayaquil|BSC|band,#fde100,#111111,|José Contreras:GOL:82:;José Cevallos:GOL:79:;José Angulo:GOL:78:;Kleber Pinargote:GOL:75:;Aníbal Chalá:LE:81:;Byron Castillo:LD:82:;Bryan Carabalí:ZAG:79:;Cristhian Solano:ZAG:78:;Gustavo Vallecilla:ZAG:81:;Willian Vargas:ZAG:79:;Jandry Gómez:LE:77:;Alex Rangel:LD:78:;Carlos Medina:ZAG:76:;Cristian Báez:ZAG:79:;Walter Chalá:LD/LE:79:;Jefferson Intriago:VOL:81:;Jordan Medina:MC:79:;Joao Rojas:MEI/PE:83:;Jhonny Quiñónez:MC:81:;Matías Lugo:MC:78:;Ronald Perlaza:MC:76:;J. García:MC:75:;Dixon Gaspar:MC:76:;Damián Díaz:MEI:80:;Tomás Martínez:MC/MEI:81:;Marcos Mejía:PE:78:;Tomás Rodríguez:PD/PE:81:;Luis Cano:PE:78:;Jonathan Perlaza:CA:80:;Erick Mendoza:PE:77:;Pedro Preciado:CA:75:;Jefferson Wila:PD:75:;Klever Caicedo:CA:75:;Vernaza:PD:75:;Eduardo Esterilla:PE:75:;Miguel Parrales:CA:79:;Sergio Díaz:CA/MEI:81:;Héctor Villalba:PD/PE:82:;Darío Benedetto:CA:85:
+EQU||Independiente del Valle|IDV|band,#111111,#1a4ba0,|Aldair Quintana:GOL:78:;Eduardo Bores:GOL:76:;Guido Villar:GOL:83:;Miguel Peralta:GOL:75:;Luis Zárate:ZAG:82:;Jhon Espinoza:LD:83:;Richard Schunke:ZAG:84:;Daykol Romero:LD:79:;Mateo Carabajal:ZAG:82:;Gustavo Cortez:LE:82:;Layan Loor:LE:80:;Aníbal Gómez:ZAG:76:;Juan Viacava:ZAG:80:;Andy Velasco:ZAG:78:;Jordy Alcívar:VOL/MC:83:;Patrik Mercado:MEI/MC:85:;Youri Ochoa:MC:82:;Junior Sornoza:MEI:83:;Ronald Briones:MC:78:;Jean Pierre Arroyo:MC:78:;Juan Cazares:MEI:82:;Hugo Quintana:VOL:78:;Jhegson Méndez:VOL:83:;Hans Peralta:MC:75:;Carlos González:CA:82:;Matías Perelló:PE/PD:82:;Aron Rodríguez:PD:79:;Steven Góngora:PE:76:;Emerson Pata:PE/PD:80:;Justin Cuero:PD/CA:82:;Kelvin Montaño:CA:75:;Yandri Vásquez:PD:78:;Edwin Quintero:PE:75:;Holger Quintero:PD:75:;Djorkaeff Reasco:CA:82:
+EQU||LDU Quito|LDU|band3,#ffffff,#0a3e8c,#e30613|Alexander Domínguez:GOL:83:;Gonzalo Valle:GOL:84:;Alexis Villa:GOL:77:;Ricardo Adé:ZAG:84:;José Carabalí:ZAG:80:;Luis Segovia:ZAG:81:;Gian Franco Allala:ZAG:83:;Richard Mina:ZAG:81:;Daniel de la Cruz:LE:79:;Leonel Quiñónez:LE:82:;José Quintero:LD:79:;Yeltzin Erique:LD:79:;Josué Cuero:ZAG:77:;Gabriel Villamíl:MC/MEI:84:;Jesús Pretell:VOL:83:;Lucas Rodríguez:MEI:83:;Fernando Cornejo:VOL/MC:82:;Juan Rodríguez:MC:76:;Sebastián González:MC:79:;Cristian Tobar:MC:79:;Iván Zambrano:MC:78:;Ederson Castillo:MC:75:;Ruddy Mina:MC:75:;Madison Julio:MEI/PE:79:;Patrick Ortiz:MC:75:;Jandry Calle:MC:75:;Andrés Gómez:MC:75:;Elvis Velasco:MC:76:;Deyverson:CA:83:;Michael Estrada:CA:84:;Josué Caicedo:PE:77:;Alexander Alvarado:PE/MEI:85:;Janner Corozo:PD/PE:81:;Jeison Medina:CA:83:;Yerlin Quiñónez:PD:77:;Jairon Charcopa:PE:76:;Melvin Díaz:PD:77:;Luis Estupiñán:CA:77:;Freddy Mina:PE:78:;Paul Durán:CA:75:
+PAR||Cerro Porteño|CCP|v,#e30613,#0a3e8c,|Manuel Roffo:GOL:81:;Ángel Martínez:GOL:75:;Gatito Fernández:GOL:82:;Lucas Merolla:ZAG:81:;Lucas Quintana:ZAG:79:;Gustavo Velázquez:ZAG:81:;Alexis Cañete:LD:78:;Abel Luciatti:ZAG:79:;Fabricio Domínguez:LD/MC:80:;Guillermo Benítez:ZAG:78:;Blas Riveros:LE:80:;Jorge Morel:MC/MEI:80:;Agustín Almendra:MEI/MC:84:;Iván Ramírez:MEI/PE:80:;César Bobadilla:VOL:76:;Ariel Gamarra:MC:76:;Pablo Vegetti:CA:85:;Ignacio Aliseda:PE/PD:81:;Derlis Rodríguez:PD/PE:78:;Juan Giménez:CA:76:;Enzo González:CA/PE:79:
+PAR||Libertad|LIB|v,#111111,#ffffff,|Rodrigo Morínigo:GOL:82:;Ángel González:GOL:75:;Victor Rojas:GOL:75:;Matías Espinoza:LE:81:;Alexis Fretes:LE:78:;Nicolás Freire:ZAG:82:;Robert Rojas:ZAG:83:;Néstor Giménez:ZAG:81:;Alan Benítez:LD/ZAG:79:;Lorenzo Melgarejo:MEI/PE:82:;Álvaro Campuzano:VOL/MC:82:;Lucas Sanabria:MC/MEI:80:;Iván Franco:PD:83:;Marcelo Fernández:PD/MEI:81:;Luciano Nequecaur:CA:82:;Gustavo Aguilar:CA:80:
+PER||Alianza Lima|ALI|v,#0a2463,#ffffff,|Alejandro Duarte:GOL:82:;Ángel De la Cruz:GOL:78:;Fabrisio Mesías:GOL:75:;Nicolás Díaz:ZAG:82:;Mateo Antoni:ZAG:79:;Gianfranco Chávez:ZAG:80:;Renzo Garcés:ZAG:81:;Marco Huamán:LD:78:;D'Alessandro Montenegro:ZAG:75:;Luis Advíncula:LD:85:;Brian Arias:ZAG:75:;Cristian Carbajal:LE:79:;Jonathan García:ZAG:75:;Rait Alarcón:ZAG:75:;Carlos Gómez:LD:77:;Josué Estrada:LE:79:;Esteban Pavez:VOL:83:;Fernando Gaibor:MC/MEI:82:;Alan Cantero:PE/MEI:83:;Jesús Castillo:VOL:80:;Alessandro Burlamaqui:MEI:79:;Jairo Vélez:MEI/PD:81:;Piero Cari:MC:79:;Christian Neira:MC:76:;Jean Pierre Archimbaud:MC:79:;Jhoao Velásquez:MC:76:;Erick Castillo:PE/PD:82:;Luis Ramos:CA:80:;Matías Succar:CA:80:;Gaspar Gentile:PD/PE:80:;Kevin Quevedo:PE/PD:81:;Geray Motta:CA:75:;Paolo Guerrero:CA:82:;Federico Girotti:CA:84:
+PER||Sporting Cristal|SCR|band,#69b3e7,#ffffff,|Diego Enríquez:GOL:82:;Renato Solís:GOL:80:;César Bautista:GOL:75:;Tomás Dulanto:GOL:75:;Luis Abram:ZAG:85:;Miguel Araujo:ZAG:83:;Rafael Lutiger:ZAG/LD:81:;Anderson Villacorta:ZAG:78:;Duham Ballumbrosio:LD:78:;Juan Cruz González:LE:81:;Leandro Sosa:LE/MEI:82:;Yoshimar Yotún:MC/VOL:83:;Christofer Gonzales:MEI:83:;Martín Távara:MC:82:;Agustín Álvarez Wallace:VOL:81:;Santiago González:PD/PE:82:;Hernán Barcos:CA:82:;Luis Iberico:CA/PE:81:;Irven Ávila:PE/CA:80:;Juan Manuel Cuesta:PE/MEI:78:;Maxloren Castro:PD:80:;Felipe Vizeu:CA:84:
+PER||Cusco FC|CUS|band,#e30613,#fde100,|Rodolfo Anderson:GOL:81:;Alessandro Cavagna:GOL:75:;Andy Vidal:GOL:77:;Pedro Díaz:GOL:75:;Ricardo Lagos:ZAG:79:;Alex Custodio:ZAG:80:;Álvaro Ampuero:ZAG:81:;Carlo Diez:LD:75:;José Zevallos:LE:78:;Marlon Ruidías:ZAG:78:;Gu-Rum Choi:ZAG:79:;Carlos Gamarra:LD/MC:79:;Miguel Aucca:VOL:79:;Aldair Fuentes:MC:79:;Iván Colman:MEI:83:;Oswaldo Valenzuela:MC:78:;José Ali:MC:75:;Lucas Colitto:MC/MEI:81:;Sergio Quillahuamán:MC:75:;Jean Montaño:MC:75:;Diego Soto:MC:75:;Miguel Silveira:MEI:80:;José Manzaneda:PD:79:;Facundo Callejo:CA:83:;Juan Manuel Tevez:PE/CA:80:;Nicolás Silva:CA:79:;Joel Herrera:PE:76:
+PER||Universitario|UNI|band,#f5e6c4,#8a1538,|Diego Romero:GOL:80:;Miguel Vargas:GOL:81:;Aamet Calderón:GOL:77:;Jhefferson Rodríguez:GOL:75:;Matías Di Benedetto:ZAG:82:;Jorge Gutiérrez:ZAG:80:;Aldo Corzo:LD:80:;Williams Riveros:ZAG:82:;César Inga:LE:81:;Caín Fara:ZAG:81:;Gustavo Dulanto:ZAG:78:;Anderson Santamaría:ZAG:82:;Paolo Reyna:LD:78:;Hugo Ancajima:LD:78:;Julinho Astudillo:ZAG:75:;Piero Quispe:MEI/MC:85:;Jairo Concha:MC/MEI:82:;Adrián Quiroz:VOL:78:;Horacio Calcaterra:MEI/MC:81:;Juan Requena:VOL:79:;Yuriel Celi:MEI:80:;Jorge Murrugarra:VOL:79:;Jordan Guivin:VOL:78:;Álvaro Rojas:MC:75:;Esteban Cruz:MC:75:;Sebastián Flores:MC:75:;Diogo Vásquez:MC:75:;Fabián Cabanillas:MC:75:;Gianluca Lapadula:CA:84:;Alex Valera:CA:82:;Edison Flores:PE/MEI:82:;Bryan Reyna:PE/PD:81:;Lisandro Alzugaray:PD/CA:81:;Andy Polo:PD:80:;José Rivera:CA:79:;Héctor Fértoli:PE/MEI:81:;Nicolás Rengifo:CA:75:;Christopher Loayza:PD:75:;Jhon Guzmán:CA:75:
+URU||Nacional (URU)|NAU|band3,#ffffff,#0a3e8c,#e30613|Luis Mejía:GOL:85:;Alexis Martín Arias:GOL:78:;Ignacio Suárez:GOL:75:;Juan Bianchi:GOL:75:;Agustín Rogel:ZAG:82:;Sebastián Coates:ZAG:83:;Francisco Calvo:ZAG:82:;Emiliano Ancheta:ZAG:78:;Gastón Martirena:LD:80:;Camilo Cándido:LE:82:;Lucas Morales:LE:78:;Luciano Boggio:VOL:80:;Nicolás Rodríguez:PD:80:;Santiago Silva:MC:78:;Agustín Dos Santos:MEI:78:;Rubén Botta:MEI:80:;Baltasar Barcia:MC:75:;Bruno Zuculini:VOL:80:;Rómulo Otero:MEI:82:;Maxi Gómez:CA:85:;Maximiliano Silvera:CA:82:;Alejandro Martínez:CA:78:;Exequiel Mereles:PE:78:;Tomás Verón Lupi:PD:78:;Tiziano Correa:CA:75:
+URU||Peñarol|CAP|v,#fde100,#111111,|Sebastián Britos:GOL:80:;Washington Aguerre:GOL:82:;Leandro Díaz:GOL:75:;Germán Pezzella:ZAG:85:;Mauricio Lemos:ZAG:81:;Franco Romero:ZAG:80:;Lucas Ferreira:ZAG:79:;Kevin Rodríguez:ZAG:75:;Maximiliano Olivera:LE:81:;Jesús Trindade:VOL/ZAG:79:;Facundo Alvez:LD:79:;Thiago Espinosa:LD:76:;Lucas Hernández:LE:79:;Ignacio Alegre:ZAG:75:;Nahuel Herrera:ZAG:78:;Brian Barboza:LD:75:;Diego Laxalt:LE:81:;Eric Remedi:VOL:81:;Roberto Fernández:VOL:79:;Leo Fernández:MEI:84:;Cristian Jaime:MEI/PE:80:;Eduardo Darias:MC:79:;Tomás Olase:MC:76:;Stiven Muhlethaler:MC:76:;Leandro Umpierrez:MEI:78:;Lorenzo Couture:MC:75:;Franco González:MC:75:;Sergi Oriol:MC:75:;Javier Cabrera:PD/PE:81:;Facundo Batista:CA:80:;Matías Arezo:CA:81:;Gonzalo Gelini:PE:76:;Jonathan Rodríguez:CA:82:;Luciano González:PE:75:;Brandon Álvarez:PD:75:;Luis Miguel Angulo:PD/PE:79:;Abel Hernández:CA:79:;Alexander Machado:CA:76:
+VEN||Carabobo|CBB|band,#7a0019,#ffffff,|Diego Gil:GOL:76:;Keiber Roa:GOL:75:;Lucas Bruera:GOL:78:;Miguel Silva:GOL:76:;Marcel Guaramato:LD:76:;Jean Fuentes:ZAG:77:;Leonardo Aponte:ZAG:76:;Miguel Pernía:ZAG:75:;José Durán:ZAG:75:;Franyer Oliveros:LE:75:;Loureins Martínez:ZAG:75:;A. González:LD:79:;Norman Rodríguez:ZAG:75:;Jonathan Bilbao:ZAG:77:;Ezequiel Neira:ZAG:76:;Edson Castillo:VOL:79:;Abraham Bahachille:MC:77:;Edson Tortolero:MC:76:;Juan Camilo Pérez:MC:76:;Yohandry Orozco:MEI:80:;Angelo Lucena:MC:76:;Joshua Berríos:MC:75:;Maurice Cova:MEI/PE:78:;Franner López:MC:75:;Carlos Ramos:MC:76:;Juan Obando:MC:75:;Dimas Meza:MC:76:;Matías Núñez:MC:76:;Sebastián Mendoza:MC:75:;Aimar Angulo:MC:75:;Darwin Machís:PE/MEI:83:;Bryan Castillo:PD/PE:77:;Eric Ramírez:CA:81:;Exon Arzú:CA:76:;S. Calabrese:CA:75:
+VEN||Deportivo La Guaira|DLG|band,#f58220,#0a2463,|Cristopher Varela:GOL:80:;Jorge Sánchez:GOL:75:;Diego Osio:ZAG:79:;Carlos Rojas:ZAG:75:;Carlos Rivero:ZAG:80:;Genderson Ascanio:LD:76:;J. Gutiérrez:ZAG:76:;Guillermo Ortiz:ZAG:78:;Alfonzo Sosa:LE:75:;Matías Orihuela:ZAG:80:;Ricardo Villanueva:LD:75:;Juan Luis Perdomo:MC:78:;Juan Castellanos:MEI:83:;Nelson Hernández:MC:78:;Rommell Ibarra:MC/MEI:79:;César Da Silva:MC:76:;Clyde García:VOL:78:;Miguel González:MC:75:;Luis Peña:MC:75:;Manuel Sulbarán:MC:75:;Jesús Valbuena:MC:75:;Carlos Faya:VOL:79:;José Correa:MC:75:;Gabriel Vargas:MC:75:;Helzon Pomozy:MC:75:;Maike Villero:MEI:75:;Alí Meza:PD/PE:82:;Anthony Uribe:CA:82:;Sebastián Castillo:PE:75:;Flabián Londoño:CA:78:;José Betancourt:CA:75:;Juan Sebastián Herrera:PE:75:;Juan Sebastián Zeballos:PD:75:;Jesús González:CA:75:
+VEN||Universidad Central de Venezuela|UCV|band,#0a3e8c,#ffffff,|Giancarlo Schiavone:GOL:80:;Carlos González:GOL:75:;Diego Ochoa:GOL:75:;Román Davis:ZAG:75:;Gonzalo Mottes:ZAG:78:;Williams Velásquez:ZAG:79:;Daniel Carrillo:LD:76:;Yohan Cumana:ZAG:76:;Kendrys Silva:LE:76:;Edwin Peraza:ZAG:76:;Yanniel Hernández:LD:76:;Steven Pabón:ZAG:76:;Adrián Martínez:ZAG:76:;Kevin Guzmán:ZAG:75:;Diego Rinaldi:ZAG:75:;Samuel Sosa:MEI/PE:83:;Williams Lugo:MC:78:;Carlos Cermeño:MC:76:;Francisco Solé:VOL:78:;Alexander González:LD/MC:80:;Maicol Ruiz:MC:75:;Vicente Rodríguez:MC:76:;Jean Polo:MC:75:;Alexander Granko:MC:75:;José López:MC:75:;Edwin Mosquera:PD/PE:82:;Juan Alegría:CA:78:;Juan Camilo Zapata:MEI/PE:78:;Yeiber Murillo:CA:78:;Daniel De Sousa:PE:75:;Roberto Sarli:CA:75:;Cristhian Andrade:PD:75:
+POR|POR|Arouca|ARO|band,#fde100,#0a3e8c,|Ignacio De Arruabarrena:GOL:86:;Jakub Vinarčík:GOL:83:;Martim Silva Duarte:GOL:80:;Leo Shahar:LD:82:;Javier Sánchez de Felipe:ZAG:84:;Arnau Solà:LE:84:;Diogo Monteiro:ZAG:83:;José Fontán:ZAG:86:;Orest Lebedenko:LE:83:;Boris Popovic:ZAG:84:;Mario Climent:LE/LD:83:;Taichi Fukui:MC:86:;Lee Hyun-ju:MEI:86:;Naïs Djouahra:PE/MEI:86:;Alfonso Trezza:PD:86:;Espen van Ee:MC:84:;Tiago Esgaio:LD:83:;Mateo Flores:MC:83:;Rachid Gomes:MC:80:;Pedro Santos:MC:83:;Fally Mayulu:CA:84:;Iván Barbero:CA:86:;Gabrijel Rukavina:CA:82:;Miguel Puche:PE:84:;Dylan Nandín:CA:83:;Pablo Gozálbez:MEI/PE:86:;Romualdas Jansonas:CA:80:;Brian Mansilla:PD:83:;Park Si-hoo:PE:80:
+POR|POR|Braga|SCB|band,#e30613,#ffffff,|Tiago Sá:GOL:83:;Bernardo:GOL:80:;Alaa Bellaarouch:GOL:82:;João Carvalho:GOL:80:;Víctor Gómez:LD:84:;Sikou Niakaté:ZAG:85:;Leonardo Lelo:LE:84:;Diogo Travassos:LD:82:;Gabriel Silva:ZAG:82:;Gustaf Lagerbielke:ZAG:84:;Sergio Barcia:ZAG:84:;Bright Arrey-Mbi:ZAG:83:;Bartłomiej Wdowik:LE:84:;Adrian Leon Barišić:ZAG:83:;Adrian Bajrami:ZAG:82:;Francisco Chissumba:ZAG:80:;Diogo Lobo:LD:80:;Vitor Carvalho:VOL:85:;João Moutinho:MC:84:;Fran Navarro:CA:84:;Ismaël Gharbi:MEI:84:;Tommy Marqués:MC:80:;Mario Dorgeles:MC/PE:84:;Denis Huseinbašić:MC:83:;Jean-Baptiste Gorby:VOL:84:;Demir Ege Tıknaz:MC:84:;Diego Rodrigues:MC:80:;João Trovisco:MC:80:;Luis Pinto:MC:80:;Pau Víctor:CA:84:;Jovan Milošević:CA:82:;Jonas Wind:CA:84:;Ricardo Horta:PE/MEI:86:;João Marques:PD:82:;João Aragão:PE:80:;Gabri Martínez:PD:83:;Ruben Furtado:PE:80:;Sandro Vidigal:PD:80:;Flinto Costa:CA:80:
+POR|POR|Estoril|EST|band,#fde100,#0047ab,|Joel Robles:GOL:86:;Martin Turk:GOL:82:;Diogo Dias:GOL:80:;Fletcher Smythe-Lowe:GOL:80:;Ricard Sánchez:LD:84:;Fernando Medrano:ZAG:84:;Ferro:ZAG:84:;Antef Tsoungui:LE:84:;Nail Omerović:ZAG:81:;Ismael Sierra:ZAG:80:;Gonçalo Costa:LD:81:;Tiago Parente:ZAG:81:;Roko Jurišić:ZAG:81:;Stelios Andreou:ZAG:82:;Samuel Amissah:ZAG:80:;Kazim:ZAG:80:;Jordan Arnolin:LE:80:;Longin Bimai:ZAG:80:;Tiago Brito:ZAG:80:;Jan Montes:LE:80:;Xavier Sintes:MC:82:;Xeka:VOL:84:;Jordan Holsgrove:MC:85:;João Carvalho:MEI:85:;Pedro Carvalho:MC:80:;Milan Robin:MC:81:;Bernardo Lourenço:MC:80:;Luís Gomes:MC:80:;Rafik Guitane:MEI:85:;André Lacximicant:PE:82:;Axel Camblan:CA:82:;Yanis Begraoui:CA:85:;Peixinho:PE:80:;Israel Salazar:CA:82:;Fabrício Garcia:CA:80:;Isnaba Mane:PE:80:;Kelian Baruti:CA:80:
+POR|POR|Marítimo|MAR|v,#009a44,#e30613,|Gonçalo Tabuaço:GOL:84:;Alfonso Pastor:GOL:84:;Fran Vieites:GOL:82:;Kimiss Zavala:GOL:80:;Pedro Teixeira:GOL:80:;Igor Julião:LD:84:;Nathanael Ogbeta:LE:84:;Nilton Varela:LE:82:;Tomás Tavares:LD:84:;Gábor Szalai:ZAG:82:;Paulo Henrique:ZAG:84:;Romain Correia:ZAG:84:;Rodrigo Andrade:MC:84:;Enrique Peña Zauner:PE:84:;Maxime Dominguez:MC/MEI:86:;Martín Tejón:MEI:84:;Simo Bouzaidi:PE:84:;Raphael Guzzo:MC:84:;Francisco Freitas Silva:MC:80:;Vladan Danilović:VOL:86:;Ibrahim Alani:MC:80:;Yellu Santiago:MC:80:;Israel Isaac Ayuma:MC:80:;Nélio Batista:MC:80:;José Melro:CA:82:;Mons Bassouamina:CA:84:;Adrián Butzke:PE:84:;Francisco Gomes:CA:80:;Samuel Bamba:PD:82:;Bryan Limbombe:PE:82:;Maurice Boakye:CA:80:
+POR|POR|Moreirense|MOR|v,#00843d,#ffffff,|André Ferreira:GOL:86:;Aranha:GOL:80:;Francisco Barbosa Sampaio:GOL:80:;Francisco Domingues:ZAG:84:;Leandro Santos:LD:82:;Dinis Pinto:LE:84:;Gilberto Batista:ZAG:83:;Fabiano:ZAG:84:;Álvaro Martínez:ZAG:83:;Kevyn Monteiro:ZAG:80:;Jóbson:ZAG:83:;Pedro Lucas:ZAG:80:;João Veloso:MC:83:;Nile John:MC:83:;Jimi Gower:MC:80:;Manuel Mendonça:MC:82:;Chipyoka Songa:MC:82:;Guilherme Liberato:MC:80:;Rodri:MEI:83:;Afonso Assis:MC:80:;Mateja Stjepanović:MC:83:;Janderson:PE:83:;Miguel Andrade Silva:MC:80:;Michael Dacosta:PD:83:;Leonardo Vonić:CA:84:;Tiago Andrade:PE:82:;Alexandre Parsemain:CA:83:;Kiko Bondoso:PE:84:;Koby Mottoh:PD:80:;Landerson:PE:80:;Yan Maranhão:CA:83:;Dante:CA:80:;Afonso Vieira:PE:80:;Rodrigo Soares:CA:80:
+POR|POR|Nacional|NAC|v,#111111,#ffffff,|Renato Marin:GOL:83:;João Gonçalves:GOL:83:;Kevyn:GOL:80:;Daniel de La Cruz:LD:82:;Ulisses:ZAG:83:;José Gomes:ZAG:83:;Matheus Dias:VOL/ZAG:84:;Ivanildo Fernandes:ZAG:84:;William Kokolo:LD:82:;Francisco Gonçalves:ZAG:80:;Léo Santos:ZAG:84:;Zé Vítor:LE:83:;Wesley Andrade:LE:82:;Markus Jensen:PE/MEI:83:;Miguel Baeza:MEI:86:;Daniel Júnior:MC:83:;Stavros Gavriel:PD:83:;Laabidi:PE:82:;Matchoi Djaló:PE:83:;Filipe Soares:MC/MEI:83:;Liziero:MC:84:;Danel Dongmo:PD:80:;Deivison:PE:82:;Allen Obando:CA:83:;Song Min-Kyu:CA:83:;Njoya Kader:CA:80:;Pablo Ruan:CA:82:
+POR|POR|Rio Ave|RAV|v,#00843d,#ffffff,|Cezary Miszta:GOL:86:;Kevin Chamorro:GOL:86:;Vitor Hugo:GOL:80:;Rodrigo Real:GOL:80:;Ennio van der Gouw:GOL:80:;Anxhelo Sina:GOL:80:;Zé Carlos:LD:84:;Simón García:ZAG:80:;Andreas Ntoi:ZAG:84:;Nelson Abbey:ZAG:82:;Jakub Brabec:ZAG:86:;João Tomé:LD:84:;Francisco Petrasso:LE:82:;Pedro Amaral:LE:84:;Gustavo Mancha:ZAG:84:;Georgios Liavas:ZAG:80:;Caike:ZAG:80:;Ryan Guilherme:MC:84:;Tamble Monteiro:CA:84:;Brandon Aguilera:MEI:86:;Julien Lomboto:MC:82:;Marios Vrousai:PD:84:;Malik Sellouki:PE:80:;Radek Šiler:MC:80:;Roland Galčík:MC:82:;Tamás Nikitscher:MC:84:;Antoine Wenck:MC:80:;Miguel Patricio:MC:80:;Dai Baldé:MC:80:;Diogo Nascimento:MC:82:;Diogo Bezerra:PE:82:;Jalen Blesa:PE:84:;Rafael Lobato:CA:80:;Tobias Medina:CA:80:;Samuel da Silva Alves:CA:80:;Dario Špikić:PD:84:;Sebastian Clemmensen:CA:82:
+POR|POR|Santa Clara|SCL|band,#e30613,#ffffff,|Tome Sousa:GOL:80:;Neneca:GOL:84:;Lucas Oliveira de França:GOL:86:;Sidney Lima:ZAG:86:;Lucas Soares:ZAG:84:;Ythallo:LE:83:;Guilherme Romão:LE:83:;Thauan Lara:ZAG:83:;Tiago Ribeiro:ZAG:82:;Pedro Pacheco:ZAG:83:;Emanuel Moreira Fernandes:LD:82:;Edney Silva:ZAG:80:;Henrique Fernandes da Silva:ZAG:80:;Alysson:LD:82:;Kauan Conceicao:ZAG:80:;Pedro Ferreira:MC:84:;João Vasconcelos:MC:83:;Djé Tavares:VOL:83:;Rildo:MC:83:;Dani Borges:MC:80:;Pedro Jesus:MC:80:;Kamika:MC:80:;Vitinho:MEI:83:;Tiago Queiroz:MC:80:;Fredy:MC:80:;MT:MC:82:;Isaac:MC:80:;Andrey:MC:80:;Hiago Santos:MC:80:;Gonçalo Paciência:CA:86:;Jader:PE:83:;Vinícius Lopes:CA:84:;Léo Jacó:PD:80:;Brenner Lucas:PE:83:;Henrique Pereira:PD:82:;Welinton:PE:83:;Adriel Moraes:CA:80:;Fernando:PE:80:;Melvin Costa:CA:80:;Joao Costa:CA:80:;Afonso Duarte:PE:80:;Wendel:CA:82:;Tiago Duarte:PD:80:;Luiz Fernando:CA:80:
+POR|POR|Sporting|SCP|h,#008057,#ffffff,|Rui Silva:GOL:85:;Kaique Pereira:GOL:80:;Diego Callai:GOL:81:;Zeno Debast:ZAG:85:;Georgios Vagiannidis:LD:84:;Moncef Zekri:ZAG:81:;Iván Fresneda:LD:84:;Gonçalo Inácio:ZAG:86:;Rodrigo Dias:ZAG:80:;Ibrahima Ba:ZAG:81:;Eduardo Quaresma:ZAG/LD:85:;Lucas Taibo:ZAG:80:;Silas Andersen:MC:81:;Sergi Altimira:VOL:83:;João Simões:MC:84:;Geny Catamo:PD:85:;Rodrigo Zalazar:MEI:85:;Maximiliano Araújo:LE/PE:85:;Pedro Lima:LD:81:;Jesse Derry:PE:81:;Luis Guilherme:PD:83:;Mateo Tanlongo:VOL:81:;Salvador Blopa:MC:80:;Eduardo Felicíssimo:MC:80:;Rodrigo Rodrigues:MC:80:;Issa Doumbia:MC:81:;Paulo Cardoso:MC:80:;Samuel Justo:MC:80:;Fotis Ioannidis:CA:85:;Rafael Nel:CA:81:;Nuno Santos:PE/LE:84:;Nestory Irankunda:PD:83:;Biel Teixeira:PE:82:;Chris Grombahi:CA:80:;Flávio Gonçalves:PE:80:;Mauro Couto:PD:80:;Luis Suárez:CA:85:
+POR|POR|Vitória de Guimarães|VSC|band,#ffffff,#111111,|Juan Castillo:GOL:85:;Oliwier Zych:GOL:82:;Lucas Furtado:GOL:80:;Gui:GOL:80:;Toni Borevković:ZAG:86:;Miguel Maga:LD:84:;João Mendes:LE:82:;Yeimar Mosquera:ZAG:84:;Óscar Rivas:ZAG:82:;Tony Strata:LD:82:;Thiago Balieiro:ZAG:82:;Ahmed Sidibe:LE:81:;Mohammed Kebdani:ZAG:80:;Francisco Dias:ZAG:80:;Samu:MC:85:;Beni:MC:84:;Gonçalo Nogueira:MC:81:;Lohann Doucet:MC:84:;Ricardo Rocha:MC:80:;Santiago Verdi:MC:80:;Arnel Jakupovic:MC:80:;Alan:MEI:81:;Marco Cruz:MC:80:;Matija Mitrovic:MC:81:;Telmo Arcanjo:PE/MEI:86:;Gustavo Silva:PD:85:;Victor Andersson:CA:82:;Alioune Ndoye:CA:82:;Oumar Camara:PE:82:;Fabio Blanco:PD:84:;Patrick Ouotro:CA:80:;Miguel Nogueira:PE:80:`;
+const CTRY={ING:['Inglaterra','🏴󠁧󠁢󠁥󠁮󠁧󠁿'],ESP:['Espanha','🇪🇸'],ITA:['Itália','🇮🇹'],ALE:['Alemanha','🇩🇪'],FRA:['França','🇫🇷'],POR:['Portugal','🇵🇹'],BRA:['Brasil','🇧🇷'],
+ ARG:['Argentina','🇦🇷'],URU:['Uruguai','🇺🇾'],PAR:['Paraguai','🇵🇾'],EQU:['Equador','🇪🇨'],CHI:['Chile','🇨🇱'],COL:['Colômbia','🇨🇴'],PER:['Peru','🇵🇪'],BOL:['Bolívia','🇧🇴'],VEN:['Venezuela','🇻🇪']};
+const LG={ING:{n:'Liga Inglesa',cup:'Copa da Inglaterra',ucl:8,mult:1,bn:3,prize:60},ESP:{n:'Liga Espanhola',cup:'Copa da Espanha',ucl:7,mult:1,bn:3,prize:50},
+ ITA:{n:'Liga Italiana',cup:'Copa da Itália',ucl:7,mult:1,bn:3,prize:45},ALE:{n:'Liga Alemã',cup:'Copa da Alemanha',ucl:6,mult:1,bn:3,prize:45},
+ FRA:{n:'Liga Francesa',cup:'Copa da França',ucl:5,mult:.7,bn:1,prize:25},POR:{n:'Liga Portuguesa',cup:'Copa de Portugal',ucl:3,mult:.7,bn:1,prize:15},
+ BRA:{n:'Brasileirão',cup:'Copa do Brasil',ucl:0,mult:.5,bn:0,prize:15}};
+const LGORD=['ING','ESP','ITA','ALE','FRA','POR','BRA'];
+const NSEAS=10;
+const TYP={GOL:'GOL',ZAG:'ZAG',LE:'LE',LD:'LD',VOL:'MID',MC:'MID',MEI:'MID',PE:'WIN',PD:'WIN',CA:'CA'};
+const TMIN={GOL:2,ZAG:3,LE:1,LD:1,MID:4,WIN:2,CA:2};
+const TPOS={GOL:'GOL',ZAG:'ZAG',LE:'LE',LD:'LD',MID:'MC',WIN:'PE',CA:'CA'};
+const NAMES={
+ BRA:[['Lucas','Gabriel','Mateus','Rafael','Pedro','Thiago','Igor','Caio','Davi','Vitor','Enzo','Kauã','Ryan','Breno','Luan'],['Silva','Souza','Lima','Costa','Rocha','Alves','Moura','Barros','Nunes','Teixeira','Ramos','Pires','Melo','Freitas','Cardoso']],
+ ESP:[['Diego','Mateo','Santiago','Tomás','Bruno','Iker','Nicolás','Joaquín','Agustín','Facundo','Martín','Álvaro','Hugo','Pablo','Sergio'],['García','López','Martínez','Sánchez','Pérez','Gómez','Díaz','Torres','Ruiz','Vargas','Castro','Rojas','Molina','Ortega','Navarro']],
+ ING:[['Jack','Harry','Oliver','George','Charlie','Alfie','Jacob','Mason','Archie','Leo','Ethan','Callum','Kieran','Lewis','Ryan'],['Smith','Taylor','Brown','Wilson','Walker','Wright','Hughes','Evans','Green','Hall','Clarke','Turner','Barnes','Cooper','Ward']],
+ FRA:[['Lucas','Hugo','Théo','Maxime','Antoine','Enzo','Mathis','Noah','Yanis','Baptiste','Clément','Rayan','Louis','Adam','Nolan'],['Martin','Bernard','Dubois','Durand','Moreau','Laurent','Simon','Michel','Lefèvre','Garnier','Faure','Roux','Fontaine','Mercier','Blanc']],
+ ITA:[['Lorenzo','Matteo','Alessandro','Leonardo','Francesco','Andrea','Riccardo','Tommaso','Gabriele','Edoardo','Federico','Davide','Simone','Marco','Luca'],['Rossi','Russo','Ferrari','Esposito','Bianchi','Romano','Colombo','Ricci','Marino','Greco','Bruno','Gallo','Conti','Costa','Mancini']],
+ ALE:[['Lukas','Jonas','Leon','Finn','Paul','Felix','Niklas','Tim','Moritz','Jan','Luca','Noah','Elias','Julian','Max'],['Müller','Schmidt','Schneider','Fischer','Weber','Meyer','Wagner','Becker','Schulz','Hoffmann','Koch','Richter','Klein','Wolf','Neumann']],
+ POR:[['João','Tiago','Rodrigo','Diogo','Gonçalo','Martim','Rúben','André','Nuno','Bernardo','Duarte','Afonso','Tomás','Miguel','Rafael'],['Ferreira','Santos','Pereira','Oliveira','Costa','Martins','Sousa','Fernandes','Gonçalves','Lopes','Marques','Ribeiro','Carvalho','Pinto','Mendes']]};
+const BASE_RECS=[['Neymar','Barcelona','PSG',222,'2017'],['Kylian Mbappé','Mônaco','PSG',180,'2018'],['Alexander Isak','Newcastle','Liverpool',150,'2025'],
+ ['Philippe Coutinho','Liverpool','Barcelona',135,'2018'],['Ousmane Dembélé','Borussia Dortmund','Barcelona',135,'2017'],['João Félix','Benfica','Atlético de Madrid',127,'2019'],
+ ['Florian Wirtz','Bayer Leverkusen','Liverpool',125,'2025'],['Enzo Fernández','Benfica','Chelsea',121,'2023'],['Antoine Griezmann','Atlético de Madrid','Barcelona',120,'2019'],
+ ['Jack Grealish','Aston Villa','Manchester City',117.5,'2021'],['Declan Rice','West Ham','Arsenal',116.6,'2023'],['Moisés Caicedo','Brighton','Chelsea',116,'2023']];
+const BR_REC={n:'Lucas Paquetá',fee:42,y:'real'};
+
+let C=null;             // estado da carreira (salvo)
+const XC=new Map();     // cache de escalações (não salvo)
+const SAVE_KEY='futfut_carreira_v1';
+const r1=v=>Math.round(v*10)/10, r2=v=>Math.round(v*100)/100;
+const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
+const M=v=>{v=+v||0;const s=v>=100?Math.round(v).toString():v>=10?v.toFixed(1):v.toFixed(2);return '€'+s.replace('.',',')+'M'};
+function poi(l){const L=Math.exp(-l);let k=0,p=1;do{k++;p*=Math.random()}while(p>L);return k-1}
+const CL=i=>C.clubs[i], PL=i=>C.P[i];
+const sq=ci=>C.P.filter(p=>p.c===ci);
+const me=()=>CL(C.me);
+const flag=k=>(CTRY[k]||['',''])[1];
+const lgOf=c=>c.lg||'LIB';
+const typesOf=p=>[...new Set(p.ps.map(x=>TYP[x]))];
+
+/* ---------- valores e salários ---------- */
+function rawVal(o){
+ if(o>=95)return Math.min(220,150+(o-95)*17.5);if(o>=90)return 70+(o-90)*20;if(o>=86)return 30+(o-86)*13.4;
+ if(o>=83)return 12+(o-83)*9;if(o>=80)return 4+(o-80)*4;if(o>=75)return 1+(o-75)*.75;if(o>=70)return .3+(o-70)*.14;return .1+Math.max(0,o-60)*.02;
+}
+const multOf=ci=>{if(ci<0)return .7;const c=CL(ci);return c.lg?LG[c.lg].mult:.3};
+function revalue(p){p.v=r2(Math.max(.05,rawVal(p.o)*multOf(p.c)*p.vf))}
+const baseWage=(o,ci)=>r2(Math.max(.03,rawVal(o)*multOf(ci)*.09));
+
+/* ---------- dados iniciais ---------- */
+function cBuild(){
+ const clubs=[],P=[];
+ CAR_RAW.trim().split('\n').forEach((l,ci)=>{
+  const[ctry,lg,name,sig,kit,list]=l.split('|');const k=kit.split(',');
+  KIT[name]=[k[0],k[1],k[2],k[3]||k[1]];
+  clubs.push({i:ci,club:name,sig,ctry,lg:lg||'',money:0,form:'4-3-3',tac:{post:'equ',est:'equ'},man:null,pw:0,pr:0,ver:0});
+  list.split(';').forEach(s=>{const[n,ps,o,sh]=s.split(':');const pp=ps.split('/').filter(x=>GOF[x]);if(!pp.length)return;
+   P.push({i:P.length,n,s:sh||shortName(n),ps:pp,o:+o,c:ci,v:0,w:0,ct:ri(1,5),vf:rnd(.9,1.1),b:0,gl:0,ga:0,ap:0,lk:0,ln:null,pre:null,lp:0,d:0})});
+ });
+ return{clubs,P};
+}
+function shortName(n){const a=n.split(' ');return a.length>1?a[a.length-1]:n}
+function genName(ctry){const L=NAMES[ctry]||NAMES[['ARG','URU','PAR','EQU','CHI','COL','PER','BOL','VEN'].includes(ctry)?'ESP':'BRA'];return pick(L[0])+' '+pick(L[1])}
+function fillSquad(ci){
+ const c=CL(ci),pl=sq(ci),real=pl.filter(p=>!p.b);const lo=real.length?Math.min(...real.map(p=>p.o)):72;
+ const cnt={};Object.keys(TMIN).forEach(t=>cnt[t]=0);pl.forEach(p=>typesOf(p).forEach(t=>cnt[t]++));
+ let made=0;
+ Object.entries(TMIN).forEach(([t,m])=>{while(cnt[t]<m){const n=genName(c.ctry);const p={i:C.P.length,n,s:shortName(n),ps:[TPOS[t]],o:clamp(ri(lo-5,lo-1),66,80),c:ci,v:0,w:0,ct:ri(1,3),vf:rnd(.9,1.1),b:1,gl:0,ga:0,ap:0,lk:0,ln:null,pre:null,lp:0,d:0};
+  revalue(p);p.w=baseWage(p.o,ci);C.P.push(p);cnt[t]++;made++}});
+ while(sq(ci).length<18){const t=pick(['ZAG','MID','WIN','CA','LE','LD']);const n=genName(c.ctry);const p={i:C.P.length,n,s:shortName(n),ps:[TPOS[t]],o:clamp(ri(lo-5,lo-1),66,80),c:ci,v:0,w:0,ct:ri(1,3),vf:rnd(.9,1.1),b:1,gl:0,ga:0,ap:0,lk:0,ln:null,pre:null,lp:0,d:0};revalue(p);p.w=baseWage(p.o,ci);C.P.push(p);made++}
+ if(made)c.ver++;
+ return made;
+}
+
+/* ---------- escalação / força ---------- */
+const effC=(p,s)=>p.ps.includes(s.pos)?p.o:Math.round(p.o*pen(GOF[p.ps[0]],s.g));
+function placeXI(players,form){
+ const sl=slotList(form);const a=assign(players,sl);
+ if(a&&a.filter(Boolean).length===Math.min(players.length,sl.length))return sl.map((s,i)=>a[i]?a[i].i:null);
+ const xi=sl.map(()=>null),used=new Set(),pairs=[];
+ players.forEach(p=>sl.forEach((s,i)=>pairs.push({p,i,e:effC(p,s),ex:p.ps.includes(s.pos)})));
+ pairs.sort((x,y)=>(y.ex-x.ex)||(y.e-x.e));
+ pairs.forEach(x=>{if(used.has(x.p.i)||xi[x.i]!=null)return;used.add(x.p.i);xi[x.i]=x.p.i});
+ return xi;
+}
+function autoXI(ci,form){
+ const sl=slotList(form),pl=sq(ci).sort((a,b)=>b.o-a.o),ch=[];
+ for(const p of pl){if(ch.length>=11)break;if(assign([...ch,p],sl))ch.push(p)}
+ const a=assign(ch,sl)||[];const xi=sl.map((s,i)=>a[i]?a[i].i:null);const used=new Set(xi.filter(x=>x!=null));
+ sl.forEach((s,i)=>{if(xi[i]!=null)return;let best=null,be=-1;pl.forEach(p=>{if(used.has(p.i))return;const e=effC(p,s);if(e>be){be=e;best=p}});if(best){xi[i]=best.i;used.add(best.i)}});
+ return xi;
+}
+function xiOf(ci){
+ const c=CL(ci);
+ if(c.man){const ok=c.man.length===11&&c.man.every(id=>id!=null&&PL(id).c===ci)&&new Set(c.man).size===11;if(ok)return c.man;c.man=null}
+ const k=XC.get(ci);if(k&&k.ver===c.ver&&k.form===c.form)return k.xi;
+ const xi=autoXI(ci,c.form);XC.set(ci,{ver:c.ver,form:c.form,xi});return xi;
+}
+function lineupC(ci){const c=CL(ci),xi=xiOf(ci);return slotList(c.form).map((s,i)=>{const p=xi[i]!=null?PL(xi[i]):null;return{...s,p,eff:p?effC(p,s):0}})}
+function powerOf(ci){const l=lineupC(ci);return l.reduce((a,s)=>a+s.eff,0)/l.length}
+function calcPower(){C.clubs.forEach(c=>{c.pw=r1(powerOf(c.i))})}
+function calcPrestige(){
+ const inU=new Set(C.uclT||[]),inL=new Set(C.libT||[]);
+ C.clubs.forEach(c=>{c.pr=r1(c.pw+(c.lg?LG[c.lg].bn:-2)+(inU.has(c.i)?1:0)+(inL.has(c.i)?.5:0))});
+}
+function cStr(ci,oi){
+ const r=rawStr(lineupC(ci)),tc=CL(ci).tac,ot=CL(oi).tac;
+ if(tc.post==='ofe'){r.atk*=1.15;r.def*=.86}if(tc.post==='def'){r.atk*=.82;r.def*=1.15}
+ if(tc.est==='posse')r.def*=1.06;if(tc.est==='pressao'){r.atk*=1.07;r.def*=.95}if(tc.est==='contra')r.atk*=ot.post==='ofe'?1.12:.97;
+ return r;
+}
+const cLam=(a,b)=>(1.3/90)*Math.pow((a.atk/b.def)/R0[11],1.3)*Math.exp((a.avg-b.avg)*.09);
+function cScorer(ci){const sl=lineupC(ci).filter(s=>s.p&&s.g!=='G');const w=sl.map(s=>({D:.4,M:1.5,A:4}[s.g])*s.eff/70);let r=Math.random()*w.reduce((a,b)=>a+b,0);for(let i=0;i<sl.length;i++){r-=w[i];if(r<0)return sl[i].p}return sl[0]?sl[0].p:null}
+function botTacC(ci,m,home){
+ if(ci===C.me)return;const c=CL(ci),gf=home?m.gh:m.ga,ga=home?m.ga:m.gh;
+ if(m.min===0)c.tac={post:pick(['equ','equ','ofe','def']),est:pick(['equ','posse','pressao','contra'])};
+ else if(m.min>=65&&gf+(home?m.ah:m.aa)<ga+(home?m.aa:m.ah))c.tac.post='ofe';else if(m.min>=75&&gf+(home?m.ah:m.aa)>ga+(home?m.aa:m.ah))c.tac.post='def';
+}
+function cPens(m){
+ const gk=ci=>lineupC(ci)[0].eff||50,tk=ci=>lineupC(ci).filter(s=>s.g!=='G'&&s.p).sort((a,b)=>b.eff-a.eff);
+ const th=tk(m.h),ta=tk(m.a),gh=gk(m.h),ga=gk(m.a),kick=(s,g)=>s&&Math.random()<Math.min(.92,Math.max(.55,.75+(s.eff-g)/120));
+ let ph=0,pa=0,i=0;for(;i<5;i++){ph+=kick(th[i%th.length],ga);pa+=kick(ta[i%ta.length],gh)}
+ while(ph===pa&&i<30){ph+=kick(th[i%th.length],ga);pa+=kick(ta[i%ta.length],gh);i++}if(ph===pa)ph++;
+ return{h:ph,a:pa};
+}
+// m: {h,a,gh,ga,min,ev:[],ko,ah,aa(agregado prévio),pens,et}
+function newM(h,a,ko,ah,aa){return{h,a,gh:0,ga:0,min:0,ev:[],ko:!!ko,ah:ah||0,aa:aa||0,pens:null,et:false}}
+function mStep(m){
+ m.min++;botTacC(m.h,m,true);botTacC(m.a,m,false);
+ const sh=cStr(m.h,m.a),sa=cStr(m.a,m.h);const lh=cLam(sh,sa)*1.1,la=cLam(sa,sh)*.92;
+ if(Math.random()<lh){const p=cScorer(m.h);m.gh++;m.ev.push({min:m.min,side:'h',pid:p?p.i:null})}
+ if(Math.random()<la){const p=cScorer(m.a);m.ga++;m.ev.push({min:m.min,side:'a',pid:p?p.i:null})}
+}
+function mOver(m){
+ if(m.min<90)return false;const th=m.gh+m.ah,ta=m.ga+m.aa;
+ if(!m.ko||th!==ta)return true;
+ if(m.min<120){m.et=true;return false}
+ if(!m.pens)m.pens=cPens(m);return true;
+}
+function quickSim(m){
+ botTacC(m.h,m,true);botTacC(m.a,m,false);
+ const sh=cStr(m.h,m.a),sa=cStr(m.a,m.h);const lh=cLam(sh,sa)*1.1*90,la=cLam(sa,sh)*.92*90;
+ const add=(side,ci,n,a,b)=>{for(let k=0;k<n;k++){const p=cScorer(ci);m.ev.push({min:ri(a,b),side,pid:p?p.i:null})}};
+ const gh=poi(lh),ga=poi(la);m.gh=gh;m.ga=ga;add('h',m.h,gh,1,90);add('a',m.a,ga,1,90);m.min=90;
+ if(m.ko&&m.gh+m.ah===m.ga+m.aa){m.et=true;const eh=poi(lh/3),ea=poi(la/3);m.gh+=eh;m.ga+=ea;add('h',m.h,eh,91,120);add('a',m.a,ea,91,120);m.min=120;if(m.gh+m.ah===m.ga+m.aa)m.pens=cPens(m)}
+ m.ev.sort((x,y)=>x.min-y.min);return m;
+}
+const mWin=m=>{const th=m.gh+m.ah,ta=m.ga+m.aa;return th>ta?m.h:ta>th?m.a:(m.pens?(m.pens.h>m.pens.a?m.h:m.a):null)};
+const mTxt=m=>`${m.gh} x ${m.ga}${m.pens?` (pên. ${m.pens.h}x${m.pens.a})`:m.et?' (prorr.)':''}`;
+
+/* ---------- competições ---------- */
+function mkLeague(key){
+ const teams=C.clubs.filter(c=>c.lg===key).map(c=>c.i);
+ const tab={};teams.forEach(i=>tab[i]={id:i,P:0,J:0,V:0,E:0,D:0,GP:0,GC:0});
+ return{t:'L',key,name:LG[key].n,teams,rounds:roundRobin(shuffle([...teams]),true),ri:0,tab,last:null,champ:null};
+}
+const sortTab=tab=>Object.values(tab).sort((a,b)=>b.P-a.P||b.V-a.V||(b.GP-b.GC)-(a.GP-a.GC)||b.GP-a.GP||a.id-b.id);
+function applyTab(tab,m){const h=tab[m.h],a=tab[m.a];if(!h||!a)return;h.J++;a.J++;h.GP+=m.gh;h.GC+=m.ga;a.GP+=m.ga;a.GC+=m.gh;
+ if(m.gh>m.ga){h.V++;h.P+=3;a.D++}else if(m.gh<m.ga){a.V++;a.P+=3;h.D++}else{h.E++;a.E++;h.P++;a.P++}}
+const stageName=n=>({2:'Final',4:'Semifinal',8:'Quartas de final',16:'Oitavas de final',32:'1ª fase'}[n]||'Fase');
+function mkCup(key){
+ const teams=C.clubs.filter(c=>c.lg===key).map(c=>c.i).sort((a,b)=>CL(b).pw-CL(a).pw);
+ let size=2;while(size<teams.length)size*=2;
+ const arr=bracketOrder(size).map(i=>teams[i]??null);const ties=[];
+ for(let i=0;i<size;i+=2){const x=arr[i],y=arr[i+1];
+  if(x==null||y==null)ties.push({a:x??y,b:null,legs:1,m:[],w:x??y});
+  else{const f=Math.random()<.5;ties.push({a:f?x:y,b:f?y:x,legs:1,m:[],w:null})}}
+ return{t:'K',key:key+'c',name:LG[key].cup,teams,stages:[{nm:stageName(size),ties}],cur:0,champ:null,nSt:Math.log2(size)};
+}
+function nextStageFrom(st,legs,nm){const w=st.ties.map(t=>t.w);const ties=[];for(let i=0;i<w.length;i+=2){const x=w[i],y=w[i+1];const f=Math.random()<.5;ties.push({a:f?x:y,b:f?y:x,legs,m:[],w:null})}return{nm:nm||stageName(w.length),ties}}
+
+// Champions: sorteio com restrições
+function uclDraw(teams,holder){
+ const ord=[...teams].sort((a,b)=>(b===holder)-(a===holder)||CL(b).pw-CL(a).pw);
+ const pots=[0,1,2,3].map(k=>ord.slice(k*9,k*9+9));const ct=i=>CL(i).ctry;
+ for(let mode=0;mode<3;mode++){
+  for(let tries=0;tries<400;tries++){
+   const opp=new Map(teams.map(t=>[t,[]]));const edges=[];let ok=true;
+   const can=(x,y)=>x!==y&&(mode===2||ct(x)!==ct(y))&&!opp.get(x).includes(y)&&(mode>=1||(opp.get(x).filter(z=>ct(z)===ct(y)).length<2&&opp.get(y).filter(z=>ct(z)===ct(x)).length<2));
+   const link=(h,a)=>{edges.push([h,a]);opp.get(h).push(a);opp.get(a).push(h)};
+   const perm=(A,B,self)=>{for(let t=0;t<60;t++){const used=new Set(),res=[];let good=true;
+     for(const x of shuffle([...A.keys()])){const cand=shuffle([...B]).filter(y=>!used.has(y)&&can(A[x],y)&&!(self&&res.some(([u,v])=>u===y&&v===A[x])));if(!cand.length){good=false;break}used.add(cand[0]);res.push([A[x],cand[0]])}
+     if(good)return res}return null};
+   for(let i=0;i<4&&ok;i++){
+    const s=perm(pots[i],pots[i],true);if(!s){ok=false;break}s.forEach(([h,a])=>link(h,a));
+    for(let j=i+1;j<4&&ok;j++){const p1=perm(pots[i],pots[j]);if(!p1){ok=false;break}p1.forEach(([h,a])=>link(h,a));const p2=perm(pots[j],pots[i]);if(!p2){ok=false;break}p2.forEach(([h,a])=>link(h,a))}
+   }
+   if(ok&&teams.every(t=>opp.get(t).length===8))return{edges,pots};
+  }
+ }
+ // fallback: rodízio simples
+ const edges=[];const R=roundRobin(shuffle([...teams]),false).slice(0,8);R.forEach(r=>r.forEach(e=>edges.push(e)));return{edges,pots};
+}
+function spreadMD(edges,teams,nd){
+ let best=null,bo=1e9;
+ for(let t=0;t<120;t++){const days=[...Array(nd)].map(()=>[]),busy=[...Array(nd)].map(()=>new Set());let ov=0;
+  shuffle([...edges]).forEach(e=>{let d=[...Array(nd).keys()].find(k=>!busy[k].has(e[0])&&!busy[k].has(e[1]));if(d==null){ov++;d=[...Array(nd).keys()].sort((x,y)=>days[x].length-days[y].length)[0]}days[d].push(e);busy[d].add(e[0]);busy[d].add(e[1])});
+  if(ov<bo){bo=ov;best=days}if(!ov)break}
+ return best;
+}
+function mkUCL(teams,holder){
+ const {edges}=uclDraw(teams,holder);const fx=spreadMD(edges,teams,8);
+ const tab={};teams.forEach(i=>tab[i]={id:i,P:0,J:0,V:0,E:0,D:0,GP:0,GC:0});
+ return{t:'U',key:'UCL',name:'Champions',teams,fx,md:0,tab,stages:[],cur:-1,champ:null,last:null,out:[]};
+}
+function mkLIB(teams){
+ const ord=[...teams].sort((a,b)=>CL(a).pw-CL(b).pw);const w=ord.slice(0,4);
+ return{t:'B',key:'LIB',name:'Libertadores',teams,pre:{nm:'Fase preliminar',ties:[{a:w[0],b:w[3],legs:2,m:[],w:null},{a:w[1],b:w[2],legs:2,m:[],w:null}]},groups:null,gfx:null,gr:0,stages:[],cur:-1,champ:null,last:null};
+}
+function libGroups(L){
+ const out=new Set();L.pre.ties.forEach(t=>out.add(t.w===t.a?t.b:t.a));
+ const t32=L.teams.filter(i=>!out.has(i)).sort((a,b)=>CL(b).pw-CL(a).pw);const pots=[0,1,2,3].map(k=>t32.slice(k*8,k*8+8));
+ let G=null;
+ for(let tries=0;tries<300&&!G;tries++){const g=[...Array(8)].map(()=>[]);let ok=true;
+  for(const pot of pots){const order=shuffle([...pot]);const free=new Set([...Array(8).keys()]);
+   for(const t of order){const opts=shuffle([...free]).filter(k=>tries>200||!g[k].some(x=>CL(x).ctry===CL(t).ctry));if(!opts.length){ok=false;break}g[opts[0]].push(t);free.delete(opts[0])}
+   if(!ok)break}
+  if(ok)G=g}
+ L.groups=G.map((g,k)=>({nm:'Grupo '+'ABCDEFGH'[k],teams:g,tab:Object.fromEntries(g.map(i=>[i,{id:i,P:0,J:0,V:0,E:0,D:0,GP:0,GC:0}])),rounds:roundRobin(g,true)}));
+}
+
+/* ---------- calendário ---------- */
+function buildCal(){
+ const ev=[{k:'win',n:1}];const after={};const add=(r,e)=>(after[r]=after[r]||[]).push(e);
+ [1,2].forEach((r,i)=>add(r,{k:'lib',st:'pre',leg:i+1}));
+ [3,5,7,9,11,13].forEach((r,i)=>add(r,{k:'lib',st:'grp',md:i}));
+ [2,4,6,8,10,12,14,16].forEach((r,i)=>add(r,{k:'ucl',st:'lg',md:i}));
+ add(18,{k:'win',n:2});
+ [[20,21,'po'],[23,24,'r16'],[27,28,'qf'],[31,32,'sf']].forEach(([a,b,s])=>{add(a,{k:'ucl',st:s,leg:1});add(b,{k:'ucl',st:s,leg:2})});
+ [[19,20,'r16'],[25,26,'qf'],[29,30,'sf']].forEach(([a,b,s])=>{add(a,{k:'lib',st:s,leg:1});add(b,{k:'lib',st:s,leg:2})});
+ [5,10,15,24,34].forEach((r,i)=>add(r,{k:'cup',st:i}));
+ add(36,{k:'lib',st:'fin',leg:1});add(37,{k:'ucl',st:'fin',leg:1});
+ for(let r=0;r<38;r++){ev.push({k:'lg',r});(after[r]||[]).forEach(e=>ev.push(e))}
+ ev.push({k:'mun'},{k:'end'});
+ return ev;
+}
+
+/* ---------- início de temporada ---------- */
+function seasonStart(first){
+ calcPower();
+ const L={};LGORD.forEach(k=>L[k]=mkLeague(k));
+ const CU={};LGORD.forEach(k=>CU[k]=mkCup(k));
+ // vagas
+ let ucl=[],lib=[];
+ if(first){
+  LGORD.filter(k=>LG[k].ucl).forEach(k=>ucl.push(...C.clubs.filter(c=>c.lg===k).sort((a,b)=>b.pw-a.pw).slice(0,LG[k].ucl).map(c=>c.i)));
+  lib=C.clubs.filter(c=>c.lg==='BRA').sort((a,b)=>b.pw-a.pw).slice(0,8).map(c=>c.i);
+  C.holder={ucl:[...ucl].sort((a,b)=>CL(b).pw-CL(a).pw)[0],lib:null};
+ }else{ucl=C.nextUCL;lib=C.nextLIB}
+ lib=[...lib,...C.clubs.filter(c=>!c.lg).map(c=>c.i)];
+ C.uclT=ucl;C.libT=lib;calcPrestige();
+ C.comps={L,CU,UCL:mkUCL(ucl,C.holder.ucl),LIB:mkLIB(lib),MUN:null};
+ C.cal=buildCal();C.day=0;C.half=1;C.myRes=[];C.offers=[];C.negs={};C.win=null;PEND=null;
+ C.P.forEach(p=>{p.gl=0;p.ga=0;p.ap=0;p.d=0});
+ C.fin={rev:0,wag:0,pri:0,tin:0,tout:0,start:me().money};
+ setObjective();
+}
+function setObjective(){
+ const c=me(),rank=C.clubs.filter(x=>x.lg===c.lg).sort((a,b)=>b.pw-a.pw).findIndex(x=>x.i===c.i)+1,n=C.comps.L[c.lg].teams.length;
+ let o;if(rank===1)o={pos:1,t:'Ser campeão da liga'};else if(rank<=4)o={pos:4,t:'Terminar entre os 4 primeiros'};else if(rank<=Math.ceil(n/2))o={pos:Math.ceil(n/2),t:'Terminar na metade de cima da tabela'};else o={pos:Math.ceil(n*.75),t:`Terminar entre os ${Math.ceil(n*.75)} primeiros`};
+ C.obj=o;
+}
+
+/* ---------- novo jogo ---------- */
+function fairMoney(c){return r1(rawVal(c.pw)*(c.lg?LG[c.lg].mult:.3)*.9+3)}
+function cNew(coach,ci,startMoney){
+ const d=cBuild();C={ver:1,coach,me:ci,season:1,clubs:d.clubs,P:d.P,news:[],hist:[],troph:[],recs:BASE_RECS.map(r=>({n:r[0],f:r[1],t:r[2],fee:r[3],y:r[4]})),brRec:{...BR_REC},winIdx:0,careerFin:[]};
+ C.clubs.forEach(c=>fillSquad(c.i));
+ C.P.forEach(p=>{revalue(p);p.w=r2(baseWage(p.o,p.c)*rnd(.85,1.2))});
+ calcPower();
+ C.clubs.forEach(c=>{c.money=fairMoney(c)});
+ if(startMoney!=null)me().money=r1(startMoney);
+ seasonStart(true);
+ pushNews(`📋 ${esc(coach)} é o novo técnico do ${esc(me().club)}.`);
+}
+function pushNews(t){C.news.unshift({s:C.season,d:C.day,t});if(C.news.length>120)C.news.length=120}
+function cSave(){if(PEND)return;try{localStorage.setItem(SAVE_KEY,JSON.stringify(C))}catch(e){}}
+function cLoad(){try{const s=localStorage.getItem(SAVE_KEY);if(!s)return null;const c=JSON.parse(s);return c&&c.ver===1?c:null}catch(e){return null}}
+function cHasSave(){try{return!!localStorage.getItem(SAVE_KEY)}catch(e){return false}}
+function cDel(){try{localStorage.removeItem(SAVE_KEY)}catch(e){}}
+
+/* ---------- jogos do dia ---------- */
+function libStage(L,st){
+ const order=['r16','qf','sf','fin'],nm={r16:'Oitavas de final',qf:'Quartas de final',sf:'Semifinal',fin:'Final'};const idx=order.indexOf(st);
+ if(L.cur>=idx)return L.stages[idx];
+ if(idx===0){const G=L.groups.map(g=>sortTab(g.tab).map(r=>r.id));const ties=[];
+  for(let k=0;k<8;k+=2){ties.push({a:G[k+1][1],b:G[k][0],legs:2,m:[],w:null});ties.push({a:G[k][1],b:G[k+1][0],legs:2,m:[],w:null})}
+  L.stages.push({nm:nm.r16,ties})}
+ else L.stages.push(nextStageFrom(L.stages[idx-1],st==='fin'?1:2,nm[st]));
+ L.cur=idx;return L.stages[idx];
+}
+function uclStage(U,st){
+ const order=['po','r16','qf','sf','fin'],nm={po:'Playoff',r16:'Oitavas de final',qf:'Quartas de final',sf:'Semifinal',fin:'Final'};const idx=order.indexOf(st);
+ if(U.cur>=idx)return U.stages[idx];
+ if(idx===0){const t=sortTab(U.tab).map(r=>r.id);U.rank=t;const ties=[];for(let k=0;k<8;k++)ties.push({a:t[23-k],b:t[8+k],legs:2,m:[],w:null});U.stages.push({nm:nm.po,ties});U.out=t.slice(24)}
+ else if(idx===1){const t=U.rank,po=U.stages[0].ties;const seeds=[0,7,3,4,1,6,2,5];const ties=seeds.map(k=>({a:po[7-k].w,b:t[k],legs:2,m:[],w:null}));U.stages.push({nm:nm.r16,ties})}
+ else U.stages.push(nextStageFrom(U.stages[idx-1],st==='fin'?1:2,nm[st]));
+ U.cur=idx;return U.stages[idx];
+}
+function tieFx(t,leg,comp){
+ if(t.b==null||t.w!=null&&leg!==2)return null;
+ if(t.legs===1)return{comp,tie:t,h:t.a,a:t.b,ko:true,ah:0,aa:0};
+ if(leg===1)return{comp,tie:t,h:t.a,a:t.b,ko:false,ah:0,aa:0};
+ const m1=t.m[0];if(!m1)return null;return{comp,tie:t,h:t.b,a:t.a,ko:true,ah:m1.ga,aa:m1.gh};
+}
+function dayFixtures(ev){
+ const F=[];const X=C.comps;
+ if(ev.k==='lg'){
+  LGORD.forEach(k=>{const L=X.L[k],R=L.rounds.length,target=Math.floor((ev.r+1)*R/38);while(L.ri<target){L.rounds[L.ri].forEach(([h,a])=>F.push({comp:L,h,a,ko:false,ah:0,aa:0,lr:L.ri}));L.ri++}});
+ }else if(ev.k==='cup'){
+  LGORD.forEach(k=>{const K=X.CU[k];const s=ev.st-(5-K.nSt);if(s<0)return;if(s>K.cur){K.stages.push(nextStageFrom(K.stages[K.cur],1));K.cur=s}
+   K.stages[s].ties.forEach(t=>{if(t.w==null){const f=tieFx(t,1,K);if(f)F.push(f)}})});
+ }else if(ev.k==='ucl'){
+  const U=X.UCL;if(ev.st==='lg'){(U.fx[ev.md]||[]).forEach(([h,a])=>F.push({comp:U,h,a,ko:false,ah:0,aa:0}));U.md=ev.md+1}
+  else{const s=uclStage(U,ev.st);s.ties.forEach(t=>{const f=tieFx(t,ev.leg,U);if(f)F.push(f)})}
+ }else if(ev.k==='lib'){
+  const B=X.LIB;
+  if(ev.st==='pre')B.pre.ties.forEach(t=>{const f=tieFx(t,ev.leg,B);if(f)F.push(f)});
+  else if(ev.st==='grp'){if(!B.groups)libGroups(B);B.groups.forEach(g=>(g.rounds[ev.md]||[]).forEach(([h,a])=>F.push({comp:B,grp:g,h,a,ko:false,ah:0,aa:0})));B.gr=ev.md+1}
+  else{const s=libStage(B,ev.st);s.ties.forEach(t=>{const f=tieFx(t,ev.leg,B);if(f)F.push(f)})}
+ }else if(ev.k==='mun'){
+  const a=X.UCL.champ,b=X.LIB.champ;if(a!=null&&b!=null){X.MUN={t:'M',name:'Mundial de Clubes',a,b,m:null,champ:null};F.push({comp:X.MUN,h:a,a:b,ko:true,ah:0,aa:0,mun:true})}
+ }
+ return F;
+}
+function evTitle(ev){
+ if(!ev)return'';const me_=me();
+ if(ev.k==='win')return ev.n===1?'Janela de transferências · pré-temporada':'Janela de transferências · meio da temporada';
+ if(ev.k==='lg'){const L=C.comps.L[me_.lg];const R=L.rounds.length,t=Math.floor((ev.r+1)*R/38);return `${L.name} · Rodada ${Math.min(R,t)}/${R}`}
+ if(ev.k==='cup'){const K=C.comps.CU[me_.lg];const s=ev.st-(5-K.nSt);return s<0?'Copas nacionais · 1ª fase':`${K.name} · ${s===K.cur&&K.stages[s]?K.stages[s].nm:stageName(Math.pow(2,K.nSt-s))}`}
+ if(ev.k==='ucl'){const nm={lg:'Fase de liga',po:'Playoff',r16:'Oitavas',qf:'Quartas',sf:'Semifinal',fin:'Final'}[ev.st];return `Champions · ${nm}${ev.st==='lg'?` · ${ev.md+1}ª rodada`:ev.st==='fin'?'':` · ${ev.leg===1?'ida':'volta'}`}`}
+ if(ev.k==='lib'){const nm={pre:'Fase preliminar',grp:'Fase de grupos',r16:'Oitavas',qf:'Quartas',sf:'Semifinal',fin:'Final'}[ev.st];return `Libertadores · ${nm}${ev.st==='grp'?` · ${ev.md+1}ª rodada`:ev.st==='fin'?'':` · ${ev.leg===1?'ida':'volta'}`}`}
+ if(ev.k==='mun')return 'Mundial de Clubes · Final';
+ if(ev.k==='end')return 'Fim da temporada';return'';
+}
+function compName(c){return c.t==='L'?c.name:c.t==='K'?c.name:c.name}
+
+/* ---------- aplicar resultado ---------- */
+function applyRes(f,m){
+ const comp=f.comp;
+ // estatísticas
+ [m.h,m.a].forEach(ci=>xiOf(ci).forEach(id=>{if(id!=null)PL(id).ap++}));
+ m.ev.forEach(e=>{if(e.pid==null)return;const p=PL(e.pid);p.ga++;if(comp.t==='L')p.gl++});
+ if(comp.t==='L'){applyTab(comp.tab,m);(comp._day=comp._day||[]).push(m)}
+ else if(comp.t==='U'&&!f.tie){applyTab(comp.tab,m);prizeUCL(m)}
+ else if(comp.t==='B'&&f.grp){applyTab(f.grp.tab,m);prizeLIB(m)}
+ else if(f.mun){comp.m=m;comp.champ=mWin(m)}
+ if(f.tie){const t=f.tie;t.m.push(m);if(f.ko){t.w=mWin(m)}}
+ if(comp.t==='U'&&f.tie)prizeUCL(m);
+ if(comp.t==='B'&&f.tie)prizeLIB(m);
+ if(m.h===C.me||m.a===C.me)C.myRes.unshift({t:evTitle(C.cal[C.day]),h:m.h,a:m.a,s:mTxt(m),agg:f.ah||f.aa?`agregado ${m.gh+m.ah} x ${m.ga+m.aa}`:''});
+}
+function addMoney(ci,v,kind){const c=CL(ci);c.money=r2(c.money+v);if(ci===C.me&&C.fin){if(kind==='pri')C.fin.pri=r2(C.fin.pri+v)}}
+function prizeUCL(m){[[m.h,m.gh,m.ga],[m.a,m.ga,m.gh]].forEach(([ci,f,a])=>addMoney(ci,f>a?2.1:f===a?.7:0,'pri'))}
+function prizeLIB(m){[[m.h,m.gh,m.ga],[m.a,m.ga,m.gh]].forEach(([ci,f,a])=>addMoney(ci,f>a?.35:f===a?.12:0,'pri'))}
+
+/* ---------- pós-dia: fecha fases ---------- */
+function afterDay(ev){
+ const X=C.comps;
+ if(ev.k==='lg'){
+  LGORD.forEach(k=>{const L=X.L[k];if(L._day){L.last=L._day;L._day=null}
+   if(L.ri>=L.rounds.length&&L.champ==null){const t=sortTab(L.tab);L.champ=t[0].id;const n=t.length;
+    t.forEach((r,i)=>addMoney(r.id,r1(LG[k].prize*(1-i/n*.85)),'pri'));
+    pushNews(`🏆 ${esc(CL(L.champ).club)} é campeão da ${L.name}!`);if(L.champ===C.me)addTroph(L.name)}});
+  // receita/folha por rodada
+  C.clubs.forEach(c=>{const wb=sq(c.i).reduce((a,p)=>a+p.w,0),sv=sq(c.i).reduce((a,p)=>a+p.v,0);const rev=(wb*1.08+sv*.03)/38,wg=wb/38;c.money=r2(c.money+rev-wg);if(c.i===C.me){C.fin.rev=r2(C.fin.rev+rev);C.fin.wag=r2(C.fin.wag+wg)}});
+ }
+ if(ev.k==='cup'){LGORD.forEach(k=>{const K=X.CU[k];const s=K.stages[K.cur];if(s&&K.cur===K.nSt-1&&s.ties.every(t=>t.w!=null)&&K.champ==null){K.champ=s.ties[0].w;const ru=s.ties[0].a===K.champ?s.ties[0].b:s.ties[0].a;addMoney(K.champ,r1(LG[k].prize*.15),'pri');addMoney(ru,r1(LG[k].prize*.07),'pri');pushNews(`🏆 ${esc(CL(K.champ).club)} conquista a ${K.name}!`);if(K.champ===C.me)addTroph(K.name)}})}
+ if(ev.k==='ucl'&&ev.st==='lg'&&ev.md===7){const t=sortTab(X.UCL.tab);t.slice(0,24).forEach(r=>addMoney(r.id,1,'pri'))}
+ if(ev.k==='ucl'&&ev.st!=='lg'){const U=X.UCL,s=U.stages[U.cur];if(s&&s.ties.every(t=>t.w!=null)){const bonus={po:0,r16:11,qf:12.5,sf:15,fin:18.5}[ev.st];
+  if(ev.st!=='fin'&&(ev.leg===2))s.ties.forEach(t=>addMoney(t.w,{po:11,r16:12.5,qf:15,sf:18.5}[ev.st],'pri'));
+  if(ev.st==='fin'){U.champ=s.ties[0].w;addMoney(U.champ,6+18.5,'pri');pushNews(`🏆 ${esc(CL(U.champ).club)} é campeão da Champions!`);if(U.champ===C.me)addTroph('Champions')}}}
+ if(ev.k==='lib'&&ev.st!=='pre'&&ev.st!=='grp'){const B=X.LIB,s=B.stages[B.cur];if(s&&s.ties.every(t=>t.w!=null)){
+  if(ev.st!=='fin'&&ev.leg===2)s.ties.forEach(t=>addMoney(t.w,{r16:1.7,qf:2.3,sf:7}[ev.st],'pri'));
+  if(ev.st==='fin'){B.champ=s.ties[0].w;addMoney(B.champ,16,'pri');pushNews(`🏆 ${esc(CL(B.champ).club)} é campeão da Libertadores!`);if(B.champ===C.me)addTroph('Libertadores')}}}
+ if(ev.k==='lib'&&ev.st==='grp'&&ev.md===5){X.LIB.groups.forEach(g=>sortTab(g.tab).slice(0,2).forEach(r=>addMoney(r.id,1.25,'pri')))}
+ if(ev.k==='mun'&&X.MUN&&X.MUN.champ!=null){const w=X.MUN.champ,l=w===X.MUN.a?X.MUN.b:X.MUN.a;addMoney(w,30,'pri');addMoney(l,15,'pri');pushNews(`🌍 ${esc(CL(w).club)} é campeão do Mundial de Clubes!`);if(w===C.me)addTroph('Mundial de Clubes')}
+}
+function addTroph(n){C.troph.push({s:C.season,n});pushNews(`🥇 Você conquistou: ${n}!`)}
+
+/* ---------- avançar ---------- */
+function curEv(){return C.cal[C.day]}
+function myFx(F){return F.find(f=>f.h===C.me||f.a===C.me)}
+let PEND=null; // {ev,F} dia preparado
+function prepDay(){if(PEND&&PEND.day===C.day&&PEND.s===C.season)return PEND;const ev=curEv();PEND={day:C.day,s:C.season,ev,F:(ev.k==='win'||ev.k==='end')?[]:dayFixtures(ev),done:new Set()};return PEND}
+function simOthers(skipMine){
+ const D=prepDay();D.F.forEach((f,i)=>{if(D.done.has(i))return;if(skipMine&&(f.h===C.me||f.a===C.me))return;const m=quickSim(newM(f.h,f.a,f.ko,f.ah,f.aa));applyRes(f,m);D.done.add(i)});
+}
+function finishDay(){const D=prepDay();simOthers(false);afterDay(D.ev);C.lastDay={t:evTitle(D.ev),k:D.ev.k};C.day++;PEND=null;cSave()}
+function goHome(){skipIdle();cSave();cRender('home')}
+function advance(){ // sem jogo do usuário / simular
+ const ev=curEv();
+ if(ev.k==='win'){openWindow(ev.n);return cRender('mkt')}
+ if(ev.k==='end'){return seasonEnd()}
+ finishDay();goHome();
+}
+function simToMine(){
+ let guard=0;while(guard++<80){const ev=curEv();if(ev.k==='win'||ev.k==='end')break;const D=prepDay();if(myFx(D.F))break;finishDay()}
+ cRender('home');
+}
+
+// pula sozinho as datas em que o seu time não joga
+function skipIdle(){
+ let g=0;while(g++<120){if(C.win&&C.win.open)break;const ev=curEv();if(!ev||ev.k==='win'||ev.k==='end')break;const D=prepDay();if(myFx(D.F))break;finishDay()}
+}
+/* ---------- janelas de transferência ---------- */
+function openWindow(n){
+ C.win={n,moves:0,target:ri(15,30),open:true,log:[]};C.winIdx++;if(n===2)C.half=2;C.negs={};
+ calcPower();calcPrestige();
+ botMarket(Math.floor(C.win.target/2));
+ genOffers(ri(1,3));
+ C.day++;PEND=null;cSave();
+}
+function closeWindow(){
+ calcPower();calcPrestige();botMarket(Math.max(0,C.win.target-C.win.moves));
+ C.clubs.forEach(c=>fillSquad(c.i));calcPower();calcPrestige();
+ pushNews(`🔒 Janela fechada: ${C.win.moves} transferências entre os clubes.`);
+ C.win=null;C.offers=[];cSave();
+}
+function inXI(p){return p.c>=0&&xiOf(p.c).includes(p.i)}
+function isKey(p){if(p.c<0)return false;const c=CL(p.c);return inXI(p)&&p.o>=c.pw}
+function needOf(ci){
+ const c=CL(ci),pl=sq(ci),lu=lineupC(ci);const res=[];
+ Object.keys(TMIN).forEach(t=>{const cnt=pl.filter(p=>typesOf(p).includes(t)).length;const st=lu.filter(s=>TYP[s.pos]===t);const cur=st.length?Math.min(...st.map(s=>s.eff)):(cnt?Math.max(...pl.filter(p=>typesOf(p).includes(t)).map(p=>p.o)):60);
+  let sc=0;if(cnt<TMIN[t])sc+=10;if(st.length&&cur<c.pw-3)sc+=c.pw-cur;if(sc>0)res.push({t,cur,sc})});
+ res.sort((a,b)=>b.sc-a.sc);return res[0]||null;
+}
+function playerWilling(p,buyer){
+ if(p.c<0)return buyer.pr>=p.lp-3;
+ const s=CL(p.c);const starter=inXI(p);
+ if(p.o>=88&&buyer.pr<s.pr)return false;
+ if(starter&&buyer.pr<s.pr-1)return false;
+ if(!starter&&buyer.pr<s.pr-3)return false;
+ if(p.o>buyer.pw+8)return false; // seria craque deslocado demais
+ return true;
+}
+function sellerWilling(p,buyer){if(p.c<0)return true;const s=CL(p.c);if(isKey(p)&&buyer.pr<s.pr)return false;return true}
+function botFee(p){if(p.c<0)return 0;let f=p.v*(isKey(p)?1.3:inXI(p)?1.12:.95)*rnd(.95,1.1);if(p.ct===1)f*=.65;return r1(f)}
+function findTarget(c,need){
+ let best=null,bs=-1e9;
+ for(const p of C.P){
+  if(p.c===c.i||p.c===C.me||p.ln||p.pre!=null||p.lk>C.winIdx)continue;
+  if(!p.ps.some(x=>TYP[x]===need.t))continue;
+  if(p.o<need.cur+2||p.o>c.pw+5)continue;
+  if(!sellerWilling(p,c)||!playerWilling(p,c))continue;
+  const fee=botFee(p);if(fee>c.money*.7||fee>c.cap)continue;
+  const sc=p.o*10-fee*.05+Math.random()*6;if(sc>bs){bs=sc;best={p,fee}}
+ }
+ return best;
+}
+function botMarket(maxMoves){
+ const cap=new Map();let moves=0;const bots=C.clubs.filter(c=>c.i!==C.me);
+ bots.forEach(c=>{c.cap=Math.max(3,1.8*Math.max(...sq(c.i).map(p=>p.v)))});
+ bots.forEach(c=>cap.set(c.i,ri(2,3)));
+ for(let pass=0;pass<4&&moves<maxMoves;pass++){
+  const bids=new Map();
+  shuffle([...bots]).forEach(c=>{if(cap.get(c.i)<=0)return;const need=needOf(c.i);if(!need)return;const t=findTarget(c,need);if(!t)return;
+   const w=r2(Math.max(t.p.w*1.1,baseWage(t.p.o,c.i))*rnd(1,1.15));(bids.get(t.p.i)||bids.set(t.p.i,[]).get(t.p.i)).push({c,fee:t.fee,w})});
+  for(const [pid,arr] of bids){if(moves>=maxMoves)break;arr.sort((x,y)=>y.c.pr-x.c.pr||y.w-x.w);const b=arr[0],p=PL(pid);if(cap.get(b.c.i)<=0||p.c===b.c.i)continue;
+   doTransfer(p,b.c.i,b.fee,b.w,ri(2,5),arr.length>1?`(${arr.length} clubes interessados)`:'');cap.set(b.c.i,cap.get(b.c.i)-1);moves++}
+ }
+ if(C.win)C.win.moves+=moves;
+ return moves;
+}
+function doTransfer(p,to,fee,wage,yrs,note,kind){
+ const from=p.c;
+ if(from>=0){addMoney(from,fee);CL(from).ver++;const fc=CL(from);if(fc.man)fc.man=null}
+ addMoney(to,-fee);CL(to).ver++;
+ if(from===C.me&&C.fin)C.fin.tout=r1(C.fin.tout+fee);if(to===C.me&&C.fin)C.fin.tin=r1(C.fin.tin+fee);
+ p.lp=from>=0?CL(from).pr:p.lp;p.c=to;p.w=r2(wage);p.ct=yrs;p.lk=C.winIdx+2;revalue(p);
+ const fn=from>=0?CL(from).club:'sem clube';
+ const txt=kind==='loan'?`🔁 ${esc(p.n)} (${p.o}) vai por empréstimo do ${esc(fn)} para o ${esc(CL(to).club)}${fee?` · ${M(fee)}`:''}`:
+  `💱 ${esc(p.n)} (${p.o}) · ${esc(fn)} → ${esc(CL(to).club)} · ${fee?M(fee):'de graça'} ${note||''}`;
+ pushNews(txt);
+ if(kind!=='loan')checkRecord(p,fn,CL(to).club,fee,to);
+}
+function checkRecord(p,f,t,fee,to){
+ if(fee>=C.recs[C.recs.length-1].fee||C.recs.length<12){C.recs.push({n:p.n,f,t,fee:r1(fee),y:'T'+C.season,mine:to===C.me});C.recs.sort((a,b)=>b.fee-a.fee);C.recs=C.recs.slice(0,15);
+  if(C.recs[0].y==='T'+C.season&&C.recs[0].n===p.n)pushNews(`🚨 RECORDE MUNDIAL! ${esc(p.n)} por ${M(fee)}.`)}
+ if(CL(to).ctry==='BRA'&&fee>C.brRec.fee){C.brRec={n:p.n,fee:r1(fee),y:'T'+C.season};pushNews(`🇧🇷 Recorde do futebol brasileiro: ${esc(p.n)} por ${M(fee)}.`)}
+}
+// ofertas dos bots pelos jogadores do usuário
+function genOffers(n){
+ const mine=sq(C.me).filter(p=>p.lk<=C.winIdx&&!p.ln).sort((a,b)=>b.o-a.o);let made=0;
+ for(const p of mine){if(made>=n)break;if(Math.random()<.45)continue;
+  const best=bestBuyerFor(p,true);if(!best)continue;
+  C.offers.push({pid:p.i,club:best.i,fee:r1(p.v*rnd(.9,1.3)),st:'open',tries:0});made++}
+}
+function bestBuyerFor(p,needBased){
+ let best=null;
+ C.clubs.forEach(c=>{if(c.i===C.me||c.i===p.c)return;if(!playerWilling(p,c))return;if(c.money<p.v*1.05)return;if(p.o>c.pr+3)return;
+  if(needBased){const lu=lineupC(c.i).filter(s=>p.ps.some(x=>TYP[x]===TYP[s.pos]));if(!lu.length)return;const cur=Math.min(...lu.map(s=>s.eff));if(p.o<cur+2)return}
+  if(!best||c.pr>best.pr)best=c});
+ return best;
+}
+
+// clubes da IA contratam jogadores livres para substituir os da base / repor elenco
+function faPass(){
+ calcPower();calcPrestige();
+ const fa=C.P.filter(p=>p.c<0&&!p.b).sort((a,b)=>b.o-a.o);
+ shuffle(C.clubs.filter(c=>c.i!==C.me)).forEach(c=>{
+  let k=0;const pl=sq(c.i);
+  Object.keys(TMIN).forEach(t=>{if(k>=4)return;const mine=pl.filter(p=>typesOf(p).includes(t));const real=mine.filter(p=>!p.b);
+   if(real.length>=TMIN[t]+1)return;
+   const cand=fa.find(p=>p.c<0&&typesOf(p).includes(t)&&p.o<=c.pw+4&&p.o>=c.pw-7&&c.pr>=p.lp-3);
+   if(cand){cand.c=c.i;cand.ct=ri(1,3);cand.w=r2(baseWage(cand.o,c.i)*rnd(.9,1.1));revalue(cand);cand.fs=0;c.ver++;k++;
+    const b=pl.filter(p=>p.b&&typesOf(p).includes(t)).sort((x,y)=>x.o-y.o)[0];if(b){b.c=-1;b.dead=1}}});
+ });
+ C.P=C.P.filter(p=>!p.dead);reindex();
+}
+/* ---------- fim de temporada ---------- */
+function seasonEnd(){
+ const X=C.comps,c=me();const L=X.L[c.lg];const tab=sortTab(L.tab);const pos=tab.findIndex(r=>r.id===C.me)+1;
+ const rep={s:C.season,pos,n:tab.length,obj:C.obj,ok:pos<=C.obj.pos,champs:{},evo:[],left:[],loans:[],fin:{...C.fin,end:c.money},top:null};
+ LGORD.forEach(k=>{rep.champs[X.L[k].name]=X.L[k].champ;rep.champs[X.CU[k].name]=X.CU[k].champ});
+ rep.champs.Champions=X.UCL.champ;rep.champs.Libertadores=X.LIB.champ;rep.champs['Mundial de Clubes']=X.MUN?X.MUN.champ:null;
+ // artilheiro da liga do usuário
+ const sc=C.P.filter(p=>p.c>=0&&CL(p.c).lg===c.lg).sort((a,b)=>b.gl-a.gl)[0];if(sc)rep.top={n:sc.n,c:CL(sc.c).club,g:sc.gl};
+ // próximas vagas
+ const nu=[];LGORD.filter(k=>LG[k].ucl).forEach(k=>nu.push(...sortTab(X.L[k].tab).slice(0,LG[k].ucl).map(r=>r.id)));C.nextUCL=nu;
+ const br=sortTab(X.L.BRA.tab).map(r=>r.id);let nl=br.slice(0,7);const cc=X.CU.BRA.champ;nl.push(cc!=null&&!nl.includes(cc)?cc:br[7]);C.nextLIB=nl;
+ C.holder={ucl:X.UCL.champ,lib:X.LIB.champ};
+ // evolução de overall
+ C.P.forEach(p=>{if(p.c<0&&p.b)return;if(p.o0==null)p.o0=p.o;let b=0;if(p.ap>=25)b+=.6;else if(p.ap>=12)b+=.15;else if(p.ap<5)b-=.8;else b-=.2;
+  if(p.o>=92)b-=1;else if(p.o>=88)b-=.4;if(p.o<76)b+=.5;b-=.25*(p.o-p.o0);
+  let d=Math.round(b+rnd(-1.8,1.8));d=clamp(d,-3,3);const o1=p.o;p.o=clamp(p.o+d,60,99);p.d=p.o-o1;if(p.c===C.me&&p.d)rep.evo.push({n:p.n,o:p.o,d:p.d});revalue(p)});
+ C.clubs.forEach(x=>x.ver++);
+ // contratos
+ C.P.forEach(p=>{if(p.c<0)return;p.ct--;});
+ // pré-contratos executados
+ C.P.forEach(p=>{if(p.pre!=null&&p.ct<=0){const t=p.pre;const from=p.c;p.pre=null;const pc=p.preT||{w:p.w,y:3};doTransfer(p,t,0,pc.w,pc.y,'(pré-contrato)');if(from===C.me)rep.left.push(p.n+' (pré-contrato)')}});
+ C.P.forEach(p=>{if(p.c<0||p.ct>0||p.ln)return;
+  if(p.c===C.me){rep.left.push(p.n);pushNews(`👋 ${esc(p.n)} saiu do ${esc(me().club)} no fim do contrato.`);p.lp=me().pr;p.c=-1;p.ct=0;me().ver++;return}
+  const c=CL(p.c),rank=sq(p.c).sort((a,b)=>b.o-a.o).findIndex(x=>x.i===p.i);
+  if(!p.b&&(rank<18&&Math.random()<.95||rank<25&&Math.random()<.6)){p.ct=ri(2,4);p.w=r2(Math.max(p.w,baseWage(p.o,p.c)))}else{p.lp=c.pr;c.ver++;p.c=-1;p.ct=0;if(p.b)p.dead=1}});
+ C.P.forEach(p=>{if(p.c<0){p.fs=(p.fs||0)+1;if(p.fs>=3||(p.fs>=2&&p.o<80))p.dead=1}else p.fs=0});
+ C.P=C.P.filter(p=>!p.dead);reindex();
+ sq(C.me).filter(p=>p.ln).forEach(p=>rep.loans.push(p.i));
+ C.lastRep=rep;C.hist.push({s:C.season,club:c.club,pos,n:tab.length,ok:rep.ok,troph:C.troph.filter(t=>t.s===C.season).map(t=>t.n)});
+ C.careerFin.push({s:C.season,...rep.fin});
+ C.phase='end';cSave();cRender('end');
+}
+function reindex(){
+ const map=new Map();C.P.forEach((p,i)=>{map.set(p.i,i)});C.P.forEach((p,i)=>p.i=i);
+ C.clubs.forEach(c=>{if(c.man)c.man=c.man.map(id=>map.has(id)?map.get(id):null);c.ver++});XC.clear();
+ if(C.offers)C.offers=C.offers.filter(o=>map.has(o.pid)).map(o=>({...o,pid:map.get(o.pid)}));
+}
+function resolveLoans(choices){
+ sq(C.me).filter(p=>p.ln).forEach(p=>{const ln=p.ln;const buy=ln.type==='obr'||choices[p.i];
+  if(buy&&me().money>=ln.price){addMoney(C.me,-ln.price);addMoney(ln.from,ln.price);C.fin.tin=r1(C.fin.tin+ln.price);pushNews(`✅ ${esc(p.n)} foi comprado em definitivo por ${M(ln.price)}.`);checkRecord(p,CL(ln.from).club,me().club,ln.price,C.me);p.ln=null;p.ct=Math.max(p.ct,ln.yrs||3)}
+  else{pushNews(`↩️ ${esc(p.n)} voltou para o ${esc(CL(ln.from).club)}.`);p.c=ln.from;p.ln=null;p.ct=Math.max(1,p.ct);p.w=ln.ow||p.w;CL(ln.from).ver++}
+  me().ver++});
+}
+function nextSeason(choices){
+ resolveLoans(choices||{});
+ if(C.season>=NSEAS){C.phase='over';cSave();return cRender('over')}
+ C.season++;C.phase=null;faPass();C.clubs.forEach(c=>fillSquad(c.i));
+ seasonStart(false);pushNews(`📅 Começa a temporada ${C.season}/${NSEAS}.`);goHome();
+}
+
+/* ======================= TELAS ======================= */
+let CT='home',CSUB={};
+function cHead(){
+ const c=me();
+ return `<header class="top ctop"><button class="btn sm cm" data-act="cMenu" aria-label="Menu principal">☰</button><div class="row grow" style="gap:8px">${crest(c,1)}<b style="font:800 18px var(--fd)">${esc(c.club)}</b></div><span class="tag">T${C.season}/${NSEAS}</span><span class="tag" title="Saldo">${M(c.money)}</span></header>`;
+}
+function cNav(){const t=[['home','🏠','Início'],['squad','👕','Elenco'],['tab','📊','Tabelas'],['mkt','💱','Mercado'],['club','🏛️','Clube']];
+ return `<nav class="cnav">${t.map(([k,i,l])=>`<button class="${CT===k?'sel':''}" data-act="cTab" data-v="${k}"><span>${i}</span>${l}${k==='mkt'&&C.win?'<i class="dotn"></i>':''}</button>`).join('')}</nav>`}
+function cRender(tab){
+ if(tab)CT=tab;
+ if(!C)return renderHome();
+ if(CT==='end')return renderSeasonEnd();if(CT==='over')return renderOver();
+ const body={home:cHomeHTML,squad:cSquadHTML,tab:cTabHTML,mkt:cMktHTML,club:cClubHTML}[CT]();
+ app.innerHTML=cHead()+`<main class="wrap cwrap">${body}</main>`+cNav()+`<div id="modal"></div>`;
+ window.scrollTo(0,0);
+}
+const tnc=(ci,sm=1)=>`${crest(CL(ci),sm)}<span>${esc(CL(ci).club)}</span>`;
+const mRow=(m,hl)=>`<div class="match ${hl?'mine':''}"><span>${tnc(m.h)}</span><b style="white-space:nowrap">${mTxt(m)}</b><span style="justify-content:flex-end">${esc(CL(m.a).club)}${crest(CL(m.a),1)}</span></div>`;
+
+function cHomeHTML(){
+ const ev=curEv(),c=me();let main='';
+ if(C.win&&C.win.open){
+  main=`<div class="card"><h2>🔓 Janela aberta</h2><p class="mut">${C.win.n===1?'Pré-temporada':'Meio da temporada'}: contrate, venda e negocie. Os outros clubes também estão se mexendo.</p>
+  ${C.offers.filter(o=>o.st==='open').length?`<p>📨 Você tem <b>${C.offers.filter(o=>o.st==='open').length}</b> proposta(s) pelos seus jogadores.</p>`:''}
+  <div class="grid2"><button class="btn block" data-act="cTab" data-v="mkt">Ir ao mercado</button><button class="btn ac block" data-act="cCloseWin">Fechar janela ▶</button></div></div>`;
+ }else if(ev.k==='win'){
+  main=`<div class="card"><h2>${evTitle(ev)}</h2><p class="mut">A janela de transferências vai abrir.</p><button class="btn ac block" data-act="cAdv">Abrir janela ▶</button></div>`;
+ }else if(ev.k==='end'){
+  main=`<div class="card"><h2>🏁 Fim da temporada ${C.season}</h2><p class="mut">Veja o balanço, a evolução dos jogadores e as vagas da próxima temporada.</p><button class="btn ac block" data-act="cAdv">Ver balanço ▶</button></div>`;
+ }else{
+  const D=prepDay(),f=myFx(D.F);
+  main=`<div class="card"><h2>${evTitle(ev)}</h2>
+  ${f?`<div class="vs"><div>${crest(CL(f.h))}<b>${esc(CL(f.h).club)}</b><small>força ${r1(powerOf(f.h))}</small></div><span>x</span><div>${crest(CL(f.a))}<b>${esc(CL(f.a).club)}</b><small>força ${r1(powerOf(f.a))}</small></div></div>
+   ${f.ah||f.aa?`<p class="mut" style="text-align:center">Jogo de volta · ida: ${esc(CL(f.a).club)} ${f.aa} x ${f.ah} ${esc(CL(f.h).club)}</p>`:''}
+   <div class="grid2"><button class="btn ac block" data-act="cLive">▶ Jogar ao vivo</button><button class="btn block" data-act="cQuick">⏩ Simular</button></div>`
+   :`<p class="mut">Você não joga nesta data.</p><div class="grid2"><button class="btn ac block" data-act="cAdv">⏩ Avançar</button><button class="btn block" data-act="cToMine">⏭ Até meu jogo</button></div>`}
+  </div>`;
+ }
+ const L=C.comps.L[c.lg],t=sortTab(L.tab),pos=t.findIndex(r=>r.id===C.me)+1;
+ const res=C.myRes.slice(0,5),exp=sq(C.me).filter(p=>p.ct<=1&&!p.ln&&p.pre==null);
+ return `${main}
+ ${exp.length?`<div class="card warnc" style="margin-top:12px">⚠️ <b>${exp.length}</b> jogador(es) no último ano de contrato: ${exp.slice(0,4).map(p=>esc(p.s)).join(', ')}${exp.length>4?'…':''}. Renove no <button class="lnk" data-act="cTab" data-v="squad">Elenco</button> ou eles saem de graça no fim da temporada.</div>`:''}
+ <div class="grid2 stats" style="margin-top:12px"><div class="card mini"><small>${L.name}</small><b>${pos}º</b><span>${t[pos-1].P} pts · ${t[pos-1].J} jogos</span></div><div class="card mini"><small>Objetivo da diretoria</small><b style="font-size:17px">${C.obj.t}</b><span>${pos<=C.obj.pos?'✅ cumprindo agora':'⚠️ abaixo do esperado'}</span></div></div>
+ ${res.length?`<div class="card" style="margin-top:12px"><b>Seus últimos jogos</b>${res.map(r=>`<div class="match"><span>${tnc(r.h)}</span><b>${r.s}</b><span style="justify-content:flex-end">${esc(CL(r.a).club)}${crest(CL(r.a),1)}</span></div><div class="mut small" style="margin-top:-4px">${r.t}${r.agg?' · '+r.agg:''}</div>`).join('')}</div>`:''}
+ <div class="card" style="margin-top:12px"><b>Notícias</b><div class="news">${C.news.slice(0,14).map(n=>`<div>${n.t}</div>`).join('')}</div></div>`;
+}
+
+/* ----- elenco ----- */
+function cPitch(ci,act){
+ const lu=lineupC(ci);
+ return `<div class="pitch">${lu.map((s,i)=>{if(!s.p)return `<div class="slot" style="left:${s.x}%;top:${s.y}%"><button class="dot empty" data-act="${act}" data-v="${i}">+</button><i>${s.pos}</i></div>`;
+  const bad=!s.p.ps.includes(s.pos);return `<div class="slot" style="left:${s.x}%;top:${s.y}%"><button class="dot ${s.g}" data-act="${act}" data-v="${i}">${s.eff}</button><i class="${bad?'bad':''}">${esc(s.p.s)}</i></div>`}).join('')}</div>`;
+}
+function tacHTMLc(act){const t=me().tac;return `<div class="seg" style="margin-top:8px">${[['def','🛡️ Defensiva'],['equ','⚖️ Equilibrada'],['ofe','⚔️ Ofensiva']].map(([v,l])=>`<button class="${t.post===v?'sel':''}" data-act="${act}" data-k="post" data-v="${v}">${l}</button>`).join('')}</div>
+ <div class="seg" style="margin-top:6px">${[['equ','Normal'],['posse','Posse'],['pressao','Pressão'],['contra','Contra-ataque']].map(([v,l])=>`<button class="${t.est===v?'sel':''}" data-act="${act}" data-k="est" data-v="${v}">${l}</button>`).join('')}</div>`}
+const posTxt=p=>p.ps.join('/');
+const ctTxt=p=>p.ct<=1?'<span class="warn">termina nesta temporada</span>':`${p.ct} temporadas`;
+function cSquadHTML(){
+ const c=me(),pl=sq(C.me).sort((a,b)=>'GDMA'.indexOf(a.ps.map(x=>GOF[x])[0])-'GDMA'.indexOf(b.ps.map(x=>GOF[x])[0])||b.o-a.o);
+ const xi=new Set(xiOf(C.me));const wb=pl.reduce((a,p)=>a+p.w,0);
+ return `<div class="layout"><div class="card"><div class="row" style="margin-bottom:8px"><b class="grow">Escalação</b><span class="nota">${r1(powerOf(C.me))}<small>FORÇA</small></span></div>
+ ${cPitch(C.me,'cSlot')}<p class="mut small" style="margin:6px 0 0">Toque num jogador do campo para trocar.</p>
+ <div style="margin-top:10px">${formsHTML(11,c.form,'cForm')}</div>${tacHTMLc('cTac')}
+ <button class="btn block" data-act="cAutoXI" style="margin-top:10px;font-size:14px">Escalar os melhores automaticamente</button></div>
+ <div class="card"><div class="row"><b class="grow">Elenco (${pl.length})</b><span class="mut small">Folha: ${M(wb)}/ano</span></div>
+ <div class="plist">${pl.map(p=>`<button class="pl" data-act="cPlayer" data-v="${p.i}"><span class="ov ${p.d>0?'up':p.d<0?'dn':''}">${p.o}</span><span class="nm">${esc(p.n)}${p.b?' <em class="bdg">BASE</em>':''}${p.ln?' <em class="bdg">EMPR.</em>':''}${p.pre!=null&&p.pre!==C.me?' <em class="bdg rd">SAI</em>':''}<small>${posTxt(p)} · ${M(p.v)} · ${M(p.w)}/ano · ${p.ct<=1?'último ano':p.ct+' anos'}</small></span>${xi.has(p.i)?'<span class="tit">TIT</span>':''}</button>`).join('')}</div></div></div>`;
+}
+function playerModal(pid){
+ const p=PL(pid),mine=p.c===C.me,club=p.c>=0?CL(p.c):null;
+ const off=C.offers.find(o=>o.pid===pid&&o.st==='open');
+ let acts='';
+ if(mine){
+  acts=`<div class="grid2">${!p.ln&&p.ct<=2?`<button class="btn block" data-act="cRenew" data-v="${pid}">Renovar contrato</button>`:''}${C.win&&!p.ln?`<button class="btn block" data-act="cSellList" data-v="${pid}">Oferecer ao mercado</button>`:''}</div>`;
+  if(!C.win&&!p.ln&&p.ct>2)acts+=`<p class="mut small">Renovação disponível quando faltarem 2 temporadas ou menos. Vendas só com a janela aberta.</p>`;
+  if(!C.win&&!p.ln&&p.ct<=2&&!acts.includes('Oferecer'))acts+=`<p class="mut small">Vendas só com a janela aberta.</p>`;
+ }else acts=buyButtons(p);
+ modal(`<div class="row" style="gap:10px">${club?crest(club):''}<div class="grow"><h2 style="margin:0">${esc(p.n)}</h2><span class="mut">${club?esc(club.club):'Sem clube (livre)'} · ${posTxt(p)}</span></div><span class="bigov">${p.o}</span></div>
+ <div class="kv"><span>Valor</span><b>${M(p.v)}</b><span>Salário</span><b>${M(p.w)}/ano</b><span>Contrato</span><b>${p.c<0?'—':ctTxt(p)}</b><span>Na temporada</span><b>${p.ap} jogos · ${p.ga} gols</b>${club?`<span>No clube</span><b>${inXI(p)?(isKey(p)?'Titular importante':'Titular'):'Reserva'}</b>`:''}${p.ln?`<span>Empréstimo</span><b>${p.ln.type==='obr'?'obrigação':'opção'} de compra por ${M(p.ln.price)}</b>`:''}</div>
+ ${acts}`);
+}
+function buyButtons(p){
+ const w=C.win&&C.win.open;const n=C.negs[p.i];
+ if(p.pre===C.me)return `<p class="ok">✅ Pré-contrato assinado: chega de graça no fim da temporada.</p>`;
+ if(p.ln&&p.c!==C.me)return `<p class="mut">Jogador emprestado, não negociável agora.</p>`;
+ if(n&&n.closed)return `<p class="mut">${n.closed}</p>`;
+ const b=[];
+ if(p.c<0){if(w)b.push(`<button class="btn ac block" data-act="cNeg" data-v="${p.i}" data-k="free">Contratar (jogador livre)</button>`)}
+ else{
+  if(w&&p.lk<=C.winIdx){b.push(`<button class="btn ac block" data-act="cNeg" data-v="${p.i}" data-k="buy">Fazer proposta de compra</button>`);if(!isKey(p))b.push(`<button class="btn block" data-act="cNeg" data-v="${p.i}" data-k="loan">Pedir empréstimo</button>`)}
+  if(p.ct===1&&C.half===2&&p.pre==null)b.push(`<button class="btn block" data-act="cNeg" data-v="${p.i}" data-k="pre">Oferecer pré-contrato</button>`);
+ }
+ if(!b.length)return `<p class="mut small">${!w?'A janela está fechada. Pré-contratos (jogadores no último ano) liberam a partir do meio da temporada.':'Contratado há pouco: não pode ser negociado nesta janela.'}</p>`;
+ return `<div class="grid2">${b.join('')}</div>`;
+}
+function modal(h){let el=$('#modal');if(!el){el=document.createElement('div');el.id='modal';document.body.appendChild(el)}el.innerHTML=`<div class="mbg" data-act="cClose"></div><div class="mbox" role="dialog">${h}<button class="btn block" data-act="cClose" style="margin-top:12px">Fechar</button></div>`}
+function closeModal(){const m=$('#modal');if(m)m.innerHTML=''}
+
+/* ----- trocar jogador na escalação ----- */
+function slotPick(i){
+ const c=me(),xi=[...xiOf(C.me)],sl=slotList(c.form)[i];
+ const cur=xi[i]!=null?PL(xi[i]):null;
+ const pl=sq(C.me).filter(p=>p.i!==xi[i]).map(p=>({p,e:effC(p,sl),inx:xi.includes(p.i)})).sort((a,b)=>b.e-a.e);
+ modal(`<h2>${sl.pos}${cur?` · sai ${esc(cur.n)} (${effC(cur,sl)})`:''}</h2><div class="plist">${pl.map(x=>`<button class="pl" data-act="cSwap" data-v="${i}" data-k="${x.p.i}"><span class="ov">${x.e}</span><span class="nm">${esc(x.p.n)}<small>${posTxt(x.p)} · ovr ${x.p.o}${x.inx?' · já é titular (troca de posição)':''}</small></span></button>`).join('')}</div>`);
+}
+function doSwap(i,pid){
+ const c=me(),xi=[...xiOf(C.me)];const j=xi.indexOf(pid);
+ if(j>=0){xi[j]=xi[i];}xi[i]=pid;c.man=xi;c.pw=r1(powerOf(C.me));
+}
+
+/* ----- negociação ----- */
+function askPrice(p){
+ const s=CL(p.c),u=me();let m=isKey(p)?1.45:inXI(p)?1.2:.95;if(p.ct===1)m*=.65;let a=p.v*m;
+ if(isKey(p)&&u.pr<s.pr-1)a=Math.max(a,p.v*2);return r1(a);
+}
+function wantWage(p){
+ const u=me(),sp=p.c>=0?CL(p.c).pr:p.lp,gap=Math.max(0,sp-u.pr);
+ // vir para um clube menor custa caro: cada ponto de prestígio a menos aumenta o salário pedido (mais ainda para craques)
+ const f=1+gap*(p.o>=88?.2:.1);
+ let w=Math.max(baseWage(p.o,C.me)*f,p.w*1.15*(1+gap*.06));return r2(w);
+}
+function startNeg(pid,kind){
+ const p=PL(pid);let n=C.negs[pid];
+ if(!n||n.kind!==kind||n.closed){n={kind,stage:kind==='free'||kind==='pre'?'player':'club',tries:0,ptries:0,msg:'',ask:p.c>=0?askPrice(p):0,want:wantWage(p),yrs:ri(2,5)};
+  n.fee=kind==='buy'?r1(n.ask*.85):kind==='loan'?r1(p.v*.08):0;n.price=kind==='loan'?r1(p.c>=0?askPrice(p):p.v):0;n.ltype='opt';n.w=r2(n.want*.9);n.bonus=0;n.y=n.yrs;C.negs[pid]=n}
+ const u=me(),sp=p.c>=0?CL(p.c).pr:p.lp;
+ n.gap=Math.max(0,r1(sp-u.pr));
+ renderNeg(pid);
+}
+function num(id,v,step,act){return `<div class="stepper"><button class="cbtn" data-act="${act}" data-k="${id}" data-v="-${step}">−</button><b id="${id}">${M(v)}</b><button class="cbtn" data-act="${act}" data-k="${id}" data-v="${step}">+</button></div>`}
+function renderNeg(pid){
+ const p=PL(pid),n=C.negs[pid],u=me();
+ if(n.closed){modal(`<h2>${esc(p.n)}</h2><p>${n.closed}</p>`);return}
+ const step=v=>v>=50?5:v>=10?1:v>=2?.5:.1;
+ let h=`<div class="row" style="gap:10px">${p.c>=0?crest(CL(p.c)):''}<div class="grow"><h2 style="margin:0">${esc(p.n)} <small class="mut">${p.o}</small></h2><span class="mut small">${p.c>=0?esc(CL(p.c).club):'Livre'} · valor ${M(p.v)} · seu saldo ${M(u.money)}</span></div></div>`;
+ h+=`<div class="steps"><span class="${n.stage==='club'?'on':'done'}">1 · Clube</span><span class="${n.stage==='player'?'on':''}">2 · Jogador</span></div>`;
+ if(n.stage==='club'){
+  if(n.kind==='buy')h+=`<p class="mut small">Proposta de compra definitiva ao ${esc(CL(p.c).club)}.</p><label class="lbl">Taxa de transferência</label>${num('fee',n.fee,step(n.fee),'cNum')}`;
+  else h+=`<p class="mut small">Empréstimo por 1 temporada. O ${esc(CL(p.c).club)} pede ${M(n.price)} pela compra no fim.</p>
+   <div class="seg"><button class="${n.ltype==='opt'?'sel':''}" data-act="cLt" data-v="opt">Opção de compra</button><button class="${n.ltype==='obr'?'sel':''}" data-act="cLt" data-v="obr">Obrigação de compra</button></div>
+   <label class="lbl">Taxa de empréstimo</label>${num('fee',n.fee,step(n.fee),'cNum')}<label class="lbl">Valor de compra no fim</label>${num('price',n.price,step(n.price),'cNum')}`;
+  h+=n.msg?`<div class="resp">${n.msg}</div>`:'';
+  if(n.cask)h+=`<button class="btn block" data-act="cPayC" data-v="${pid}" style="margin-top:10px">Pagar o que pedem</button>`;
+  h+=`<button class="btn ac block" data-act="cOffer" data-v="${pid}" style="margin-top:10px">Enviar proposta (${3-n.tries} tentativas)</button>`;
+ }else{
+  h+=`<p class="mut small">${n.kind==='pre'?'Pré-contrato: ele chega de graça no fim da temporada.':n.kind==='free'?'Jogador livre: sem taxa para clube.':'Acordo com o clube fechado ✅. Agora o contrato do jogador.'} Salário atual: ${M(p.w)}/ano.${n.gap>=1?` <b class="warn">Ele vem de um clube maior, então pede bem mais para aceitar.</b>`:''}</p>
+  <label class="lbl">Salário (por ano)</label>${num('w',n.w,step(n.w),'cNum')}<label class="lbl">Luvas (bônus na assinatura)</label>${num('bonus',n.bonus,step(Math.max(n.bonus,n.w)),'cNum')}
+  <label class="lbl">Anos de contrato</label><div class="seg">${[1,2,3,4,5].map(y=>`<button class="${n.y===y?'sel':''}" data-act="cYrs" data-v="${y}">${y}</button>`).join('')}</div>`;
+  h+=n.msg?`<div class="resp">${n.msg}</div>`:'';
+  if(n.pask)h+=`<button class="btn block" data-act="cPayP" data-v="${pid}" style="margin-top:10px">Pagar o que ele pede (${M(n.pask)}/ano)</button>`;
+  h+=`<button class="btn ac block" data-act="cOfferP" data-v="${pid}" style="margin-top:10px">Propor contrato (${3-n.ptries} tentativas)</button>`;
+ }
+ modal(h);$('#modal').dataset.pid=pid;
+}
+function clubAnswer(pid){
+ const p=PL(pid),n=C.negs[pid],u=me();n.tries++;
+ if(n.fee>u.money){n.msg='💸 Você não tem saldo para essa taxa.';n.tries--;return renderNeg(pid)}
+ if(n.kind==='buy'){
+  if(n.fee>=n.ask){n.stage='player';n.msg=`✅ O ${esc(CL(p.c).club)} aceitou ${M(n.fee)}.`;n.agreed=n.fee}
+  else if(n.fee>=n.ask*.8){n.msg=`↔️ Contraproposta: o clube quer ${M(n.ask)}.`;n.fee=n.ask;n.cask=1}
+  else{n.cask=1;n.msg=`❌ Proposta muito baixa. O clube quer ${M(n.ask)}.`}
+  if(0)n.msg=`❌ Proposta muito baixa. ${isKey(p)&&u.pr<CL(p.c).pr-1?'Titular importante: só sai por proposta irrecusável.':''}`;
+ }else{
+  const minF=r1(p.v*.06),minP=r1(n.ask*(n.ltype==='opt'?1.05:.95));
+  if(n.fee>=minF&&n.price>=minP){n.stage='player';n.msg=`✅ Empréstimo aceito (${n.ltype==='opt'?'opção':'obrigação'} de compra por ${M(n.price)}).`;n.agreed=n.fee}
+  else if((n.cask=1)&&n.fee>=minF*.6){n.msg=`↔️ O clube pede taxa de ${M(Math.max(n.fee,minF))} e compra por ${M(Math.max(n.price,minP))}.`;n.fee=Math.max(n.fee,minF);n.price=Math.max(n.price,minP)}
+  else n.msg='❌ O clube recusou a proposta de empréstimo.';
+ }
+ if(n.stage==='club'&&n.tries>=3){n.closed=`O ${esc(CL(p.c).club)} encerrou as negociações por ${esc(p.n)} nesta janela.`}
+ n.msg&&n.stage==='player'&&(n.msg+=' Agora negocie com o jogador.');
+ renderNeg(pid);
+}
+function playerAnswer(pid){
+ const p=PL(pid),n=C.negs[pid],u=me();n.ptries++;
+ const cost=(n.kind==='buy'||n.kind==='loan'?n.agreed:0)+n.bonus;
+ if(cost>u.money){n.msg='💸 Saldo insuficiente para taxa + luvas.';n.ptries--;return renderNeg(pid)}
+ let need=n.want*(Math.abs(n.y-n.yrs)>1?1.05:1);const got=n.w+n.bonus/Math.max(1,n.y);
+ if(got>=need*.97){finishDeal(pid);return}
+ n.pask=r2(need);
+ if(got>=need*.75)n.msg=`↔️ ${esc(p.n)} pede ${M(need)}/ano${n.yrs!==n.y?` e prefere ${n.yrs} anos`:''}.`;
+ else n.msg=`❌ ${esc(p.n)} achou a proposta fraca. Ele quer ${M(need)}/ano.`;
+ if(n.ptries>=3){n.closed=`${esc(p.n)} encerrou a conversa nesta janela.`}
+ renderNeg(pid);
+}
+function finishDeal(pid){
+ const p=PL(pid),n=C.negs[pid],u=me();
+ if(n.bonus){addMoney(C.me,-n.bonus)}
+ if(n.kind==='pre'){p.pre=C.me;p.preT={w:n.w,y:n.y};pushNews(`✍️ Pré-contrato assinado com ${esc(p.n)}: chega no fim da temporada.`);n.closed='✅ Pré-contrato assinado! Ele chega de graça no fim da temporada.'}
+ else if(n.kind==='loan'){const from=p.c,ow=p.w;doTransfer(p,C.me,n.agreed,n.w,1,'','loan');p.ln={from,type:n.ltype,price:n.price,yrs:n.y,ow};n.closed=`✅ ${esc(p.n)} chegou por empréstimo!`}
+ else{doTransfer(p,C.me,n.agreed||0,n.w,n.y,'');n.closed=`✅ ${esc(p.n)} é o novo reforço do ${esc(u.club)}!`;if(C.win)C.win.moves++}
+ me().ver++;me().man=null;calcPower();cSave();cRender();modal(`<h2>Negócio fechado!</h2><p>${n.closed}</p>`);
+}
+
+/* ----- mercado ----- */
+function cMktHTML(){
+ const f=CSUB.f||(CSUB.f={pos:'',lg:'',max:0,q:'',free:false});const w=C.win&&C.win.open;
+ const offs=C.offers.filter(o=>o.st==='open');
+ let list=C.P.filter(p=>p.c!==C.me&&(f.free?p.c<0:true)&&(!f.pos||p.ps.some(x=>TYP[x]===f.pos))&&(!f.lg||(p.c>=0&&lgOf(CL(p.c))===f.lg))&&(!f.max||p.v<=f.max)&&(!f.q||p.n.toLowerCase().includes(f.q.toLowerCase())));
+ list.sort((a,b)=>b.o-a.o);const tot=list.length;list=list.slice(0,60);
+ return `<div class="card"><h2>${w?'🔓 Janela aberta':'🔒 Janela fechada'}</h2><p class="mut small" style="margin:0">${w?'Compras, empréstimos e jogadores livres liberados.':C.half===2?'Pré-contratos liberados para jogadores no último ano de contrato.':'A próxima janela abre no meio da temporada.'}</p>
+ ${w?`<button class="btn ac block" data-act="cCloseWin" style="margin-top:10px">Fechar janela e seguir ▶</button>`:''}</div>
+ ${offs.length?`<div class="card" style="margin-top:12px"><b>📨 Propostas pelos seus jogadores</b>${offs.map(o=>{const p=PL(o.pid);return `<div class="offer"><div>${crest(CL(o.club),1)} <b>${esc(CL(o.club).club)}</b> quer <b>${esc(p.n)}</b> (${p.o})<br><span class="mut small">Oferta: <b>${M(o.fee)}</b> · valor ${M(p.v)}</span></div><div class="seg"><button data-act="cOffAcc" data-v="${C.offers.indexOf(o)}">Aceitar</button><button data-act="cOffCnt" data-v="${C.offers.indexOf(o)}">Pedir +20%</button><button data-act="cOffRej" data-v="${C.offers.indexOf(o)}">Recusar</button></div></div>`}).join('')}</div>`:''}
+ <div class="card" style="margin-top:12px"><div class="filters">
+  <input class="input" id="mq" placeholder="Buscar jogador" value="${esc(f.q)}">
+  <select class="input" id="mpos"><option value="">Todas as posições</option>${[['GOL','Goleiro'],['ZAG','Zagueiro'],['LE','Lateral esquerdo'],['LD','Lateral direito'],['MID','Meio-campo'],['WIN','Ponta'],['CA','Centroavante']].map(([v,l])=>`<option value="${v}" ${f.pos===v?'selected':''}>${l}</option>`).join('')}</select>
+  <select class="input" id="mlg"><option value="">Todas as ligas</option>${[...LGORD,'LIB'].map(k=>`<option value="${k}" ${f.lg===k?'selected':''}>${k==='LIB'?'Outros da Libertadores':LG[k].n}</option>`).join('')}</select>
+  <select class="input" id="mmax"><option value="0">Qualquer valor</option>${[5,10,20,40,70,100,150].map(v=>`<option value="${v}" ${+f.max===v?'selected':''}>Até ${M(v)}</option>`).join('')}</select>
+  <label class="chk"><input type="checkbox" id="mfree" ${f.free?'checked':''}> Só jogadores livres</label></div>
+  <p class="mut small">${tot} jogadores${tot>60?' (mostrando os 60 melhores)':''}</p>
+  <div class="plist">${list.map(p=>`<button class="pl" data-act="cPlayer" data-v="${p.i}"><span class="ov">${p.o}</span><span class="nm">${esc(p.n)}<small>${posTxt(p)} · ${p.c>=0?esc(CL(p.c).club):'Livre'} · ${M(p.v)}${p.ct===1&&p.c>=0?' · último ano':''}</small></span>${p.c>=0?crest(CL(p.c),1):''}</button>`).join('')}</div></div>`;
+}
+function offerAccept(k){const o=C.offers[k],p=PL(o.pid);if(p.c!==C.me){o.st='x';return cRender()}const b=CL(o.club);if(b.money<o.fee){o.st='x';flashC('O clube desistiu: sem saldo.');return cRender()}
+ doTransfer(p,o.club,o.fee,r2(Math.max(p.w*1.1,baseWage(p.o,o.club))),ri(2,5),'');o.st='ok';me().man=null;calcPower();if(C.win)C.win.moves++;cSave();cRender()}
+function offerCounter(k){const o=C.offers[k];o.tries++;const b=CL(o.club),want=r1(o.fee*1.2);
+ if(Math.random()<.55&&b.money>=want){o.fee=want;flashC(`✅ O ${b.club} aceitou pagar ${M(want)}. Agora é só aceitar.`)}else{o.st='x';flashC(`❌ O ${b.club} não subiu a oferta e desistiu.`)}cSave();cRender()}
+function sellList(pid){const p=PL(pid);if(C.offers.some(o=>o.pid===pid&&o.st==='open')){closeModal();return cRender('mkt')}
+ const b=bestBuyerFor(p,false);if(!b){modal(`<h2>${esc(p.n)}</h2><p>Nenhum clube se interessou agora.</p>`);return}
+ C.offers.push({pid,club:b.i,fee:r1(p.v*rnd(.8,1.05)),st:'open',tries:0});cSave();closeModal();cRender('mkt')}
+function renewModal(pid){
+ const p=PL(pid);const want=r2(Math.max(p.w*1.08,baseWage(p.o,C.me)));const n=C.negs['r'+pid]||(C.negs['r'+pid]={w:r2(want*.9),y:3,tries:0,want,msg:''});
+ if(n.closed){modal(`<h2>${esc(p.n)}</h2><p>${n.closed}</p>`);return}
+ const st=n.w>=10?1:n.w>=2?.5:.1;
+ modal(`<h2>Renovar · ${esc(p.n)}</h2><p class="mut small">Salário atual ${M(p.w)}/ano · contrato: ${ctTxt(p)}</p><label class="lbl">Novo salário</label>${num('rw',n.w,st,'cRNum')}<label class="lbl">Anos</label><div class="seg">${[1,2,3,4,5].map(y=>`<button class="${n.y===y?'sel':''}" data-act="cRYrs" data-v="${y}">${y}</button>`).join('')}</div>${n.msg?`<div class="resp">${n.msg}</div>`:''}<button class="btn ac block" data-act="cRenewGo" data-v="${pid}" style="margin-top:10px">Propor (${3-n.tries} tentativas)</button>`);
+ $('#modal').dataset.pid=pid;
+}
+function renewGo(pid){const p=PL(pid),n=C.negs['r'+pid];n.tries++;
+ if(n.w>=n.want*.97){p.w=r2(n.w);p.ct=n.y+ (p.ct>0?0:0);p.ct=Math.max(p.ct,n.y);n.closed=`✅ ${esc(p.n)} renovou por ${n.y} temporada(s) com ${M(n.w)}/ano.`;pushNews(`🖊️ ${esc(p.n)} renovou com o ${esc(me().club)}.`);cSave();cRender();return modal(`<h2>Renovado!</h2><p>${n.closed}</p>`)}
+ n.msg=n.w>=n.want*.75?`↔️ Ele pede ${M(n.want)}/ano.`:'❌ Proposta fraca.';if(n.tries>=3)n.closed=`${esc(p.n)} não quer mais conversar sobre renovação agora.`;renewModal(pid)}
+function flashC(t){const d=document.createElement('div');d.className='toast';d.textContent=t;document.body.appendChild(d);setTimeout(()=>d.remove(),2600)}
+
+/* ----- tabelas ----- */
+function tabT(rows,hl,cut){return `<table><tr><th class="l">#</th><th class="l">Clube</th><th>P</th><th>J</th><th>V</th><th>E</th><th>D</th><th>SG</th></tr>${rows.map((r,i)=>`<tr class="${r.id===C.me?'me':''} ${cut&&cut(i)?'cut':''}"><td class="l">${i+1}</td><td class="l"><span class="row">${crest(CL(r.id),1)}<span class="ell">${esc(CL(r.id).club)}</span></span></td><td><b>${r.P}</b></td><td>${r.J}</td><td>${r.V}</td><td>${r.E}</td><td>${r.D}</td><td>${r.GP-r.GC}</td></tr>`).join('')}</table>`}
+function tieHTML(t){const leg=t.m.map(m=>`${m.gh}x${m.ga}`).join(' · ');const nm=i=>i==null?'—':`${crest(CL(i),1)}<span class="ell">${esc(CL(i).club)}</span>`;
+ return `<div class="tie ${t.a===C.me||t.b===C.me?'mine':''}"><span class="row ${t.w===t.a?'w':''}">${nm(t.a)}</span><b>${t.b==null?'bye':leg||'x'}${t.m.some(m=>m.pens)?' (pên.)':''}</b><span class="row ${t.w===t.b&&t.b!=null?'w':''}" style="justify-content:flex-end">${nm(t.b)}</span></div>`}
+function stagesHTML(st){return st.map(s=>`<h3>${s.nm}</h3>${s.ties.map(tieHTML).join('')}`).join('')}
+function cTabHTML(){
+ const c=me();const X=C.comps;const opts=[['L:'+c.lg,LG[c.lg].n],['K:'+c.lg,LG[c.lg].cup]];
+ if(C.uclT.includes(C.me)||c.lg!=='BRA')opts.push(['U','Champions']);if(C.libT.includes(C.me)||c.lg==='BRA')opts.push(['B','Libertadores']);
+ opts.push(['M','Mundial'],['O','Outras ligas'],['G','Artilharia']);
+ const sel=CSUB.tab||opts[0][0];let h='';
+ const [t,k]=sel.split(':');
+ if(t==='L'){const L=X.L[k];const n=LG[k].ucl;h=`<h2>${L.name}</h2><p class="mut small">Rodada ${L.ri}/${L.rounds.length}${n?` · ${n} primeiros vão para a Champions`:k==='BRA'?' · 7 primeiros (+ campeão da copa) vão para a Libertadores':''}</p>${tabT(sortTab(L.tab),1,i=>i===(n||7)-1)}${L.last?`<h3>Últimos jogos</h3>${L.last.map(m=>mRow(m,m.h===C.me||m.a===C.me)).join('')}`:''}`}
+ else if(t==='K'){const K=X.CU[k];h=`<h2>${K.name}</h2><p class="mut small">Mata-mata em jogo único.</p>${stagesHTML(K.stages)}${K.champ!=null?`<p class="champ">🏆 Campeão: ${esc(CL(K.champ).club)}</p>`:''}`}
+ else if(t==='U'){const U=X.UCL;h=`<h2>Champions</h2><p class="mut small">Fase de liga: ${U.md}/8 rodadas · 1º–8º oitavas, 9º–24º playoff, 25º–36º eliminados.</p>${tabT(sortTab(U.tab),1,i=>i===7||i===23)}${stagesHTML(U.stages)}${U.champ!=null?`<p class="champ">🏆 Campeão: ${esc(CL(U.champ).club)}</p>`:''}`}
+ else if(t==='B'){const B=X.LIB;h=`<h2>Libertadores</h2><h3>${B.pre.nm}</h3>${B.pre.ties.map(tieHTML).join('')}${B.groups?B.groups.map(g=>`<h3>${g.nm}</h3>${tabT(sortTab(g.tab),1,i=>i===1)}`).join(''):'<p class="mut">Os grupos são sorteados depois da fase preliminar.</p>'}${stagesHTML(B.stages)}${B.champ!=null?`<p class="champ">🏆 Campeão: ${esc(CL(B.champ).club)}</p>`:''}`}
+ else if(t==='M'){const Mu=X.MUN;h=`<h2>Mundial de Clubes</h2><p class="mut">Último jogo da temporada: campeão da Champions x campeão da Libertadores, em jogo único.</p>${Mu&&Mu.m?mRow(Mu.m,1)+`<p class="champ">🌍 Campeão: ${esc(CL(Mu.champ).club)}</p>`:`<p>Champions: <b>${X.UCL.champ!=null?esc(CL(X.UCL.champ).club):'a definir'}</b><br>Libertadores: <b>${X.LIB.champ!=null?esc(CL(X.LIB.champ).club):'a definir'}</b></p>`}`}
+ else if(t==='O'){const ok=CSUB.ol||LGORD.find(x=>x!==c.lg);h=`<div class="seg">${LGORD.map(x=>`<button class="${x===ok?'sel':''}" data-act="cOL" data-v="${x}">${flag(x)}</button>`).join('')}</div><h2 style="margin-top:10px">${LG[ok].n}</h2>${tabT(sortTab(X.L[ok].tab),0)}`}
+ else if(t==='G'){const lg=CSUB.gl||c.lg;const top=C.P.filter(p=>p.c>=0&&CL(p.c).lg===lg&&p.gl>0).sort((a,b)=>b.gl-a.gl).slice(0,20);
+  h=`<div class="seg">${LGORD.map(x=>`<button class="${x===lg?'sel':''}" data-act="cGL" data-v="${x}">${flag(x)}</button>`).join('')}</div><h2 style="margin-top:10px">Artilharia · ${LG[lg].n}</h2>${top.length?`<table>${top.map((p,i)=>`<tr class="${p.c===C.me?'me':''}"><td class="l">${i+1}</td><td class="l">${esc(p.n)}<br><span class="mut small">${esc(CL(p.c).club)}</span></td><td><b>${p.gl}</b></td></tr>`).join('')}</table>`:'<p class="mut">Ainda sem gols.</p>'}`}
+ return `<div class="chips">${opts.map(([v,l])=>`<button class="${v===sel?'sel':''}" data-act="cTabSel" data-v="${v}">${l}</button>`).join('')}</div><div class="card" style="margin-top:10px">${h}</div>`;
+}
+
+/* ----- clube ----- */
+function cClubHTML(){
+ const c=me(),f=C.fin,wb=sq(C.me).reduce((a,p)=>a+p.w,0);
+ const sub=CSUB.club||'fin';
+ let h='';
+ if(sub==='fin')h=`<h2>Finanças · temporada ${C.season}</h2><div class="kv"><span>Saldo atual</span><b>${M(c.money)}</b><span>Saldo no início</span><b>${M(f.start)}</b><span>Receitas (bilheteria, TV, patrocínio)</span><b class="ok">+${M(f.rev)}</b><span>Premiações</span><b class="ok">+${M(f.pri)}</b><span>Salários pagos</span><b class="warn">−${M(f.wag)}</b><span>Gastos com contratações</span><b class="warn">−${M(f.tin)}</b><span>Vendas</span><b class="ok">+${M(f.tout)}</b><span>Folha salarial anual</span><b>${M(wb)}</b></div>
+  <p class="mut small">As premiações entram ao longo da temporada: posição na liga, copa, Champions, Libertadores e Mundial.</p>`;
+ else if(sub==='tro'){const by={};C.troph.forEach(t=>(by[t.n]=by[t.n]||[]).push(t.s));
+  h=`<h2>Sala de troféus</h2>${C.troph.length?`<div class="troph">${Object.entries(by).map(([n,s])=>`<div>${TROPHY}<b>${s.length}x ${n}</b><small>Temporada ${s.join(', ')}</small></div>`).join('')}</div>`:'<p class="mut">Nenhum título ainda. Bora mudar isso!</p>'}
+  <h3>Histórico</h3>${C.hist.length?`<table>${C.hist.map(x=>`<tr><td class="l">T${x.s}</td><td class="l">${esc(x.club)}</td><td>${x.pos}º/${x.n}</td><td>${x.ok?'✅':'❌'}</td><td class="l small">${x.troph.join(', ')||'—'}</td></tr>`).join('')}</table>`:'<p class="mut">A primeira temporada ainda está em andamento.</p>'}`}
+ else if(sub==='rec')h=`<h2>Recordes de transferência</h2><table>${C.recs.map((r,i)=>`<tr class="${r.mine?'me':''}"><td class="l">${i+1}</td><td class="l"><b>${esc(r.n)}</b><br><span class="mut small">${esc(r.f)} → ${esc(r.t)} · ${r.y[0]==='T'?'⭐ nesta carreira (temp. '+r.y.slice(1)+')':r.y}</span></td><td><b>${M(r.fee)}</b></td></tr>`).join('')}</table>
+  <h3>Futebol brasileiro</h3><p>Maior compra de um clube brasileiro: <b>${esc(C.brRec.n)}</b> · ${M(C.brRec.fee)} ${C.brRec.y[0]==='T'?'(⭐ nesta carreira)':''}</p>`;
+ else if(sub==='opt')h=`<h2>Carreira</h2><p>Técnico: <b>${esc(C.coach)}</b><br>Clube: <b>${esc(c.club)}</b> · ${flag(c.ctry)} ${LG[c.lg].n}<br>Temporada ${C.season} de ${NSEAS}</p><p class="mut small">O jogo salva sozinho neste navegador depois de cada rodada.</p>
+  <button class="btn block" data-act="menu">Voltar ao menu principal</button><button class="btn block" data-act="cAbandon" style="margin-top:8px;border-color:#7a2b2b">Apagar esta carreira</button>`;
+ return `<div class="chips">${[['fin','Finanças'],['tro','Troféus'],['rec','Recordes'],['opt','Carreira']].map(([v,l])=>`<button class="${v===sub?'sel':''}" data-act="cClubSub" data-v="${v}">${l}</button>`).join('')}</div><div class="card" style="margin-top:10px">${h}</div>`;
+}
+
+/* ----- fim de temporada / fim de carreira ----- */
+function renderSeasonEnd(){
+ const r=C.lastRep,c=me();
+ const loans=r.loans.filter(id=>PL(id)&&PL(id).ln);
+ app.innerHTML=cHead()+`<main class="wrap cwrap"><div class="card" style="text-align:center"><h1 style="font-size:38px">Fim da temporada ${r.s}</h1><p style="font-size:20px">${esc(c.club)} terminou em <b>${r.pos}º</b> de ${r.n} na ${LG[c.lg].n}.</p>
+ <p>${r.ok?'✅ Objetivo cumprido: ':'❌ Objetivo não cumprido: '}${r.obj.t}</p>${C.troph.filter(t=>t.s===r.s).length?`<p class="champ">🏆 Títulos: ${C.troph.filter(t=>t.s===r.s).map(t=>t.n).join(', ')}</p>`:''}</div>
+ <div class="card" style="margin-top:12px"><b>Campeões</b><table>${Object.entries(r.champs).filter(([,v])=>v!=null).map(([k,v])=>`<tr class="${v===C.me?'me':''}"><td class="l">${k}</td><td class="l"><span class="row">${crest(CL(v),1)}${esc(CL(v).club)}</span></td></tr>`).join('')}</table>${r.top?`<p class="mut small">Artilheiro da ${LG[c.lg].n}: ${esc(r.top.n)} (${esc(r.top.c)}) · ${r.top.g} gols</p>`:''}</div>
+ <div class="card" style="margin-top:12px"><b>Evolução do seu elenco</b>${r.evo.length?`<div class="evo">${r.evo.sort((a,b)=>b.d-a.d).map(e=>`<span class="${e.d>0?'up':'dn'}">${esc(e.n)} ${e.o} (${e.d>0?'+':''}${e.d})</span>`).join('')}</div>`:'<p class="mut">Ninguém mudou de overall.</p>'}
+ ${r.left.length?`<p class="mut small">Saíram no fim do contrato: ${r.left.map(esc).join(', ')}</p>`:''}</div>
+ <div class="card" style="margin-top:12px"><b>Finanças da temporada</b><div class="kv"><span>Saldo inicial</span><b>${M(r.fin.start)}</b><span>Premiações</span><b class="ok">+${M(r.fin.pri)}</b><span>Contratações</span><b class="warn">−${M(r.fin.tin)}</b><span>Vendas</span><b class="ok">+${M(r.fin.tout)}</b><span>Saldo final</span><b>${M(r.fin.end)}</b></div></div>
+ ${loans.length?`<div class="card" style="margin-top:12px"><b>Empréstimos</b>${loans.map(id=>{const p=PL(id);return `<div class="offer"><div><b>${esc(p.n)}</b> (${p.o}) · ${p.ln.type==='obr'?`obrigação de compra: <b>${M(p.ln.price)}</b> (automático)`:`opção de compra por <b>${M(p.ln.price)}</b>`}</div>${p.ln.type==='opt'?`<label class="chk"><input type="checkbox" class="lnbuy" data-v="${id}"> Comprar em definitivo</label>`:''}</div>`}).join('')}</div>`:''}
+ <button class="btn ac block" data-act="cNextS" style="margin:16px 0 30px">${C.season>=NSEAS?'Encerrar carreira ▶':`Começar temporada ${C.season+1} ▶`}</button></main>`;
+}
+function renderOver(){
+ const c=me(),by={};C.troph.forEach(t=>(by[t.n]=by[t.n]||0,by[t.n]++));
+ app.innerHTML=`<header class="top"><div class="logo">${LOGO}</div><span class="tag">Fim de carreira</span></header><main class="wrap"><div class="card" style="text-align:center">${TROPHY}<h1>${esc(C.coach)}</h1><p class="mut">${NSEAS} temporadas no comando do ${esc(c.club)}</p>
+ <p style="font-size:20px">${C.troph.length?`<b>${C.troph.length}</b> título(s)`:'Nenhum título'}</p>${Object.entries(by).map(([n,k])=>`<div>${k}x ${n}</div>`).join('')}</div>
+ <div class="card" style="margin-top:12px"><b>Temporada a temporada</b><table>${C.hist.map(x=>`<tr><td class="l">T${x.s}</td><td>${x.pos}º</td><td>${x.ok?'✅':'❌'}</td><td class="l small">${x.troph.join(', ')||'—'}</td></tr>`).join('')}</table></div>
+ <div class="grid2" style="margin:16px 0 30px"><button class="btn ac block" data-act="cNewSetup">Nova carreira</button><button class="btn block" data-act="menu">Menu principal</button></div></main>${FOOT}`;
+}
+
+/* ----- configuração ----- */
+let CS={name:'',lg:'ING',club:null,mm:'fair',money:''};
+function renderCSetup(){
+ const clubs=C0clubs().filter(c=>c.lg===CS.lg).sort((a,b)=>b.pw-a.pw);if(!clubs.some(c=>c.i===CS.club))CS.club=clubs[0].i;
+ const has=cHasSave();
+ app.innerHTML=`<header class="top"><div class="logo">${LOGO}</div><span class="tag">Modo Carreira</span><span class="grow"></span><button class="btn sm" data-act="menu">← Menu</button></header><main class="wrap">
+ <h1>Modo Carreira <em style="font-style:normal;color:var(--ac)">Técnico</em></h1><p class="mut">Escolha um clube e comande por até ${NSEAS} temporadas: liga, copa, Champions ou Libertadores, Mundial, mercado e finanças.</p>
+ ${has?`<div class="card" style="margin-bottom:14px"><b>Você tem uma carreira salva.</b><div class="grid2" style="margin-top:8px"><button class="btn ac block" data-act="cContinue">Continuar carreira</button><button class="btn block" data-act="cAbandon">Apagar e começar outra</button></div></div>`:''}
+ <h3>Nome do técnico</h3><input class="input" id="cnm" maxlength="24" placeholder="Digite seu nome" value="${esc(CS.name)}">
+ <h3>Liga</h3><div class="grid3">${LGORD.map(k=>`<button class="opt ${CS.lg===k?'sel':''}" data-act="cLg" data-v="${k}"><b>${flag(k)} ${LG[k].n}</b><span>${C0clubs().filter(c=>c.lg===k).length} times · ${k==='BRA'?'vaga na Libertadores':LG[k].ucl+' vagas na Champions'}</span></button>`).join('')}</div>
+ <h3>Time</h3><div class="crests">${clubs.map(c=>`<button class="${CS.club===c.i?'sel':''}" data-act="cClub" data-v="${c.i}">${crest(c)}<span>${esc(c.club)}</span><small class="nota" style="margin:0">${c.pw}</small></button>`).join('')}</div>
+ <p class="mut small">O número é a força do time titular. Times mais fracos têm objetivos menores.</p>
+ <h3>Dinheiro para contratar</h3>
+ <div class="grid2"><button class="opt ${CS.mm==='fair'?'sel':''}" data-act="cMM" data-v="fair"><b>Valor justo</b><span>${M(fairMoney(clubs.find(c=>c.i===CS.club)))} · calculado pela força do time</span></button>
+ <button class="opt ${CS.mm==='custom'?'sel':''}" data-act="cMM" data-v="custom"><b>Escolher valor</b><span>Você define quanto o clube tem pra gastar</span></button></div>
+ ${CS.mm==='custom'?`<div class="row" style="margin-top:10px;gap:8px"><span style="font:800 22px var(--fd)">€</span><input class="input" id="cmoney" type="number" inputmode="decimal" min="0" step="1" placeholder="Ex.: 150" value="${esc(String(CS.money))}" style="flex:1"><span style="font:800 22px var(--fd)">M</span></div><p class="mut small">Só o seu clube recebe esse valor; os outros clubes continuam com o valor justo.</p>`:''}
+ <button class="btn ac block" data-act="cStart" style="margin:18px 0 30px" ${CS.name.trim()?'':'disabled'}>Começar carreira ▶</button></main>${FOOT}`;
+}
+let C0=null;
+function C0clubs(){
+ if(C0)return C0;const saved=C;const d=cBuild();C={clubs:d.clubs,P:d.P,uclT:[],libT:[]};
+ C.clubs.forEach(c=>fillSquad(c.i));C.clubs.forEach(c=>c.pw=r1(powerOf(c.i)));C0=C.clubs.map(c=>({...c}));C=saved;XC.clear();return C0;
+}
+
+/* ----- partida ao vivo ----- */
+let CLV=null;
+function cLive(){
+ const D=prepDay(),fi=D.F.findIndex(f=>f.h===C.me||f.a===C.me),f=D.F[fi];
+ simOthers(true);
+ const m=newM(f.h,f.a,f.ko,f.ah,f.aa);CLV={m,f,fi,speed:1,iv:null,subs:0,used:new Set(xiOf(C.me)),pre:me().man?[...me().man]:null,preForm:me().form};
+ me().man=[...xiOf(C.me)];
+ app.innerHTML=cHead()+`<main class="wrap layout"><div><div class="card"><div class="board">
+  <div class="score"><div class="grow">${crest(CL(m.h))}<br>${esc(CL(m.h).club)}</div><div class="n" id="gh">0</div><div class="mut">x</div><div class="n" id="ga">0</div><div class="grow">${crest(CL(m.a))}<br>${esc(CL(m.a).club)}</div></div>
+  <div style="text-align:center;margin-top:8px"><span class="tag" id="min">0'</span>${f.ah||f.aa?`<div class="mut small" id="agg"></div>`:''}</div></div>
+  <div class="seg" style="margin-top:12px">${[1,2,4].map(v=>`<button data-act="cSpd" data-v="${v}" class="${v===1?'sel':''}">${v}x</button>`).join('')}<button data-act="cPause" id="pz">Pausar</button><button data-act="cSkip">Pular ⏭</button></div>
+  <div id="evs" style="margin-top:10px"></div><button class="btn ac block hide" id="cont" data-act="cCont" style="margin-top:12px">Continuar</button></div></div>
+ <div class="card"><div class="row"><b class="grow">Mexa no time</b><span class="tag" id="subs">0/5 trocas</span></div><div id="lp" style="margin-top:8px">${cPitch(C.me,'cLSlot')}</div><div id="lf" style="margin-top:10px">${formsHTML(11,me().form,'cLForm')}</div><div id="lt">${tacHTMLc('cLTac')}</div></div></main><div id="modal"></div>`;
+ cRun();
+}
+function cRun(){clearInterval(CLV.iv);CLV.iv=setInterval(()=>{const m=CLV.m;if(mOver(m))return cEndLive();mStep(m);cUpd()},260/CLV.speed)}
+function cUpd(){const m=CLV.m;$('#gh').textContent=m.gh;$('#ga').textContent=m.ga;
+ $('#min').textContent=m.min>90?`${m.min}' prorrogação`:m.min+"'";const ag=$('#agg');if(ag)ag.textContent=`Agregado: ${m.gh+m.ah} x ${m.ga+m.aa}`;
+ $('#evs').innerHTML=[...m.ev].reverse().map(e=>`<div class="ev">⚽ <b>${e.min}'</b> ${e.pid!=null?esc(PL(e.pid).n):'?'} <span class="mut">(${esc(CL(e.side==='h'?m.h:m.a).club)})</span></div>`).join('')+(m.pens?`<div class="ev">🥅 Pênaltis: <b>${m.pens.h} x ${m.pens.a}</b></div>`:'');}
+function cEndLive(){clearInterval(CLV.iv);const m=CLV.m;cUpd();const w=m.ko?mWin(m):(m.gh>m.ga?m.h:m.ga>m.gh?m.a:null);
+ $('#min').textContent='Fim de jogo'+(w===C.me?' · VITÓRIA!':w==null?' · empate':' · derrota');$('#cont').classList.remove('hide');CLV.done=true}
+function cContLive(){/*fim*/const D=prepDay();applyRes(CLV.f,CLV.m);D.done.add(CLV.fi);const c=me();c.man=CLV.pre?(c.form===CLV.preForm?CLV.pre:placeXI(CLV.pre.map(PL),c.form)):null;CLV=null;finishDay();goHome()}
+function cQuick(){const D=prepDay();simOthers(false);finishDay();goHome()}
+
+/* ----- ações ----- */
+Object.assign(ACT,{
+ goCarreira(){C0clubs();renderCSetup()},
+ cLg(b){CS.lg=b.dataset.v;CS.club=null;renderCSetup()},
+ cClub(b){CS.club=+b.dataset.v;renderCSetup()},
+ cStart(){if(!CS.name.trim())return;const v=parseFloat(String(CS.money).replace(',','.'));const sm=CS.mm==='custom'&&isFinite(v)&&v>=0?v:null;cNew(CS.name.trim(),CS.club,sm);cSave();goHome()},
+ cMM(b){CS.mm=b.dataset.v;renderCSetup()},
+ cContinue(){C=cLoad();XC.clear();PEND=null;if(!C){renderCSetup();return}if(C.phase==='end'||C.phase==='over')cRender(C.phase);else goHome()},
+ cAbandon(){modal(`<h2>Apagar a carreira?</h2><p>A carreira salva será apagada e não dá pra desfazer.</p><button class="btn block" data-act="cAbandonYes" style="border-color:#c0392b">Sim, apagar</button>`)},
+ cAbandonYes(){cDel();C=null;PEND=null;CS={name:'',lg:'ING',club:null,mm:'fair',money:''};renderCSetup()},
+ cNewSetup(){cDel();C=null;CS={name:'',lg:'ING',club:null,mm:'fair',money:''};renderCSetup()},
+ cMenu(){if(CLV&&!CLV.done)return;renderHome()},
+ cTab(b){CT=b.dataset.v;cRender()},
+ cAdv(){advance()},cToMine(){simToMine()},
+ cQuick(){cQuick()},cLive(){cLive()},
+ cCloseWin(){closeWindow();goHome()},
+ cSlot(b){slotPick(+b.dataset.v)},
+ cSwap(b){doSwap(+b.dataset.v,+b.dataset.k);closeModal();if(CLV){CLV.subs+=0;$('#lp').innerHTML=cPitch(C.me,'cLSlot')}else cRender()},
+ cForm(b){const c=me();const pl=xiOf(C.me).filter(x=>x!=null).map(PL);c.form=b.dataset.v;if(c.man)c.man=placeXI(pl,c.form);c.pw=r1(powerOf(C.me));cRender()},
+ cTac(b){me().tac[b.dataset.k]=b.dataset.v;cRender()},
+ cAutoXI(){me().man=null;XC.delete(C.me);me().pw=r1(powerOf(C.me));cRender()},
+ cPlayer(b){playerModal(+b.dataset.v)},
+ cClose(){closeModal();if(!CLV&&C&&(CT==='squad'||CT==='mkt'))cRender()},
+ cNeg(b){startNeg(+b.dataset.v,b.dataset.k)},
+ cNum(b){const pid=+$('#modal').dataset.pid,n=C.negs[pid];const k=b.dataset.k;n[k]=r2(Math.max(0,(n[k]||0)+ +b.dataset.v));renderNeg(pid)},
+ cLt(b){const pid=+$('#modal').dataset.pid,n=C.negs[pid];n.ltype=b.dataset.v;renderNeg(pid)},
+ cYrs(b){const pid=+$('#modal').dataset.pid,n=C.negs[pid];n.y=+b.dataset.v;renderNeg(pid)},
+ cOffer(b){clubAnswer(+b.dataset.v)},
+ cPayC(b){const pid=+b.dataset.v,n=C.negs[pid];n.fee=n.ask;if(n.kind==='loan'){n.fee=Math.max(n.fee,r1(PL(pid).v*.06));n.price=Math.max(n.price,r1(n.ask*(n.ltype==='opt'?1.05:.95)))}n.tries=Math.max(0,n.tries-1);clubAnswer(pid)},
+ cPayP(b){const pid=+b.dataset.v,n=C.negs[pid];n.w=n.pask;n.ptries=Math.max(0,n.ptries-1);playerAnswer(pid)},cOfferP(b){playerAnswer(+b.dataset.v)},
+ cOffAcc(b){offerAccept(+b.dataset.v)},cOffRej(b){C.offers[+b.dataset.v].st='x';cSave();cRender()},cOffCnt(b){offerCounter(+b.dataset.v)},
+ cSellList(b){sellList(+b.dataset.v)},
+ cRenew(b){renewModal(+b.dataset.v)},
+ cRNum(b){const pid=+$('#modal').dataset.pid,n=C.negs['r'+pid];n.w=r2(Math.max(0,n.w+ +b.dataset.v));renewModal(pid)},
+ cRYrs(b){const pid=+$('#modal').dataset.pid,n=C.negs['r'+pid];n.y=+b.dataset.v;renewModal(pid)},
+ cRenewGo(b){renewGo(+b.dataset.v)},
+ cTabSel(b){CSUB.tab=b.dataset.v;cRender()},cOL(b){CSUB.ol=b.dataset.v;cRender()},cGL(b){CSUB.gl=b.dataset.v;cRender()},
+ cClubSub(b){CSUB.club=b.dataset.v;cRender()},
+ cNextS(){const ch={};document.querySelectorAll('.lnbuy').forEach(x=>{if(x.checked)ch[+x.dataset.v]=true});nextSeason(ch)},
+ cSpd(b){CLV.speed=+b.dataset.v;CLV.paused=false;$('#pz').textContent='Pausar';document.querySelectorAll('[data-act=cSpd]').forEach(x=>x.classList.toggle('sel',x===b));cRun()},
+ cPause(){if(CLV.done)return;CLV.paused=!CLV.paused;$('#pz').textContent=CLV.paused?'Retomar':'Pausar';if(CLV.paused)clearInterval(CLV.iv);else cRun()},
+ cSkip(){clearInterval(CLV.iv);while(!mOver(CLV.m))mStep(CLV.m);cEndLive()},
+ cCont(){cContLive()},
+ cLForm(b){const c=me();const pl=xiOf(C.me).filter(x=>x!=null).map(PL);c.form=b.dataset.v;c.man=placeXI(pl,c.form);$('#lp').innerHTML=cPitch(C.me,'cLSlot');$('#lf').innerHTML=formsHTML(11,c.form,'cLForm')},
+ cLTac(b){me().tac[b.dataset.k]=b.dataset.v;$('#lt').innerHTML=tacHTMLc('cLTac')},
+ cLSlot(b){if(CLV.done)return;const i=+b.dataset.v;const xi=xiOf(C.me),sl=slotList(me().form)[i];
+  const bench=sq(C.me).filter(p=>!xi.includes(p.i)).map(p=>({p,e:effC(p,sl),ok:!CLV.used.has(p.i)})).sort((a,b)=>b.e-a.e);
+  const others=xi.map((id,j)=>({id,j})).filter(x=>x.j!==i&&x.id!=null);
+  modal(`<h2>${sl.pos} · ${xi[i]!=null?esc(PL(xi[i]).n):'vazio'}</h2><p class="mut small">Substituições: ${CLV.subs}/5. Trocar posição entre titulares é livre.</p>
+  <b>Do banco</b><div class="plist">${bench.map(x=>`<button class="pl" ${!x.ok||CLV.subs>=5?'disabled':''} data-act="cLSub" data-v="${i}" data-k="${x.p.i}"><span class="ov">${x.e}</span><span class="nm">${esc(x.p.n)}<small>${posTxt(x.p)}${!x.ok?' · já saiu do jogo':''}</small></span></button>`).join('')}</div>
+  <b>Trocar de lugar com</b><div class="plist">${others.map(x=>`<button class="pl" data-act="cLMove" data-v="${i}" data-k="${x.id}"><span class="ov">${effC(PL(x.id),sl)}</span><span class="nm">${esc(PL(x.id).n)}<small>${posTxt(PL(x.id))}</small></span></button>`).join('')}</div>`)},
+ cLSub(b){if(CLV.subs>=5)return;const i=+b.dataset.v,pid=+b.dataset.k;const xi=[...xiOf(C.me)];if(xi[i]!=null)CLV.used.add(xi[i]);CLV.used.add(pid);xi[i]=pid;me().man=xi;CLV.subs++;$('#subs').textContent=CLV.subs+'/5 trocas';closeModal();$('#lp').innerHTML=cPitch(C.me,'cLSlot')},
+ cLMove(b){doSwap(+b.dataset.v,+b.dataset.k);closeModal();$('#lp').innerHTML=cPitch(C.me,'cLSlot')}
+});
+document.addEventListener('input',e=>{
+ if(e.target.id==='cmoney'){CS.money=e.target.value}
+ if(e.target.id==='cnm'){CS.name=e.target.value;const b=document.querySelector('[data-act=cStart]');if(b)b.disabled=!CS.name.trim()}
+ if(e.target.id==='mq'){CSUB.f.q=e.target.value;clearTimeout(window._mq);window._mq=setTimeout(()=>{const pos=e.target.selectionStart;cRender();const q=$('#mq');if(q){q.focus();q.setSelectionRange(pos,pos)}},350)}
+});
+document.addEventListener('change',e=>{
+ const id=e.target.id;if(!CSUB.f)return;
+ if(id==='mpos')CSUB.f.pos=e.target.value;else if(id==='mlg')CSUB.f.lg=e.target.value;else if(id==='mmax')CSUB.f.max=+e.target.value;else if(id==='mfree')CSUB.f.free=e.target.checked;else return;
+ cRender();
+});
+
 renderHome();
 </script>
 </body>
